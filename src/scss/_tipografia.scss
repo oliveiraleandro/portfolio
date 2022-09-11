@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Display:wght@600;700&family=Patua+One&display=swap');
+
+$noto: 'Noto Sans',
+sans-serif;
+$noto-display: 'Noto Sans Display',
+sans-serif;
+$patua: 'Patua One',
+cursive;
+
+.txt_ {
+
+  &display {
+    /* Display */
+    font-family: $patua;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.20875rem;
+    line-height: 4.1875rem;
+    letter-spacing: 0.01em;
+  }
+
+  &sub-display {
+    /* Sub-display */
+
+    font-family: $noto-display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.1575rem;
+    line-height: 3.375rem;
+    letter-spacing: -0.01em;
+  }
+
+  &titulo {
+    /* Título */
+    font-family: $patua;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.36875rem;
+    line-height: 2.5rem;
+  }
+
+  &sub-titulo {
+    /* Sub-título */
+    font-family: $patua;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.776875rem;
+    line-height: 2.125rem;
+  }
+
+  &copy {
+    /* Copy */
+    font-family: $noto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.333125rem;
+    line-height: 2rem;
+    letter-spacing: 0.03em;
+  }
+
+  &sub-copy {
+    /* Sub-copy */
+    font-family: $noto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+  &menu{
+    /* Sub-copy */
+    font-family: $noto-display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+}

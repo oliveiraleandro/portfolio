@@ -7,9 +7,9 @@ sans-serif;
 $patua: 'Patua One',
 cursive;
 
-.txt_ {
+.txt {
 
-  &display {
+  &.display {
     /* Display */
     font-family: $patua;
     font-style: normal;
@@ -19,7 +19,7 @@ cursive;
     letter-spacing: 0.01em;
   }
 
-  &sub-display {
+  &.sub-display {
     /* Sub-display */
 
     font-family: $noto-display;
@@ -30,7 +30,7 @@ cursive;
     letter-spacing: -0.01em;
   }
 
-  &titulo {
+  &.titulo {
     /* Título */
     font-family: $patua;
     font-style: normal;
@@ -39,7 +39,7 @@ cursive;
     line-height: 2.5rem;
   }
 
-  &sub-titulo {
+  &.sub-titulo {
     /* Sub-título */
     font-family: $patua;
     font-style: normal;
@@ -48,7 +48,7 @@ cursive;
     line-height: 2.125rem;
   }
 
-  &copy {
+  &.copy {
     /* Copy */
     font-family: $noto;
     font-style: normal;
@@ -58,7 +58,7 @@ cursive;
     letter-spacing: 0.03em;
   }
 
-  &sub-copy {
+  &.sub-copy {
     /* Sub-copy */
     font-family: $noto;
     font-style: normal;
@@ -67,7 +67,7 @@ cursive;
     line-height: 1.1875rem;
   }
 
-  &menu{
+  &.menu {
     /* Sub-copy */
     font-family: $noto-display;
     font-style: normal;
@@ -76,4 +76,14 @@ cursive;
     line-height: 1.1875rem;
   }
 
+}
+
+.link {
+  color: $preto;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $zul;
+  }
 }

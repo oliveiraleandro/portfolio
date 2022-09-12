@@ -110,7 +110,7 @@ function clean(done) {
 function otimizaCSS() {
   return gulp.src('src/scss/styles.css')
     .pipe(autoprefixer())
-    .pipe(purify([srcJS, distHTML + '**/*.html']))
+    //.pipe(purify([srcJS, 'src/pages/**/*.*','src/partials/**/*.*','src/layouts/**/*.*']))
     .pipe(csso())
     .pipe(gulp.dest(distCSS))
 }

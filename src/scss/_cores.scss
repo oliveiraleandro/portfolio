@@ -1,3 +1,27 @@
-$white: #F8F8F8;
-$black: #252525;
-$primary: #4A00D4;
+$branco: #F8F8F8;
+$preto: #252525;
+$zul: #4A00D4;
+
+.bg-branco{
+  background-color: $branco;
+}
+
+.bg-preto{
+  background-color: $preto;
+}
+
+.bg-zul{
+  background-color: $zul;
+}
+
+.color-branco{
+  color: $branco;
+}
+
+.color-preto{
+  color: $preto;
+}
+
+.color-zul{
+  color: $zul;
+}

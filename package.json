@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/oliveiraleandro/portfolio#readme",
   "devDependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^5.2.1",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",

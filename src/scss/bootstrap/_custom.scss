@@ -1,10 +1,8 @@
 $theme-colors: (
   "primary":    $zul,
-  "secondary":  $medium-grey,
-  "success":    $green-success,
-  "info":       $blue-info,
-  "warning":    $orange-warning,
-  "danger":     $red-danger,
-  "light":      $light-grey,
   "dark":       $preto
 ) ;
+
+$body-bg:                   $branco;
+$body-color:                $preto;
+$body-text-align:           null;

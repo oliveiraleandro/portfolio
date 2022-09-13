@@ -1,0 +1,25 @@
+.inicio-main{
+  background-color: $branco !important;
+  margin: calc(80px + 60px) auto;
+  padding: 0 1rem 15rem;
+  max-width: 872px;
+}
+
+.inicio-cases{
+  margin: 48px 0;
+  display: block;
+  text-decoration: none;
+  color: $preto;
+
+  &:hover{
+    color: $zul;
+  }
+  
+}
+
+.inicio-hr{
+  background-color: $zul;
+  opacity: .1;
+  padding: 2px;
+  margin-bottom: 56px;
+}

@@ -17,6 +17,11 @@ cursive;
     font-size: 4.20875rem;
     line-height: 4.1875rem;
     letter-spacing: 0.01em;
+
+    @include media-breakpoint-down(md){
+      font-size: 2.20875rem;
+      line-height: 2.1875rem;
+    }
   }
 
   &.sub-display {

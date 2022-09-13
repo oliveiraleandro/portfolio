@@ -8435,11 +8435,52 @@ fieldset:disabled .btn {
   z-index: 1;
   background-color: #F8F8F8; }
 
+@media (max-width: 767.98px) {
+  .nav-menu {
+    display: none; } }
+
+.head-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: .75rem 1.25rem;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.03);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #F8F8F8; }
+
+@media (min-width: 576px) {
+  .head-mobile {
+    display: none; } }
+
+.nav-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .75rem 1.25rem;
+  box-shadow: 0px -4px 24px 0px rgba(0, 0, 0, 0.03);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #F8F8F8; }
+
+@media (min-width: 576px) {
+  .nav-mobile {
+    display: none; } }
+
 .inicio-main {
   background-color: #F8F8F8 !important;
   margin: calc(80px + 60px) auto;
   padding: 0 1rem 15rem;
   max-width: 872px; }
+
+@media (max-width: 767.98px) {
+  .inicio-main {
+    margin: 80px auto;
+    max-width: 100%; } }
 
 .inicio-cases {
   margin: 48px 0;

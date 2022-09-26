@@ -6,7 +6,8 @@
 
 .nav-menu{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: .75rem 1.25rem;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.03);
   position: fixed;
@@ -17,6 +18,22 @@
   
   @include media-breakpoint-down(md){
     display: none;
+  }
+
+  ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: calc(872px - 1.6rem);
+  }
+
+  li{
+    list-style: none;
+    display: flex;
+    align-items: center;
   }
 }
 

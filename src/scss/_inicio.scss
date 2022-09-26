@@ -17,14 +17,17 @@
   color: $preto;
 
   &:hover{
-    color: $zul;
+    color: $prima;
   }
   
 }
 
 .inicio-hr{
-  background-color: $zul;
+  background-color: $prima;
   opacity: .1;
   padding: 2px;
+  height: 2px;
+  border: 0;
   margin-bottom: 56px;
+  border-radius: .5rem;
 }

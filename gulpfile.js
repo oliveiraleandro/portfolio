@@ -1,7 +1,7 @@
 //node-modules
 const gulp = require('gulp');
 var panini = require('panini');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const del = require('del');
 const csso = require('gulp-csso')
 const autoprefixer = require('gulp-autoprefixer')

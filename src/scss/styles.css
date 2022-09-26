@@ -96,19 +96,6 @@
   line-height: 1.1875rem;
 }
 
-.bt-menu {
-  color: #252525;
-  text-decoration: none;
-  padding: 0.5rem !important;
-  border-radius: 1rem;
-}
-
-.bt-menu:hover, .bt-menu:focus {
-  text-decoration: none;
-  color: #3000C0;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(48, 0, 192, 0) 0%, rgba(48, 0, 192, 0.03) 100%);
-}
-
 :root {
   font-size: 16px;
   color: #252525;
@@ -6649,6 +6636,19 @@ progress {
     display: none;
   }
 }
+.bt-menu {
+  color: #252525;
+  text-decoration: none;
+  padding: 0.5rem !important;
+  border-radius: 1rem;
+}
+
+.bt-menu:hover, .bt-menu:focus {
+  text-decoration: none;
+  color: #3000C0;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(48, 0, 192, 0) 0%, rgba(48, 0, 192, 0.03) 100%);
+}
+
 .inicio-main {
   background-color: #F8F8F8 !important;
   margin: 140px auto;

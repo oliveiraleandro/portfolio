@@ -1,0 +1,15 @@
+.tag {
+  background-color: $prima;
+  border-radius: .25rem;
+  color: $branco;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+
+}

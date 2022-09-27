@@ -81,4 +81,13 @@ cursive;
     line-height: 1.1875rem;
   }
 
+  &.tag {
+    font-family: $noto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+  }
+
 }

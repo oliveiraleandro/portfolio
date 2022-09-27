@@ -1,6 +1,7 @@
 //node-modules
 const gulp = require('gulp');
-var panini = require('panini');
+const {watch} = require('gulp');
+const panini = require('panini');
 const sass = require('gulp-sass')(require('sass'));
 const del = require('del');
 const csso = require('gulp-csso')
@@ -79,6 +80,7 @@ function moveMAP(done) {
 
 
 function templateHTML() {
+  panini.refresh();
   return gulp.src(srcHTML)
     .pipe(panini({
       root: 'src/pages/',
@@ -119,13 +121,13 @@ function otimizaCSS() {
 
 
 function watcher() {
-  gulp.watch(srcFONTS, moveFONTS)
-  gulp.watch(srcIMG, moveIMG)
-  gulp.watch(srcJS, moveJS)
-  gulp.watch(srcROBOTS, moveROBOTS)
-  gulp.watch(srcMAP, moveMAP)
-  gulp.watch(['src/{pages,layouts,partials,helpers,data}/**/*'], templateHTML)
-  gulp.watch(srcCSS, gulp.series(processaCSS, otimizaCSS))
+  watch(srcFONTS, moveFONTS)
+  watch(srcIMG, moveIMG)
+  watch(srcJS, moveJS)
+  watch(srcROBOTS, moveROBOTS)
+  watch(srcMAP, moveMAP)
+  watch(['src/{pages,layouts,partials,helpers,data}/**/*'], templateHTML)
+  watch(srcCSS, gulp.series(processaCSS, otimizaCSS))
 
 }
 

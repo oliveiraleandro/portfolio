@@ -6,7 +6,7 @@ const del = require('del');
 const csso = require('gulp-csso')
 const autoprefixer = require('gulp-autoprefixer')
 const purify = require('gulp-purifycss')
-
+const ext_replace = require('gulp-ext-replace');
 
 
 //Pasta para onde vão os arquivos compilados
@@ -17,7 +17,7 @@ const srcFONTS = 'src/webfonts/**/*'
 const srcIMG = 'src/img/**/*'
 const srcJS = 'src/js/**/*.js'
 const srcCSS = 'src/scss/**/*.scss'
-const srcHTML = 'src/pages/**/*.html'
+const srcHTML = 'src/pages/**/*.**'
 const srcFAV = 'src/favicon/*'
 const srcROBOTS = 'src/robots/*'
 const srcMAP = 'src/sitemap/*'
@@ -87,6 +87,7 @@ function templateHTML() {
       helpers: 'src/helpers/',
       data: 'src/data/'
     }))
+    .pipe(ext_replace('.html'))
     .pipe(gulp.dest(distHTML))
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Display:wght@600;700&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Display:wght@200;600;700&family=Patua+One&display=swap');
 
 $noto: 'Noto Sans',
 sans-serif;
@@ -8,6 +8,18 @@ $patua: 'Patua One',
 cursive;
 
 .txt {
+
+  @mixin alink {
+    text-decoration: underline;
+    color: $prima;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $apoio;
+    }
+
+  }
 
   &.display {
     /* Display */
@@ -51,6 +63,11 @@ cursive;
     font-weight: 400;
     font-size: 1.776875rem;
     line-height: 2.125rem;
+
+    &[href],a{
+      @include alink()
+    }
+
   }
 
   &.copy {
@@ -61,6 +78,24 @@ cursive;
     font-size: 1.333125rem;
     line-height: 2rem;
     letter-spacing: 0.03em;
+
+    &[href],a{
+      @include alink()
+    }
+  }
+
+  &.copy-bold {
+    /* Copy */
+    font-family: $noto-display;
+    font-style: normal; 
+    font-weight: 700;
+    font-size: 1.333125rem;
+    line-height: 2rem;
+    letter-spacing: 0.03em;
+
+    &[href],a{
+      @include alink()
+    }
   }
 
   &.sub-copy {
@@ -70,6 +105,10 @@ cursive;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.1875rem;
+
+    &[href],a{
+      @include alink()
+    }
   }
 
   &.menu {

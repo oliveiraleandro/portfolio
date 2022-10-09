@@ -1,6 +1,8 @@
 $branco: #F8F8F8;
 $preto: #252525;
 $prima: #3000C0;
+$apoio: #7A02C5;
+$cinza: #454545;
 
 .bg-branco{
   background-color: $branco;
@@ -10,8 +12,16 @@ $prima: #3000C0;
   background-color: $preto;
 }
 
-.bg-zul{
+.bg-primary{
   background-color: $prima;
+}
+
+.bg-apoio{
+  background-color: $apoio;
+}
+
+.bg-cinza{
+  background-color: $cinza;
 }
 
 .color-branco{
@@ -19,9 +29,17 @@ $prima: #3000C0;
 }
 
 .color-preto{
-  color: $preto;
+  color: $preto !important;
 }
 
-.color-zul{
+.color-primary{
   color: $prima;
+}
+
+.color-apoio{
+  color: $apoio;
+}
+
+.color-cinza{
+  color: $cinza;
 }

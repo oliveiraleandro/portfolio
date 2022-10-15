@@ -111,6 +111,19 @@ cursive;
     }
   }
 
+  &.sub-copy-bold {
+    /* Sub-copy */
+    font-family: $noto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+
+    &[href],a{
+      @include alink()
+    }
+  }
+
   &.menu {
     /* Sub-copy */
     font-family: $noto-display;

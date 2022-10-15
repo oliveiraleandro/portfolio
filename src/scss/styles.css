@@ -149,6 +149,24 @@
   color: #7A02C5;
 }
 
+.txt.sub-copy-bold, .sub-copy-bold.card-hipotese-form, .pages-container p.sub-copy-bold {
+  /* Sub-copy */
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+
+.txt.sub-copy-bold[href], .sub-copy-bold[href].card-hipotese-form, .pages-container p.sub-copy-bold[href], .txt.sub-copy-bold a, .sub-copy-bold.card-hipotese-form a, .pages-container p.sub-copy-bold a {
+  text-decoration: underline;
+  color: #3000C0;
+}
+
+.txt.sub-copy-bold[href]:hover, .sub-copy-bold[href].card-hipotese-form:hover, .pages-container p.sub-copy-bold[href]:hover, .txt.sub-copy-bold[href]:active, .sub-copy-bold[href].card-hipotese-form:active, .pages-container p.sub-copy-bold[href]:active, .txt.sub-copy-bold[href]:focus, .sub-copy-bold[href].card-hipotese-form:focus, .pages-container p.sub-copy-bold[href]:focus, .txt.sub-copy-bold a:hover, .sub-copy-bold.card-hipotese-form a:hover, .pages-container p.sub-copy-bold a:hover, .txt.sub-copy-bold a:active, .sub-copy-bold.card-hipotese-form a:active, .pages-container p.sub-copy-bold a:active, .txt.sub-copy-bold a:focus, .sub-copy-bold.card-hipotese-form a:focus, .pages-container p.sub-copy-bold a:focus {
+  color: #7A02C5;
+}
+
 .txt.menu, .menu.card-hipotese-form, .pages-container p.menu {
   /* Sub-copy */
   font-family: "Noto Sans Display", sans-serif;

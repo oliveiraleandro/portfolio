@@ -1,6 +1,6 @@
 # Portfólio — Leandro Oliveira
 
-Site estático em português, sem JavaScript, frameworks, dependências ou build.
+Site estático em português, sem frameworks, dependências ou build. JavaScript mínimo monta o contato WhatsApp apenas no clique.
 
 ## Estado da implementação
 
@@ -11,7 +11,7 @@ A direção de arte está em andamento. Os quatro cases têm imagens reais e log
 ## Pendências antes de publicar
 
 - Adicionar imagens dos formulários da Sinapse. Os quatro cases já usam assets reais nas páginas internas. Comentários `TODO ASSETS` indicam os pontos de composição. Inserir figuras também junto às decisões relevantes nos cases. Preservar proporções, informar width/height e alt contextual; usar lazy loading e decoding async abaixo da dobra. Ajustar grid, crops e sobreposições após conhecer os arquivos reais.
-- Fornecer número/link WhatsApp. Os comentários `TODO WHATSAPP` contêm o modelo de CTA; substituir o aviso visível e adicionar o CTA discreto no cabeçalho. Não há link fictício ativo.
+- WhatsApp configurado com obfuscação em `js/contact.js`. O número não fica em texto puro no HTML; bots que executam ou analisam JavaScript ainda podem recuperá-lo. Sem JavaScript, uma mensagem orienta a ativá-lo.
 - Definir URL pública. Adicionar canonical e og:url específicos por página; adicionar og:image com URL absoluta de uma imagem real. Title, description, viewport e os demais metadados Open Graph já existem.
 - Adicionar referências dos cases e concluir revisão visual desktop/mobile. Ver `design-qa.md`.
 

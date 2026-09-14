@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/components.css?v=contact-1">
   <link rel="stylesheet" href="../../css/responsive.css">
+  <script src="../../js/contact.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -187,8 +188,8 @@ Havia informações suficientes para que a solução pudesse posteriormente ser 
 <footer class="contact container" id="contato">
   <p class="eyebrow">Vamos conversar?</p>
   <p class="contact-message">Se você tem um projeto, oportunidade ou só quer trocar uma ideia, será um prazer conversar.</p>
-  <!-- TODO WHATSAPP: substituir o texto abaixo por <a class="contact-link" href="https://wa.me/NUMERO_INTERNACIONAL">Falar pelo WhatsApp</a> após receber o número real. Não publicar com NUMERO_INTERNACIONAL. -->
-  <p class="contact-pending">Contato pelo WhatsApp em breve.</p>
+  <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden>Falar pelo WhatsApp</button>
+  <noscript><p class="contact-pending">Ative o JavaScript para abrir o contato pelo WhatsApp.</p></noscript>
   <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
 </footer>
 </body>

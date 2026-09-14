@@ -56,3 +56,9 @@ blockquote { border-left: 2px solid var(--color-border); padding-left: var(--spa
 .modal-tool { width: 178px; top: 0; left: 10%; }
 .modal-condition { width: 192px; top: 15px; right: 0; }
 .modal-calculation { width: 340px; top: 125px; left: 22%; }
+
+.whatsapp-button { font: inherit; font-size: .9375rem; border: 0; cursor: pointer; }
+.whatsapp-button[hidden] { display: none; }
+.whatsapp-button:hover { background: var(--color-muted); }
+.whatsapp-button:focus-visible { outline: 3px solid #075ec9; outline-offset: 5px; }
+.contact-header { margin-top: 0; font-size: .8125rem; padding: .75rem 1rem; max-width: 160px; line-height: 1.35; }

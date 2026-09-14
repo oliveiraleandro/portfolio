@@ -1,0 +1,23 @@
+:root {
+  --color-text: #19243b;
+  --color-muted: #53617a;
+  --color-background: #fcfcfd;
+  --color-surface: #f3f6fa;
+  --color-border: #d9e0e9;
+  --color-sebrae: #eff7fd;
+  --color-sinapse: #eff9f6;
+  --color-cervello: #f5f3ff;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 5rem;
+  --space-7: 8rem;
+  --radius-sm: .25rem;
+  --radius-md: .75rem;
+  --radius-lg: 1.5rem;
+  --content-width: 1280px;
+  --reading-width: 700px;
+  --page-gutter: clamp(1.25rem, 4.8vw, 5rem);
+}

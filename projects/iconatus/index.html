@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iconatus · CAP — Leandro Oliveira</title>
+  <meta name="description" content="Redesenhei uma plataforma imobiliária B2B completa, reorganizando uma grande quantidade de informações para torná-la mais profissional, consistente e utilizável tanto no desktop quanto na rotina mobile de corretores.">
+  <meta property="og:title" content="Iconatus · CAP — Leandro Oliveira">
+  <meta property="og:description" content="Redesenhei uma plataforma imobiliária B2B completa, reorganizando uma grande quantidade de informações para torná-la mais profissional, consistente e utilizável tanto no desktop quanto na rotina mobile de corretores.">
+  <meta property="og:type" content="website">
+  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header container">
+  <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
+  <a class="text-link" href="../../">Voltar ao portfólio</a>
+</header>
+<main id="conteudo">
+  <article class="case iconatus">
+    <header class="case-hero container">
+      <img class="case-logo" src="logo.svg" alt="Iconatus" width="267" height="99" decoding="async">
+<p class="eyebrow">04 / Iconatus · CAP</p>
+      <h1>Informação imobiliária para trabalhar no escritório e na rua</h1>
+      <p class="case-lead">Redesenhei uma plataforma imobiliária B2B completa, reorganizando uma grande quantidade de informações para torná-la mais profissional, consistente e utilizável tanto no desktop quanto na rotina mobile de corretores.</p>
+      <ul class="tags"><li>Sistemas B2B</li><li>Arquitetura de informação</li><li>Design responsivo</li><li>Visualização de dados</li></ul>
+    </header>
+
+    <div class="case-body container">
+<figure class="case-figure case-opening">
+  <a class="figure-image-link" href="images/imoveis%20-%20precificacao%20v2.png" aria-label="Abrir imagem completa: Precificação do imóvel com comparação de preços, valorização e liquidez"><img src="images/imoveis%20-%20precificacao%20v2.png" alt="Precificação do imóvel com comparação de preços, valorização e liquidez" width="1280" height="1148" loading="lazy" decoding="async"></a>
+  <figcaption>A visão de precificação organiza diferentes referências de preço, histórico e indicadores para apoiar a leitura do corretor. <a href="images/imoveis%20-%20precificacao%20v2.png">Abrir imagem completa</a></figcaption>
+</figure>
+
+    <section class="story-section">
+      <h2>Reorganizar a experiência sem remover funcionalidades</h2>
+      <p>O CAP é uma plataforma B2B voltada a corretores de imóveis. Ela reúne informações de imóveis, ofertas, proprietários, histórico de preços e dados de mercado para apoiar o trabalho do corretor em atividades como pesquisa, captação, acompanhamento e precificação.</p>
+      <p>Quando entrei no projeto, a plataforma já existia e precisava de um redesign completo. Havia dois objetivos principais: tornar a interface mais profissional e preparar o produto para uso mobile.</p>
+      <p>O cliente considerava a aparência anterior excessivamente infantil para o público profissional. Ao mesmo tempo, vários padrões de interação — principalmente tabelas extensas, abas e modais em profundidade — dificultavam uma adaptação responsiva.</p>
+      <p>O desafio, portanto, não era apenas modernizar a interface. Era reorganizar uma plataforma existente, sem remover funcionalidades, preservando sua complexidade e tornando-a mais coerente para desktop e celular.</p>
+    </section>
+    <section class="story-section">
+      <h2>Três meses, um designer e colaboração direta com o time técnico</h2>
+      <p>Eu já havia trabalhado com esse cliente alguns anos antes. Mais recentemente, fui chamado novamente para redesenhar uma visão de outro produto da empresa, voltado a gestores de imobiliárias.</p>
+      <p>Essa primeira entrega funcionou como uma espécie de conceito. O trabalho foi bem recebido e abriu espaço para um escopo maior: o redesign completo do CAP.</p>
+      <p>A empresa é pequena, formada principalmente por desenvolvedores com bastante experiência no mercado imobiliário. Não havia Product Manager ou Product Owner formal. Eu era o único designer do projeto e trabalhava diretamente com o time técnico e com o fundador, que participava ativamente das decisões.</p>
+      <p>O projeto durou aproximadamente três meses.</p>
+      <p>Uma restrição importante estava definida desde o início: <strong>nenhuma funcionalidade existente poderia ser removida</strong>. Eu poderia reorganizar informações, alterar padrões de interação e sugerir novos dados, mas a complexidade funcional precisava ser preservada.</p>
+    </section>
+    <section class="story-section">
+      <h2>Entendendo a plataforma antes de redesenhá-la</h2>
+      <p>Antes de começar a desenhar, tive acesso a uma conta no ambiente de desenvolvimento da plataforma.</p>
+      <p>Percorri o produto inteiro e fiz um inventário das telas, conteúdos, funcionalidades e jornadas. Mapeei tanto a estrutura vertical das páginas quanto os caminhos horizontais entre diferentes áreas do sistema.</p>
+      <p>Esse levantamento era necessário por dois motivos.</p>
+      <p>Primeiro, o redesign abrangia a plataforma inteira. Segundo, como nenhuma funcionalidade poderia ser eliminada, eu precisava compreender exatamente o que já existia antes de começar a reorganizar.</p>
+      <p>O mapeamento revelou três problemas principais.</p>
+      <h3>A arquitetura não estava preparada para mobile</h3>
+      <p>A plataforma dependia bastante de grids, tabelas largas, abas e modais. Alguns fluxos já tinham bastante profundidade no desktop e se tornariam difíceis de operar em telas menores.</p>
+      <p>A listagem de imóveis era um caso evidente: no desktop, uma tabela fazia sentido. No mobile, a mesma estrutura exigiria rolagem horizontal e vertical.</p>
+      <h3>A home era subutilizada</h3>
+      <p>A página inicial funcionava essencialmente como um menu.</p>
+      <p>Ela era um ponto obrigatório de passagem para outras áreas do sistema, mas apresentava pouca informação sobre o trabalho corrente do corretor.</p>
+      <h3>Faltava consistência visual</h3>
+      <p>Apesar de a plataforma não ser muito antiga, diferentes partes pareciam ter sido construídas em momentos distintos.</p>
+      <p>Havia várias famílias tipográficas, estilos de ícones diferentes, uma paleta bastante extensa e ilustrações com linguagem visual pouco consistente.</p>
+      <p>A percepção do cliente de que o produto parecia “infantil” não vinha de um único elemento. Era resultado da combinação desses fatores.</p>
+    </section>
+    <section class="story-section">
+      <h2>Benchmark: buscando uma linguagem mais profissional</h2>
+      <p>O mercado imobiliário B2B tem várias plataformas relativamente fechadas, o que dificultava uma comparação direta.</p>
+      <p>Por isso, ampliei o benchmark.</p>
+      <p>Analisei produtos imobiliários maduros, como <strong>ZAP, QuintoAndar e Zillow</strong>, observando principalmente busca, listagem, densidade de informação e apresentação de imóveis. Também comparei a solução com o <strong>Captei</strong>, uma referência mais próxima do contexto do produto.</p>
+      <p>O objetivo não era copiar uma interface concorrente, mas entender padrões consolidados do setor e verificar se a percepção do cliente sobre a linguagem visual fazia sentido.</p>
+      <p>O benchmark reforçou essa leitura.</p>
+      <p>A plataforma anterior usava muitas cores simultâneas, iconografia mais lúdica, ilustrações abstratas e diferentes famílias tipográficas. A relação entre imagem e texto também dava bastante protagonismo a elementos decorativos.</p>
+      <p>No redesign, mantive algumas cores-chave da identidade anterior, mas reduzi a quantidade de cores por tela. As ilustrações foram gradualmente substituídas por fotografia, fundos chapados ou gradientes discretos. Também reduzi o número de famílias tipográficas e defini uma régua mais consistente.</p>
+      <p>A intenção não era apenas deixar o produto “mais bonito”, mas aproximar sua linguagem visual de uma ferramenta profissional de trabalho.</p>
+    </section>
+    <section class="story-section">
+      <h2>Usuários e contexto de uso</h2>
+      <p>O público principal do CAP são corretores de imóveis.</p>
+      <p>O cliente mencionou que muitos deles utilizavam a plataforma fora do escritório. Para entender melhor esse contexto, conversei com dois corretores.</p>
+      <p>Eles confirmaram que, em dias de visita, passam muitas horas na rua. Isso tornou a versão mobile mais do que uma adaptação complementar: ela precisava funcionar como ferramenta real de trabalho.</p>
+      <p>As conversas também revelaram problemas mais amplos.</p>
+      <p>Um deles era a dificuldade de precificação. Determinar se um imóvel está acima ou abaixo do mercado ainda depende muito da experiência do corretor, especialmente em um mercado especulativo como o de São Paulo.</p>
+      <p>Outra dificuldade era a qualificação dos leads. Corretores frequentemente lidam com clientes que ainda não compreendem bem o processo de visita, negociação ou compra.</p>
+      <p>Esses problemas, porém, estavam apenas parcialmente dentro do alcance do CAP.</p>
+      <p>A plataforma não pretendia substituir o julgamento profissional do corretor nem atuar diretamente na educação do comprador. Seu papel era principalmente <strong>enriquecer a informação disponível para o profissional</strong>.</p>
+      <p>Ela consolida anúncios de diferentes fontes, relaciona essas ofertas a um mesmo imóvel e apresenta informações sobre proprietários, histórico, localização, pontos de interesse e mercado.</p>
+      <p>Essa distinção foi importante para o projeto: o redesign deveria melhorar o suporte à decisão do corretor sem prometer resolver problemas estruturais que estavam fora do produto.</p>
+    </section>
+    <section class="story-section">
+      <h2>Antes e depois</h2>
+
+      <p>O contraste entre a versão antiga e o redesign foi uma parte importante do trabalho.</p>
+      <p>Na versão anterior, a navegação era mais fragmentada, a home funcionava quase exclusivamente como acesso aos módulos e diversas tarefas dependiam de tabelas, abas e modais.</p>
+      <p>No redesign, a intenção foi reorganizar esses elementos sem perder capacidade funcional.</p>
+      <p>Algumas mudanças foram principalmente visuais. Outras alteraram de forma significativa a maneira como a informação era apresentada e navegada.</p>
+    </section>
+    <section class="story-section">
+      <h2>Transformando a home em uma área de trabalho</h2>
+
+      <p>Uma das oportunidades identificadas no mapeamento foi a home.</p>
+      <p>Antes, ela funcionava essencialmente como uma porta de entrada. O corretor acessava a plataforma, escolhia um módulo e seguia para outra tela.</p>
+      <p>No redesign, propus trazer para a página inicial duas atividades que representam trabalho corrente: <strong>captações recentes</strong> e <strong>acompanhamentos recentes</strong>.</p>
+      <p>Captação representa imóveis que o corretor está tentando trazer para sua carteira. Acompanhamento representa negócios que já estão em andamento.</p>
+      <p>A ideia não surgiu de uma solicitação direta dos corretores. Foi uma hipótese de design baseada na estrutura das jornadas.</p>
+      <p>Se queríamos que a plataforma funcionasse mais como suporte cotidiano ao trabalho, fazia sentido que a home ajudasse o usuário a retomar rapidamente atividades em andamento.</p>
+      <p>Assim, ela passou de simples menu para um ponto de continuidade da operação.</p>
+    </section>
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/home%20v2.png" aria-label="Abrir imagem completa: Home desktop do CAP com captação e acompanhamento"><img src="images/home%20v2.png" alt="Home desktop do CAP com captação e acompanhamento" width="1280" height="1054" loading="lazy" decoding="async"></a>
+  <figcaption>Na home desktop, captações e acompanhamentos ganham espaço ao lado dos acessos aos módulos. <a href="images/home%20v2.png">Abrir imagem completa</a></figcaption>
+</figure>
+
+    <section class="story-section">
+      <h2>Desktop e mobile não deveriam ser iguais</h2>
+      <p>O processo de design teve uma particularidade.</p>
+      <p>Comecei pelo desktop, com rascunhos de baixa fidelidade, mas avancei relativamente rápido para interfaces mais acabadas.</p>
+      <p>Isso aconteceu porque o fundador da empresa preferia explorar os protótipos de forma autônoma antes de aprová-los. Portanto, eu precisava entregar protótipos com bastante fidelidade e interação.</p>
+      <p>A primeira direção foi validada em desktop com o cliente e também com um corretor.</p>
+      <p>Só depois dessa etapa comecei a sistematizar melhor tokens e componentes e a desenvolver as variações mobile.</p>
+      <p>Essa ordem foi diferente do meu processo habitual. Em vez de começar pelo design system, primeiro encontrei a linguagem visual e só depois consolidei o sistema.</p>
+    </section>
+<figure class="case-figure case-figure-mobile">
+  <a class="figure-image-link" href="images/mobile%20home.png" aria-label="Abrir imagem completa: Home mobile do CAP com módulos e atividades em uma coluna"><img src="images/mobile%20home.png" alt="Home mobile do CAP com módulos e atividades em uma coluna" width="390" height="2116" loading="lazy" decoding="async"></a>
+  <figcaption>No celular, os módulos e as atividades em andamento seguem uma sequência vertical. <a href="images/mobile%20home.png">Abrir imagem completa</a></figcaption>
+</figure>
+
+    <section class="story-section">
+      <h2>De tabela para card: preservar o conteúdo, mudar a hierarquia</h2>
+
+      <p>A listagem de imóveis foi um dos casos mais claros em que desktop e mobile exigiam soluções diferentes.</p>
+      <p>No desktop, mantive o formato de tabela. Ele fazia sentido para comparação, ordenação e leitura de muitas informações simultaneamente.</p>
+      <p>No mobile, uma tabela equivalente seria desconfortável. Algumas estruturas exigiriam rolagem em dois eixos.</p>
+      <p>Por isso, cada linha foi transformada em um card.</p>
+      <p>Mas eu não simplesmente empilhei as colunas na mesma ordem.</p>
+      <p>A mudança de formato exigia também uma mudança de hierarquia.</p>
+      <p>Na tabela, a informação de <strong>visitas recentes</strong> aparecia na última coluna. No mobile, ela passou a ser o primeiro dado destacado do card.</p>
+      <p>A razão era operacional: esse número funciona quase como um indicador indireto de atividade ou popularidade do imóvel.</p>
+      <p>Para reforçar essa leitura, usei cor secundária e maior peso tipográfico.</p>
+      <p>As demais informações do imóvel foram comprimidas e receberam menos ênfase, porque poderiam ser consultadas em detalhes na tela seguinte.</p>
+      <p>O card acabou seguindo uma lógica simples:</p>
+      <p><strong>atividade recente → resumo do imóvel → ação principal</strong></p>
+      <p>O botão para acessar a visão detalhada ocupava toda a largura no final do card, com a cor primária.</p>
+      <p>Esse foi um exemplo importante do projeto porque mostrou que responsividade não significava apenas reduzir dimensões. Em alguns casos, era necessário reinterpretar a informação.</p>
+    </section>
+<figure class="case-figure case-figure-mobile">
+  <a class="figure-image-link" href="images/mobile%20resultado.png" aria-label="Abrir imagem completa: Busca de ofertas mobile com fotos, resumo e acesso aos anúncios"><img src="images/mobile%20resultado.png" alt="Busca de ofertas mobile com fotos, resumo e acesso aos anúncios" width="390" height="1419" loading="lazy" decoding="async"></a>
+  <figcaption>Outra aplicação de cards no mobile: a busca de ofertas reúne fotos, informações resumidas e acesso aos anúncios. <a href="images/mobile%20resultado.png">Abrir imagem completa</a></figcaption>
+</figure>
+
+    <section class="story-section">
+      <h2>A visão detalhada do imóvel</h2>
+
+      <p>A visão detalhada foi a tela mais difícil do projeto.</p>
+      <p>Ela concentrava um volume grande de informações e, na versão anterior, utilizava abas e diversos modais.</p>
+      <p>Minha proposta inicial para o mobile era eliminar as abas e reorganizar o conteúdo em uma navegação mais linear.</p>
+      <p>O cliente vetou essa solução.</p>
+      <p>Não houve uma justificativa formal, mas ficou claro que havia uma preferência por preservar essa estrutura.</p>
+      <p>A alternativa sem abas também tinha uma desvantagem real: reunia muita informação em uma única tela e criava um scroll bastante longo.</p>
+      <p>Diante dessa restrição, mantive o padrão de abas, mas redesenhei seu comportamento para o mobile.</p>
+      <p>Trabalhei uma diferenciação mais clara entre estados ativos e inativos e organizei o controle para que todas as abas permanecessem acessíveis sem criar uma rolagem horizontal adicional.</p>
+      <p>Foi um compromisso.</p>
+      <p>Eu não consegui alterar o modelo de navegação como gostaria, mas consegui reduzir parte dos problemas que ele criaria em telas pequenas.</p>
+    </section>
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/imoveis%20v2.png" aria-label="Abrir imagem completa: Visão desktop de localização com mapa e informações da região"><img src="images/imoveis%20v2.png" alt="Visão desktop de localização com mapa e informações da região" width="1280" height="939" loading="lazy" decoding="async"></a>
+  <figcaption>A visão detalhada reúne a navegação por abas, o mapa e informações sobre o entorno do imóvel. <a href="images/imoveis%20v2.png">Abrir imagem completa</a></figcaption>
+</figure>
+
+    <section class="story-section">
+      <h2>Precificação: de tabela para suporte à decisão</h2>
+
+      <p>A área de precificação foi uma das maiores transformações do projeto.</p>
+      <p>As informações já existiam na plataforma anterior, mas eram apresentadas principalmente em formato tabular.</p>
+      <p>Como esses dados são particularmente importantes para o trabalho do corretor, eu queria aumentar sua legibilidade e seu peso na interface.</p>
+      <p>Passei a diferenciar visualmente os diferentes conceitos de preço com cores, ícones e tratamentos específicos.</p>
+      <p>Informações relacionadas ao momento atual ganharam maior destaque.</p>
+      <p>Os dados históricos passaram a ser apresentados como série temporal, acompanhados de indicadores que ajudavam a interpretar tendência e evolução do preço.</p>
+      <p>Também foram criadas comparações entre o imóvel analisado e outros imóveis da região.</p>
+      <p>A intenção era transformar uma informação que antes estava disponível, mas visualmente rebaixada, em uma área realmente útil para negociação e tomada de decisão.</p>
+      <p>Essa tela foi especialmente bem recebida pelo cliente.</p>
+      <p>Na validação com o corretor, os dados históricos e a indicação de tendência também despertaram interesse. Ao mesmo tempo, surgiu uma questão importante: ele começou a perguntar sobre a precisão dos dados.</p>
+      <p>Isso trouxe um aprendizado relevante.</p>
+      <p>Quanto mais clara e acionável a informação se torna, maior tende a ser a expectativa sobre sua confiabilidade.</p>
+      <p>Eu cheguei a questionar o cliente sobre estados de ausência ou incerteza, mas recebi como premissa que informações incertas simplesmente não seriam exibidas.</p>
+      <p>A qualidade do dado, portanto, permanecia como uma questão de negócio e tecnologia fora do alcance direto do redesign.</p>
+    </section>
+<figure class="case-figure case-figure-mobile">
+  <a class="figure-image-link" href="images/mobile%20imo%CC%81vel.png" aria-label="Abrir imagem completa: Precificação mobile com abas, referências de preço, valorização e liquidez"><img src="images/mobile%20imo%CC%81vel.png" alt="Precificação mobile com abas, referências de preço, valorização e liquidez" width="390" height="2846" loading="lazy" decoding="async"></a>
+  <figcaption>Na versão mobile, as referências de preço e os dados históricos são reorganizados verticalmente. Os valores exibidos são conteúdo da interface, não resultados do projeto. <a href="images/mobile%20imo%CC%81vel.png">Abrir imagem completa</a></figcaption>
+</figure>
+
+    <section class="story-section">
+      <h2>Um cabeçalho que também precisava representar o negócio</h2>
+      <p>Durante a primeira validação com o cliente, surgiram requisitos que não estavam presentes no meu levantamento inicial.</p>
+      <p>O principal deles era uma barra persistente mostrando limites de proprietários e imóveis.</p>
+      <p>Essa informação estava diretamente ligada ao modelo de cobrança da plataforma.</p>
+      <p>Eu ainda não conhecia essa regra de negócio quando fiz as primeiras propostas.</p>
+      <p>Outro ajuste foi tornar mais visível a quantidade de imóveis em acompanhamento, adicionando um contador ao ícone correspondente.</p>
+      <p>Essas mudanças mostraram um aspecto recorrente do projeto: nem todas as decisões poderiam ser guiadas apenas pelas tarefas do usuário.</p>
+      <p>A interface também precisava expor informações comerciais importantes para o funcionamento do produto.</p>
+      <p>O desafio passou a ser acomodar esses elementos sem comprometer a hierarquia construída.</p>
+    </section>
+    <section class="story-section">
+      <h2>Densidade de informação como escolha consciente</h2>
+      <p>O CAP é uma ferramenta profissional com grande quantidade de informação.</p>
+      <p>No desktop, optei por uma interface relativamente densa.</p>
+      <p>Não queria depender apenas de grandes áreas de espaço negativo para organizar a tela. Em vez disso, usei agrupamentos, cards, divisores, tipografia e hierarquia visual para separar conteúdos.</p>
+      <p>Essa decisão também estava relacionada ao reposicionamento visual do produto.</p>
+      <p>A plataforma anterior tinha uma linguagem mais lúdica e espaçada em alguns momentos, mas ao mesmo tempo apresentava tabelas densas em outros, criando uma sensação inconsistente.</p>
+      <p>No redesign, busquei uma densidade mais controlada e deliberada.</p>
+      <p>No mobile, essa mesma informação precisava ser reordenada e reduzida visualmente, mas não eliminada.</p>
+      <p>Esse contraste entre desktop e mobile foi uma das principais decisões estruturais do projeto.</p>
+    </section>
+    <section class="story-section">
+      <h2>A clareza dos dados trouxe perguntas sobre sua confiabilidade</h2>
+      <p>A validação aconteceu em diferentes níveis.</p>
+      <p>O cliente avaliava protótipos de alta fidelidade e interativos. Como o fundador preferia explorar as soluções no próprio tempo, o protótipo funcionava não apenas como demonstração, mas também como artefato de decisão.</p>
+      <p>Também apresentei parte do trabalho a um corretor externo que não utilizava o CAP.</p>
+      <p>Ele considerou a navegação e a apresentação profissional, mas trouxe uma preocupação recorrente com a confiabilidade dos dados.</p>
+      <p>Esse feedback não levou a uma mudança profunda de interface, mas ajudou a explicitar uma fronteira importante do produto.</p>
+      <p>O redesign podia tornar os dados mais compreensíveis e acessíveis. Não podia garantir sua qualidade.</p>
+    </section>
+    <section class="story-section">
+      <h2>Design system depois da direção visual</h2>
+
+      <p>Eu não comecei o projeto procurando componentes prontos ou tentando estruturar imediatamente um design system.</p>
+      <p>Primeiro defini uma régua tipográfica pequena e comecei a explorar as telas.</p>
+      <p>Depois que a linguagem visual foi validada em desktop, consolidei melhor tokens, componentes e variantes.</p>
+      <p>Essa base foi importante para o desenvolvimento da versão mobile e também para o handoff.</p>
+      <p>Ao final do projeto, havia um conjunto relativamente amplo de componentes reutilizáveis e padrões suficientes para apoiar a implementação.</p>
+    </section>
+    <section class="story-section">
+      <h2>Uma direção que o time conseguiu implementar</h2>
+      <p>O handoff foi simples.</p>
+      <p>Não houve uma reunião formal de passagem para desenvolvimento. Compartilhei o link de desenvolvimento do Figma e o material foi suficiente para o time.</p>
+      <p>Os desenvolvedores tinham bastante experiência em front-end e demonstraram pouca dificuldade para reproduzir as interfaces.</p>
+      <p>Nas partes que consegui acompanhar, a implementação ficou muito próxima do protótipo.</p>
+      <p>Isso reforçou uma percepção que tive durante o projeto: a principal lacuna da empresa não estava na capacidade técnica de implementação, mas na direção visual, arquitetura da informação e sistematização da experiência.</p>
+    </section>
+    <section class="story-section">
+      <h2>Uma plataforma reorganizada, com resultados qualitativos</h2>
+      <p>O projeto não teve uma etapa estruturada de mensuração quantitativa.</p>
+      <p>Cheguei a levantar a possibilidade de acompanhar métricas, mas isso não despertou muito interesse do cliente naquele momento. A empresa ainda estava amadurecendo decisões sobre o produto e o projeto tinha um foco muito maior em interface e reorganização da experiência.</p>
+      <p>Por isso, o impacto precisa ser lido principalmente de forma qualitativa.</p>
+      <p>O redesign cobriu toda a plataforma, criou uma linguagem visual mais consistente, reorganizou informações críticas e estabeleceu uma versão mobile que não dependia simplesmente de comprimir as telas desktop.</p>
+      <p>A nova visão de precificação foi uma das áreas mais bem recebidas pelo cliente.</p>
+      <p>Também houve um sinal importante de confiança ao longo da relação: o trabalho começou a partir de uma intervenção menor em outro produto e evoluiu para o redesign completo do CAP.</p>
+    </section>
+    <section class="story-section">
+      <h2>O próximo passo seria acompanhar o uso real</h2>
+      <p>A parte que considero mais bem resolvida é a visão detalhada do imóvel, principalmente a área de precificação.</p>
+      <p>Ela sintetiza bem o tipo de contribuição que eu buscava fazer no projeto: não alterar necessariamente os dados disponíveis, mas reorganizá-los para que seu significado se tornasse mais claro e útil para o trabalho do corretor.</p>
+      <p>Se tivesse mais tempo e influência sobre o produto, exploraria mais a home.</p>
+      <p>Ainda vejo oportunidades para transformá-la em um ponto de entrada mais direto para tarefas reais, aproximando o usuário ainda mais do que está executando naquele momento.</p>
+      <p>Também gostaria de ter acompanhado o produto depois da implementação por meio de telemetria e métricas de uso.</p>
+      <p>Esse acompanhamento não fazia parte do orçamento nem do escopo contratado, mas seria o próximo passo natural para entender quais decisões realmente melhoraram a operação cotidiana dos corretores.</p>
+    </section>
+    </div>
+    <nav class="next-case container" aria-label="Próximo projeto"><p class="eyebrow">Próximo case</p><a href="../sebrae/">SEBRAE</a></nav>
+  </article>
+</main>
+<footer class="contact container" id="contato">
+  <p class="eyebrow">Vamos conversar?</p>
+  <p class="contact-message">Se você tem um projeto, oportunidade ou só quer trocar uma ideia, será um prazer conversar.</p>
+  <!-- TODO WHATSAPP: substituir o texto abaixo por <a class="contact-link" href="https://wa.me/NUMERO_INTERNACIONAL">Falar pelo WhatsApp</a> após receber o número real. Não publicar com NUMERO_INTERNACIONAL. -->
+  <p class="contact-pending">Contato pelo WhatsApp em breve.</p>
+  <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
+</footer>
+</body>
+</html>

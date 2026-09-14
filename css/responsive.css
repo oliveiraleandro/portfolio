@@ -1,0 +1,55 @@
+@media (max-width: 680px) {
+  .hero { padding-top: var(--space-5); padding-bottom: var(--space-6); }
+  .hero h1 { max-width: 420px; }
+  .principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
+  .project-layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-3); }
+  .project-band { padding-block: var(--space-5); }
+  .case-hero { padding-block: var(--space-5); }
+  .case-hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+  .case-lead { font-size: 1.1rem; }
+  .site-header > .text-link { max-width: 105px; line-height: 1.4; }
+  .story-section { margin-bottom: var(--space-5); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media (max-width: 680px) {
+  .case-figure { margin-bottom: var(--space-5); }
+  .case-figure-mobile { display: block; padding: var(--space-2); }
+  .case-figure-mobile .figure-image-link { max-height: 620px; }
+  .case-figure-mobile figcaption { margin-top: var(--space-3); }
+}
+@media (max-width: 680px) {
+  .gallery-comparison { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero-copy { max-width: 620px; }
+  .hero-art { min-height: 380px; max-width: 650px; width: 100%; }
+  .hero-sebrae { width: 70%; }
+  .hero-sinapse { top: 150px; width: 38%; }
+  .hero-cervello { top: 200px; left: 35%; width: 90%; }
+  .project-layout { column-gap: var(--space-4); }
+}
+@media (max-width: 680px) {
+  .hero { gap: var(--space-4); padding-block: var(--space-4) var(--space-5); }
+  .hero-art { min-height: 310px; overflow: hidden; }
+  .hero-sebrae { width: 95%; }
+  .hero-sinapse { top: 110px; width: 52%; }
+  .hero-cervello { top: 185px; left: 25%; width: 140%; }
+  .project-layout { grid-template-columns: minmax(0, 1fr); }
+  .project-art { grid-column: 1; grid-row: auto; height: 260px; margin-top: var(--space-3); overflow: hidden; }
+  .art-sebrae .feature-screen { width: 480px; transform: none; }
+  .art-cervello .feature-screen { height: 270px; transform: none; }
+  .art-iconatus .feature-screen { width: 530px; }
+  .art-sinapse { height: 310px; }
+  .art-sinapse .modal-tool, .art-sinapse .modal-condition { display: none; }
+  .art-sinapse .modal-calculation { position: static; width: 340px; max-width: 100%; box-shadow: none; }
+}
+@media (max-width: 680px) {
+  .hero-copy { display: contents; }
+  .hero-art { order: 1; }
+  .hero .principles { order: 2; margin-top: 0; }
+}

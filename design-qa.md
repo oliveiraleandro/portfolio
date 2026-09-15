@@ -79,3 +79,9 @@ Referências home-destktop.png e home-mobile.png reabertas. Preservados o contra
 Primeira revisão: cache antigo impedia aplicação do grid, corrigido versionando URLs CSS. Segunda revisão: imagens do hero posicionadas antes dos princípios no mobile, conforme referência. Screenshots de revisão exibidos na conversa em 1280px, 320px e 1440px. Verificadas larguras 320, 768 e 1440 sem overflow horizontal; nenhum arquivo carregado reportado quebrado; 13 referências de imagem e caminhos locais verificados. Diff sem erros de whitespace. Comparação formal lado a lado e captura persistida ainda não realizadas; resultado geral permanece blocked pelas pendências registradas.
 
 Arquivos alterados: index.html, css/layout.css, css/components.css, css/responsive.css, README.md e design-qa.md. A pendência anterior de imagens na home está resolvida.
+
+## Atualização editorial — 15/09/2026
+
+Os quatro cases foram sincronizados com os novos arquivos content.md: títulos, aberturas, parágrafos, listas, subtítulos e metadados. Todas as figuras existentes foram preservadas e reposicionadas nas novas seções. Verificação textual confirmou que todas as linhas de conteúdo dos quatro Markdown estão presentes nos respectivos HTMLs. Aninhamento HTML, H1 único e caminhos locais passaram na validação por parser.
+
+Os screenshots de review-screenshots representam a versão anterior dos textos. A revisão visual desta atualização ficou pendente: a prévia retornou conexão recusada e a ferramenta de navegador bloqueou a navegação a partir da página de erro. O servidor local foi reiniciado. git diff --check não pôde executar porque o Git do sistema exige aceitação da licença do Xcode; nenhuma licença foi aceita pelo agente.

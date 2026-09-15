@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SEBRAE — Leandro Oliveira</title>
-  <meta name="description" content="Digitalizei uma metodologia de avaliação de ecossistemas de inovação, organizando o trabalho dos consultores e o acompanhamento dos gestores.">
-  <meta property="og:title" content="SEBRAE — Leandro Oliveira">
-  <meta property="og:description" content="Digitalizei uma metodologia de avaliação de ecossistemas de inovação, organizando o trabalho dos consultores e o acompanhamento dos gestores.">
+  <title>Ecossistema de Inovação SEBRAE — Leandro Oliveira</title>
+  <meta name="description" content="Uma plataforma para aplicar uma metodologia complexa com mais clareza no dia a dia.">
+  <meta property="og:title" content="Ecossistema de Inovação SEBRAE — Leandro Oliveira">
+  <meta property="og:description" content="Uma plataforma para aplicar uma metodologia complexa com mais clareza no dia a dia.">
   <meta property="og:type" content="website">
   <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
   <link rel="stylesheet" href="../../css/reset.css">
@@ -25,166 +25,99 @@
 </header>
 <main id="conteudo"><article class="case sebrae">
 <header class="case-hero container"><img class="case-logo" src="logo.svg" alt="SEBRAE" width="4096" height="2214" decoding="async">
-<p class="eyebrow">01 / SEBRAE</p><h1>Uma metodologia de inovação, agora em uma plataforma</h1><p class="case-lead">Digitalizei uma metodologia de avaliação de ecossistemas de inovação, organizando o trabalho dos consultores e o acompanhamento dos gestores.</p><ul class="tags"><li>Product Design</li><li>Sistemas B2B</li><li>Visualização de dados</li></ul></header>
+<p class="eyebrow">01 / SEBRAE</p><h1>Ecossistema de Inovação SEBRAE</h1><p class="case-lead">Uma plataforma para aplicar uma metodologia complexa com mais clareza no dia a dia.</p><ul class="tags"><li>Product Design</li><li>Sistemas B2B</li><li>Visualização de dados</li></ul></header>
 
 <div class="case-body container">
 <figure class="case-figure case-opening">
   <a class="figure-image-link" href="images/Frame%202116.png" aria-label="Abrir imagem completa: Gráficos de radar de maturidade e nota final do ecossistema"><img src="images/Frame%202116.png" alt="Gráficos de radar de maturidade e nota final do ecossistema" width="823" height="464" loading="lazy" decoding="async"></a>
   <figcaption>Visão de maturidade: os gráficos de radar preservam uma representação já familiar na metodologia. <a href="images/Frame%202116.png">Abrir imagem completa</a></figcaption>
 </figure>
-
-<section class="story-section"><h2>O contexto do projeto</h2>
-<p>O SEBRAE Paraná havia desenvolvido uma metodologia para avaliar e fortalecer ecossistemas de inovação nos municípios. O método era abrangente e permitia analisar diferentes atores e dimensões de um ambiente de inovação, mas sua aplicação dependia de formulários, planilhas e documentos distribuídos em diferentes arquivos.</p>
-<p>Isso criava um problema: <strong>a metodologia era robusta, mas sua operação era difícil de acompanhar, compartilhar e escalar</strong>. O desafio do projeto era transformar esse processo em uma plataforma digital sem simplificar aquilo que dava valor ao método.</p>
-<p>Meu papel no projeto foi compreender a metodologia e os processos existentes, estruturar a experiência do produto e desenhar uma interface capaz de atender dois tipos de usuários com necessidades bastante diferentes.</p>
-</section>
-<section class="story-section"><h2>Entendendo antes de simplificar</h2>
-<h3>Problema</h3>
-<p>Antes de pensar na interface, eu precisava entender exatamente o que estava sendo digitalizado.</p>
-<p>A metodologia estava documentada em um manual de aproximadamente <strong>150 páginas</strong>. Além disso, parte importante do conhecimento necessário para executá-la estava distribuída entre arquivos e práticas de trabalho da própria equipe do SEBRAE.</p>
-<p>No processo existente, também havia problemas operacionais claros:</p>
-<ul><li>dependência de arquivos Excel;</li><li>dificuldade de colaboração;</li><li>dificuldade para acompanhar avaliações em andamento;</li><li>relatórios limitados;</li><li>dificuldade para treinar novos consultores;</li><li>conhecimento sobre a metodologia pouco acessível durante o trabalho.</li></ul>
-<p>Essas dificuldades já estavam presentes no diagnóstico original do projeto.</p>
-<h3>Descoberta</h3>
-<p>Minha primeira etapa foi estudar o manual da metodologia, conversar com a equipe do SEBRAE e analisar os mesmos processos e arquivos utilizados no cotidiano.</p>
-<p>Não queria apenas entender quais campos precisavam existir no sistema. Precisava compreender <strong>como o trabalho realmente acontecia</strong>.</p>
-<p>A partir dessa investigação, identifiquei dois perfis principais.</p>
-<p><strong>Consultores</strong> eram responsáveis por entrevistar os atores dos ecossistemas e alimentar a avaliação. Eram, portanto, os usuários mais frequentes da plataforma.</p>
-<p><strong>Gestores</strong> precisavam acompanhar o trabalho dos consultores, observar a evolução dos ambientes de inovação e acessar análises e relatórios.</p>
-<p>Antes de começar a desenhar, descrevi em minhas anotações a jornada do consultor. Isso me ajudou a separar duas coisas que poderiam parecer iguais à primeira vista:</p>
-<p><strong>a metodologia era complexa; a operação cotidiana do consultor não precisava ser.</strong></p>
-<p>Essa distinção orientou boa parte das decisões seguintes.</p>
-</section>
-<section class="story-section"><h2>Transformando metodologia em fluxo de trabalho</h2>
-<h3>Decisão</h3>
-<p>Ao analisar a jornada, percebi que grande parte do trabalho operacional seguia uma sequência relativamente previsível: selecionar ou criar uma avaliação, coletar informações, preencher os dados necessários e chegar ao cálculo do score.</p>
-<p>Por isso, optei por organizar a interface em torno desse <strong>caminho feliz</strong>.</p>
-<p>Em cada contexto procurei deixar uma ação principal evidente, reduzindo o número de decisões necessárias para que o consultor avançasse.</p>
-<p>A prioridade não era expor toda a complexidade da metodologia simultaneamente. Era permitir que o consultor realizasse sua tarefa principal com rapidez, mantendo o conhecimento metodológico disponível quando necessário.</p>
-<p>Essa escolha também partia de uma premissa de uso: os consultores tenderiam a adquirir proficiência à medida que utilizassem a metodologia.</p>
-<p>Por isso:</p>
-<ul><li>ações operacionais receberam maior destaque;</li><li>explicações metodológicas ficaram disponíveis de forma contextual;</li><li>conteúdos extensos não competiam visualmente com a tarefa principal;</li><li>dashboards e análises tiveram menor prioridade dentro do fluxo operacional, porque eram utilizados principalmente pelos gestores.</li></ul>
-<p>O produto poderia, assim, ser profundo <strong>sem exigir que toda essa profundidade estivesse visível o tempo inteiro</strong>.</p>
-</section>
+    <section class="story-section">
+      <h2>Contexto e desafio</h2>
+      <p>O SEBRAE Paraná havia desenvolvido uma metodologia para avaliar e fortalecer ecossistemas de inovação nos municípios. O método era abrangente, mas sua aplicação dependia de formulários, planilhas e documentos espalhados em diferentes arquivos.</p>
+      <p>Isso dificultava a colaboração, o acompanhamento das avaliações e a produção de relatórios. Treinar novos consultores também era trabalhoso, porque o conhecimento necessário nem sempre estava acessível durante a operação.</p>
+      <p>Meu papel foi entender a metodologia, organizar a experiência e desenhar uma plataforma para consultores e gestores. O desafio era facilitar o trabalho preservando a profundidade do método.</p>
+    </section>
+    <section class="story-section">
+      <h2>Entendendo o trabalho de cada pessoa</h2>
+      <p>Comecei estudando o manual de aproximadamente 150 páginas, conversando com a equipe do SEBRAE e analisando seus arquivos e processos. Queria entender tanto as informações necessárias quanto a maneira como eram usadas.</p>
+      <p>Identifiquei dois perfis principais:</p>
+      <ul>
+        <li><strong>Consultores:</strong> entrevistavam os atores dos ecossistemas e preenchiam as avaliações. Eram os usuários mais frequentes.</li>
+        <li><strong>Gestores:</strong> acompanhavam o trabalho, consultavam relatórios e observavam a evolução dos ambientes de inovação.</li>
+      </ul>
+      <p>Mapear a jornada do consultor ajudou a reconhecer uma oportunidade: mesmo com uma metodologia complexa, era possível organizar o trabalho cotidiano em uma sequência clara.</p>
+    </section>
+    <section class="story-section">
+      <h2>Da metodologia ao fluxo de trabalho</h2>
+      <p>A operação seguia um caminho relativamente previsível: selecionar ou criar uma avaliação, coletar informações, preencher os dados e chegar ao cálculo da pontuação.</p>
+      <p>Organizei a interface em torno dessa sequência, deixando uma ação principal evidente em cada contexto. As tarefas operacionais ganharam destaque, enquanto as explicações metodológicas ficaram disponíveis conforme a necessidade.</p>
+      <p>A expectativa era que os consultores ganhassem familiaridade com o uso. Por isso, conteúdos extensos não precisavam disputar atenção com as ações diárias. Dashboards e análises tinham maior relevância para os gestores e receberam menos destaque no fluxo de preenchimento.</p>
+      <p>Essa organização permitia avançar com rapidez e consultar os detalhes do método sempre que surgisse uma dúvida.</p>
+    </section>
 <figure class="case-figure">
   <a class="figure-image-link" href="images/Frame%202117.png" aria-label="Abrir imagem completa: Seleção de vocações econômicas com peso, representatividade e soma"><img src="images/Frame%202117.png" alt="Seleção de vocações econômicas com peso, representatividade e soma" width="823" height="464" loading="lazy" decoding="async"></a>
   <figcaption>A seleção de vocações organiza uma etapa da avaliação, com os dados necessários à decisão no mesmo contexto. <a href="images/Frame%202117.png">Abrir imagem completa</a></figcaption>
 </figure>
-
-<section class="story-section"><h2>Wireframes para validar a estrutura antes da interface</h2>
-<p>Antes de desenvolver a interface final, produzi wireframes da solução.</p>
-<p>A primeira validação foi realizada com o Product Owner.</p>
-<p>Nesse momento, o objetivo não era discutir cores, componentes ou acabamento visual. Eu queria responder questões mais fundamentais:</p>
-<p><strong>A navegação fazia sentido?
-As etapas necessárias estavam representadas?
-Havia informações suficientes para que a solução pudesse posteriormente ser implementada?</strong></p>
-<p>Não surgiram mudanças estruturais significativas nessa validação, o que permitiu avançar para um protótipo de maior fidelidade.</p>
-<p>Essa etapa foi importante porque reduziu o custo de revisar decisões estruturais antes que o trabalho de interface estivesse avançado.</p>
-</section>
-<section class="story-section"><h2>Familiaridade também era uma decisão de design</h2>
-<p>Nem tudo deveria ser redesenhado.</p>
-<p>Durante o estudo da metodologia percebi que algumas formas de representação já faziam parte da linguagem utilizada pelo SEBRAE.</p>
-<p>Os <strong>gráficos de radar</strong> são um exemplo.</p>
-<p>Em vez de substituir essa representação por uma visualização potencialmente mais nova ou mais convencional para dashboards, optei por preservar sua lógica.</p>
-<p>O objetivo era fazer com que os resultados apresentados pelo sistema continuassem reconhecíveis para quem já conhecia a metodologia.</p>
-<p>Isso era especialmente importante porque o projeto não pretendia criar uma nova forma de avaliar ecossistemas de inovação. Estávamos criando <strong>uma nova forma de operar uma metodologia existente</strong>.</p>
-<p>A familiaridade, nesse caso, reduzia o esforço de transição para a nova ferramenta.</p>
-</section>
 <figure class="case-figure">
   <a class="figure-image-link" href="images/Frame%202119.png" aria-label="Abrir imagem completa: Análise de vocação e potencial com painel de área do projeto"><img src="images/Frame%202119.png" alt="Análise de vocação e potencial com painel de área do projeto" width="823" height="464" loading="lazy" decoding="async"></a>
   <figcaption>A análise cruza vocações e potenciais; o painel lateral mantém a delimitação territorial acessível. <a href="images/Frame%202119.png">Abrir imagem completa</a></figcaption>
 </figure>
-
-<section class="story-section"><h2>Colocando a metodologia dentro do produto — sem transformar cada tela em um manual</h2>
-<h3>Validação com o cliente</h3>
-<p>Depois dos wireframes, o protótipo foi apresentado ao SEBRAE.</p>
-<p>O cliente não encontrou nenhum problema estrutural importante na solução. O principal pedido foi outro: havia interesse em disponibilizar <strong>mais conteúdo explicativo sobre a metodologia dentro da própria plataforma</strong>.</p>
-<p>Esse feedback criou um pequeno conflito de design.</p>
-<p>Se todas as explicações fossem exibidas permanentemente, as telas utilizadas diariamente pelos consultores ficariam mais densas. Se fossem removidas, usuários menos experientes poderiam ter dificuldade para interpretar os conceitos.</p>
-<h3>Decisão</h3>
-<p>A solução foi aumentar a quantidade de conteúdo <strong>sob demanda</strong>.</p>
-<p>Um exemplo foi o modal de <strong>“nível de efetividade”</strong>, que passou a apresentar uma explicação mais completa do conceito sem ocupar permanentemente espaço na interface principal.</p>
-<p>Dessa forma, o produto oferecia dois níveis de leitura:</p>
-<p><strong>executar primeiro; aprofundar quando necessário.</strong></p>
-<p>Essa lógica também respondia a uma das dores identificadas no discovery: a dificuldade de acessar conhecimento sobre a metodologia durante o trabalho. O case original já apontava como requisito tornar as informações críticas acessíveis diretamente no sistema.</p>
-</section>
+    <section class="story-section">
+      <h2>Validando a estrutura</h2>
+      <p>Antes de trabalhar o acabamento visual, criei wireframes e os validei com o Product Owner. O foco era verificar se a navegação fazia sentido, se as etapas estavam completas e se havia informação suficiente para orientar a implementação.</p>
+      <p>Não surgiram mudanças estruturais significativas, e avancei para um protótipo mais detalhado. Validar essa base cedo ajudou a evitar revisões maiores quando as telas já estivessem prontas.</p>
+      <p>Também preservei representações conhecidas pela equipe, como os gráficos de radar. Eles faziam parte da linguagem da metodologia e ajudavam as pessoas a reconhecer os resultados na nova ferramenta.</p>
+    </section>
+    <section class="story-section">
+      <h2>Ajuda disponível na hora certa</h2>
+      <p>Na apresentação ao SEBRAE, o principal pedido foi incluir mais explicações sobre a metodologia dentro da plataforma. Era uma necessidade importante, especialmente para consultores menos experientes.</p>
+      <p>Ampliei o conteúdo disponível sob demanda. O modal de <strong>nível de efetividade</strong>, por exemplo, passou a explicar o conceito com mais profundidade, mantendo a tela principal concentrada na tarefa.</p>
+      <p>Essa solução aproximava o conhecimento do momento de uso. O consultor podia seguir com o preenchimento e abrir uma explicação quando precisasse, sem depender da busca em documentos separados.</p>
+    </section>
 <figure class="case-figure">
   <a class="figure-image-link" href="images/Frame%202120.png" aria-label="Abrir imagem completa: Modal com explicação e níveis de efetividade"><img src="images/Frame%202120.png" alt="Modal com explicação e níveis de efetividade" width="823" height="464" loading="lazy" decoding="async"></a>
   <figcaption>Conhecimento sob demanda: o modal reúne definição, pergunta norteadora e níveis de efetividade. <a href="images/Frame%202120.png">Abrir imagem completa</a></figcaption>
 </figure>
-
-<section class="story-section"><h2>Testes revelaram dois tipos diferentes de problema</h2>
-<p>Realizamos testes de usabilidade com dois grupos: pessoas não especialistas e especialistas do próprio SEBRAE.</p>
-<p>O uso dos dois grupos permitia observar a solução por perspectivas diferentes.</p>
-<h3>Não especialistas</h3>
-<p>Os participantes não familiarizados com a metodologia nos ajudaram a identificar problemas que especialistas poderiam deixar passar.</p>
-<p>Alguns pontos apresentavam <strong>contraste insuficiente</strong>, criando problemas de acessibilidade. Esses elementos foram corrigidos.</p>
-<p>Também ficou evidente que parte da terminologia da própria metodologia não era imediatamente assimilável por novos usuários — algo já registrado nos testes originais — e alguns termos foram revistos para melhorar a compreensão.</p>
-<h3>Especialistas</h3>
-<p>Com os especialistas do SEBRAE, o resultado foi diferente.</p>
-<p>A adequação à metodologia foi muito alta e a plataforma pareceu familiar. Isso indicava que a tentativa de digitalizar o processo sem descaracterizá-lo estava funcionando.</p>
-<p>Mas os testes também revelaram o principal conflito de UX do projeto.</p>
-</section>
-<section class="story-section"><h2>Quando a necessidade institucional entra em conflito com o modelo mental do usuário</h2>
-<p>O maior atrito apareceu logo no início da experiência: o <strong>catálogo de projetos</strong>.</p>
-<p>A solução organizava cada avaliação de um ambiente de inovação como um projeto. Essa estrutura permitia acompanhar avaliações ao longo do tempo, documentar sua evolução e manter diferentes iniciativas organizadas dentro de um único sistema.</p>
-<p>Do ponto de vista institucional, isso fazia bastante sentido.</p>
-<p>Para os consultores, não necessariamente.</p>
-<p>Eles não estavam acostumados a pensar em cada avaliação como um projeto independente. Seu modelo mental estava mais ligado à atividade que realizavam: <strong>coletar dados, produzir a avaliação e entregar informações aos gestores</strong>.</p>
-<p>A própria solução original previa um catálogo de avaliações segregado por município para oferecer uma visão global do processo.</p>
-<p>Tínhamos, portanto, um conflito real:</p>
-<p><strong>o modelo que facilitava a governança institucional não correspondia perfeitamente ao modelo mental do principal usuário operacional.</strong></p>
-</section>
+    <section class="story-section">
+      <h2>O que aprendemos nos testes</h2>
+      <p>Testamos a solução com pessoas não especialistas e com especialistas do SEBRAE. Cada grupo ajudou a observar uma parte diferente da experiência.</p>
+      <p>Os não especialistas revelaram pontos com contraste insuficiente e termos difíceis de compreender. Corrigimos os problemas visuais e revisamos parte da terminologia para tornar a interface mais acessível.</p>
+      <p>Os especialistas reconheceram a metodologia e demonstraram familiaridade com a proposta. Ao mesmo tempo, os testes revelaram o principal atrito do projeto: o catálogo de projetos.</p>
+      <h3>O catálogo e a rotina dos consultores</h3>
+      <p>A plataforma organizava cada avaliação como um projeto. Essa estrutura ajudava o SEBRAE a acompanhar iniciativas, registrar seu histórico e observar a evolução dos ecossistemas.</p>
+      <p>Os consultores, porém, pensavam no trabalho a partir das atividades: coletar dados, produzir uma avaliação e entregar informações aos gestores. Criar um projeto independente para cada avaliação não era uma organização natural para eles.</p>
+      <p>Como essa estrutura atendia a uma necessidade institucional importante, havia pouca margem para removê-la. Propus uma carga inicial de projetos no banco de dados, para que o primeiro acesso já trouxesse exemplos reais.</p>
+      <p>Esses registros serviriam de referência para nomear projetos, organizar avaliações e entender o nível de detalhe esperado. A proposta ajudava a reduzir o esforço de aprendizado, embora não resolvesse por completo a diferença entre a estrutura institucional e a forma de trabalhar dos consultores.</p>
+    </section>
 <figure class="case-figure">
   <a class="figure-image-link" href="images/Frame%202115.png" aria-label="Abrir imagem completa: Catálogo de projetos com filtros territoriais e avaliações por município"><img src="images/Frame%202115.png" alt="Catálogo de projetos com filtros territoriais e avaliações por município" width="823" height="464" loading="lazy" decoding="async"></a>
   <figcaption>O catálogo que organiza a visão institucional também introduziu o conflito de modelo mental observado nos testes. <a href="images/Frame%202115.png">Abrir imagem completa</a></figcaption>
 </figure>
-
-<section class="story-section"><h2>Trabalhando dentro de uma restrição que não podia ser removida</h2>
-<p>Havia pouca margem para simplesmente eliminar o conceito de projeto.</p>
-<p>Ele cumpria uma necessidade importante do SEBRAE: documentar e acompanhar a evolução de cada ambiente de inovação ao longo do tempo.</p>
-<p>Em vez de tentar resolver o problema removendo a estrutura, propus reduzir o esforço de aprendizado necessário para compreendê-la.</p>
-<p>Minha sugestão foi realizar uma <strong>carga inicial de projetos diretamente no banco de dados</strong>.</p>
-<p>Assim, quando os consultores acessassem a plataforma pela primeira vez, não encontrariam um catálogo vazio nem precisariam descobrir sozinhos como estruturar uma avaliação.</p>
-<p>Encontrariam exemplos reais.</p>
-<p>Esses primeiros registros funcionariam como <strong>modelos implícitos</strong>, mostrando na prática:</p>
-<ul><li>como um projeto deveria ser nomeado;</li><li>como as avaliações deveriam ser organizadas;</li><li>qual nível de granularidade era esperado.</li></ul>
-<p>Não eliminava completamente o desalinhamento de modelo mental, mas permitia mitigá-lo respeitando uma restrição institucional importante.</p>
-</section>
-<section class="story-section"><h2>Trabalhando com as restrições de desenvolvimento</h2>
-<p>Outra restrição veio da própria implementação.</p>
-<p>Por exigência da equipe de desenvolvimento, a interface deveria utilizar um design system baseado em <strong>Material Design</strong>.</p>
-<p>Isso delimitava parte do espaço de exploração visual, mas não alterava os princípios fundamentais da solução.</p>
-<p>Os desenvolvedores não participaram das etapas de discovery nem da apresentação inicial ao cliente. Antes da implementação, porém, todo o protótipo foi apresentado e explicado à equipe em reuniões que também incluíam o Product Owner.</p>
-<p>Essas sessões permitiram contextualizar não apenas <strong>o que</strong> deveria ser implementado, mas <strong>por que determinadas decisões haviam sido tomadas</strong>.</p>
-<p>Não surgiram solicitações relevantes de alteração provocadas por limitações técnicas.</p>
-<p>Na review da implementação, havia pouca ou nenhuma diferença significativa entre o produto desenvolvido e o protótipo.</p>
-<p>Para mim, isso também foi uma forma de validação: as decisões de design sobreviveram à passagem do protótipo para o produto.</p>
-</section>
-<section class="story-section"><h2>Resultado: de arquivos dispersos para uma visão contínua do ecossistema</h2>
-<p>A plataforma reuniu em um único ambiente aquilo que anteriormente dependia de diversos arquivos e etapas manuais.</p>
-<p>Para os <strong>consultores</strong>, significou ter o processo e as informações necessárias para executar suas avaliações disponíveis no mesmo sistema.</p>
-<p>Para os <strong>gestores</strong>, surgiu uma mudança ainda mais significativa.</p>
-<p>Anteriormente, eles dependiam dos consultores para consolidar os dados e produzir relatórios.</p>
-<p>Com a plataforma, passaram a poder consultar <strong>dados atuais e históricos diretamente e em tempo real</strong>.</p>
-<p>Isso transformou o sistema de uma ferramenta de entrada de dados em uma fonte permanente de acompanhamento dos ecossistemas.</p>
-<p>O feedback qualitativo do SEBRAE foi muito positivo. O líder do projeto do lado do cliente destacou especialmente a fidelidade com que a metodologia havia sido representada digitalmente.</p>
-<p>Essa era uma das principais medidas de sucesso do projeto: <strong>simplificar a operação sem simplificar indevidamente o método</strong>.</p>
-<p>O projeto original também previa uma ambição maior: a solução desenvolvida no Paraná deveria permitir que a metodologia pudesse posteriormente ser utilizada por outras unidades do SEBRAE no país.</p>
-</section>
+    <section class="story-section">
+      <h2>Colaboração com desenvolvimento</h2>
+      <p>A equipe técnica definiu o uso de um sistema de design baseado em Material Design. Trabalhei dentro dessa base para manter os princípios de organização e clareza da solução.</p>
+      <p>Os desenvolvedores não participaram da descoberta nem da apresentação inicial ao cliente. Antes da implementação, apresentei o protótipo em reuniões com a equipe e o Product Owner, explicando os fluxos e os motivos das decisões.</p>
+      <p>Não houve pedidos relevantes de mudança por limitações técnicas. Nas revisões, a implementação ficou muito próxima do protótipo, preservando as escolhas construídas durante o processo.</p>
+    </section>
+    <section class="story-section">
+      <h2>Resultados</h2>
+      <p>A plataforma reuniu em um só ambiente informações e atividades que antes dependiam de arquivos separados e consolidação manual.</p>
+      <p>Os consultores passaram a ter o processo de avaliação e as orientações necessárias no mesmo sistema. Os gestores ganharam acesso direto a dados atuais e históricos, em tempo real, reduzindo a dependência de relatórios preparados pelos consultores.</p>
+      <p>O retorno qualitativo do SEBRAE foi muito positivo. O líder do projeto destacou a fidelidade da representação digital da metodologia, um dos principais objetivos do trabalho.</p>
+      <p>O projeto também previa que a solução desenvolvida no Paraná pudesse apoiar a adoção do método por outras unidades do SEBRAE no país.</p>
+    </section>
 <figure class="case-figure">
   <a class="figure-image-link" href="images/Frame%202118.png" aria-label="Abrir imagem completa: Comparação de efetividade, integração e maturidade entre 2020 e 2021"><img src="images/Frame%202118.png" alt="Comparação de efetividade, integração e maturidade entre 2020 e 2021" width="823" height="464" loading="lazy" decoding="async"></a>
   <figcaption>A comparação entre períodos torna visível a evolução dos indicadores. Os valores pertencem à tela apresentada, não são métricas de impacto do redesign. <a href="images/Frame%202118.png">Abrir imagem completa</a></figcaption>
 </figure>
-
-<section class="story-section"><h2>O que eu faria diferente</h2>
-<p>O ponto que eu mais exploraria hoje seria justamente aquele em que apareceu o maior conflito entre organização institucional e modelo mental dos usuários: o catálogo de projetos.</p>
-<p>A solução cumpria bem o objetivo do SEBRAE de organizar e acompanhar avaliações ao longo do tempo, mas exigia que os consultores adotassem uma estrutura conceitual que não fazia parte naturalmente de sua rotina.</p>
-<p>Com mais tempo, eu investigaria alternativas de interação que mantivessem a noção de projeto no modelo de dados e na visão gerencial, mas que <strong>não obrigassem necessariamente o consultor a pensar dessa maneira para iniciar seu trabalho</strong>.</p>
-<p>Esse é também um dos principais aprendizados que levo do projeto:</p>
-<blockquote><p><strong>Digitalizar um processo não significa simplesmente reproduzir sua estrutura na interface. É preciso decidir quais partes dessa estrutura o usuário realmente precisa perceber para conseguir realizar seu trabalho.</strong></p></blockquote>
-</section>
-</div><nav class="next-case container" aria-label="Próximo projeto"><p class="eyebrow">Próximo case</p><a href="../sinapse/">Sinapse Finance</a></nav></article></main>
+    <section class="story-section">
+      <h2>O que eu faria diferente</h2>
+      <p>Hoje, exploraria mais alternativas para o catálogo. A ideia seria preservar a organização por projetos na gestão e nos dados, aproximando o início da experiência das atividades que os consultores já reconheciam.</p>
+      <p>O principal aprendizado foi entender que digitalizar um processo exige escolher quais partes de sua estrutura precisam aparecer para cada pessoa. Essa escolha pode facilitar o trabalho sem perder o rigor necessário ao negócio.</p>
+    </section>
+</div>
+<nav class="next-case container" aria-label="Próximo projeto"><p class="eyebrow">Próximo case</p><a href="../sinapse/">Sinapse Finance</a></nav></article></main>
 <footer class="contact container" id="contato">
   <p class="eyebrow">Vamos conversar?</p>
   <p class="contact-message">Se você tem um projeto, oportunidade ou só quer trocar uma ideia, será um prazer conversar.</p>

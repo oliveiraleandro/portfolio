@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cervello BPMS — Leandro Oliveira</title>
-  <meta name="description" content="Conduzi o redesign de uma plataforma enterprise, da hierarquia da informação ao Design System e à implementação de componentes responsivos.">
+  <meta name="description" content="Redesign de uma plataforma corporativa, com uma experiência mais clara e flexível.">
   <meta property="og:title" content="Cervello BPMS — Leandro Oliveira">
-  <meta property="og:description" content="Conduzi o redesign de uma plataforma enterprise, da hierarquia da informação ao Design System e à implementação de componentes responsivos.">
+  <meta property="og:description" content="Redesign de uma plataforma corporativa, com uma experiência mais clara e flexível.">
   <meta property="og:type" content="website">
   <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
   <link rel="stylesheet" href="../../css/reset.css">
@@ -24,182 +24,96 @@
   <a class="text-link" href="../../">Voltar ao portfólio</a>
 </header>
 <main id="conteudo"><article class="case cervello">
-<header class="case-hero container"><img class="case-logo" src="logo.svg" alt="Cervello" width="2468" height="512" decoding="async"><p class="eyebrow">03 / Cervello BPMS</p><h1>Uma plataforma mais clara para processos mais eficientes</h1><p class="case-lead">Conduzi o redesign de uma plataforma enterprise, da hierarquia da informação ao Design System e à implementação de componentes responsivos.</p><ul class="tags"><li>Design System</li><li>Enterprise UX</li><li>HTML e CSS</li></ul></header>
+<header class="case-hero container"><img class="case-logo" src="logo.svg" alt="Cervello" width="2468" height="512" decoding="async"><p class="eyebrow">03 / Cervello BPMS</p><h1>Cervello BPMS</h1><p class="case-lead">Redesign de uma plataforma corporativa, com uma experiência mais clara e flexível.</p><ul class="tags"><li>Design System</li><li>Enterprise UX</li><li>HTML e CSS</li></ul></header>
 
-<div class="case-body container"><figure class="case-figure asset-gallery">
+<div class="case-body container">
+<figure class="case-figure asset-gallery">
 <div class="asset-gallery-images"><a class="figure-image-link" href="images/cervello.png" aria-label="Abrir imagem completa: Atendimento de chamado com resumo, status, prioridade e prazos de SLA"><img src="images/cervello.png" alt="Atendimento de chamado com resumo, status, prioridade e prazos de SLA" width="1210" height="553" loading="lazy" decoding="async"></a></div>
 <figcaption>A tela de atendimento mantém a densidade operacional, organizando contexto, status e informações do chamado. Selecione uma imagem para abri-la no tamanho original.</figcaption>
 </figure>
-
-<section class="story-section"><h2>Contexto</h2>
-<p>O Cervello BPMS era uma plataforma white label voltada principalmente para gestão de TI e atendimento de tickets, usada por equipes de suporte e profissionais de tecnologia. Quando entrei no projeto, em 2018, a interface carregava muitos sinais de um produto que havia crescido sem uma atuação dedicada de design.</p>
-<p>A UI havia sido construída principalmente pelos desenvolvedores a partir de um template baseado em Bootstrap. Embora funcional, o produto tinha aparência bastante antiquada, navegação rígida e grande densidade de informação. O uso extensivo de abas fazia com que muitas jornadas fossem fragmentadas e excessivamente lineares.</p>
-<p>Atuei por aproximadamente quatro anos como único designer do time e responsável por UX/UI, trabalhando em protótipos, validação com usuários, Design System e também diretamente em HTML, CSS e SCSS. O material original do projeto já destacava a criação de um Design System, a melhoria da hierarquia visual, novos componentes, responsividade e um framework SCSS customizado.</p>
-</section>
-<section class="story-section"><h2>Problemas do produto legado</h2>
-<p>O primeiro desafio não era simplesmente modernizar a aparência da plataforma.</p>
-<p>Nas conversas com usuários, PM e equipe comercial, identifiquei um problema mais estrutural: o produto havia evoluído muito orientado pela adição de features, campos e controles, e pouco pela avaliação da experiência como um todo.</p>
-<p>Cada nova necessidade tendia a resultar em mais um elemento dentro da interface.</p>
-<p>Isso produzia três problemas principais.</p>
-<p>Primeiro, havia uma hierarquia visual fraca. Informações de importância muito diferente frequentemente recebiam tratamentos semelhantes, dificultando a leitura rápida.</p>
-<p>Segundo, a navegação era excessivamente dependente de abas. Em algumas áreas, esse padrão estava tão consolidado que era difícil até explicar por que ele poderia prejudicar usuários menos familiarizados com o sistema.</p>
-<p>Terceiro, o crescimento contínuo dos módulos havia gerado inconsistências de interface e uma aparência cada vez mais distante das expectativas de um software corporativo moderno.</p>
-<p>O redesenho, portanto, precisava preservar a robustez funcional da plataforma, mas reorganizar a forma como essas capacidades eram apresentadas e acessadas.</p>
-</section>
-<section class="story-section"><h2>Processo de design</h2>
-<p>Os usuários principais eram profissionais de suporte e TI. Suas atividades mais frequentes, em ordem aproximada, eram:</p>
-<ol><li>visualizar chamados;</li><li>atender chamados;</li><li>transferir ou encerrar chamados;</li><li>consultar chamados anteriores;</li><li>consultar a base de conhecimento;</li><li>visualizar métricas e dashboards.</li></ol>
-<p>A priorização inicial acompanhou essa jornada.</p>
-<p>Em conjunto com o PM, começamos por três grandes pontos da experiência:</p>
-<p>login → home → atendimento de chamados.</p>
-<p>Minha abordagem era primeiro criar um esboço satisfatório para o fluxo principal de cada área e, em seguida, retornar para aprofundar estados, exceções e configurações.</p>
-<p>Na Home, por exemplo, isso levou ao desenho de fluxos específicos para configuração de atalhos e personalização da página.</p>
-<p>Na área de chamados, aprofundei interações relacionadas a mudança de status, encaminhamento, encerramento e outras ações operacionais.</p>
-<p>As soluções eram trabalhadas em protótipos e levadas para conversas com usuários. As validações eram qualitativas e relativamente informais: eu conduzia entrevistas com o protótipo em mãos, coletando impressões e observando as reações às propostas.</p>
-<p>Não havia um roteiro rígido de teste. Esse formato também acabava revelando problemas além do escopo imediato, porque usuários frequentemente comentavam espontaneamente sobre outras partes da plataforma.</p>
-<p>O fluxo de trabalho tornou-se, de forma geral:</p>
-<p>protótipo → validação com usuários → validação com PM e desenvolvimento → HTML/SCSS.</p>
-</section>
-<section class="story-section"><h2>Flexibilidade sem perder consistência</h2>
-<p>O Cervello era um produto white label, e a possibilidade de customizar sua identidade era um argumento comercial importante.</p>
-<p>Por isso, uma das bases do redesign foi criar um sistema que fosse visualmente flexível sem depender de decisões arbitrárias de cor.</p>
-<p>Trabalhei com uma paleta relativamente estrita, estabelecendo relações pré-definidas de figura e fundo e gerando programaticamente variações de cor para os principais controles.</p>
-<p>Ao mesmo tempo, algumas cores semânticas do sistema permaneceram fixas e não eram customizáveis, especialmente tons associados a sucesso, alerta e erro.</p>
-<p>A intenção era permitir a personalização da marca sem comprometer a leitura dos estados da interface.</p>
-</section>
-<section class="story-section"><h2>Hierarquia visual explícita</h2>
-<p>A hierarquia passou a ser tratada como um conjunto de regras.</p>
-<p>Criei uma escala tipográfica baseada em Roboto, aproveitando a variedade de pesos da família.</p>
-<p>Padronizei a iconografia com Font Awesome.</p>
-<p>Em cada tela ou modal, procurei limitar o destaque à ação principal do fluxo, utilizando apenas um botão com a cor principal para representar o caminho mais esperado.</p>
-<p>Também estabeleci títulos de página mais informativos, com o objetivo de comunicar imediatamente ao usuário o contexto em que ele se encontrava.</p>
-<p>Separadores, fios, bordas e agrupamentos passaram a ser usados para tornar a estrutura das telas mais evidente.</p>
-</section>
-<section class="story-section"><h2>Densidade não significa fragmentação</h2>
-<p>Uma das principais mudanças de raciocínio ocorreu na forma de lidar com telas densas.</p>
-<p>No legado, havia uma tendência a combater a quantidade de informação dividindo o conteúdo em muitas abas.</p>
-<p>Em vários momentos, argumentei que uma página vertical um pouco mais longa poderia produzir uma experiência mais clara do que uma sequência de áreas ocultas.</p>
-<p>Cheguei a demonstrar que, em determinadas telas, o usuário poderia utilizar inclusive a busca nativa do navegador para localizar rapidamente um conteúdo em uma página maior.</p>
-<p>Em outros contextos, a solução foi dividir a jornada em mais etapas, utilizar modais ou simplesmente reorganizar as informações em uma ordem mais coerente com a tarefa — como apresentar primeiro os registros mais recentes.</p>
-<p>O objetivo não era reduzir artificialmente a quantidade de informação, mas tornar sua estrutura mais compreensível.</p>
-</section>
-<section class="story-section"><h2>Navegação e busca universal</h2>
-<p>A redução do uso excessivo de abas trouxe outro problema: algumas páginas passaram a estar distribuídas por uma árvore de navegação mais profunda.</p>
-<p>Para compensar isso, propus uma busca universal no cabeçalho da plataforma.</p>
-<p>A ideia era permitir que o usuário saltasse diretamente entre áreas distantes do sistema. Da Home, por exemplo, seria possível localizar um chamado específico digitando seu número.</p>
-<p>O PM propôs complementar essa navegação com breadcrumbs.</p>
-<p>A orientação dentro dos módulos não seguia uma única estratégia rígida. Cada contexto recebia os elementos mais apropriados: títulos de página, tags de status nos chamados, árvore de navegação na base de conhecimento ou indicação do responsável por uma tarefa no Kanban.</p>
-</section>
-<section class="story-section"><h2>Do conceito ao Design System</h2>
-<p>O Design System não surgiu como um projeto separado do redesign.</p>
-<p>Inicialmente, explorei telas-conceito com o PM. Depois da aprovação de uma direção visual, passei a investir mais tempo na construção das telas efetivas.</p>
-<p>À medida que as soluções se estabilizavam, comecei a sistematizar os elementos que se repetiam.</p>
-<p>A base começou pelos elementos mais fundamentais:</p>
-<ul><li>escala tipográfica;</li><li>cores e relações de contraste;</li><li>botões primários e secundários;</li><li>espaçamentos;</li><li>bordas;</li><li>raios;</li><li>estilos básicos de containers e cards.</li></ul>
-<p>Componentes mais complexos foram surgindo conforme os módulos eram detalhados.</p>
-<p>Nem tudo precisava se transformar em um componente global.</p>
-<p>Minha abordagem era iniciar uma nova tela reutilizando os elementos existentes e, a partir daí, avaliar o que deveria permanecer comum ao sistema e o que precisava ser específico daquele contexto.</p>
-<p>Esse equilíbrio era importante porque os usuários respondiam bem quando cada módulo recebia algum cuidado particular em relação à sua própria tarefa.</p>
-</section>
-<section class="story-section"><h2>Um sistema comum para módulos diferentes</h2>
-<p>O Cervello reunia módulos bastante distintos: tickets, base de conhecimento, gestão de projetos, dashboards e outros.</p>
-<p>A coerência não dependia de todos utilizarem exatamente os mesmos componentes.</p>
-<p>Ela era construída a partir de fundamentos compartilhados.</p>
-<p>Mesmo quando um módulo ganhava controles próprios, os mesmos princípios de tipografia, bordas, arredondamentos, espaçamento e tratamento de superfícies mantinham a sensação de que tudo fazia parte do mesmo produto.</p>
-<p>Essa base permaneceu bastante estável durante os anos em que trabalhei na plataforma.</p>
-<p>Depois que Home e tela principal de chamados estavam consolidadas, estimo que cerca de 80% da estrutura visual necessária para novos módulos já estava resolvida.</p>
-<p>Ainda existia trabalho específico, mas o reaproveitamento era grande.</p>
-<p>E, como eu também escrevia o CSS, esse reaproveitamento existia no código, não apenas no Figma.</p>
-</section>
-<section class="story-section"><h2>White label e cards como padrão de navegação</h2>
-<p>Os cards acabaram se tornando um elemento recorrente da plataforma.</p>
-<p>Eles eram úteis para diferenciar áreas de navegação, especialmente em contextos como atalhos da Home e base de conhecimento.</p>
-<p>Porém, o white label criava um desafio: eu não teria controle sobre quais imagens e conteúdos cada cliente colocaria nesses cards.</p>
-<p>A possibilidade de customização chegou a ser questionada porque poderia aumentar muito o esforço de configuração inicial.</p>
-<p>Minha proposta foi embarcar junto ao produto uma biblioteca de imagens royalty free, já redimensionadas e organizadas em torno de conceitos comuns de TI — como servidores, computadores pessoais e salas de reunião.</p>
-<p>Assim, cada cliente poderia combinar imagem e label para criar uma navegação visual mais rica sem precisar produzir todo o material gráfico do zero.</p>
-</section>
-<section class="story-section"><h2>Home</h2>
-<p>A Home foi um dos módulos mais trabalhosos do redesign.</p>
-<p>Ela podia ser personalizada com drag and drop, tinha preview da configuração, imagem de fundo customizável, widgets laterais opcionais e atalhos representados por cards.</p>
-<p>Também desenhei uma tela específica para configurar essa experiência antes de publicá-la.</p>
-<p>Hoje, eu provavelmente revisaria algumas decisões visuais dessa solução. Ainda assim, ela cumpriu os requisitos de negócio e demonstrou bem uma característica importante do Cervello: a necessidade de equilibrar experiência pronta para uso com alto nível de personalização.</p>
-</section>
-<section class="story-section"><h2>Dashboards</h2>
-<p>Os dashboards já existiam no produto e eram construídos a partir das métricas disponíveis nos endpoints da plataforma.</p>
-<p>Minha atuação esteve principalmente na experiência de composição e apresentação.</p>
-<p>O usuário podia selecionar métricas, escolher o tipo de gráfico e determinar quanto espaço cada gráfico ocuparia em uma grade com regras de responsividade previamente definidas.</p>
-<p>Desenhei também o fluxo completo de personalização, incluindo a reorganização dos componentes por drag and drop.</p>
-<p>Os dashboards tinham ainda opção de modo claro e escuro disponível ao usuário final.</p>
-<p>Os componentes JavaScript partiam de uma biblioteca que os desenvolvedores já utilizavam. Em vez de propor uma tecnologia completamente diferente, desenhei os protótipos e escrevi o CSS respeitando suas limitações técnicas, modificando significativamente sua aparência para integrá-la ao novo sistema visual.</p>
-<p>Os exemplos de dashboards e gráficos aparecem com destaque no material original do projeto.</p>
-</section><figure class="case-figure asset-gallery">
+    <section class="story-section">
+      <h2>Contexto e meu papel</h2>
+      <p>O Cervello BPMS era uma plataforma personalizável para gestão de TI e atendimento de chamados. Quando entrei no projeto, em 2018, a interface havia crescido sem uma atuação dedicada de design. Construída pelos desenvolvedores sobre um template Bootstrap, ela funcionava, mas tinha uma aparência antiga, muita informação e uma navegação bastante dependente de abas.</p>
+      <p>Durante aproximadamente quatro anos, fui o único designer do time. Atuei em UX/UI, prototipação, validação com usuários e criação do Design System, além de escrever HTML, CSS e SCSS para apoiar a implementação.</p>
+      <p>O desafio era dar mais clareza ao produto e criar uma base que permitisse sua evolução, preservando as funcionalidades e a personalização que os clientes valorizavam.</p>
+    </section>
+    <section class="story-section">
+      <h2>Por onde começamos</h2>
+      <p>Conversas com usuários, PM e equipe comercial mostraram que cada nova necessidade costumava virar mais um campo, controle ou funcionalidade. Com o tempo, esse acúmulo enfraqueceu a hierarquia visual e criou diferenças entre os módulos.</p>
+      <p>Informações importantes competiam com detalhes secundários. As abas dividiam tarefas em áreas ocultas e dificultavam a navegação, especialmente para quem ainda não conhecia o sistema.</p>
+      <p>Os profissionais de suporte e TI usavam a plataforma principalmente para consultar, atender, transferir e encerrar chamados. Depois vinham a consulta ao histórico, à base de conhecimento e às métricas. Com o PM, priorizei o caminho <strong>login → home → atendimento de chamados</strong>.</p>
+      <p>Começava pelo fluxo principal de cada área e depois detalhava configurações, estados e exceções. Na home, isso incluía personalizar a página e os atalhos. Nos chamados, significava aprofundar ações como encaminhamento, mudança de status e encerramento.</p>
+    </section>
+    <section class="story-section">
+      <h2>Um processo próximo de usuários e desenvolvimento</h2>
+      <p>As propostas eram discutidas com usuários a partir dos protótipos. Essas conversas eram qualitativas e informais, sem um roteiro rígido de teste. Além das reações às telas, surgiam relatos espontâneos sobre outras dificuldades da plataforma.</p>
+      <p>O trabalho seguia um ciclo de <strong>protótipo, validação com usuários, alinhamento com PM e desenvolvimento e implementação em HTML/SCSS</strong>. Essa proximidade ajudava a ajustar as soluções às necessidades das pessoas e às condições técnicas do produto.</p>
+    </section>
+    <section class="story-section">
+      <h2>Princípios que orientaram o redesign</h2>
+      <h3>Personalização com consistência</h3>
+      <p>Como produto white label, o Cervello precisava assumir a identidade de diferentes clientes. Criei uma paleta com relações predefinidas entre texto e fundo e variações de cor geradas por código para os controles.</p>
+      <p>As cores de sucesso, alerta e erro permaneceram fixas. Assim, a marca poderia mudar sem alterar o significado dos estados da interface.</p>
+      <h3>Uma hierarquia fácil de reconhecer</h3>
+      <p>Defini uma escala tipográfica com Roboto e padronizei os ícones com Font Awesome. Em cada tela ou modal, reservei o botão com a cor principal para a ação mais importante.</p>
+      <p>Títulos mais informativos, agrupamentos, bordas e separadores ajudavam a mostrar onde o usuário estava e como o conteúdo se organizava. Essas regras deram unidade às telas sem exigir que todos os módulos fossem iguais.</p>
+      <h3>Informação organizada em torno da tarefa</h3>
+      <p>Em algumas áreas, uma página vertical mais longa funcionava melhor do que várias abas. Além de deixar o conteúdo visível, ela permitia usar a busca do próprio navegador.</p>
+      <p>Em outras, fazia mais sentido dividir o trabalho em etapas, usar modais ou mudar a ordem dos registros para apresentar primeiro os mais recentes. A escolha dependia da tarefa e da forma mais clara de apresentar suas informações.</p>
+    </section>
+    <section class="story-section">
+      <h2>Navegação e busca</h2>
+      <p>A redução das abas deixou algumas páginas em níveis mais profundos da navegação. Para facilitar o acesso, propus uma busca universal no cabeçalho: da home, o usuário poderia encontrar um chamado digitando seu número.</p>
+      <p>O PM complementou a proposta com breadcrumbs, que mostravam o caminho até a página atual. Cada módulo também recebeu referências próprias de orientação, como status nos chamados, árvore de navegação na base de conhecimento e identificação do responsável no Kanban.</p>
+    </section>
+    <section class="story-section">
+      <h2>Um Design System que cresceu com o produto</h2>
+      <p>O sistema de design nasceu das telas. Primeiro explorei uma direção visual com o PM; conforme as soluções se consolidavam, organizei os elementos recorrentes em uma base reutilizável:</p>
+      <ul>
+        <li>Tipografia, cores e contraste.</li>
+        <li>Botões, espaçamentos, bordas e arredondamentos.</li>
+        <li>Containers, cards e componentes específicos dos módulos.</li>
+      </ul>
+      <p>Ao começar uma nova tela, reutilizava essa base e avaliava o que precisava de uma solução própria. Tickets, dashboards, projetos e base de conhecimento compartilhavam fundamentos, mas podiam ter controles adequados às suas tarefas.</p>
+      <p>Depois de consolidar a home e a tela principal de chamados, estimo que cerca de 80% da estrutura visual necessária para novos módulos já estivesse resolvida. Como eu também escrevia os estilos, esse reaproveitamento chegava ao código.</p>
+    </section>
+    <section class="story-section">
+      <h2>As principais áreas redesenhadas</h2>
+      <h3>Home e atalhos</h3>
+      <p>A home combinava atalhos em cards, widgets opcionais, imagem de fundo e organização por arrastar e soltar. Desenhei também uma tela de configuração com prévia antes da publicação.</p>
+      <p>A personalização dos cards trazia um desafio: cada cliente precisaria escolher imagens e conteúdos. Propus incluir uma biblioteca de imagens royalty free, já dimensionadas e relacionadas a temas de TI, como servidores e salas de reunião. Isso facilitava a configuração inicial.</p>
+      <p>Foi uma das áreas mais trabalhosas do projeto. Hoje eu revisaria algumas escolhas visuais, mas a solução atendeu aos requisitos de negócio e à necessidade de personalização.</p>
+      <h3>Dashboards</h3>
+      <p>Os dashboards já existiam; meu foco foi melhorar sua composição e apresentação. O usuário podia escolher métricas, tipos de gráfico, espaço ocupado na grade e ordem dos componentes, além de alternar entre modo claro e escuro.</p>
+      <p>Trabalhei com a biblioteca JavaScript já utilizada pelo time. Os protótipos e o CSS respeitavam suas limitações, adaptando a aparência ao novo sistema visual.</p>
+      <h3>Projetos e Kanban</h3>
+      <p>O módulo de projetos recebeu uma interface Kanban com elementos próprios, como a identificação dos responsáveis pelas tarefas. Ele mostrava como a mesma base visual podia acomodar necessidades diferentes dentro do produto.</p>
+    </section>
+<figure class="case-figure asset-gallery">
 <div class="asset-gallery-images gallery-comparison"><a class="figure-image-link" href="images/modo-claro.png" aria-label="Abrir imagem completa: Dashboard em modo claro"><img src="images/modo-claro.png" alt="Dashboard em modo claro" width="588" height="588" loading="lazy" decoding="async"></a><a class="figure-image-link" href="images/modo-escuro.png" aria-label="Abrir imagem completa: Dashboard em modo escuro"><img src="images/modo-escuro.png" alt="Dashboard em modo escuro" width="588" height="588" loading="lazy" decoding="async"></a></div>
 <figcaption>Os mesmos componentes em modo claro e escuro: gráficos, contadores e blocos de informação compartilham uma grade. Os valores exibidos são exemplos da interface, não métricas do redesign. Selecione uma imagem para abri-la no tamanho original.</figcaption>
 </figure>
-
-<section class="story-section"><h2>Projetos e Kanban</h2>
-<p>O redesign também se estendeu ao módulo de projetos, incluindo uma interface de Kanban.</p>
-<p>Nesse módulo, alguns componentes eram específicos do contexto, como identificação do responsável por determinada tarefa.</p>
-<p>Esse tipo de solução exemplifica uma decisão recorrente no projeto: reutilizar os fundamentos do Design System sem obrigar todos os módulos a se comportarem da mesma maneira.</p>
-</section>
-<section class="story-section"><h2>Responsividade e aplicativo</h2>
-<p>Responsividade era uma exigência de negócio desde o início.</p>
-<p>O aplicativo do Cervello funcionava como uma webview e a diretoria queria que praticamente todas as capacidades importantes da plataforma também estivessem disponíveis no celular.</p>
-<p>Mesmo assim, defendi que algumas tarefas não deveriam ser priorizadas no mobile.</p>
-<p>Configuração da Home e criação de dashboards, por exemplo, eram funcionalidades usadas principalmente durante a implantação do Cervello dentro de uma empresa e não faziam parte da rotina mais frequente dos profissionais de suporte.</p>
-<p>No restante da plataforma, a adaptação para mobile aconteceu principalmente por meio da estrutura responsiva dos componentes, com poucos comportamentos exclusivos para telas pequenas. Os principais ajustes específicos estavam relacionados à legibilidade, especialmente tamanho de texto.</p>
-<p>O material original também apresenta o design responsivo e o novo aplicativo como entregas do projeto.</p>
-</section><figure class="case-figure asset-gallery">
+    <section class="story-section">
+      <h2>Responsividade e implementação</h2>
+      <p>O aplicativo funcionava como uma webview, e a empresa queria oferecer no celular praticamente todas as capacidades importantes da plataforma. A adaptação aconteceu principalmente pela estrutura responsiva dos componentes, com ajustes específicos de legibilidade.</p>
+      <p>Defendi uma prioridade menor no mobile para configurar a home e criar dashboards. Essas tarefas eram mais comuns durante a implantação do sistema do que na rotina dos profissionais de suporte.</p>
+      <p>O time era enxuto e não tinha um desenvolvedor front-end dedicado. Por isso, substituí grande parte do Bootstrap por uma base própria em SCSS, com componentes organizados pela metodologia BEM e estilos que geravam as diferentes opções de cor do white label.</p>
+      <p>Algumas propostas precisaram ser revistas por limitações de backend, como campos de busca no agendamento de serviços. Nesses casos, ajustávamos a experiência ao que a arquitetura permitia.</p>
+      <p>Também revisava a implementação e mantinha o protótipo atualizado com as mudanças, para que o Figma continuasse representando o produto entregue.</p>
+    </section>
+<figure class="case-figure asset-gallery">
 <div class="asset-gallery-images"><a class="figure-image-link" href="images/Group-2.png" aria-label="Abrir imagem completa: Home mobile com notícias e acesso a solicitações"><img src="images/Group-2.png" alt="Home mobile com notícias e acesso a solicitações" width="325" height="574" loading="lazy" decoding="async"></a><a class="figure-image-link" href="images/Group.png" aria-label="Abrir imagem completa: Lista mobile de solicitações com ações de aprovação"><img src="images/Group.png" alt="Lista mobile de solicitações com ações de aprovação" width="323" height="574" loading="lazy" decoding="async"></a><a class="figure-image-link" href="images/Group-1.png" aria-label="Abrir imagem completa: Tela mobile de busca de solicitações"><img src="images/Group-1.png" alt="Tela mobile de busca de solicitações" width="323" height="574" loading="lazy" decoding="async"></a></div>
 <figcaption>Home, solicitações e busca no aplicativo. As telas fornecidas mostram uma aplicação da identidade white label. Selecione uma imagem para abri-la no tamanho original.</figcaption>
 </figure>
-
-<section class="story-section"><h2>Colaboração com desenvolvimento</h2>
-<p>O time era enxuto e não havia um desenvolvedor front-end dedicado.</p>
-<p>Além disso, os desenvolvedores tinham pouca experiência com CSS, porque historicamente a empresa não havia tratado a interface como uma parte central do produto.</p>
-<p>Por isso, minha atuação se estendeu além do Figma.</p>
-<p>Grande parte do Bootstrap original foi descartada.</p>
-<p>Construí uma base própria em SCSS, com helpers para tokens e componentes completos seguindo a metodologia BEM — Block, Element, Modifier.</p>
-<p>O CSS era pré-processado e podia gerar diferentes folhas de estilo para as opções de cor disponíveis no white label.</p>
-<p>Essa proximidade com a implementação trouxe uma vantagem importante: o Design System não existia apenas como especificação.</p>
-<p>Os mesmos padrões definidos no protótipo eram materializados na camada de estilos da aplicação.</p>
-</section>
-<section class="story-section"><h2>Limitações técnicas</h2>
-<p>Nem todas as propostas puderam ser implementadas.</p>
-<p>Algumas ideias exigiam mudanças mais profundas no backend e acabaram sendo barradas pelo desenvolvimento.</p>
-<p>Um exemplo ocorreu em campos associados à busca dentro do módulo de agendamento de serviços, um tipo específico de chamado.</p>
-<p>Nesses casos, a solução precisava ser redesenhada respeitando as limitações da arquitetura existente.</p>
-<p>Esses trade-offs faziam parte do processo: a prioridade não era preservar uma solução idealizada, mas encontrar a melhor experiência possível dentro das condições reais do produto.</p>
-</section>
-<section class="story-section"><h2>Revisão da implementação</h2>
-<p>Depois da implementação pelos desenvolvedores, eu fazia revisões constantes da plataforma.</p>
-<p>Uma regra importante do processo era manter o protótipo sincronizado com o produto entregue.</p>
-<p>Mesmo quando um ajuste surgia durante a implementação, ele não era tratado apenas no código.</p>
-<p>A mudança era primeiro incorporada ao protótipo.</p>
-<p>Com isso, o arquivo do Figma permanecia como fonte de verdade da interface disponível aos usuários.</p>
-</section>
-<section class="story-section"><h2>Resultados</h2>
-<p>Não havia uma estrutura sistemática de telemetria que permitisse medir com precisão indicadores como tempo de tarefa, redução de erros ou adoção de funcionalidades.</p>
-<p>Isso acontecia também porque muitos clientes ainda utilizavam o Cervello no modelo on-premises.</p>
-<p>Posteriormente, a empresa migrou para uma abordagem SaaS mais moderna e baseada em nuvem, mas essa mudança aconteceu depois do encerramento da minha participação.</p>
-<p>Por isso, prefiro não atribuir ao redesign resultados quantitativos que não foram medidos.</p>
-<p>Os resultados observados foram principalmente qualitativos.</p>
-<p>O novo produto foi bem recebido pelos usuários com quem validei as soluções, embora eles já conhecessem profundamente o sistema legado.</p>
-<p>O PM e a equipe comercial também avaliaram positivamente o redesign.</p>
-<p>Para o comercial, especialmente, a nova camada de customização facilitava a adaptação do produto para diferentes clientes e tornava mais simples apresentar a plataforma como uma solução white label.</p>
-<p>Novos contratos foram assinados durante esse período. Não tenho dados que permitam atribuir essas vendas exclusivamente ao redesign, mas a percepção interna era de que a nova interface havia tornado o produto mais fácil de apresentar e vender.</p>
-</section>
-<section class="story-section"><h2>Reflexão</h2>
-<p>Este projeto mudou minha percepção sobre o potencial do design em produtos legados.</p>
-<p>Eu já havia participado de modernizações menores, mas o Cervello tinha uma escala e uma complexidade maiores do que os produtos com os quais eu estava acostumado.</p>
-<p>Ao longo de aproximadamente quatro anos, percebi que modernizar uma plataforma desse tipo não significa simplesmente substituir uma estética antiga por uma nova.</p>
-<p>Foi necessário reconsiderar como o usuário encontrava informações, como navegava entre módulos, como ações ganhavam prioridade, como componentes podiam ser reutilizados e como o sistema poderia continuar crescendo sem retornar ao mesmo padrão de acúmulo de controles que havia produzido o legado.</p>
-<p>Hoje, eu dedicaria mais tempo a explorar novas capacidades de produto, e não apenas a transformar a experiência das funcionalidades existentes.</p>
-<p>Tentaria participar de maneira ainda mais ativa da direção do produto, utilizando os aprendizados obtidos durante o redesign para propor novas features e influenciar sua evolução.</p>
-<p>O principal aprendizado que levo do Cervello é justamente esse: em um produto legado, design pode ser uma força transformadora não apenas sobre a interface, mas sobre como o produto é percebido, utilizado e desenvolvido ao longo do tempo.</p>
-</section>
-</div><nav class="next-case container" aria-label="Próximo projeto"><p class="eyebrow">Próximo case</p><a href="../iconatus/">Iconatus · CAP</a></nav></article></main>
+    <section class="story-section">
+      <h2>Resultados e aprendizados</h2>
+      <p>O redesign recebeu avaliações positivas dos usuários envolvidos nas validações, do PM e da equipe comercial. A personalização facilitava a apresentação da plataforma a diferentes clientes.</p>
+      <p>Não havia telemetria sistemática para medir tempo de tarefa, erros ou adoção, em parte porque muitos clientes utilizavam instalações locais. Novos contratos foram assinados no período, mas não tenho dados para atribuí-los ao redesign. Os resultados que pude observar foram principalmente qualitativos.</p>
+      <p>O Cervello me mostrou como o design pode ajudar uma plataforma complexa a evoluir: organizando informações, orientando a navegação e criando padrões que apoiam o crescimento do produto.</p>
+      <p>Hoje, eu usaria esses aprendizados para participar ainda mais da direção do produto, explorando novas funcionalidades além da melhoria das existentes. A experiência reforçou o valor de acompanhar o design desde as conversas com usuários até sua implementação.</p>
+    </section>
+</div>
+<nav class="next-case container" aria-label="Próximo projeto"><p class="eyebrow">Próximo case</p><a href="../iconatus/">Iconatus · CAP</a></nav></article></main>
 <footer class="contact container" id="contato">
   <p class="eyebrow">Vamos conversar?</p>
   <p class="contact-message">Se você tem um projeto, oportunidade ou só quer trocar uma ideia, será um prazer conversar.</p>

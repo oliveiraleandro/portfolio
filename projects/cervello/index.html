@@ -10,10 +10,10 @@
   <meta property="og:type" content="website">
   <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
   <link rel="stylesheet" href="../../css/reset.css">
-  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css?v=contact-1">
+  <link rel="stylesheet" href="../../css/components.css?v=case-tags-1">
   <link rel="stylesheet" href="../../css/responsive.css">
   <script src="../../js/contact.js" defer></script>
 </head>
@@ -28,8 +28,8 @@
 
 <div class="case-body container">
 <figure class="case-figure asset-gallery">
-<div class="asset-gallery-images"><a class="figure-image-link" href="images/cervello.png" aria-label="Abrir imagem completa: Atendimento de chamado com resumo, status, prioridade e prazos de SLA"><img src="images/cervello.png" alt="Atendimento de chamado com resumo, status, prioridade e prazos de SLA" width="1210" height="553" loading="lazy" decoding="async"></a></div>
-<figcaption>A tela de atendimento mantém a densidade operacional, organizando contexto, status e informações do chamado. Selecione uma imagem para abri-la no tamanho original.</figcaption>
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="images/cervello.png" alt="Atendimento de chamado com resumo, status, prioridade e prazos de SLA" width="1210" height="553" loading="lazy" decoding="async"></div></div>
+<figcaption>A tela de atendimento mantém a densidade operacional, organizando contexto, status e informações do chamado.</figcaption>
 </figure>
     <section class="story-section">
       <h2>Contexto e meu papel</h2>
@@ -90,8 +90,8 @@
       <p>O módulo de projetos recebeu uma interface Kanban com elementos próprios, como a identificação dos responsáveis pelas tarefas. Ele mostrava como a mesma base visual podia acomodar necessidades diferentes dentro do produto.</p>
     </section>
 <figure class="case-figure asset-gallery">
-<div class="asset-gallery-images gallery-comparison"><a class="figure-image-link" href="images/modo-claro.png" aria-label="Abrir imagem completa: Dashboard em modo claro"><img src="images/modo-claro.png" alt="Dashboard em modo claro" width="588" height="588" loading="lazy" decoding="async"></a><a class="figure-image-link" href="images/modo-escuro.png" aria-label="Abrir imagem completa: Dashboard em modo escuro"><img src="images/modo-escuro.png" alt="Dashboard em modo escuro" width="588" height="588" loading="lazy" decoding="async"></a></div>
-<figcaption>Os mesmos componentes em modo claro e escuro: gráficos, contadores e blocos de informação compartilham uma grade. Os valores exibidos são exemplos da interface, não métricas do redesign. Selecione uma imagem para abri-la no tamanho original.</figcaption>
+<div class="asset-gallery-images gallery-comparison"><div class="figure-image-link"><img src="images/modo-claro.png" alt="Dashboard em modo claro" width="588" height="588" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/modo-escuro.png" alt="Dashboard em modo escuro" width="588" height="588" loading="lazy" decoding="async"></div></div>
+<figcaption>Os mesmos componentes em modo claro e escuro: gráficos, contadores e blocos de informação compartilham uma grade. Os valores exibidos são exemplos da interface, não métricas do redesign.</figcaption>
 </figure>
     <section class="story-section">
       <h2>Responsividade e implementação</h2>
@@ -102,8 +102,8 @@
       <p>Também revisava a implementação e mantinha o protótipo atualizado com as mudanças, para que o Figma continuasse representando o produto entregue.</p>
     </section>
 <figure class="case-figure asset-gallery">
-<div class="asset-gallery-images"><a class="figure-image-link" href="images/Group-2.png" aria-label="Abrir imagem completa: Home mobile com notícias e acesso a solicitações"><img src="images/Group-2.png" alt="Home mobile com notícias e acesso a solicitações" width="325" height="574" loading="lazy" decoding="async"></a><a class="figure-image-link" href="images/Group.png" aria-label="Abrir imagem completa: Lista mobile de solicitações com ações de aprovação"><img src="images/Group.png" alt="Lista mobile de solicitações com ações de aprovação" width="323" height="574" loading="lazy" decoding="async"></a><a class="figure-image-link" href="images/Group-1.png" aria-label="Abrir imagem completa: Tela mobile de busca de solicitações"><img src="images/Group-1.png" alt="Tela mobile de busca de solicitações" width="323" height="574" loading="lazy" decoding="async"></a></div>
-<figcaption>Home, solicitações e busca no aplicativo. As telas fornecidas mostram uma aplicação da identidade white label. Selecione uma imagem para abri-la no tamanho original.</figcaption>
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="images/Group-2.png" alt="Home mobile com notícias e acesso a solicitações" width="325" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/Group.png" alt="Lista mobile de solicitações com ações de aprovação" width="323" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/Group-1.png" alt="Tela mobile de busca de solicitações" width="323" height="574" loading="lazy" decoding="async"></div></div>
+<figcaption>Home, solicitações e busca no aplicativo. As telas fornecidas mostram uma aplicação da identidade white label.</figcaption>
 </figure>
     <section class="story-section">
       <h2>Resultados e aprendizados</h2>
@@ -117,7 +117,7 @@
 <footer class="contact container" id="contato">
   <p class="eyebrow">Vamos conversar?</p>
   <p class="contact-message">Se você tem um projeto, oportunidade ou só quer trocar uma ideia, será um prazer conversar.</p>
-  <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden>Falar pelo WhatsApp</button>
+  <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Falar pelo WhatsApp</button>
   <noscript><p class="contact-pending">Ative o JavaScript para abrir o contato pelo WhatsApp.</p></noscript>
   <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
 </footer>

@@ -1,0 +1,70 @@
+/* Ajustes editoriais exclusivos da home. As interfaces continuam sendo assets originais. */
+.home { --frame-border: 8px solid var(--image-frame-color); --frame-shadow: 0 12px 32px rgb(31 50 78 / .1); }
+.home .hero { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 2rem; }
+.home .hero-art { min-height: 530px; isolation: isolate; overflow: hidden; border-radius: 24px; }
+.home .hero-screen { border: var(--frame-border); box-shadow: var(--frame-shadow); }
+.home .hero-sebrae { width: 82%; left: 3%; top: 45px; transform: rotate(4deg); }
+.home .hero-sinapse { width: 47%; left: 3%; top: 255px; transform: rotate(-3deg); }
+.home .hero-cervello { width: 96%; left: 42%; top: 280px; transform: rotate(-5deg); }
+.home .principles .principle-icon { display: block; color: inherit; width: 24px; height: 24px; margin-bottom: .8rem; }
+.handwritten { font-family: "SignPainter", "Snell Roundhand", "Segoe Print", "Bradley Hand", cursive; font-size: 1.65rem; font-weight: 400; line-height: 1.2; letter-spacing: .01em; }
+.hero-note { position: absolute; top: 0; right: 2%; z-index: 2; transform: rotate(-7deg); font-size: 1.4rem; }
+.home .project-band { --project-ink: #075caf; --panel-color: 0 117 207; padding-block: 3.5rem; }
+.home .sinapse { --project-ink: #00794c; --panel-color: 0 150 111; }
+.home .cervello { --project-ink: #5540b0; --panel-color: 109 84 224; }
+.home .iconatus { --project-ink: #244e9c; --panel-color: 38 95 183; }
+.home .project-layout { grid-template-columns: minmax(0, .75fr) minmax(0, 1.45fr); column-gap: 2rem; row-gap: 1.2rem; padding-left: calc(var(--page-gutter) + 2.5rem); }
+.home .project-label { position: relative; min-height: 58px; }
+.home .project-number { position: absolute; left: -2.5rem; top: 50%; transform: translateY(-50%); }
+.home .project-logo { max-width: 100%; height: 58px; }
+.home .project-copy h2 { font-size: clamp(1.65rem, 2.5vw, 2.4rem); }
+.home .project-copy > p { font-size: 1rem; line-height: 1.55; }
+.home .project-copy .text-link { color: var(--project-ink); text-decoration: none; gap: .75rem; }
+.home .project-copy .text-link:hover { text-decoration: underline; }
+.case-arrow { font-size: 1.25rem; }
+.home .tags li { border: 0; background: rgb(var(--panel-color) / .075); }
+.home .project-art { height: 460px; isolation: isolate; overflow: hidden; border-radius: 24px; padding: 24px 14px; }
+.home .project-art::before, .home .project-art::after, .home .hero-art::before { content: ""; position: absolute; z-index: -1; border-radius: 24px; pointer-events: none; }
+.home .project-art::before { inset: 22px 8% 28px 0; background: rgb(var(--panel-color) / .075); transform: rotate(-7deg); }
+.home .project-art::after { inset: 70px 0 0 18%; background: rgb(var(--panel-color) / .055); transform: rotate(5deg); }
+.home .hero-art::before { inset: 60px 5% 15px 3%; background: rgb(86 141 204 / .065); transform: rotate(5deg); }
+.home .feature-screen { border: var(--frame-border); box-shadow: var(--frame-shadow); transform: none; }
+.home .art-sebrae .feature-screen { width: 780px; height: auto; transform: rotate(-2deg); transform-origin: center; }
+.home .art-cervello .feature-screen { height: 405px; width: auto; transform: rotate(2deg); }
+.home .art-iconatus .feature-screen { width: 820px; height: auto; }
+.home .art-sinapse img { border: 5px solid var(--image-frame-color); box-shadow: var(--frame-shadow); }
+.home .modal-tool { width: 215px; top: 28px; left: 5%; }
+.home .modal-condition { width: 220px; top: 40px; right: 3%; }
+.home .modal-calculation { width: 410px; max-width: 78%; top: 128px; left: 18%; }
+.home .contact { position: relative; }
+.contact-note { margin: 1.5rem 0 0 auto; width: fit-content; transform: rotate(-5deg); }
+.home .whatsapp-button { gap: .6rem; }
+.home .contact-header { max-width: 195px; flex-shrink: 0; }
+.whatsapp-icon { flex: 0 0 20px; filter: invert(1); }
+@media (max-width: 900px) {
+  .home .hero { grid-template-columns: minmax(0, 1fr); }
+  .home .hero-art { width: 100%; max-width: 680px; }
+  .home .project-layout { grid-template-columns: minmax(0, 1fr); }
+  .home .project-art { grid-column: 1; grid-row: auto; width: 100%; }
+  .home .project-copy { max-width: 600px; }
+}
+@media (max-width: 680px) {
+  .home { --frame-border: 5px solid var(--image-frame-color); }
+  .home .site-header { gap: .75rem; }
+  .home .identity { font-size: 1rem; }
+  .home .contact-header { max-width: 136px; padding: .65rem .75rem; font-size: .75rem; }
+  .home .hero-art { min-height: 350px; }
+  .home .hero-note { font-size: 1.2rem; right: 5%; }
+  .home .hero-sebrae { width: 94%; top: 65px; }
+  .home .hero-sinapse { width: 51%; top: 165px; }
+  .home .hero-cervello { width: 128%; left: 24%; top: 235px; }
+  .home .project-layout { padding-left: calc(var(--page-gutter) + 1.6rem); }
+  .home .project-number { left: -1.6rem; font-size: .75rem; }
+  .home .project-art { height: 290px; margin-top: .5rem; padding: 20px 8px; }
+  .home .art-sebrae .feature-screen { width: 500px; }
+  .home .art-cervello .feature-screen { height: 265px; }
+  .home .art-iconatus .feature-screen { width: 560px; }
+  .home .art-sinapse { height: 330px; }
+  .home .art-sinapse .modal-calculation { position: relative; top: 0; left: 0; width: 340px; max-width: none; }
+  .contact-note { margin-right: 1rem; font-size: 1.5rem; }
+}

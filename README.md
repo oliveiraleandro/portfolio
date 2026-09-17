@@ -1,37 +1,27 @@
 # Portfólio — Leandro Oliveira
 
-Site estático em português, sem frameworks, dependências ou build. JavaScript mínimo monta o contato WhatsApp apenas no clique.
+Portfólio de Product/UX Design com home e cases de SEBRAE, Sinapse Finance, Cervello BPMS e Iconatus (CAP). Site estático, responsivo e em português.
 
-## Estado da implementação
+## Ferramentas utilizadas
 
-Home e cases de SEBRAE, Sinapse, Cervello e Iconatus (CAP) implementados a partir dos conteúdos locais. Os arquivos de conteúdo originais foram preservados. CSS dividido em reset, tokens, base, layout, componentes e responsividade.
+- HTML5, CSS3 e JavaScript puro, sem frameworks ou etapa de build.
+- OpenAI Codex (aplicativo desktop), com assistência do modelo de IA **GPT-6** nesta sessão de desenvolvimento.
+- Navegador integrado do Codex para revisão visual e verificações de responsividade.
+- Python 3 para o servidor local e verificações de arquivos; não é necessário no site publicado.
+- Ícones SVG Lucide (ISC) na abertura e WhatsApp do Simple Icons 16.0.0 (CC0).
 
-A direção de arte está em andamento. Os quatro cases têm imagens reais e logos inseridos. A home também usa composições com as interfaces reais dos quatro projetos. Faltam screenshots dos formulários da Sinapse. Foram analisadas as referências `references/home-destktop.png` (nome original preservado), `references/home-mobile.png` e seu README. As três referências de case e a referência de enquadramento não estavam presentes.
+## Visualizar localmente
 
-## Pendências antes de publicar
+Na raiz do projeto:
 
-- Adicionar imagens dos formulários da Sinapse. Os quatro cases já usam assets reais nas páginas internas. Comentários `TODO ASSETS` indicam os pontos de composição. Inserir figuras também junto às decisões relevantes nos cases. Preservar proporções, informar width/height e alt contextual; usar lazy loading e decoding async abaixo da dobra. Ajustar grid, crops e sobreposições após conhecer os arquivos reais.
-- WhatsApp configurado com obfuscação em `js/contact.js`. O número não fica em texto puro no HTML; bots que executam ou analisam JavaScript ainda podem recuperá-lo. Sem JavaScript, uma mensagem orienta a ativá-lo.
-- Definir URL pública. Adicionar canonical e og:url específicos por página; adicionar og:image com URL absoluta de uma imagem real. Title, description, viewport e os demais metadados Open Graph já existem.
-- Adicionar referências dos cases e concluir revisão visual desktop/mobile. Ver `design-qa.md`.
+```sh
+python3 -m http.server 8000
+```
 
-## Visualizar
+Abra [localhost:8000](http://localhost:8000/).
 
-Abra `index.html` diretamente no navegador. Opcionalmente, na raiz, execute `python3 -m http.server 8000` e abra http://localhost:8000. Python serve apenas para prévia; o site publicado não depende dele.
+## Referência e manutenção
 
-## Testar
+Consulte [DOCUMENTACAO.md](DOCUMENTACAO.md) para estrutura, conteúdo, decisões visuais, manutenção e pendências. O histórico de revisão está em [design-qa.md](design-qa.md).
 
-- Abrir home e os quatro cases em 320, 390, 768, 1024 e 1440px. Confirmar ausência de rolagem horizontal e leitura confortável.
-- Percorrer com Tab: atalho para conteúdo, cases, retorno à home e próximo projeto. Confirmar foco visível.
-- Verificar links e imagens após adicionar assets. Validar os cinco HTMLs no Nu HTML Checker antes da publicação; não enviar conteúdos privados sem revisão.
-- Repetir comparação com referências depois da composição de screenshots. Os testes estruturais locais não substituem uma auditoria completa de acessibilidade.
-
-## Publicar no GitHub Pages
-
-Depois de concluir as pendências, faça commit e push para a branch desejada. Nas configurações do repositório, em Pages, selecione publicação a partir da branch e pasta raiz (`/`). Não é necessário workflow de build. Os caminhos são relativos e funcionam em um subdiretório de projeto. Após a publicação, teste home, cases, CSS e WhatsApp na URL fornecida pelo GitHub.
-
-## Arquivos
-
-Modificados: `index.html`, `css/reset.css`, `projects/sebrae/index.html`, `projects/sinapse/index.html`, `projects/cervello/index.html`, `projects/iconatus/index.html`.
-
-Criados: os outros cinco CSS, `README.md`, `design-qa.md` e `.nojekyll`.
+O site está preparado para hospedagem estática, incluindo GitHub Pages. A publicação e a configuração do domínio ainda precisam ser confirmadas.

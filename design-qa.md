@@ -85,3 +85,16 @@ Arquivos alterados: index.html, css/layout.css, css/components.css, css/responsi
 Os quatro cases foram sincronizados com os novos arquivos content.md: títulos, aberturas, parágrafos, listas, subtítulos e metadados. Todas as figuras existentes foram preservadas e reposicionadas nas novas seções. Verificação textual confirmou que todas as linhas de conteúdo dos quatro Markdown estão presentes nos respectivos HTMLs. Aninhamento HTML, H1 único e caminhos locais passaram na validação por parser.
 
 Os screenshots de review-screenshots representam a versão anterior dos textos. A revisão visual desta atualização ficou pendente: a prévia retornou conexão recusada e a ferramenta de navegador bloqueou a navegação a partir da página de erro. O servidor local foi reiniciado. git diff --check não pôde executar porque o Git do sistema exige aceitação da licença do Xcode; nenhuma licença foi aceita pelo agente.
+
+## Refinamento da home — 16/09/2026
+
+Aplicados em css/home.css: molduras claras/translúcidas, sombras suaves, painéis de fundo por projeto, números recuados, links com cor e seta Unicode, tags sem borda, composições maiores e contidas em suas seções. HTML recebeu ícones SVG fornecidos em 24×24, notas cursivas e ícone WhatsApp local do Simple Icons 16.0.0 (CC0). Tipografia cursiva usa SignPainter e fallbacks do sistema, sem fonte externa.
+
+Verificação no navegador em 320, 390, 768 e 1440px: sem overflow horizontal. Nenhuma imagem carregada quebrada nas verificações de 390/1440px. Capturas completas novas: review-screenshots/home-polish-desktop.jpg e home-polish-mobile.jpg. As capturas antigas foram preservadas. A ampliação moderada dos modais Sinapse revela o limite dos PNGs de 178–340px; exports maiores são recomendados para a próxima iteração.
+
+Arquivos desta etapa: index.html modificado; css/home.css e projects/common/icons/whatsapp.svg criados; duas capturas criadas. Sem alteração nos cases ou no mecanismo de contato obfuscado.
+
+
+## Sinapse — exports maiores — 16/09/2026
+
+Recebidos quatro modais em aproximadamente 2× (356–680px de largura). Home e case atualizados com dimensões intrínsecas corretas e versão de cache nas imagens. Composição da home preservada; no case, modais apresentados a até 240px e cálculo a até 510px, limitados pela largura disponível. Verificação no navegador: imagens novas carregadas, sem overflow horizontal na home e no case em 320 e 1440px. Capturas anteriores não foram regeneradas nesta etapa.

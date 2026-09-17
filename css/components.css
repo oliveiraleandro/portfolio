@@ -1,64 +1,377 @@
-.identity { display: flex; flex-direction: column; text-decoration: none; line-height: 1.35; font-weight: 600; font-size: 1.25rem; letter-spacing: -.04em; }
-.identity .role { color: var(--color-muted); font-size: .875rem; font-weight: 400; letter-spacing: 0; }
-.eyebrow { color: var(--color-muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .16em; }
-.principles, .tags { padding: 0; list-style: none; }
-.principles { font-size: .875rem; line-height: 1.5; color: var(--color-muted); }
-.project-label { display: flex; align-items: center; align-self: start; gap: var(--space-3); }
-.project-logo { width: 160px; max-width: calc(100% - 3rem); height: 64px; object-fit: contain; object-position: left center; }
-.project-number { color: var(--color-muted); font-size: .875rem; font-variant-numeric: tabular-nums; }
-.sebrae.project-band, .sebrae .case-hero { background: var(--color-sebrae); }
-.sinapse.project-band, .sinapse .case-hero { background: var(--color-sinapse); }
-.cervello.project-band, .cervello .case-hero { background: var(--color-cervello); }
-.tags { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-block: var(--space-3); }
-.tags li { font-size: .75rem; color: var(--color-muted); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: .25rem .75rem; }
-.text-link { display: inline-flex; align-items: center; min-height: 44px; font-size: .9375rem; font-weight: 500; }
-.contact-pending { color: var(--color-muted); font-size: .875rem; margin-top: var(--space-3); }
-.contact-link { display: inline-flex; min-height: 48px; align-items: center; padding: .75rem 1.25rem; background: var(--color-text); color: white; border-radius: var(--radius-md); margin-top: var(--space-3); }
-.footer-signature { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2); margin-top: var(--space-6); padding-top: var(--space-3); border-top: 1px solid var(--color-border); font-size: .75rem; color: var(--color-muted); }
-blockquote { border-left: 2px solid var(--color-border); padding-left: var(--space-3); margin-block: var(--space-5); font-size: 1.3rem; line-height: 1.5; }
-.skip-link { position: fixed; top: 1rem; left: 1rem; transform: translateY(-200%); z-index: 10; padding: .75rem; background: white; }
-.skip-link:focus { transform: translateY(0); }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.identity {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1.35;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: -0.04em;
+}
+.identity .role {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.eyebrow {
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+.principles,
+.tags {
+    padding: 0;
+    list-style: none;
+}
+.principles {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+}
+.project-label {
+    display: flex;
+    align-items: center;
+    align-self: start;
+    gap: var(--space-3);
+}
+.project-logo {
+    width: 160px;
+    max-width: calc(100% - 3rem);
+    height: 64px;
+    object-fit: contain;
+    object-position: left center;
+}
+.project-number {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    font-variant-numeric: tabular-nums;
+}
+.sebrae.project-band,
+.sebrae .case-hero {
+    background: var(--color-sebrae);
+}
+.sinapse.project-band,
+.sinapse .case-hero {
+    background: var(--color-sinapse);
+}
+.cervello.project-band,
+.cervello .case-hero {
+    background: var(--color-cervello);
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-block: var(--space-3);
+}
+.tags li {
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 0.25rem 0.75rem;
+}
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+.contact-pending {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    margin-top: var(--space-3);
+}
+.contact-link {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-text);
+    color: white;
+    border-radius: var(--radius-md);
+    margin-top: var(--space-3);
+}
+.footer-signature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.75rem;
+    color: var(--color-muted);
+}
+blockquote {
+    border-left: 2px solid var(--color-border);
+    padding-left: var(--space-3);
+    margin-block: var(--space-5);
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.skip-link {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    transform: translateY(-200%);
+    z-index: 10;
+    padding: 0.75rem;
+    background: white;
+}
+.skip-link:focus {
+    transform: translateY(0);
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
 
 /* Superfície neutra até receber a identidade visual original da Iconatus. */
-.iconatus.project-band, .iconatus .case-hero { background: var(--color-surface); }
+.iconatus.project-band,
+.iconatus .case-hero {
+    background: var(--color-surface);
+}
 
-.case-logo { width: 128px; height: 64px; object-fit: contain; object-position: left center; margin-bottom: var(--space-4); }
-.case-figure { margin: 0 auto var(--space-6); }
-.case-opening { margin-top: var(--space-4); }
-.figure-image-link { display: block; background: var(--color-surface); border-radius: var(--radius-md); overflow: hidden; }
-.figure-image-link img { width: 100%; height: auto; }
-.case-figure figcaption { max-width: var(--reading-width); margin: var(--space-3) auto 0; color: var(--color-muted); font-size: .875rem; line-height: 1.6; }
-.case-figure figcaption a { display: inline-block; min-height: 44px; padding-block: .6rem; }
-.case-figure-mobile { display: grid; grid-template-columns: minmax(0, 390px) minmax(0, 300px); justify-content: center; align-items: start; gap: var(--space-5); padding: var(--space-4); background: var(--color-surface); border-radius: var(--radius-md); }
-.case-figure-mobile .figure-image-link { max-height: 780px; }
-.case-figure-mobile figcaption { margin: 0; }
+.case-logo {
+    width: 128px;
+    height: 64px;
+    object-fit: contain;
+    object-position: left center;
+    margin-bottom: var(--space-4);
+}
+.case-figure {
+    margin: 0 auto var(--space-6);
+}
+.case-opening {
+    margin-top: var(--space-4);
+}
+.figure-image-link {
+    display: block;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.figure-image-link img {
+    width: 100%;
+    height: auto;
+}
+.case-figure figcaption {
+    max-width: var(--reading-width);
+    margin: var(--space-3) auto 0;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+.case-figure figcaption a {
+    display: inline-block;
+    min-height: 44px;
+    padding-block: 0.6rem;
+}
+.case-figure-mobile {
+    display: grid;
+    grid-template-columns: minmax(0, 390px) minmax(0, 300px);
+    justify-content: center;
+    align-items: start;
+    gap: var(--space-5);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+}
+.case-figure-mobile .figure-image-link {
+    max-height: 780px;
+}
+.case-figure-mobile figcaption {
+    margin: 0;
+}
 
 /* Os PNGs do SEBRAE têm 823px: evitar ampliação que prejudique a nitidez. */
-.sebrae .case-figure .figure-image-link { max-width: 823px; margin-inline: auto; }
+.sebrae .case-figure .figure-image-link {
+    max-width: 823px;
+    margin-inline: auto;
+}
 
-.asset-gallery-images { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: var(--space-3); padding: var(--space-3); background: var(--color-surface); border-radius: var(--radius-md); }
-.asset-gallery-images .figure-image-link { flex: 0 1 auto; max-width: 100%; min-width: 0; }
-.asset-gallery-images img { width: auto; max-width: 100%; }
-.gallery-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.hero-art { position: relative; min-height: 490px; }
-.hero-screen { position: absolute; height: auto; border-radius: var(--radius-md); box-shadow: 0 12px 35px #19243b12; }
-.hero-sebrae { width: 95%; top: 12px; left: 3%; transform: rotate(5deg); }
-.hero-sinapse { width: 50%; left: 0; top: 230px; transform: rotate(-4deg); }
-.hero-cervello { width: 112%; max-width: none; left: 43%; top: 245px; transform: rotate(-7deg); }
-.project-art { position: relative; min-width: 0; height: 400px; }
-.feature-screen { width: auto; max-width: none; height: 100%; border-radius: var(--radius-md); }
-.art-sebrae .feature-screen { height: auto; width: 710px; transform: rotate(-3deg); transform-origin: left center; }
-.art-cervello .feature-screen { height: 430px; transform: rotate(3deg); transform-origin: left center; }
-.art-iconatus { overflow: hidden; border-radius: var(--radius-md); }
-.art-iconatus .feature-screen { width: 760px; height: auto; }
-.art-sinapse img { position: absolute; height: auto; box-shadow: 0 10px 30px #19243b12; border-radius: var(--radius-md); }
-.modal-tool { width: 178px; top: 0; left: 10%; }
-.modal-condition { width: 192px; top: 15px; right: 0; }
-.modal-calculation { width: 340px; top: 125px; left: 22%; }
+.asset-gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+}
+.asset-gallery-images .figure-image-link {
+    flex: 0 1 auto;
+    max-width: 100%;
+    min-width: 0;
+}
+.asset-gallery-images img {
+    width: auto;
+    max-width: 100%;
+}
+.gallery-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.hero-art {
+    position: relative;
+    min-height: 490px;
+}
+.hero-screen {
+    position: absolute;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: 0 12px 35px #19243b12;
+}
+.hero-sebrae {
+    width: 95%;
+    top: 12px;
+    left: 3%;
+    transform: rotate(5deg);
+}
+.hero-sinapse {
+    width: 50%;
+    left: 0;
+    top: 230px;
+    transform: rotate(-4deg);
+}
+.hero-cervello {
+    width: 112%;
+    max-width: none;
+    left: 43%;
+    top: 245px;
+    transform: rotate(-7deg);
+}
+.project-art {
+    position: relative;
+    min-width: 0;
+    height: 400px;
+}
+.feature-screen {
+    width: auto;
+    max-width: none;
+    height: 100%;
+    border-radius: var(--radius-md);
+}
+.art-sebrae .feature-screen {
+    height: auto;
+    width: 710px;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+}
+.art-cervello .feature-screen {
+    height: 430px;
+    transform: rotate(3deg);
+    transform-origin: left center;
+}
+.art-iconatus {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+.art-iconatus .feature-screen {
+    width: 760px;
+    height: auto;
+}
+.art-sinapse img {
+    position: absolute;
+    height: auto;
+    box-shadow: 0 10px 30px #19243b12;
+    border-radius: var(--radius-md);
+}
+.modal-tool {
+    width: 178px;
+    top: 0;
+    left: 10%;
+}
+.modal-condition {
+    width: 192px;
+    top: 15px;
+    right: 0;
+}
+.modal-calculation {
+    width: 340px;
+    top: 125px;
+    left: 22%;
+}
 
-.whatsapp-button { font: inherit; font-size: .9375rem; border: 0; cursor: pointer; }
-.whatsapp-button[hidden] { display: none; }
-.whatsapp-button:hover { background: var(--color-muted); }
-.whatsapp-button:focus-visible { outline: 3px solid #075ec9; outline-offset: 5px; }
-.contact-header { margin-top: 0; font-size: .8125rem; padding: .75rem 1rem; max-width: 160px; line-height: 1.35; }
+.whatsapp-button {
+    gap: 0.6rem;
+    font: inherit;
+    font-size: 0.9375rem;
+    border: 0;
+    cursor: pointer;
+}
+.whatsapp-button[hidden] {
+    display: none;
+}
+.whatsapp-button:hover {
+    background: var(--color-muted);
+}
+.whatsapp-button:focus-visible {
+    outline: 3px solid #075ec9;
+    outline-offset: 5px;
+}
+.contact-header {
+    margin-top: 0;
+    font-size: 0.8125rem;
+    padding: 0.75rem 1rem;
+    max-width: 160px;
+    line-height: 1.35;
+}
+
+/* Tamanhos de apresentação independentes da resolução dos exports 2×. */
+.sinapse-modals .figure-image-link {
+    flex: 0 1 240px;
+}
+.sinapse-calculation .figure-image-link {
+    flex: 0 1 510px;
+}
+.sinapse-modals img,
+.sinapse-calculation img {
+    width: 100%;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    filter: invert(1);
+}
+
+/* Molduras dos cases seguem o acabamento das interfaces da home. */
+.case .figure-image-link {
+    border: 8px solid var(--image-frame-color);
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgb(31 50 78 / 0.1);
+}
+.case .figure-image-link img {
+    display: block;
+    border-radius: 8px;
+}
+@media (max-width: 680px) {
+    .case .figure-image-link {
+        border-width: 5px;
+        border-radius: 13px;
+    }
+}
+
+/* Tags dos cases com o mesmo acabamento e cores da home. */
+.case.sebrae { --panel-color: 0 117 207; }
+.case.sinapse { --panel-color: 0 150 111; }
+.case.cervello { --panel-color: 109 84 224; }
+.case.iconatus { --panel-color: 38 95 183; }
+.case .tags li {
+    border: 0;
+    background: rgb(var(--panel-color) / .075);
+}

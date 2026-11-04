@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sinapse Finance — Leandro Oliveira</title>
+  <meta name="description" content="Less friction when working with complex financial processes.">
+  <meta property="og:title" content="Sinapse Finance — Leandro Oliveira">
+  <meta property="og:description" content="Less friction when working with complex financial processes.">
+  <meta property="og:type" content="website">
+  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
+  <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="../../../css/layout.css">
+  <link rel="stylesheet" href="../../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
+  <script src="../../../js/contact.js" defer></script>
+
+<!-- locale:start -->
+  <link rel="alternate" hreflang="pt-BR" href="../../../projects/sinapse/">
+  <link rel="alternate" hreflang="en-US" href="./">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <script src="../../../js/language.js" defer></script>
+<!-- locale:end -->
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Skip to content</a>
+<header class="site-header container">
+  <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
+  <div class="header-actions">
+    <a class="text-link" href="../../">Back to portfolio</a>
+    <nav class="language-switcher" aria-label="Site language">
+      <a class="language-option" href="../../../projects/sinapse/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
+      <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo"><article class="case sinapse">
+<header class="case-hero container"><img class="case-logo" src="../../../projects/sinapse/logo.png" alt="Sinapse Finance" width="551" height="214" decoding="async"><p class="eyebrow">02 / Sinapse Finance</p><h1>Sinapse Finance</h1><p class="case-lead">Less friction when working with complex financial processes.</p><ul class="tags"><li>Interaction Design</li><li>Forms</li><li>Automation</li></ul></header>
+
+<div class="case-body container">
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/sinapse/images/s2.png" alt="Automation flow with a trigger, condition, and loop" width="453" height="435" loading="lazy" decoding="async"></div></div>
+<figcaption>The visual representation makes automation triggers, conditions, and paths explicit.</figcaption>
+</figure>
+    <section class="story-section">
+      <h2>Context and my role</h2>
+      <p>Sinapse Finance provided outsourced financial operations for small and midsize businesses. Technology helped make those operations faster, more predictable, and easier to track.</p>
+      <p>As the lead designer, I worked on two initiatives: a financial automation platform and improvements to the forms used to collect client information. I worked with a second designer transitioning from graphic design to UX, alongside the product owner, financial specialists, and developers. I also wrote HTML and CSS to support delivery.</p>
+      <p>Both initiatives aimed to reduce manual work, but they had different challenges and were at different stages.</p>
+    </section>
+    <section class="story-section">
+      <h2>Two problems in the same operation</h2>
+      <h3>Making automations visible</h3>
+      <p>Sinapse already integrated ERPs, gateways, and other APIs, but the flows had no visual representation. Setting up, monitoring, and maintaining automations relied heavily on the internal team.</p>
+      <p>Users were familiar with financial processes and digital tools. They wanted more control, transparency, and speed. My challenge was to turn complex rules into an experience they could understand and configure.</p>
+      <h3>Understanding friction in forms</h3>
+      <p>The forms had been created to standardize data entry. In practice, many clients preferred to send information through other channels or ask Sinapse consultants to fill them out.</p>
+      <p>In some cases, vendors were also involved, adding more intermediaries before the information reached the operations team. The tool ended up shifting work onto the team it was supposed to support.</p>
+      <p>At first, complaints seemed related to bugs in an implementation built under a tight deadline. The investigation revealed a broader problem.</p>
+    </section>
+    <section class="story-section">
+      <h2>Research</h2>
+      <h3>Mapping before designing</h3>
+      <p>For the automations, I began by documenting existing financial processes: rules, conditions, paths, errors, and possible states. There was little room to change these routines, so representing them accurately was important.</p>
+      <p>I validated the mapping with the product owner, financial specialists, and senior developers. Engineering participated from this stage, discussing possibilities, constraints, and the technical cost of alternatives.</p>
+      <p>This alignment helped prevent poorly understood rules from becoming part of the interface and software.</p>
+      <h3>Observing the form in use</h3>
+      <p>The form work took approximately two weeks, including research, redesign, and an initial post-launch evaluation.</p>
+      <p>I started with testing and conversations with developers. I found fields accepting invalid input, unclear validation, and data that could cause processing problems.</p>
+      <p>We then instrumented the flow to observe real usage. The volume of visits allowed us to gather evidence within a few days. I analyzed recordings, organized the issues we found, and talked with financial consultants to understand the context behind the difficulties.</p>
+    </section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/sinapse/images/Group%202203.png" alt="Handwritten notes on automation processes and rules" width="680" height="462" loading="lazy" decoding="async"></div></div>
+<figcaption>Process mapping came before interface definition: actions, conditions, and execution sequences were documented.</figcaption>
+</figure>
+    <section class="story-section">
+      <h2>What the data showed</h2>
+      <p>During an analysis period following an emergency fix, Hotjar recorded:</p>
+      <ul>
+        <li><strong>58%</strong> of submissions completed successfully.</li>
+        <li><strong>42%</strong> of sessions with usability or comprehension difficulties.</li>
+        <li><strong>39%</strong> abandonment.</li>
+        <li><strong>17%</strong> involving bugs.</li>
+      </ul>
+      <p>In Google Analytics, the bounce rate was <strong>75.25%</strong>, with an average time of <strong>5 min 08 sec</strong>.</p>
+      <p>The evidence suggested that fixing bugs would not be enough. Users had questions about fields, did not know upload limits, had little support for preventing errors, and took a long time to complete the form.</p>
+      <p>The investigation raised a product question: how much of this data collection really needed to rely on a form?</p>
+    </section>
+    <section class="story-section">
+      <h2>Design decisions</h2>
+      <h3>Automations organized into steps</h3>
+      <p>I explored a diagram with draggable elements and a step-by-step alternative. The diagram offered flexibility, but increased the number of combinations, states, and exceptions developers would need to handle.</p>
+      <p>I chose a linear flow, with each step represented by a card. Complex settings were broken into smaller tasks, often in modals. Each automation could also be monitored, disabled, and reviewed through its error log.</p>
+      <p>The structure guided setup within the rules Sinapse could execute, balancing clarity for users with technical feasibility.</p>
+      <h3>Clearer forms</h3>
+      <p>For the form, I prioritized the friction we had observed. I rewrote field labels, added short instructions, and reorganized information and its visual hierarchy.</p>
+      <p>File size limits were displayed next to the upload control. Error messages were revised to explain the problem and how to fix it.</p>
+      <p>These adjustments helped users prevent errors and recover when something went wrong, using language more consistent with the rest of the platform.</p>
+    </section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images sinapse-modals"><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%206.png?v=2x-20260916" alt="Tool selection modal" width="356" height="422" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%205.png?v=2x-20260916" alt="Modal for mapping source fields to destination fields" width="358" height="473" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%207.png?v=2x-20260916" alt="Condition configuration modal" width="383" height="442" loading="lazy" decoding="async"></div></div>
+<figcaption>Settings broken into smaller tasks: choosing a tool, mapping fields, and defining a condition.</figcaption>
+</figure>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images sinapse-calculation"><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%208.png?v=2x-20260916" alt="Calculation modal with available fields and operators" width="680" height="617" loading="lazy" decoding="async"></div></div>
+<figcaption>The calculation builder brings fields and operators together in a dedicated context. The image illustrates configuration; it does not represent a measurement of test results.</figcaption>
+</figure>
+    <section class="story-section">
+      <h2>Beyond manual data entry</h2>
+      <p>Alongside the immediate improvements, we explored two hypotheses to reduce reliance on forms.</p>
+      <p>The first was a conversational interface, potentially integrated with WhatsApp, bringing information collection closer to the channels clients already preferred. It depended on a financial assessment and did not reach prototyping.</p>
+      <p>The second was extracting data from documents, such as invoices, using OCR and AI. In 2022, this involved a significant technical dependency. Discussions with developers began, but were not completed during my involvement.</p>
+      <p>Both remained possibilities for future product development.</p>
+    </section>
+    <section class="story-section">
+      <h2>Validation and refinements</h2>
+      <h3>Understanding the automations</h3>
+      <p>Access to clients was limited. In addition to internal validation with financial specialists, I recruited people familiar with productivity software to test the interaction.</p>
+      <p>They had to configure a complete automation based on an initial instruction. They understood the linear flow, although difficulties related to financial knowledge emerged. These tests helped evaluate the interface mechanics, but did not replace validation with the primary audience.</p>
+      <p>I also found uncertainty about each card’s function. I added short descriptive titles, such as “End,” to make the role of each step clearer and the flow easier to scan.</p>
+      <h3>The form in production</h3>
+      <p>Without direct access to clients for moderated testing, I monitored the form through telemetry. In a shorter measurement period after the redesign:</p>
+      <ul>
+        <li>Successful submissions increased from <strong>58% to approximately 65%</strong>.</li>
+        <li>The bounce rate dropped from around <strong>75% to below 40%</strong>.</li>
+        <li>Average completion time decreased.</li>
+      </ul>
+      <p>These signals indicated an improvement in the existing experience. Even so, reducing the need to enter information manually remained an important opportunity.</p>
+    </section>
+    <section class="story-section">
+      <h2>Results and limitations</h2>
+      <p>The form improvements were implemented and measured within a short cycle. The automation platform followed a longer path: when I left the project, the complete solution had been approved by the product owner, developers, financial specialists, and other stakeholders, and implementation had begun.</p>
+      <p>Because I did not follow the project through to full delivery, I do not have metrics for adoption or the automations’ impact in production. The outcome of that initiative was turning mapped processes into an interaction design that was validated internally and considered feasible to implement.</p>
+      <p>The main constraints were limited access to users, the need to respect existing processes, and the technical complexity of automations. The form work also had a tight deadline while I was working on both initiatives.</p>
+    </section>
+    <section class="story-section">
+      <h2>Lessons learned</h2>
+      <p>Today, I would arrange access to users and set aside time for research and validation earlier. I would also make it clear from the start what each test can establish, especially when participants do not represent the primary audience.</p>
+      <p>The projects reinforced my interest in B2B productivity products. In these products, design helps determine which details users need to understand, which the system can handle, and which steps can be removed entirely.</p>
+    </section>
+</div>
+<nav class="next-case container" aria-label="Next project"><p class="eyebrow">Next case study</p><a href="../cervello/">Cervello BPMS</a></nav></article></main>
+<footer class="contact container" id="contato">
+  <p class="eyebrow">Let’s talk</p>
+  <p class="contact-message">Have a project, an opportunity, or just want to exchange ideas? I’d be happy to chat.</p>
+  <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Chat on WhatsApp</button>
+  <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
+  <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
+</footer>
+</body>
+</html>

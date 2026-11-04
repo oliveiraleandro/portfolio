@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cervello BPMS — Leandro Oliveira</title>
+  <meta name="description" content="Redesigning an enterprise platform for a clearer, more flexible experience.">
+  <meta property="og:title" content="Cervello BPMS — Leandro Oliveira">
+  <meta property="og:description" content="Redesigning an enterprise platform for a clearer, more flexible experience.">
+  <meta property="og:type" content="website">
+  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
+  <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="../../../css/layout.css">
+  <link rel="stylesheet" href="../../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
+  <script src="../../../js/contact.js" defer></script>
+
+<!-- locale:start -->
+  <link rel="alternate" hreflang="pt-BR" href="../../../projects/cervello/">
+  <link rel="alternate" hreflang="en-US" href="./">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <script src="../../../js/language.js" defer></script>
+<!-- locale:end -->
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Skip to content</a>
+<header class="site-header container">
+  <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
+  <div class="header-actions">
+    <a class="text-link" href="../../">Back to portfolio</a>
+    <nav class="language-switcher" aria-label="Site language">
+      <a class="language-option" href="../../../projects/cervello/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
+      <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo"><article class="case cervello">
+<header class="case-hero container"><img class="case-logo" src="../../../projects/cervello/logo.svg" alt="Cervello" width="2468" height="512" decoding="async"><p class="eyebrow">03 / Cervello BPMS</p><h1>Cervello BPMS</h1><p class="case-lead">Redesigning an enterprise platform for a clearer, more flexible experience.</p><ul class="tags"><li>Design System</li><li>Enterprise UX</li><li>HTML and CSS</li></ul></header>
+
+<div class="case-body container">
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/cervello/images/cervello.png" alt="Support ticket view with summary, status, priority, and SLA deadlines" width="1210" height="553" loading="lazy" decoding="async"></div></div>
+<figcaption>The ticket view retains the information density needed for daily operations while organizing context, status, and ticket details.</figcaption>
+</figure>
+    <section class="story-section">
+      <h2>Context and my role</h2>
+      <p>Cervello BPMS was a customizable platform for IT management and support tickets. When I joined the project in 2018, the interface had grown without dedicated design support. Built by developers on a Bootstrap template, it worked, but looked dated, presented a lot of information, and relied heavily on tabs for navigation.</p>
+      <p>For approximately four years, I was the team’s only designer. I worked on UX/UI, prototyping, evaluating designs with users, and creating the design system. I also wrote HTML, CSS, and SCSS to support implementation.</p>
+      <p>The challenge was to make the product clearer and create a foundation for future development while preserving the features and customization customers valued.</p>
+    </section>
+    <section class="story-section">
+      <h2>Where we started</h2>
+      <p>Conversations with users, the product manager, and the sales team showed that each new need tended to become another field, control, or feature. Over time, this accumulation weakened the visual hierarchy and created inconsistencies across modules.</p>
+      <p>Important information competed with secondary details. Tabs split tasks across hidden areas and made navigation harder, especially for people unfamiliar with the system.</p>
+      <p>Support and IT professionals mainly used the platform to look up, handle, transfer, and close tickets. Reviewing history, the knowledge base, and metrics came next. Together with the product manager, I prioritized the path from <strong>login → home → ticket handling</strong>.</p>
+      <p>I started with each area’s main flow, then worked through settings, states, and exceptions. On the home page, this included customizing the page and its shortcuts. For tickets, it meant exploring actions such as forwarding, changing status, and closing in more detail.</p>
+    </section>
+    <section class="story-section">
+      <h2>Working closely with users and developers</h2>
+      <p>We used prototypes to discuss proposals with users. These conversations were qualitative and informal, without a rigid test script. Alongside their reactions to the screens, users shared other difficulties they faced with the platform.</p>
+      <p>The work followed a cycle of <strong>prototyping, evaluating designs with users, aligning with the product manager and developers, and implementing the designs in HTML/SCSS</strong>. This close collaboration helped us adapt solutions to people’s needs and the product’s technical constraints.</p>
+    </section>
+    <section class="story-section">
+      <h2>Principles behind the redesign</h2>
+      <h3>Consistent customization</h3>
+      <p>As a white-label product, Cervello needed to reflect different customers’ brands. I created a palette with predefined text-to-background relationships and code-generated color variations for controls.</p>
+      <p>Success, warning, and error colors stayed fixed. This allowed the branding to change without changing the meaning of interface states.</p>
+      <h3>A recognizable hierarchy</h3>
+      <p>I defined a type scale using Roboto and standardized icons with Font Awesome. On each screen or modal, I reserved the primary-color button for the most important action.</p>
+      <p>More informative headings, groupings, borders, and dividers helped users understand where they were and how content was organized. These rules brought consistency to the screens without requiring every module to look the same.</p>
+      <h3>Information organized around the task</h3>
+      <p>In some areas, a longer vertical page worked better than multiple tabs. It kept content visible and let users search with the browser’s built-in find feature.</p>
+      <p>Elsewhere, it made more sense to break the work into steps, use modals, or reorder records to show the most recent ones first. The choice depended on the task and the clearest way to present its information.</p>
+    </section>
+    <section class="story-section">
+      <h2>Navigation and search</h2>
+      <p>Reducing tabs moved some pages deeper into the navigation. To make them easier to reach, I proposed a universal search in the header: users could find a ticket from the home page by entering its number.</p>
+      <p>The product manager added breadcrumbs to show the path to the current page. Each module also received its own navigation and context cues, such as ticket statuses, a navigation tree in the knowledge base, and assignee information on the Kanban board.</p>
+    </section>
+    <section class="story-section">
+      <h2>A design system that grew with the product</h2>
+      <p>The design system emerged from the screens. I first explored a visual direction with the product manager. As the solutions took shape, I organized recurring elements into a reusable foundation:</p>
+      <ul>
+        <li>Typography, colors, and contrast.</li>
+        <li>Buttons, spacing, borders, and corner radii.</li>
+        <li>Containers, cards, and module-specific components.</li>
+      </ul>
+      <p>When starting a new screen, I reused this foundation and assessed what needed a dedicated solution. Tickets, dashboards, projects, and the knowledge base shared the same fundamentals while using controls suited to their tasks.</p>
+      <p>After consolidating the home page and main ticket screen, I estimate that around 80% of the visual structure needed for new modules was already in place. Since I also wrote the styles, that reuse extended to the code.</p>
+    </section>
+    <section class="story-section">
+      <h2>The main areas redesigned</h2>
+      <h3>Home page and shortcuts</h3>
+      <p>The home page combined shortcut cards, optional widgets, a background image, and drag-and-drop organization. I also designed a settings screen with a preview before publishing.</p>
+      <p>Card customization introduced a challenge: each customer would need to choose images and content. I proposed a library of royalty-free images, already sized and related to IT topics such as servers and meeting rooms. This made initial setup easier.</p>
+      <p>This was one of the most demanding areas of the project. I would revisit some visual choices today, but the solution met the business requirements and the need for customization.</p>
+      <h3>Dashboards</h3>
+      <p>The dashboards already existed; my focus was improving their composition and presentation. Users could choose metrics, chart types, grid space, and component order, and switch between light and dark modes.</p>
+      <p>I worked with the JavaScript library the team was already using. The prototypes and CSS respected its limitations while adapting the appearance to the new visual system.</p>
+      <h3>Projects and Kanban</h3>
+      <p>The projects module received a Kanban interface with its own elements, such as task assignee identification. It showed how the same visual foundation could accommodate different needs within the product.</p>
+    </section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images gallery-comparison"><div class="figure-image-link"><img src="../../../projects/cervello/images/modo-claro.png" alt="Dashboard in light mode" width="588" height="588" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/modo-escuro.png" alt="Dashboard in dark mode" width="588" height="588" loading="lazy" decoding="async"></div></div>
+<figcaption>The same components in light and dark modes: charts, counters, and information blocks share a grid. The values shown are interface examples, not measures of the redesign’s impact.</figcaption>
+</figure>
+    <section class="story-section">
+      <h2>Responsive design and implementation</h2>
+      <p>The app ran in a webview, and the company wanted to offer almost all of the platform’s important capabilities on mobile. Most of the adaptation came from the responsive component structure, with specific adjustments for readability.</p>
+      <p>I advocated giving home page configuration and dashboard creation lower priority on mobile. These tasks were more common during system rollout than in support professionals’ daily work.</p>
+      <p>The team was small and had no dedicated front-end developer. I therefore replaced much of Bootstrap with a custom SCSS foundation, organizing components with BEM and using styles that generated the different white-label color options.</p>
+      <p>Some proposals needed revision because of backend limitations, such as search fields in service scheduling. In those cases, we adapted the experience to what the architecture could support.</p>
+      <p>I also reviewed the implementation and kept the prototype updated as things changed, so that Figma continued to reflect the delivered product.</p>
+    </section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/cervello/images/Group-2.png" alt="Mobile home page with news and access to requests" width="325" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/Group.png" alt="Mobile request list with approval actions" width="323" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/Group-1.png" alt="Mobile request search screen" width="323" height="574" loading="lazy" decoding="async"></div></div>
+<figcaption>Home, requests, and search in the app. These screens show one example of the platform’s customizable branding.</figcaption>
+</figure>
+    <section class="story-section">
+      <h2>Results and lessons learned</h2>
+      <p>The redesign received positive feedback from users involved in validation, the product manager, and the sales team. Customization made it easier to present the platform to different customers.</p>
+      <p>There was no systematic telemetry to measure task time, errors, or adoption, partly because many customers used on-premises installations. New contracts were signed during this period, but I do not have data to attribute them to the redesign. The results I could observe were mainly qualitative.</p>
+      <p>Cervello showed me how design can help a complex platform evolve: by organizing information, guiding navigation, and creating patterns that support product growth.</p>
+      <p>Today, I would use those lessons to take a larger role in product direction, exploring new features alongside improvements to existing ones. The experience reinforced the value of following design from user conversations through implementation.</p>
+    </section>
+</div>
+<nav class="next-case container" aria-label="Next project"><p class="eyebrow">Next case study</p><a href="../iconatus/">Iconatus · CAP</a></nav></article></main>
+<footer class="contact container" id="contato">
+  <p class="eyebrow">Let’s talk</p>
+  <p class="contact-message">Have a project, an opportunity, or just want to exchange ideas? I’d be happy to chat.</p>
+  <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Chat on WhatsApp</button>
+  <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
+  <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
+</footer>
+</body>
+</html>

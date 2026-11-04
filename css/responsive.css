@@ -1,4 +1,8 @@
 @media (max-width: 680px) {
+  .site-header { flex-wrap: wrap; }
+  .header-actions { width: 100%; justify-content: space-between; gap: 0.5rem; }
+  .language-option { padding-inline: 0.5rem; }
+  .home .header-actions .contact-header { max-width: 116px; }
   .hero { padding-top: var(--space-5); padding-bottom: var(--space-6); }
   .hero h1 { max-width: 420px; }
   .principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
@@ -7,7 +11,7 @@
   .case-hero { padding-block: var(--space-5); }
   .case-hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
   .case-lead { font-size: 1.1rem; }
-  .site-header > .text-link { max-width: 105px; line-height: 1.4; }
+  .header-actions > .text-link { max-width: 105px; line-height: 1.4; }
   .story-section { margin-bottom: var(--space-5); }
 }
 @media (prefers-reduced-motion: reduce) {

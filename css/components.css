@@ -1,3 +1,46 @@
+.header-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1.25rem;
+}
+.language-switcher {
+    display: none;
+    flex-shrink: 0;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+}
+.language-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.25rem 0.875rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font: inherit;
+    font-size: 0.8125rem;
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.language-option[aria-current="page"] {
+    background: var(--color-text);
+    color: white;
+    font-weight: 600;
+}
+.language-option:focus-visible {
+    outline: 3px solid #075ec9;
+    outline-offset: 3px;
+}
+.language-option[data-language-switch]:hover {
+    background: var(--color-border);
+}
 .identity {
     display: flex;
     flex-direction: column;
@@ -367,11 +410,19 @@ blockquote {
 }
 
 /* Tags dos cases com o mesmo acabamento e cores da home. */
-.case.sebrae { --panel-color: 0 117 207; }
-.case.sinapse { --panel-color: 0 150 111; }
-.case.cervello { --panel-color: 109 84 224; }
-.case.iconatus { --panel-color: 38 95 183; }
+.case.sebrae {
+    --panel-color: 0 117 207;
+}
+.case.sinapse {
+    --panel-color: 0 150 111;
+}
+.case.cervello {
+    --panel-color: 109 84 224;
+}
+.case.iconatus {
+    --panel-color: 38 95 183;
+}
 .case .tags li {
     border: 0;
-    background: rgb(var(--panel-color) / .075);
+    background: rgb(var(--panel-color) / 0.075);
 }

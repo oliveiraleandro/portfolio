@@ -13,15 +13,29 @@
   <link rel="stylesheet" href="../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css?v=case-tags-1">
-  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../css/responsive.css?v=language-switcher-2">
   <script src="../../js/contact.js" defer></script>
+
+<!-- locale:start -->
+  <link rel="alternate" hreflang="pt-BR" href="./">
+  <link rel="alternate" hreflang="en-US" href="../../en/projects/cervello/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <script src="../../js/language.js" defer></script>
+<!-- locale:end -->
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
-  <a class="text-link" href="../../">Voltar ao portfólio</a>
+  <div class="header-actions">
+    <a class="text-link" href="../../">Voltar ao portfólio</a>
+    <nav class="language-switcher" aria-label="Idioma do site">
+      <a class="language-option" href="./" lang="pt-BR" hreflang="pt-BR" aria-current="page" aria-label="Português (Brasil)">Português</a>
+      <a class="language-option" href="../../en/projects/cervello/" lang="en-US" hreflang="en-US" data-language-switch aria-label="English (United States)">English</a>
+    </nav>
+  </div>
 </header>
 <main id="conteudo"><article class="case cervello">
 <header class="case-hero container"><img class="case-logo" src="logo.svg" alt="Cervello" width="2468" height="512" decoding="async"><p class="eyebrow">03 / Cervello BPMS</p><h1>Cervello BPMS</h1><p class="case-lead">Redesign de uma plataforma corporativa, com uma experiência mais clara e flexível.</p><ul class="tags"><li>Design System</li><li>Enterprise UX</li><li>HTML e CSS</li></ul></header>

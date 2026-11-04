@@ -98,3 +98,15 @@ Arquivos desta etapa: index.html modificado; css/home.css e projects/common/icon
 ## Sinapse — exports maiores — 16/09/2026
 
 Recebidos quatro modais em aproximadamente 2× (356–680px de largura). Home e case atualizados com dimensões intrínsecas corretas e versão de cache nas imagens. Composição da home preservada; no case, modais apresentados a até 240px e cálculo a até 510px, limitados pela largura disponível. Verificação no navegador: imagens novas carregadas, sem overflow horizontal na home e no case em 320 e 1440px. Capturas anteriores não foram regeneradas nesta etapa.
+
+
+## 24/09/2026 — Revisão final da localização
+
+- Dez páginas verificadas em 390, 768 e 1024 px, sem transbordamento de texto ou rolagem horizontal detectados.
+- Capturas completas das páginas em ambos os idiomas inspecionadas; imagens sob demanda carregadas antes de aceitar os registros.
+- Contraste de texto HTML: mínimo 5,09:1 nas combinações medidas. Não inclui texto dentro dos screenshots originais.
+- Ordem de foco e contorno visível conferidos em todos os controles das dez páginas. Salto ao conteúdo e troca de idioma preservando a âncora testados.
+- Corrigidos os nomes acessíveis das opções para corresponder ao atributo lang de cada link. aria-current informa a opção ativa.
+- Cinco testes de rotas/geração passaram.
+- Relatório e capturas: `review-screenshots/localization-final/index.html`.
+- Limites: navegador integrado; sem teste com leitor de tela real, aparelhos físicos ou zoom. WhatsApp externo e publicação não executados. Aprovação final do proprietário pendente.

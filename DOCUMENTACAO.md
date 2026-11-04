@@ -1,10 +1,10 @@
 # Documentação do portfólio
 
-Estado registrado em 16/09/2026. Este documento descreve a implementação atual e as decisões aprovadas até esta data. Registros antigos de `design-qa.md` são históricos e podem descrever situações já resolvidas.
+Estado atualizado em 24/09/2026, incluindo versões por idioma. Registros antigos de `design-qa.md` são históricos e podem descrever situações já resolvidas.
 
 ## Objetivo e escopo
 
-Portfólio de Product/UX Design de Leandro Oliveira, em português, com interfaces reais e narrativa sobre problemas, decisões e aprendizados. A implementação é estática: HTML e CSS, com JavaScript pequeno apenas para o contato WhatsApp. Não há framework, gerador de páginas, gerenciador de dependências, backend ou build.
+Portfólio de Product/UX Design de Leandro Oliveira, em português brasileiro e inglês americano, com interfaces reais e narrativa sobre problemas, decisões e aprendizados. A implementação publicada é estática: HTML e CSS, com JavaScript pequeno para o contato WhatsApp e preservação de âncoras na troca de idioma. Um gerador Python produz os HTMLs ingleses durante a manutenção, sem framework, dependências externas ou backend.
 
 As referências orientam a direção de arte, sem exigir reprodução pixel a pixel. Prioridades: composição editorial, espaço em branco, tipografia forte, interfaces em grande escala, recortes intencionais e mobile em uma coluna. As alterações visuais devem priorizar CSS e preservar os assets originais.
 
@@ -23,6 +23,11 @@ As referências orientam a direção de arte, sem exigir reprodução pixel a pi
 | `projects/common/icons/` | Ícones de princípios e WhatsApp |
 | `css/` | Estilos compartilhados e específicos da home |
 | `js/contact.js` | Contato WhatsApp com obfuscação |
+| `js/language.js` | Preserva a âncora ao trocar de idioma |
+| `en/index.html` e `en/projects/*/index.html` | Cinco versões inglesas geradas |
+| `translations/en-US.json` | Catálogo de textos originais e traduções inglesas |
+| `scripts/build_locales.py` | Geração de versões inglesas, seletor e metadados de idioma |
+| `scripts/test_locales.py` | Verificação de rotas, assets, âncoras e geração |
 | `references/` | Referências visuais e orientações de arte |
 | `review-screenshots/` | Capturas históricas de revisão |
 | `design-qa.md` | Histórico de verificações e limitações |
@@ -30,9 +35,19 @@ As referências orientam a direção de arte, sem exigir reprodução pixel a pi
 
 ## Conteúdo editorial
 
-Os quatro cases foram atualizados a partir dos respectivos `content.md`. Esses arquivos não são carregados pelo navegador: mudanças no Markdown precisam ser refletidas manualmente no HTML. Não existe sincronização automática ou script permanente de geração.
+Os quatro cases foram atualizados a partir dos respectivos `content.md`. Esses arquivos não são carregados pelo navegador: mudanças no Markdown precisam ser refletidas manualmente no HTML português. Os HTMLs portugueses são a fonte estrutural usada para gerar os ingleses; não há sincronização automática a partir dos arquivos Markdown.
 
 Ao atualizar um case, revisar também título, descrição, metadados Open Graph e resumo na home, quando afetados. Preservar figuras relevantes, textos alternativos e legendas. Não inventar resultados ou apresentar números mostrados nas interfaces como métricas de impacto do trabalho.
+
+## Idiomas e endereços
+
+Os caminhos existentes continuam em português (`pt-BR`); as versões inglesas (`en-US`) ficam em `/en/` e `/en/projects/<case>/`. O seletor utiliza links reais para a página correspondente e funciona sem JavaScript. Com JavaScript, mantém a âncora da seção. Os links de início e próximo case preservam o idioma da página. Não há detecção automática, armazenamento de preferência ou redirecionamento: o endereço escolhido determina o idioma.
+
+O gerador reutiliza a estrutura dos HTMLs portugueses e traduz textos, títulos, descrições, legendas, alternativas de imagens e rótulos de acessibilidade usando `translations/en-US.json`. A geração verifica a presença de todas as traduções antes de escrever. Também atualiza os seletores e metadados de idioma nas duas versões. CSS, JavaScript e imagens continuam compartilhados nos caminhos originais; textos dentro das capturas não foram alterados.
+
+Após editar o conteúdo português ou a estrutura, atualizar o catálogo e executar `python3 scripts/build_locales.py`. Nunca editar `en/` diretamente. Executar `python3 scripts/build_locales.py --check` para detectar arquivos gerados desatualizados e `python3 scripts/test_locales.py` para verificar as rotas. A lista de páginas fica em `PAGES` no gerador e precisa ser ampliada ao adicionar um novo case.
+
+As páginas incluem `lang`, links alternativos e metadados Open Graph de idioma. URLs canônicas e referências absolutas para publicação continuam dependendo da definição do domínio público.
 
 ## Organização dos estilos
 
@@ -112,11 +127,11 @@ Antes de publicar ou após mudanças amplas, revisar home e cases em 320, 390, 7
 ## Pendências e publicação
 
 - Definir domínio público e adicionar `canonical`, `og:url` e `og:image` específicos por página; os HTMLs têm comentários TODO para isso.
-- Concluir revisão visual final e atualizar capturas após aprovação das iterações.
+- Revisão local da localização concluída em 24/09/2026; aguardando a revisão e o aceite final do proprietário. Relatório e capturas em `review-screenshots/localization-final/index.html`.
 - Confirmar necessidade de screenshots adicionais dos formulários da Sinapse; isso estava registrado como pendência editorial anterior.
 - Referências específicas dos cases não estavam disponíveis na revisão anterior. As referências de home existentes são `home-destktop.png` (grafia original) e `home-mobile.png`.
 - Confirmar publicação e repositório remoto; não há confirmação de deploy nesta documentação.
 
-Para GitHub Pages, publicar a branch escolhida a partir da raiz, sem build. Os caminhos relativos permitem servir o projeto em subdiretório. Após publicar, testar as cinco páginas e seus assets na URL pública.
+Para GitHub Pages, gerar e versionar os HTMLs antes de publicar a branch escolhida a partir da raiz. A hospedagem não precisa executar Python nem uma etapa de build. Os caminhos relativos permitem servir o projeto em subdiretório. Após publicar, testar as dez páginas e seus assets na URL pública.
 
 Uma tentativa anterior de `git diff --check` foi impedida pela solicitação de aceite da licença do Xcode no ambiente local. Nenhuma licença foi aceita pelo agente; essa ocorrência não é um erro do site.

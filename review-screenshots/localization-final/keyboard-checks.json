@@ -1,0 +1,778 @@
+[
+  {
+    "path": "/",
+    "expected": [
+      "Pular para o conteúdo",
+      "Falar pelo WhatsApp",
+      "Português brasileiro, idioma atual",
+      "Inglês americano",
+      "Ver case completo → — SEBRAE",
+      "Ver case completo → — Sinapse Finance",
+      "Ver case completo → — Cervello BPMS",
+      "Ver case completo → — Iconatus · CAP",
+      "Falar pelo WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Pular para o conteúdo",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Falar pelo WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      },
+      {
+        "name": "Português brasileiro, idioma atual",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Inglês americano",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Ver case completo → — SEBRAE",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Ver case completo → — Sinapse Finance",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Ver case completo → — Cervello BPMS",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Ver case completo → — Iconatus · CAP",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Falar pelo WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/projects/sebrae/",
+    "expected": [
+      "Pular para o conteúdo",
+      "Leandro OliveiraProduct Designer",
+      "Voltar ao portfólio",
+      "Português brasileiro, idioma atual",
+      "Inglês americano",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Sinapse Finance",
+      "Falar pelo WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Pular para o conteúdo",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Voltar ao portfólio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Português brasileiro, idioma atual",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Inglês americano",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Sinapse Finance",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Falar pelo WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/projects/sinapse/",
+    "expected": [
+      "Pular para o conteúdo",
+      "Leandro OliveiraProduct Designer",
+      "Voltar ao portfólio",
+      "Português brasileiro, idioma atual",
+      "Inglês americano",
+      "Cervello BPMS",
+      "Falar pelo WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Pular para o conteúdo",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Voltar ao portfólio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Português brasileiro, idioma atual",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Inglês americano",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Cervello BPMS",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Falar pelo WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/projects/cervello/",
+    "expected": [
+      "Pular para o conteúdo",
+      "Leandro OliveiraProduct Designer",
+      "Voltar ao portfólio",
+      "Português brasileiro, idioma atual",
+      "Inglês americano",
+      "Iconatus · CAP",
+      "Falar pelo WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Pular para o conteúdo",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Voltar ao portfólio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Português brasileiro, idioma atual",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Inglês americano",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Iconatus · CAP",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Falar pelo WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/projects/iconatus/",
+    "expected": [
+      "Pular para o conteúdo",
+      "Leandro OliveiraProduct Designer",
+      "Voltar ao portfólio",
+      "Português brasileiro, idioma atual",
+      "Inglês americano",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "Abrir imagem completa",
+      "SEBRAE",
+      "Falar pelo WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Pular para o conteúdo",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Voltar ao portfólio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Português brasileiro, idioma atual",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Inglês americano",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Abrir imagem completa",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "SEBRAE",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Falar pelo WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/en/",
+    "expected": [
+      "Skip to content",
+      "Chat on WhatsApp",
+      "Brazilian Portuguese",
+      "American English, current language",
+      "View case study → — SEBRAE",
+      "View case study → — Sinapse Finance",
+      "View case study → — Cervello BPMS",
+      "View case study → — Iconatus · CAP",
+      "Chat on WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Skip to content",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Chat on WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      },
+      {
+        "name": "Brazilian Portuguese",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "American English, current language",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "View case study → — SEBRAE",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "View case study → — Sinapse Finance",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "View case study → — Cervello BPMS",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "View case study → — Iconatus · CAP",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Chat on WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/en/projects/sebrae/",
+    "expected": [
+      "Skip to content",
+      "Leandro OliveiraProduct Designer",
+      "Back to portfolio",
+      "Brazilian Portuguese",
+      "American English, current language",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Sinapse Finance",
+      "Chat on WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Skip to content",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Back to portfolio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Brazilian Portuguese",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "American English, current language",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Sinapse Finance",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Chat on WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/en/projects/sinapse/",
+    "expected": [
+      "Skip to content",
+      "Leandro OliveiraProduct Designer",
+      "Back to portfolio",
+      "Brazilian Portuguese",
+      "American English, current language",
+      "Cervello BPMS",
+      "Chat on WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Skip to content",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Back to portfolio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Brazilian Portuguese",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "American English, current language",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Cervello BPMS",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Chat on WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/en/projects/cervello/",
+    "expected": [
+      "Skip to content",
+      "Leandro OliveiraProduct Designer",
+      "Back to portfolio",
+      "Brazilian Portuguese",
+      "American English, current language",
+      "Iconatus · CAP",
+      "Chat on WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Skip to content",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Back to portfolio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Brazilian Portuguese",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "American English, current language",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Iconatus · CAP",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Chat on WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  },
+  {
+    "path": "/en/projects/iconatus/",
+    "expected": [
+      "Skip to content",
+      "Leandro OliveiraProduct Designer",
+      "Back to portfolio",
+      "Brazilian Portuguese",
+      "American English, current language",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "Open full image",
+      "SEBRAE",
+      "Chat on WhatsApp"
+    ],
+    "actual": [
+      {
+        "name": "Skip to content",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Leandro OliveiraProduct Designer",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Back to portfolio",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Brazilian Portuguese",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "American English, current language",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Open full image",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "SEBRAE",
+        "outline": "solid",
+        "tag": "A",
+        "width": "3px"
+      },
+      {
+        "name": "Chat on WhatsApp",
+        "outline": "solid",
+        "tag": "BUTTON",
+        "width": "3px"
+      }
+    ],
+    "orderMatches": true,
+    "focusVisible": true
+  }
+]

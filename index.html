@@ -13,16 +13,30 @@
   <link rel="stylesheet" href="css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css?v=home-images-2">
-  <link rel="stylesheet" href="css/components.css?v=shared-frame-1">
-  <link rel="stylesheet" href="css/responsive.css?v=home-images-2">
+  <link rel="stylesheet" href="css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="css/responsive.css?v=language-switcher-2">
   <script src="js/contact.js" defer></script>
   <link rel="stylesheet" href="css/home.css?v=lucide-1">
+
+<!-- locale:start -->
+  <link rel="alternate" hreflang="pt-BR" href="./">
+  <link rel="alternate" hreflang="en-US" href="en/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <script src="js/language.js" defer></script>
+<!-- locale:end -->
 </head>
 <body class="home">
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header container">
   <div class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></div>
-  <button class="contact-link whatsapp-button contact-header" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Falar pelo WhatsApp</button>
+  <div class="header-actions">
+    <button class="contact-link whatsapp-button contact-header" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Falar pelo WhatsApp</button>
+    <nav class="language-switcher" aria-label="Idioma do site">
+      <a class="language-option" href="./" lang="pt-BR" hreflang="pt-BR" aria-current="page" aria-label="Português (Brasil)">Português</a>
+      <a class="language-option" href="en/" lang="en-US" hreflang="en-US" data-language-switch aria-label="English (United States)">English</a>
+    </nav>
+  </div>
 </header>
 <main id="conteudo">
 <section class="hero container" aria-labelledby="hero-title">

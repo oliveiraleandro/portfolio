@@ -1,0 +1,169 @@
+{
+  "start": "c623256ca7cfdb8051e493cb3468a84eb90058d4",
+  "end": "585f05bc31ea97948a462f4521d1bc083593e729",
+  "capturedOn": "2026-11-04T16:16:55.307Z",
+  "browser": "157.0.8103.39",
+  "locale": "pt-BR",
+  "timezone": "America/Sao_Paulo",
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "commits": [
+    {
+      "sha": "c623256ca7cfdb8051e493cb3468a84eb90058d4",
+      "date": "2026-09-14T17:09:15-03:00",
+      "message": "a whole new world!",
+      "title": "O ponto de partida",
+      "description": "Referências visuais e conteúdo dos cases. O arquivo da home ainda estava vazio.",
+      "images": {},
+      "kind": "reference"
+    },
+    {
+      "sha": "338d3e6d46bb7b7b0fbd5067694512c137298256",
+      "date": "2026-09-14T18:20:20-03:00",
+      "message": "v1 codex",
+      "title": "A primeira home",
+      "description": "Primeira implementação responsiva, com apresentação e quatro projetos.",
+      "images": {
+        "desktop": "2026-09-14-338d3e6-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-14-338d3e6-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-14-338d3e6-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-14-338d3e6-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "df6962631ede08d127aad23caa4ad032643c7121",
+      "date": "2026-09-14T18:31:29-03:00",
+      "message": "whatsapp",
+      "title": "Um caminho para conversar",
+      "description": "Entrada do contato pelo WhatsApp na home e nos cases.",
+      "images": {
+        "desktop": "2026-09-14-df69626-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-14-df69626-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-14-df69626-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-14-df69626-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "a8049fd3b6ba87ebd0e249d7b2ea7b9cdbe4a438",
+      "date": "2026-09-14T18:31:40-03:00",
+      "message": "preview",
+      "title": "Registro de revisão",
+      "description": "Capturas de revisão adicionadas ao repositório; sem alteração na home.",
+      "images": {
+        "desktop": "2026-09-14-a8049fd-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-14-a8049fd-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-14-a8049fd-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-14-a8049fd-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "c7f72332ff6f2d34a6df89ffa00c7c186a9703d2",
+      "date": "2026-09-15T09:45:36-03:00",
+      "message": "txt para md",
+      "title": "Conteúdo em Markdown",
+      "description": "Migração dos textos dos cases para Markdown; sem alteração na home.",
+      "images": {
+        "desktop": "2026-09-15-c7f7233-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-15-c7f7233-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-15-c7f7233-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-15-c7f7233-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "f14711269d6d27008509ff738bac31fb06b98adf",
+      "date": "2026-09-15T09:49:50-03:00",
+      "message": "conteudo atualizado",
+      "title": "Revisão dos cases",
+      "description": "Atualização das páginas dos projetos; sem alteração na home.",
+      "images": {
+        "desktop": "2026-09-15-f147112-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-15-f147112-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-15-f147112-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-15-f147112-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "7e4a81d88c3d947d1b08243e783769a6c3891be8",
+      "date": "2026-09-15T10:39:06-03:00",
+      "message": "atualização imagens base",
+      "title": "Imagens atualizadas",
+      "description": "Atualização dos arquivos de imagem do Cervello usados no portfólio.",
+      "images": {
+        "desktop": "2026-09-15-7e4a81d-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-15-7e4a81d-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-15-7e4a81d-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-15-7e4a81d-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "db2f11af30b92f83ff0f8b1811e4ebaf5f8bb131",
+      "date": "2026-09-16T22:14:22-03:00",
+      "message": "revisão e correções",
+      "title": "Uma apresentação mais elaborada",
+      "description": "Nova composição da abertura, ícones e ajustes de hierarquia e imagens.",
+      "images": {
+        "desktop": "2026-09-16-db2f11a-home-pt-desktop.webp",
+        "desktopViewport": "2026-09-16-db2f11a-home-pt-desktop-viewport.webp",
+        "mobile": "2026-09-16-db2f11a-home-pt-mobile.webp",
+        "mobileViewport": "2026-09-16-db2f11a-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "965b240a6f0f0d68c25154aa170839ea87fa3b6b",
+      "date": "2026-11-03T22:37:48-03:00",
+      "message": "ajutes, cor tipografia",
+      "title": "Cor, tipografia e dois idiomas",
+      "description": "Fundo amarelo, nova tipografia e navegação entre português e inglês.",
+      "images": {
+        "desktop": "2026-11-03-965b240-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-03-965b240-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-03-965b240-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-03-965b240-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "8c59af2eb4cf86c131074cc86c6d093563f8c84f",
+      "date": "2026-11-03T22:49:17-03:00",
+      "message": "ajustes",
+      "title": "Ajustes de contraste e ritmo",
+      "description": "Refinamento da cor do texto, das bordas e do espaçamento entre letras.",
+      "images": {
+        "desktop": "2026-11-03-8c59af2-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-03-8c59af2-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-03-8c59af2-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-03-8c59af2-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "585f05bc31ea97948a462f4521d1bc083593e729",
+      "date": "2026-11-03T23:15:33-03:00",
+      "message": "ajustes",
+      "title": "Imagens que levam aos cases",
+      "description": "Composições dos projetos passam a funcionar como links; ajustes nos títulos dos cases.",
+      "images": {
+        "desktop": "2026-11-03-585f05b-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-03-585f05b-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-03-585f05b-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-03-585f05b-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+/* Shared footer: edit this file and templates/footer.html, not individual pages. */
+.site-footer.contact {
+    padding-block: 2rem 1.5rem;
+}
+.site-footer .site-footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.site-footer .contact-link {
+    margin: 0;
+}
+.site-footer .contact-note {
+    margin: 0;
+    width: auto;
+    font-family: "SignPainter", "Snell Roundhand", "Segoe Print", "Bradley Hand", cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: .01em;
+    transform: rotate(-5deg);
+}
+.site-footer .footer-signature {
+    margin-top: 1.75rem;
+    padding-top: 1rem;
+}
+@media (max-width: 680px) {
+    .site-footer .site-footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    .site-footer .contact-note {
+        transform: rotate(-3deg);
+    }
+    .site-footer .footer-signature {
+        margin-top: 1.5rem;
+    }
+}

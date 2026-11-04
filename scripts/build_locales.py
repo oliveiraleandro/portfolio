@@ -62,7 +62,10 @@ class EnglishPage(HTMLParser):
         if page in PAGES:
             target = "en/" + page
         # Assets continue to point to their original location, outside /en/.
-        return urlunsplit(("", "", relative(target, self.destination), url.query, url.fragment))
+        path = relative(target, self.destination)
+        if url.path.endswith("/") and not path.endswith("/"):
+            path += "/"
+        return urlunsplit(("", "", path, url.query, url.fragment))
 
     def handle_starttag(self, tag, attrs):
         values = dict(attrs)

@@ -1,12 +1,15 @@
 /* Ajustes editoriais exclusivos da home. As interfaces continuam sendo assets originais. */
 .home { --frame-border: 8px solid var(--image-frame-color); --frame-shadow: 0 12px 32px rgb(31 50 78 / .1); }
-.home .hero { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 2rem; }
+.home .hero { width: 100%; grid-template-columns: minmax(0, 1fr); }
+.home .hero-copy,
+.home .hero h1,
+.home .hero-intro { max-width: none; }
 .home .hero-art { min-height: 530px; isolation: isolate; overflow: hidden; border-radius: 24px; }
 .home .hero-screen { border: var(--frame-border); box-shadow: var(--frame-shadow); }
 .home .hero-sebrae { width: 82%; left: 3%; top: 45px; transform: rotate(4deg); }
 .home .hero-sinapse { width: 47%; left: 3%; top: 255px; transform: rotate(-3deg); }
 .home .hero-cervello { width: 96%; left: 42%; top: 280px; transform: rotate(-5deg); }
-.home .principles .principle-icon { display: block; color: inherit; width: 24px; height: 24px; margin-bottom: .8rem; }
+.home .principles .principle-icon { display: none; }
 .handwritten { font-family: "SignPainter", "Snell Roundhand", "Segoe Print", "Bradley Hand", cursive; font-size: 1.65rem; font-weight: 400; line-height: 1.2; letter-spacing: .01em; }
 .hero-note { position: absolute; top: 0; right: 2%; z-index: 2; transform: rotate(-7deg); font-size: 1.4rem; }
 .home .project-band { --project-ink: #075caf; --panel-color: 0 117 207; padding-block: 3.5rem; }
@@ -42,7 +45,6 @@
 .home .contact-header { max-width: 195px; flex-shrink: 0; }
 .whatsapp-icon { flex: 0 0 20px; filter: invert(1); }
 @media (max-width: 900px) {
-  .home .hero { grid-template-columns: minmax(0, 1fr); }
   .home .hero-art { width: 100%; max-width: 680px; }
   .home .project-layout { grid-template-columns: minmax(0, 1fr); }
   .home .project-art { grid-column: 1; grid-row: auto; width: 100%; }

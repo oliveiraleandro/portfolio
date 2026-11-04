@@ -68,3 +68,16 @@
   .home .art-sinapse .modal-calculation { position: relative; top: 0; left: 0; width: 340px; max-width: none; }
   .contact-note { margin-right: 1rem; font-size: 1.5rem; }
 }
+
+/* Toda a composição do projeto funciona como link, inclusive os espaços entre imagens. */
+.home .project-art-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+.home .project-art-link:focus-visible {
+  outline: 3px solid var(--color-text);
+  outline-offset: -6px;
+  border-radius: inherit;
+}

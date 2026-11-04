@@ -5,6 +5,7 @@ body {
     color: var(--color-text);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1.0625rem;
+    letter-spacing: 0.02rem;
     line-height: 1.65;
     -webkit-text-size-adjust: 100%;
 }

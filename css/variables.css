@@ -1,9 +1,9 @@
 :root {
-    --color-text: #19243b;
+    --color-text: #19243bde;
     --color-muted: #53617a;
     --color-background: #eef25e;
     --color-surface: #f3f6fa10;
-    --color-border: #d9e0e9;
+    --color-border: #cd6be880;
     --image-frame-color: rgb(255 255 255 / 0.15);
     --color-sebrae: #eff7fd10;
     --color-sinapse: #eff9f610;

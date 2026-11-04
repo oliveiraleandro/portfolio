@@ -32,12 +32,12 @@ h3 {
 h1 {
     font-size: clamp(2.7rem, 5.6vw, 5rem);
     line-height: 1.04;
-    letter-spacing: -0.055em;
+    letter-spacing: -0.03em;
 }
 h2 {
     font-size: clamp(1.8rem, 3vw, 2.75rem);
     line-height: 1.16;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.02em;
 }
 h3 {
     font-size: 1.25rem;

@@ -81,3 +81,5 @@
   outline-offset: -6px;
   border-radius: inherit;
 }
+
+.home .portfolio-evolution { --project-ink: #70482e; --panel-color: 139 91 57; }

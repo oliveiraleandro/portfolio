@@ -6,6 +6,7 @@ writing. The published site remains plain HTML/CSS/JS and needs no runtime build
 """
 
 import argparse
+from build_footer import apply_footer
 import html
 from html.parser import HTMLParser
 import json
@@ -149,7 +150,7 @@ def generate():
     catalog = json.loads((ROOT / "translations/en-US.json").read_text())
     outputs = {}
     for source in PAGES:
-        content = METADATA.sub("", (ROOT / source).read_text())
+        content = METADATA.sub("", apply_footer((ROOT / source).read_text(), source))
         content, count = SWITCHER.subn(PLACEHOLDER, content)
         if count != 1:
             raise ValueError(f"{source}: expected exactly one language switcher")

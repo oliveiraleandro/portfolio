@@ -37,3 +37,30 @@ Não edite os HTMLs de `en/` diretamente: eles são gerados. Inclua os HTMLs ger
 Consulte [DOCUMENTACAO.md](DOCUMENTACAO.md) para estrutura, conteúdo, decisões visuais, manutenção e pendências. O histórico de revisão está em [design-qa.md](design-qa.md).
 
 O site está preparado para hospedagem estática, incluindo GitHub Pages. A publicação e a configuração do domínio ainda precisam ser confirmadas.
+
+## Rodapé compartilhado
+
+O rodapé compacto tem uma única fonte em `templates/footer.html`, com estilos
+isolados em `css/footer.css`. Edite esses arquivos, não os rodapés de cada página.
+O template preserva o botão de WhatsApp, a frase caligráfica e a assinatura.
+As traduções usam o catálogo existente; os caminhos de imagens são calculados
+para cada página. O HTML é gerado previamente, sem framework ou carregamento
+adicional no navegador.
+
+```sh
+python3 scripts/build_footer.py
+python3 scripts/build_footer.py --check
+```
+
+O segundo comando falha se algum rodapé divergir do template. A geração de
+idiomas também aplica o template antes de traduzir. O comando independente
+permite atualizar apenas os rodapés sem regenerar o conteúdo dos cases.
+Páginas sem rodapé, como a timeline visual, continuam sem ele.
+
+As capturas em `review-screenshots/footer/` registram a referência visual em
+1440 e 390 px, em português e inglês, na home e em um case. Ao alterar estilos
+compartilhados, compare o resultado com essas referências: botão e frase na mesma
+linha no desktop, empilhados no celular, assinatura logo abaixo. As fontes
+caligráficas são do sistema; a comparação deve usar o mesmo navegador e sistema
+operacional. O template evita divergência de conteúdo, mas a revisão visual ainda
+é necessária para mudanças em CSS ou fontes.

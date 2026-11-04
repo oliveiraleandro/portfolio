@@ -439,3 +439,6 @@ blockquote {
     border: 0;
     background: rgb(var(--panel-color) / 0.075);
 }
+
+/* Variação suave para as tags do case do portfólio, usando o mesmo preenchimento dos demais. */
+.case.portfolio-evolution { --panel-color: 139 91 57; }

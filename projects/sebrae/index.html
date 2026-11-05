@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../css/components.css?v=case-spacing-2">
   <link rel="stylesheet" href="../../css/responsive.css?v=language-switcher-2">
   <script src="../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
+  <script src="../../js/header.js?v=sticky-1" defer></script>
 
   <link rel="stylesheet" href="../../css/footer.css">
 
@@ -32,7 +34,7 @@
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
   <div class="header-actions">
-    <a class="text-link" href="../../">Voltar ao portfólio</a>
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a>
     <nav class="language-switcher" aria-label="Idioma do site">
       <a class="language-option" href="./" lang="pt-BR" hreflang="pt-BR" aria-current="page" aria-label="Português (Brasil)">Português</a>
       <a class="language-option" href="../../en/projects/sebrae/" lang="en-US" hreflang="en-US" data-language-switch aria-label="English (United States)">English</a>
@@ -56,8 +58,15 @@
 <section class="story-section">
 <h2>Ajuda no momento certo</h2>
 <p>Dividi a avaliação em etapas. Em cada uma, o consultor podia ver o que preencher e abrir as orientações do método quando surgisse uma dúvida, sem sair do formulário.</p>
+</section>
+<figure class="case-figure">
+  <div class="figure-image-link"><img src="images/Frame%202120.png" alt="Modal com explicação e níveis de efetividade" width="823" height="464" loading="lazy" decoding="async"></div>
+  <figcaption>Explicações de efetividade disponíveis durante o preenchimento, sob demanda. <a href="images/Frame%202120.png">Abrir imagem completa</a></figcaption>
+</figure>
+<section class="story-section">
 <p>Mantive os gráficos de radar, familiares à equipe. Nos testes, não especialistas revelaram problemas de contraste e terminologia, que foram revistos. Os especialistas reconheceram o método, mas apontaram um conflito na organização das avaliações.</p>
 </section>
+<div class="case-media-pair">
 <figure class="case-figure">
   <div class="figure-image-link"><img src="images/Frame%202117.png" alt="Seleção de vocações econômicas com peso, representatividade e soma" width="823" height="464" loading="lazy" decoding="async"></div>
   <figcaption>Seleção de vocações com os dados necessários à avaliação. <a href="images/Frame%202117.png">Abrir imagem completa</a></figcaption>
@@ -66,10 +75,10 @@
   <div class="figure-image-link"><img src="images/Frame%202119.png" alt="Análise de vocação e potencial com painel de área do projeto" width="823" height="464" loading="lazy" decoding="async"></div>
   <figcaption>Análise de vocações e potenciais com delimitação territorial visível. <a href="images/Frame%202119.png">Abrir imagem completa</a></figcaption>
 </figure>
-<figure class="case-figure">
-  <div class="figure-image-link"><img src="images/Frame%202120.png" alt="Modal com explicação e níveis de efetividade" width="823" height="464" loading="lazy" decoding="async"></div>
-  <figcaption>Explicações de efetividade disponíveis durante o preenchimento, sob demanda. <a href="images/Frame%202120.png">Abrir imagem completa</a></figcaption>
-</figure>
+</div>
+
+
+
 <section class="story-section">
 <h2>Projetos ou tarefas?</h2>
 <p>O catálogo tratava cada avaliação como um projeto, atendendo à necessidade institucional de acompanhar iniciativas ao longo do tempo. Os consultores pensavam em atividades: entrevistar, avaliar e entregar informações.</p>
@@ -94,7 +103,7 @@
 <footer class="contact container site-footer" id="contato">
   <div class="site-footer-main">
     <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Falar pelo WhatsApp</button>
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
       <noscript><p class="contact-pending">Ative o JavaScript para abrir o contato pelo WhatsApp.</p></noscript>
     </div>
     <p class="handwritten contact-note">Boas conversas também<br>constroem grandes produtos.</p>

@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../css/components.css?v=sinapse-distribution-1">
   <link rel="stylesheet" href="../../css/responsive.css?v=language-switcher-2">
   <script src="../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
+  <script src="../../js/header.js?v=sticky-1" defer></script>
 
   <link rel="stylesheet" href="../../css/footer.css">
 
@@ -32,7 +34,7 @@
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
   <div class="header-actions">
-    <a class="text-link" href="../../">Voltar ao portfólio</a>
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a>
     <nav class="language-switcher" aria-label="Idioma do site">
       <a class="language-option" href="./" lang="pt-BR" hreflang="pt-BR" aria-current="page" aria-label="Português (Brasil)">Português</a>
       <a class="language-option" href="../../en/projects/sinapse/" lang="en-US" hreflang="en-US" data-language-switch aria-label="English (United States)">English</a>
@@ -57,18 +59,21 @@
 <section class="story-section">
 <h2>Automações: liberdade com limites</h2>
 <p>As integrações financeiras existiam sem representação visual. Mapeei regras com especialistas e desenvolvimento e explorei um diagrama com elementos arrastáveis. Sua liberdade, porém, ampliava as combinações e exceções técnicas.</p>
-<p>Escolhi um fluxo linear com etapas em cards e configurações divididas em tarefas menores. Cada automação poderia ser acompanhada, desabilitada e consultada por seu registro de erros, dando visibilidade ao funcionamento dos fluxos antes dependentes da própria equipe da Sinapse.</p>
-<p>Nos testes, acrescentei títulos descritivos para esclarecer a função das etapas.</p>
-<p>O acesso aos clientes era limitado. Participantes familiarizados com softwares de produtividade compreenderam a sequência, mas tiveram dificuldades com conceitos financeiros. Os testes avaliavam a interação, sem substituir a validação com o público principal.</p>
 </section>
-<figure class="case-figure asset-gallery">
-<div class="asset-gallery-images"><div class="figure-image-link"><img src="images/s2.png" alt="Fluxo de automação com gatilho, condição e repetição" width="453" height="435" loading="lazy" decoding="async"></div></div>
-<figcaption>Fluxo visual de automação com gatilhos, condições e repetição.</figcaption>
-</figure>
+<div class="sinapse-exploration">
 <figure class="case-figure asset-gallery">
 <div class="asset-gallery-images"><div class="figure-image-link"><img src="images/Group%202203.png" alt="Anotações manuscritas de processos e regras de automação" width="680" height="462" loading="lazy" decoding="async"></div></div>
 <figcaption>Mapeamento das regras e sequências antes de desenhar a interface.</figcaption>
 </figure>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="images/automation-flow-white.png" alt="Fluxo de automação com gatilho, condição e repetição" width="1280" height="1229" loading="lazy" decoding="async"></div></div>
+<figcaption>Fluxo visual de automação com gatilhos, condições e repetição.</figcaption>
+</figure>
+</div>
+<section class="story-section">
+<p>Escolhi um fluxo linear com etapas em cards e configurações divididas em tarefas menores. Cada automação poderia ser acompanhada, desabilitada e consultada por seu registro de erros, dando visibilidade ao funcionamento dos fluxos antes dependentes da própria equipe da Sinapse.</p>
+<p>Nos testes, acrescentei títulos descritivos para esclarecer a função das etapas.</p>
+</section>
 <figure class="case-figure asset-gallery">
 <div class="asset-gallery-images sinapse-modals"><div class="figure-image-link"><img src="images/image%206.png?v=2x-20260916" alt="Modal de escolha de ferramenta" width="356" height="422" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/image%205.png?v=2x-20260916" alt="Modal de mapeamento entre campos de origem e destino" width="358" height="473" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/image%207.png?v=2x-20260916" alt="Modal para configurar uma condição" width="383" height="442" loading="lazy" decoding="async"></div></div>
 <figcaption>Configurações separadas em tarefas: ferramenta, campos e condições.</figcaption>
@@ -77,6 +82,13 @@
 <div class="asset-gallery-images sinapse-calculation"><div class="figure-image-link"><img src="images/image%208.png?v=2x-20260916" alt="Modal de cálculo com campos disponíveis e operadores" width="680" height="617" loading="lazy" decoding="async"></div></div>
 <figcaption>Campos e operadores no configurador de cálculo. A imagem ilustra a interface, sem medir resultados.</figcaption>
 </figure>
+<section class="story-section">
+<p>O acesso aos clientes era limitado. Participantes familiarizados com softwares de produtividade compreenderam a sequência, mas tiveram dificuldades com conceitos financeiros. Os testes avaliavam a interação, sem substituir a validação com o público principal.</p>
+</section>
+
+
+
+
 <section class="story-section">
 <h2>Resultados e aprendizado</h2>
 <p>O formulário foi implementado e medido. As automações ficaram aprovadas internamente, com desenvolvimento iniciado; não acompanhei a entrega completa nem métricas de adoção.</p>
@@ -87,7 +99,7 @@
 <footer class="contact container site-footer" id="contato">
   <div class="site-footer-main">
     <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Falar pelo WhatsApp</button>
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
       <noscript><p class="contact-pending">Ative o JavaScript para abrir o contato pelo WhatsApp.</p></noscript>
     </div>
     <p class="handwritten contact-note">Boas conversas também<br>constroem grandes produtos.</p>

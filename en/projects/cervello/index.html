@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../../css/base.css">
   <link rel="stylesheet" href="../../../css/layout.css">
-  <link rel="stylesheet" href="../../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../../css/components.css?v=case-spacing-2">
   <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
   <script src="../../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../../css/header.css?v=sticky-2">
+  <script src="../../../js/header.js?v=sticky-1" defer></script>
 
   <link rel="stylesheet" href="../../../css/footer.css">
 
@@ -32,7 +34,7 @@
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
   <div class="header-actions">
-    <a class="text-link" href="../../">Back to portfolio</a>
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Home</a>
     <nav class="language-switcher" aria-label="Site language">
       <a class="language-option" href="../../../projects/cervello/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
       <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
@@ -58,6 +60,10 @@
 <p>I organized typography, spacing, and actions. For the customizable home page, I proposed a library of royalty-free images to simplify shortcut setup.</p>
 <p>I also grouped fragmented screens into tabs. I proposed universal search to reach deeper pages, and the PM suggested breadcrumbs to help people stay oriented. We discussed these ideas with users in informal conversations using prototypes.</p>
 </section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images gallery-comparison"><div class="figure-image-link"><img src="../../../projects/cervello/images/modo-claro.png" alt="Dashboard in light mode" width="588" height="588" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/modo-escuro.png" alt="Dashboard in dark mode" width="588" height="588" loading="lazy" decoding="async"></div></div>
+<figcaption>Dashboards in light and dark themes. The figures illustrate the interface rather than the impact of the redesign.</figcaption>
+</figure>
 <section class="story-section">
 <h2>From visual patterns to code</h2>
 <p>Modules shared foundations, with their own controls where needed. With no dedicated front-end developer, I replaced much of Bootstrap with a BEM-based SCSS foundation that reused components and generated color options.</p>
@@ -65,10 +71,7 @@
 <p>Working on both design and implementation let me carry patterns from the screens into the styles used across the platform’s modules.</p>
 <p>I reviewed releases and kept the prototype in sync with the product.</p>
 </section>
-<figure class="case-figure asset-gallery">
-<div class="asset-gallery-images gallery-comparison"><div class="figure-image-link"><img src="../../../projects/cervello/images/modo-claro.png" alt="Dashboard in light mode" width="588" height="588" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/modo-escuro.png" alt="Dashboard in dark mode" width="588" height="588" loading="lazy" decoding="async"></div></div>
-<figcaption>Dashboards in light and dark themes. The figures illustrate the interface rather than the impact of the redesign.</figcaption>
-</figure>
+
 <figure class="case-figure asset-gallery">
 <div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/cervello/images/Group-2.png" alt="Mobile home page with news and access to requests" width="325" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/Group.png" alt="Mobile request list with approval actions" width="323" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/cervello/images/Group-1.png" alt="Mobile request search screen" width="323" height="574" loading="lazy" decoding="async"></div></div>
 <figcaption>Home, requests, and search in the white-label app.</figcaption>
@@ -84,7 +87,7 @@
 <footer class="contact container site-footer" id="contato">
   <div class="site-footer-main">
     <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Chat on WhatsApp</button>
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
       <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
     </div>
     <p class="handwritten contact-note">Great conversations also<br>build great products.</p>

@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../css/components.css?v=case-spacing-2">
   <link rel="stylesheet" href="../../css/responsive.css?v=language-switcher-2">
   <script src="../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
+  <script src="../../js/header.js?v=sticky-1" defer></script>
 
   <link rel="stylesheet" href="../../css/footer.css">
 
@@ -32,7 +34,7 @@
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
   <div class="header-actions">
-    <a class="text-link" href="../../">Voltar ao portfólio</a>
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a>
     <nav class="language-switcher" aria-label="Idioma do site">
       <a class="language-option" href="./" lang="pt-BR" hreflang="pt-BR" aria-current="page" aria-label="Português (Brasil)">Português</a>
       <a class="language-option" href="../../en/projects/cervello/" lang="en-US" hreflang="en-US" data-language-switch aria-label="English (United States)">English</a>
@@ -58,6 +60,10 @@
 <p>Organizei tipografia, espaçamentos e ações. Na home personalizável, propus uma biblioteca de imagens royalty free para facilitar a configuração dos atalhos.</p>
 <p>Também reorganizei telas fragmentadas em abas. Para acessar páginas mais profundas, propus uma busca universal; o PM complementou a orientação com breadcrumbs. As propostas eram discutidas com usuários em conversas informais apoiadas por protótipos.</p>
 </section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images gallery-comparison"><div class="figure-image-link"><img src="images/modo-claro.png" alt="Dashboard em modo claro" width="588" height="588" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/modo-escuro.png" alt="Dashboard em modo escuro" width="588" height="588" loading="lazy" decoding="async"></div></div>
+<figcaption>Dashboards claros e escuros. Valores ilustrativos, sem representar impacto do redesign.</figcaption>
+</figure>
 <section class="story-section">
 <h2>Do sistema visual ao código</h2>
 <p>Os módulos compartilhavam fundamentos, com controles próprios quando necessário. Sem um desenvolvedor front-end dedicado, substituí grande parte do Bootstrap por uma base em SCSS organizada com BEM, reutilizando componentes e gerando opções de cor.</p>
@@ -65,10 +71,7 @@
 <p>Essa proximidade entre desenho e implementação permitia que os padrões definidos nas telas fossem incorporados aos estilos utilizados pelos diferentes módulos da plataforma.</p>
 <p>Revisava as entregas e mantinha o protótipo sincronizado com o produto.</p>
 </section>
-<figure class="case-figure asset-gallery">
-<div class="asset-gallery-images gallery-comparison"><div class="figure-image-link"><img src="images/modo-claro.png" alt="Dashboard em modo claro" width="588" height="588" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/modo-escuro.png" alt="Dashboard em modo escuro" width="588" height="588" loading="lazy" decoding="async"></div></div>
-<figcaption>Dashboards claros e escuros. Valores ilustrativos, sem representar impacto do redesign.</figcaption>
-</figure>
+
 <figure class="case-figure asset-gallery">
 <div class="asset-gallery-images"><div class="figure-image-link"><img src="images/Group-2.png" alt="Home mobile com notícias e acesso a solicitações" width="325" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/Group.png" alt="Lista mobile de solicitações com ações de aprovação" width="323" height="574" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="images/Group-1.png" alt="Tela mobile de busca de solicitações" width="323" height="574" loading="lazy" decoding="async"></div></div>
 <figcaption>Home, solicitações e busca no aplicativo com identidade white label.</figcaption>
@@ -84,7 +87,7 @@
 <footer class="contact container site-footer" id="contato">
   <div class="site-footer-main">
     <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Falar pelo WhatsApp</button>
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
       <noscript><p class="contact-pending">Ative o JavaScript para abrir o contato pelo WhatsApp.</p></noscript>
     </div>
     <p class="handwritten contact-note">Boas conversas também<br>constroem grandes produtos.</p>

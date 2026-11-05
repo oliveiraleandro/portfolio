@@ -22,7 +22,7 @@ def apply_footer(content, page):
     template = (ROOT / 'templates/footer.html').read_text().rstrip()
     if page.startswith('en/'):
         catalog = json.loads((ROOT / 'translations/en-US.json').read_text())
-        for text in ('Falar pelo WhatsApp', 'Ative o JavaScript para abrir o contato pelo WhatsApp.',
+        for text in ('WhatsApp', 'Ative o JavaScript para abrir o contato pelo WhatsApp.',
                      'Boas conversas também', 'constroem grandes produtos.'):
             template = template.replace(text, html.escape(catalog[text], quote=False))
     directory = posixpath.dirname(page) or '.'

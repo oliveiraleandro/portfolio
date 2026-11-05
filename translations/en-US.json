@@ -457,5 +457,8 @@
   "Precificação adaptada ao celular. Os valores ilustram a interface, sem representar resultados do redesign.": "Pricing on mobile. The figures illustrate the interface rather than the impact of the redesign.",
   "O trabalho cobriu toda a plataforma, com padrões reutilizáveis e soluções específicas para mobile. As partes da implementação que acompanhei ficaram próximas do protótipo.": "The redesign covered the entire platform, with reusable patterns and mobile-specific solutions. The parts of the implementation I saw closely matched the prototype.",
   "Não houve medição estruturada após a entrega; os resultados observados são qualitativos. Com mais tempo, acompanharia o uso real e aprofundaria a home.": "There was no structured measurement after delivery. The results I observed were qualitative. With more time, I’d study actual usage and further explore the home page.",
-  "O projeto mostrou que tornar dados mais compreensíveis também pode revelar dúvidas que a interface sozinha não resolve.": "The project showed me that making data easier to understand can also surface questions an interface alone cannot resolve."
+  "O projeto mostrou que tornar dados mais compreensíveis também pode revelar dúvidas que a interface sozinha não resolve.": "The project showed me that making data easier to understand can also surface questions an interface alone cannot resolve.",
+  "Página inicial": "Home",
+  "←": "←",
+  "WhatsApp": "WhatsApp"
 }

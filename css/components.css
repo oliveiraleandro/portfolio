@@ -253,7 +253,12 @@ blockquote {
 /* Os PNGs do SEBRAE têm 823px: evitar ampliação que prejudique a nitidez. */
 .sebrae .case-figure .figure-image-link {
     max-width: 823px;
-    margin-inline: auto;
+    margin-inline: 0;
+}
+
+.case:is(.sebrae, .sinapse, .cervello, .iconatus) .story-section,
+.case:is(.sebrae, .sinapse, .cervello, .iconatus) .case-figure figcaption {
+    margin-inline: 0;
 }
 
 .asset-gallery-images {
@@ -442,3 +447,71 @@ blockquote {
 
 /* Variação suave para as tags do case do portfólio, usando o mesmo preenchimento dos demais. */
 .case.portfolio-evolution { --panel-color: 139 91 57; }
+
+/* O corpo dos cases segue a borda esquerda do logo e do título. */
+.case:is(.sinapse, .cervello) .asset-gallery-images {
+    justify-content: start;
+    padding: 0;
+}
+.case.iconatus .case-figure-mobile {
+    display: block;
+    padding: 0;
+}
+.case.iconatus .case-figure-mobile .figure-image-link {
+    max-width: 390px;
+}
+.case.iconatus .case-figure-mobile figcaption {
+    margin-top: var(--space-3);
+}
+
+.case.sinapse .sinapse-exploration {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--space-4);
+}
+.case.sinapse .sinapse-exploration .case-figure {
+    min-width: 0;
+    width: 100%;
+}
+.case.sinapse .sinapse-exploration .figure-image-link {
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .case.sinapse .sinapse-exploration {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+}
+
+/* Imagens relacionadas compartilham uma faixa, com leitura sequencial no celular. */
+.case-media-pair,
+.case-phone-pair,
+.case-copy-phone {
+    display: grid;
+    align-items: start;
+    gap: var(--space-4);
+}
+.case-media-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.case-phone-pair {
+    grid-template-columns: repeat(2, minmax(0, 390px));
+}
+.case-copy-phone {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 390px);
+}
+.case-media-pair > .case-figure,
+.case-phone-pair > .case-figure,
+.case-copy-phone > .case-figure {
+    width: 100%;
+    min-width: 0;
+}
+@media (max-width: 900px) {
+    .case-media-pair,
+    .case-phone-pair,
+    .case-copy-phone {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+}

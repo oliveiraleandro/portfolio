@@ -1,5 +1,7 @@
 /* Shared footer: edit this file and templates/footer.html, not individual pages. */
 .site-footer.contact {
+    /* Ocultação temporária dos rodapés em todos os idiomas. */
+    display: none;
     padding-block: 2rem 1.5rem;
 }
 .site-footer .site-footer-main {

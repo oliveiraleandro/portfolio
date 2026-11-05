@@ -32,8 +32,10 @@ html = f'''<!doctype html>
 <title>A evolução do meu portfólio — Leandro Oliveira</title>
 <meta name="description" content="Uma timeline visual da evolução do meu portfólio.">
 <link rel="stylesheet" href="../../css/reset.css"><link rel="stylesheet" href="../../css/variables.css"><link rel="stylesheet" href="../../css/base.css"><link rel="stylesheet" href="../../css/layout.css"><link rel="stylesheet" href="../../css/components.css"><link rel="stylesheet" href="../../css/responsive.css"><link rel="stylesheet" href="../../css/evolution.css">
+  <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
+  <script src="../../js/header.js?v=sticky-1" defer></script>
 </head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="site-header container"><a class="identity" href="../../"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a><a class="text-link" href="../../">Voltar ao portfólio</a></header>
+<header class="site-header container"><a class="identity" href="../../"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a><div class="header-actions"><a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a></div></header>
 <main id="conteudo"><article class="case portfolio-evolution">
 <header class="case-hero container"><h1>Um portfólio também<br>é um produto.</h1><ul class="tags"><li>Design de interface</li><li>Desenvolvimento</li><li>Iteração</li></ul></header>
 <div class="container"><ol class="evolution-timeline" aria-label="Evolução visual do portfólio">

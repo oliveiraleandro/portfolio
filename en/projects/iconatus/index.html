@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../../css/base.css">
   <link rel="stylesheet" href="../../../css/layout.css">
-  <link rel="stylesheet" href="../../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../../css/components.css?v=case-spacing-2">
   <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
   <script src="../../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../../css/header.css?v=sticky-2">
+  <script src="../../../js/header.js?v=sticky-1" defer></script>
 
   <link rel="stylesheet" href="../../../css/footer.css">
 
@@ -32,7 +34,7 @@
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
   <div class="header-actions">
-    <a class="text-link" href="../../">Back to portfolio</a>
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Home</a>
     <nav class="language-switcher" aria-label="Site language">
       <a class="language-option" href="../../../projects/iconatus/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
       <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
@@ -68,6 +70,7 @@
   <div class="figure-image-link"><img src="../../../projects/iconatus/images/home%20v2.png" alt="CAP desktop home page with sourcing and follow-up activity" width="1280" height="1054" loading="lazy" decoding="async"></div>
   <figcaption>Recent property sourcing and follow-ups on the desktop home page. <a href="../../../projects/iconatus/images/home%20v2.png">Open full image</a></figcaption>
 </figure>
+<div class="case-phone-pair">
 <figure class="case-figure case-figure-mobile">
   <div class="figure-image-link"><img src="../../../projects/iconatus/images/mobile%20home.png" alt="CAP mobile home page with modules and activities in one column" width="390" height="2116" loading="lazy" decoding="async"></div>
   <figcaption>Activities arranged vertically on mobile. <a href="../../../projects/iconatus/images/mobile%20home.png">Open full image</a></figcaption>
@@ -76,10 +79,12 @@
   <div class="figure-image-link"><img src="../../../projects/iconatus/images/mobile%20resultado.png" alt="Mobile listing search with photos, summaries, and links to listings" width="390" height="1419" loading="lazy" decoding="async"></div>
   <figcaption>Property search results displayed as cards. <a href="../../../projects/iconatus/images/mobile%20resultado.png">Open full image</a></figcaption>
 </figure>
+</div>
 <figure class="case-figure">
   <div class="figure-image-link"><img src="../../../projects/iconatus/images/imoveis%20v2.png" alt="Desktop location view with a map and neighborhood information" width="1280" height="939" loading="lazy" decoding="async"></div>
   <figcaption>Tabs retained on the property detail screen. <a href="../../../projects/iconatus/images/imoveis%20v2.png">Open full image</a></figcaption>
 </figure>
+<div class="case-copy-phone">
 <section class="story-section">
 <h2>Pricing and trust</h2>
 <p>I emphasized current prices, plotted historical prices over time, and added regional comparisons. The client responded positively to the proposal.</p>
@@ -90,6 +95,7 @@
   <div class="figure-image-link"><img src="../../../projects/iconatus/images/mobile%20imo%CC%81vel.png" alt="Mobile pricing with tabs, price benchmarks, appreciation, and liquidity" width="390" height="2846" loading="lazy" decoding="async"></div>
   <figcaption>Pricing on mobile. The figures illustrate the interface rather than the impact of the redesign. <a href="../../../projects/iconatus/images/mobile%20imo%CC%81vel.png">Open full image</a></figcaption>
 </figure>
+</div>
 <section class="story-section">
 <h2>Results and lessons learned</h2>
 <p>The redesign covered the entire platform, with reusable patterns and mobile-specific solutions. The parts of the implementation I saw closely matched the prototype.</p>
@@ -103,7 +109,7 @@
 <footer class="contact container site-footer" id="contato">
   <div class="site-footer-main">
     <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Chat on WhatsApp</button>
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
       <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
     </div>
     <p class="handwritten contact-note">Great conversations also<br>build great products.</p>

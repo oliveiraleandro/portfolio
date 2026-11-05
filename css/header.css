@@ -1,0 +1,115 @@
+/* Cabeçalho compartilhado, com a mesma régua dos containers da página. */
+html {
+    scroll-padding-top: 112px;
+}
+.site-header {
+    --header-surface-padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    isolation: isolate;
+    min-height: 96px;
+    padding-block: 1.25rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--color-background);
+    border: 1px solid transparent;
+    transition:
+        inset 220ms ease,
+        background-color 220ms ease,
+        border-color 220ms ease,
+        border-radius 220ms ease,
+        box-shadow 220ms ease;
+}
+.site-header.is-scrolled::before {
+    inset: 8px calc(var(--page-gutter) - var(--header-surface-padding));
+    /* From https://css.glass */
+    background: #eef25e80;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.1px);
+    -webkit-backdrop-filter: blur(11.1px);
+    border: 1px solid rgba(253, 237, 255, 0.29);
+}
+.site-header .identity {
+    flex-shrink: 0;
+    font-size: 1.375rem;
+    line-height: 1.25;
+}
+.site-header .identity .role {
+    margin-top: 0.2rem;
+    font-size: 0.9375rem;
+}
+.site-header .header-actions {
+    width: auto;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.site-header .header-actions .contact-header {
+    min-height: 46px;
+    max-width: none;
+    margin: 0;
+    padding: 0.65rem 1rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    gap: 0.5rem;
+}
+.site-header .text-link {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+.site-header .home-link {
+    gap: 0.5rem;
+    min-height: 46px;
+    padding: 0.6rem 0.875rem;
+    border: 1px solid rgb(25 36 59 / 30%);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+}
+.site-header .home-link:hover {
+    background: rgb(255 255 255 / 35%);
+}
+@media (max-width: 680px) {
+    .site-header {
+        --header-surface-padding: 12px;
+        min-height: 88px;
+        padding-block: 1rem;
+        gap: 0.75rem;
+    }
+
+    .site-header .identity {
+        font-size: 1.25rem;
+    }
+    .site-header .identity .role {
+        font-size: 0.875rem;
+    }
+    .site-header .header-actions .contact-header {
+        max-width: none;
+        white-space: nowrap;
+        padding: 0.65rem 0.75rem;
+        font-size: 0.875rem;
+    }
+    .site-header .text-link {
+        max-width: 125px;
+        font-size: 0.875rem;
+    }
+}
+@media (max-width: 360px) {
+    .site-header .header-actions .contact-header {
+        font-size: 0.8125rem;
+        padding-inline: 0.625rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .site-header::before {
+        transition: none;
+    }
+}

@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
   <link rel="stylesheet" href="../../../css/base.css">
   <link rel="stylesheet" href="../../../css/layout.css">
-  <link rel="stylesheet" href="../../../css/components.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../../css/components.css?v=case-spacing-2">
   <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
   <script src="../../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../../css/header.css?v=sticky-2">
+  <script src="../../../js/header.js?v=sticky-1" defer></script>
 
   <link rel="stylesheet" href="../../../css/footer.css">
 
@@ -32,7 +34,7 @@
 <header class="site-header container">
   <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
   <div class="header-actions">
-    <a class="text-link" href="../../">Back to portfolio</a>
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Home</a>
     <nav class="language-switcher" aria-label="Site language">
       <a class="language-option" href="../../../projects/sebrae/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
       <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
@@ -56,8 +58,15 @@
 <section class="story-section">
 <h2>Help when consultants need it</h2>
 <p>I broke the assessment into steps. At each step, consultants could see what to fill in and look up guidance when they had a question, without leaving the form.</p>
+</section>
+<figure class="case-figure">
+  <div class="figure-image-link"><img src="../../../projects/sebrae/images/Frame%202120.png" alt="Modal explaining effectiveness levels" width="823" height="464" loading="lazy" decoding="async"></div>
+  <figcaption>Consultants can look up effectiveness levels while filling out the assessment. <a href="../../../projects/sebrae/images/Frame%202120.png">Open full image</a></figcaption>
+</figure>
+<section class="story-section">
 <p>I kept the radar charts the team knew. Testing with non-specialists revealed issues with contrast and terminology, which we revised. Specialists recognized the method but flagged a problem with how the assessments were organized.</p>
 </section>
+<div class="case-media-pair">
 <figure class="case-figure">
   <div class="figure-image-link"><img src="../../../projects/sebrae/images/Frame%202117.png" alt="Selection of economic strengths with weighting, representation, and totals" width="823" height="464" loading="lazy" decoding="async"></div>
   <figcaption>Selecting economic strengths alongside the data needed for the assessment. <a href="../../../projects/sebrae/images/Frame%202117.png">Open full image</a></figcaption>
@@ -66,10 +75,10 @@
   <div class="figure-image-link"><img src="../../../projects/sebrae/images/Frame%202119.png" alt="Analysis of economic strengths and potential with a project-area panel" width="823" height="464" loading="lazy" decoding="async"></div>
   <figcaption>Assessing economic strengths and potential with the geographic boundaries in view. <a href="../../../projects/sebrae/images/Frame%202119.png">Open full image</a></figcaption>
 </figure>
-<figure class="case-figure">
-  <div class="figure-image-link"><img src="../../../projects/sebrae/images/Frame%202120.png" alt="Modal explaining effectiveness levels" width="823" height="464" loading="lazy" decoding="async"></div>
-  <figcaption>Consultants can look up effectiveness levels while filling out the assessment. <a href="../../../projects/sebrae/images/Frame%202120.png">Open full image</a></figcaption>
-</figure>
+</div>
+
+
+
 <section class="story-section">
 <h2>Projects or tasks?</h2>
 <p>The catalog treated each assessment as a project so the institution could track initiatives over time. Consultants thought in terms of tasks. They conducted interviews, made assessments, and delivered findings.</p>
@@ -94,7 +103,7 @@
 <footer class="contact container site-footer" id="contato">
   <div class="site-footer-main">
     <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">Chat on WhatsApp</button>
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
       <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
     </div>
     <p class="handwritten contact-note">Great conversations also<br>build great products.</p>

@@ -20,17 +20,15 @@ python3 -m http.server 8000
 
 Abra [localhost:8000](http://localhost:8000/).
 
-A versão inglesa está em [localhost:8000/en/](http://localhost:8000/en/). Cada case possui sua página correspondente em `/en/projects/`. O seletor mantém a página e, com JavaScript, a âncora atual. Não há redirecionamento automático por idioma do navegador.
+A versão inglesa está temporariamente suspensa. As rotas `/en/` e `/en/projects/` estão desabilitadas, e o seletor de idioma foi removido.
 
 ## Atualizar conteúdo e traduções
 
-1. Edite os HTMLs em português nos caminhos originais; eles também definem a estrutura compartilhada das versões inglesas.
-2. Atualize `translations/en-US.json`: cada texto original tem sua tradução, incluindo descrições de imagens e metadados. Nomes de marcas e termos já ingleses aparecem explicitamente no catálogo.
-   Consulte o glossário e os critérios de revisão em [translations/README.md](translations/README.md).
-3. Execute `python3 scripts/build_locales.py`. A geração falha se faltar uma tradução, antes de escrever qualquer página.
-4. Confira com `python3 scripts/build_locales.py --check` e `python3 scripts/test_locales.py`.
+Edite apenas os HTMLs em português. O catálogo de traduções está congelado; `scripts/build_locales.py` não gera nem modifica arquivos enquanto `ENGLISH_ENABLED = False`.
 
-Não edite os HTMLs de `en/` diretamente: eles são gerados. Inclua os HTMLs gerados na publicação, junto dos arquivos originais. Estilos, scripts e imagens são compartilhados; as capturas dos produtos permanecem no idioma original.
+Os HTMLs ingleses anteriores estão preservados em `translations/suspended-en/`, com extensão `.html.disabled`. Para retomar o inglês, restaure esses arquivos em `en/`, reative o gerador, restaure os seletores de idioma nas páginas portuguesas e revise o catálogo antes de gerar as páginas.
+
+Confira a suspensão com `python3 scripts/test_locales.py`.
 
 ## Referência e manutenção
 

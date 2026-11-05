@@ -16,6 +16,8 @@ import re
 from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+# English publication is paused; do not regenerate or update translations.
+ENGLISH_ENABLED = False
 PAGES = ("index.html",) + tuple(
     f"projects/{name}/index.html" for name in ("sebrae", "sinapse", "cervello", "iconatus")
 )
@@ -150,6 +152,8 @@ def add_locale_controls(content, source, english):
 
 
 def generate():
+    if not ENGLISH_ENABLED:
+        return {}
     catalog = json.loads((ROOT / "translations/en-US.json").read_text())
     outputs = {}
     for source in PAGES:
@@ -169,6 +173,9 @@ def main():
     args = argparse.ArgumentParser(description=__doc__)
     args.add_argument("--check", action="store_true")
     options = args.parse_args()
+    if not ENGLISH_ENABLED:
+        print("English is suspended; no files were changed.")
+        return
     # Render everything before writing, so missing translations cause no partial update.
     outputs = generate()
     stale = []

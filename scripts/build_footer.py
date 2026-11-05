@@ -37,7 +37,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    pages = [ROOT/'index.html', ROOT/'en/index.html']
+    pages = [ROOT/'index.html']
+    if (ROOT/'en/index.html').is_file():
+        pages.append(ROOT/'en/index.html')
     pages += sorted((ROOT/'projects').glob('*/index.html'))
     pages += sorted((ROOT/'en/projects').glob('*/index.html'))
     stale = []

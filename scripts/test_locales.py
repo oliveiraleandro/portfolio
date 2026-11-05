@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 import unittest
 from urllib.parse import unquote, urljoin, urlsplit
 
-from build_locales import EnglishPage, PAGES, ROOT, generate
+from build_locales import ENGLISH_ENABLED, EnglishPage, PAGES, ROOT, generate
 
 
 class Elements(HTMLParser):
@@ -17,6 +17,7 @@ class Elements(HTMLParser):
         self.tags.append((tag, dict(attrs)))
 
 
+@unittest.skipUnless(ENGLISH_ENABLED, "English publication is suspended")
 class LocaleTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -85,6 +86,19 @@ class LocaleTests(unittest.TestCase):
     def test_generated_files_are_current(self):
         for page, content in self.pages.items():
             self.assertEqual((ROOT / page).read_text(), content, page)
+
+
+class SuspendedLocaleTests(unittest.TestCase):
+    @unittest.skipIf(ENGLISH_ENABLED, "English publication is enabled")
+    def test_english_routes_remain_disabled(self):
+        self.assertEqual(generate(), {})
+        self.assertFalse((ROOT / "en").exists())
+        for source in PAGES:
+            self.assertTrue((ROOT / "translations/suspended-en" / (source + ".disabled")).is_file())
+            content = (ROOT / source).read_text()
+            self.assertNotIn('hreflang="en-US"', content)
+            self.assertNotIn('data-language-switch', content)
+            self.assertNotIn('js/language.js', content)
 
 
 if __name__ == "__main__":

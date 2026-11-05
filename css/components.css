@@ -90,17 +90,9 @@
     font-size: 0.875rem;
     font-variant-numeric: tabular-nums;
 }
-.sebrae.project-band,
-.sebrae .case-hero {
-    background: var(--color-sebrae);
-}
-.sinapse.project-band,
-.sinapse .case-hero {
-    background: var(--color-sinapse);
-}
-.cervello.project-band,
-.cervello .case-hero {
-    background: var(--color-cervello);
+.project-band,
+.case .case-hero {
+    background: var(--color-project-band);
 }
 .tags {
     display: flex;
@@ -111,8 +103,9 @@
 }
 .tags li {
     font-size: 0.75rem;
-    color: var(--color-muted);
-    border: 1px solid var(--color-border);
+    color: var(--color-tag-text);
+    background: var(--color-tag-background);
+    border: 0;
     border-radius: var(--radius-lg);
     padding: 0.25rem 0.75rem;
 }
@@ -427,26 +420,10 @@ blockquote {
     }
 }
 
-/* Tags dos cases com o mesmo acabamento e cores da home. */
-.case.sebrae {
-    --panel-color: 0 117 207;
+.text-link,
+.case a {
+    color: var(--color-project-link);
 }
-.case.sinapse {
-    --panel-color: 0 150 111;
-}
-.case.cervello {
-    --panel-color: 109 84 224;
-}
-.case.iconatus {
-    --panel-color: 38 95 183;
-}
-.case .tags li {
-    border: 0;
-    background: rgb(var(--panel-color) / 0.075);
-}
-
-/* Variação suave para as tags do case do portfólio, usando o mesmo preenchimento dos demais. */
-.case.portfolio-evolution { --panel-color: 139 91 57; }
 
 /* O corpo dos cases segue a borda esquerda do logo e do título. */
 .case:is(.sinapse, .cervello) .asset-gallery-images {

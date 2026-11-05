@@ -1,3 +1,5 @@
+> **Inglês suspenso:** não atualizar o catálogo nem gerar páginas por enquanto. Os HTMLs anteriores estão em `suspended-en/` como `.html.disabled`. As instruções abaixo se aplicam à futura retomada.
+
 # Guia editorial — português brasileiro e inglês americano
 
 O catálogo `en-US.json` contém os textos originais como chaves e as versões inglesas como valores. Ele cobre a home e os quatro cases, incluindo títulos, descrições para compartilhamento, navegação, legendas e alternativas de imagens. Os rótulos do seletor são mantidos no gerador.

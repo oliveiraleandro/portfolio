@@ -309,7 +309,7 @@
 }
 .home .hero-panel::before {
     z-index: -2;
-    background: url("../assets/hero-tracing-paper.webp") center / cover no-repeat;
+    background: url("../assets/hero-hands-tracing-paper.webp") center / cover no-repeat;
     opacity: var(--hero-image-opacity);
 }
 .home .hero-panel::after {

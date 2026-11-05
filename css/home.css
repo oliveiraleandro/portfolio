@@ -58,6 +58,9 @@
 .home .project-band {
     padding-block: 3.5rem;
 }
+.home .project-band + .project-band {
+    margin-top: clamp(2rem, 4vw, 3rem);
+}
 .home .project-layout {
     grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.45fr);
     column-gap: 2rem;
@@ -288,8 +291,11 @@
     border-radius: inherit;
 }
 
-
 /* Abertura editorial aprovada, com ênfase em quem usa o produto. */
+.home .site-header {
+    position: fixed;
+    inset: 0 0 auto;
+}
 .home .project-band.portfolio-evolution {
     background: var(--color-hero-background);
 }
@@ -297,8 +303,11 @@
     --hero-image-opacity: 0.3;
     position: relative;
     isolation: isolate;
+    display: flex;
+    align-items: flex-end;
+    min-height: 100vh;
+    min-height: 100svh;
     color: var(--color-text);
-    padding: 12vh;
 }
 .home .hero-panel::before,
 .home .hero-panel::after {
@@ -309,15 +318,19 @@
 }
 .home .hero-panel::before {
     z-index: -2;
-    background: url("../assets/hero-hands-tracing-paper.webp") center / cover no-repeat;
-    opacity: var(--hero-image-opacity);
+    background: url("../assets/hero-hands-tracing-paper.webp") center / cover
+        no-repeat;
+    /*opacity: var(--hero-image-opacity);*/
 }
 .home .hero-panel::after {
     z-index: -1;
     background: var(--color-hero-background);
 }
 .home .hero {
-    padding-block: 4.5rem 4.25rem;
+    padding-block: clamp(22rem, 45svh, 38rem) clamp(3rem, 6svh, 5rem);
+}
+.home .hero-copy {
+    max-width: 1050px;
 }
 .home .hero h1 {
     font-size: clamp(2.7rem, 5vw, 4.75rem);
@@ -342,7 +355,7 @@
         background-position: 65% center;
     }
     .home .hero {
-        padding-block: 2.5rem;
+        padding-block: max(18rem, 38svh) 2.5rem;
     }
     .home .hero-copy {
         display: block;

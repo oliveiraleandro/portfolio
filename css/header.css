@@ -27,10 +27,11 @@ html {
         border-radius 220ms ease,
         box-shadow 220ms ease;
 }
+.home .site-header::before,
 .site-header.is-scrolled::before {
     inset: 8px calc(var(--page-gutter) - var(--header-surface-padding));
     /* From https://css.glass */
-    background: #eef25e80;
+    background: var(--hero-image-opacity);
     border-radius: 0.3rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.1px);

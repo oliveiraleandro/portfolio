@@ -492,3 +492,23 @@ blockquote {
         gap: 0;
     }
 }
+
+/* Correção editorial compartilhada pela home e pelo case do portfólio. */
+.evolution-strike {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.evolution-strike::after {
+    content: "";
+    position: absolute;
+    inset-inline: -0.04em;
+    top: 52%;
+    height: 0.085em;
+    min-height: 3px;
+    background: #b83232;
+    border-radius: 999px;
+    transform: rotate(-3deg);
+    pointer-events: none;
+}

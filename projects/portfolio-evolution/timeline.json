@@ -1,7 +1,7 @@
 {
   "start": "c623256ca7cfdb8051e493cb3468a84eb90058d4",
-  "end": "d5d556e2d704e2d76419aae66569589f52297780",
-  "capturedOn": "2026-11-05T00:35:11.013Z",
+  "end": "a95c60cfa513657e8774a06e04c6854474d5f16f",
+  "capturedOn": "2026-11-05T23:11:42.960Z",
   "browser": "157.0.8103.39",
   "locale": "pt-BR",
   "timezone": "America/Sao_Paulo",
@@ -186,6 +186,62 @@
       "images": {
         "desktop": "2026-11-04-d5d556e-home-pt-desktop.webp",
         "desktopViewport": "2026-11-04-d5d556e-home-pt-desktop-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "8c79505a658d698178306e5f19ff2a0603b03b2e",
+      "date": "2026-11-04T21:50:44-03:00",
+      "message": "ajustes",
+      "title": "Uma abertura editorial",
+      "description": "Hero com fundo próprio, marca-texto e princípios organizados em uma faixa editorial.",
+      "images": {
+        "desktop": "2026-11-04-8c79505-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-04-8c79505-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-04-8c79505-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-04-8c79505-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "763e25890c7e54d5365068e00e10eed7fe66226d",
+      "date": "2026-11-05T19:45:22-03:00",
+      "message": "ajustes",
+      "title": "Papel, luz e transparência",
+      "description": "Pausa da versão inglesa, cases em ordem cronológica, cores unificadas e fotografia de papel vegetal no hero.",
+      "images": {
+        "desktop": "2026-11-05-763e258-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-05-763e258-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-05-763e258-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-05-763e258-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "4771bec216a84a35267efff693cf0a18dbfa7a7d",
+      "date": "2026-11-05T19:52:57-03:00",
+      "message": "ajustes",
+      "title": "A presença das mãos",
+      "description": "A fotografia das mãos sob papel vegetal passa a compor o fundo translúcido do hero.",
+      "images": {
+        "desktop": "2026-11-05-4771bec-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-05-4771bec-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-05-4771bec-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-05-4771bec-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "a95c60cfa513657e8774a06e04c6854474d5f16f",
+      "date": "2026-11-05T20:09:57-03:00",
+      "message": "ajustes",
+      "title": "Mais espaço para as pessoas",
+      "description": "Hero em tela cheia, cabeçalho suspenso, texto mais abaixo e maior respiro entre cases. Relatos de confiança e convivência aprofundados em Iconatus e Cervello.",
+      "images": {
+        "desktop": "2026-11-05-a95c60c-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-05-a95c60c-home-pt-desktop-viewport.webp",
+        "mobile": "2026-11-05-a95c60c-home-pt-mobile.webp",
+        "mobileViewport": "2026-11-05-a95c60c-home-pt-mobile-viewport.webp"
       },
       "kind": "capture"
     }

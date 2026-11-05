@@ -20,6 +20,10 @@ const output = path.join(root, 'public/images/cases/portfolio-evolution');
 const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'portfolio-evolution-'));
 const git = (...args) => execFileSync('git', args, {cwd:root, maxBuffer:100*1024*1024});
 const notes = {
+ '8c79505':['Uma abertura editorial','Hero com fundo próprio, marca-texto e princípios organizados em uma faixa editorial.'],
+ '763e258':['Papel, luz e transparência','Pausa da versão inglesa, cases em ordem cronológica, cores unificadas e fotografia de papel vegetal no hero.'],
+ '4771bec':['A presença das mãos','A fotografia das mãos sob papel vegetal passa a compor o fundo translúcido do hero.'],
+ 'a95c60c':['Mais espaço para as pessoas','Hero em tela cheia, cabeçalho suspenso, texto mais abaixo e maior respiro entre cases. Relatos de confiança e convivência aprofundados em Iconatus e Cervello.'],
  c623256:['O ponto de partida','Referências visuais e conteúdo dos cases. O arquivo da home ainda estava vazio.'],
  '338d3e6':['A primeira home','Primeira implementação responsiva, com apresentação e quatro projetos.'],
  df69626:['Um caminho para conversar','Entrada do contato pelo WhatsApp na home e nos cases.'],

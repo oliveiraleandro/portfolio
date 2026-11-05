@@ -1,7 +1,7 @@
 {
   "start": "c623256ca7cfdb8051e493cb3468a84eb90058d4",
-  "end": "585f05bc31ea97948a462f4521d1bc083593e729",
-  "capturedOn": "2026-11-04T16:16:55.307Z",
+  "end": "d5d556e2d704e2d76419aae66569589f52297780",
+  "capturedOn": "2026-11-05T00:35:11.013Z",
   "browser": "157.0.8103.39",
   "locale": "pt-BR",
   "timezone": "America/Sao_Paulo",
@@ -162,6 +162,30 @@
         "desktopViewport": "2026-11-03-585f05b-home-pt-desktop-viewport.webp",
         "mobile": "2026-11-03-585f05b-home-pt-mobile.webp",
         "mobileViewport": "2026-11-03-585f05b-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "cfa01e6b1db5f791225f4644075a2f4272aab9a0",
+      "date": "2026-11-04T20:45:07-03:00",
+      "message": "ajustes",
+      "title": "Entender quem usa o produto",
+      "description": "Nova abertura e revisão dos cases com foco na rotina de trabalho de quem usa os produtos. Hero passa a apresentar apenas texto.",
+      "images": {
+        "desktop": "2026-11-04-cfa01e6-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-04-cfa01e6-home-pt-desktop-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "d5d556e2d704e2d76419aae66569589f52297780",
+      "date": "2026-11-04T21:33:33-03:00",
+      "message": "ajustes",
+      "title": "Navegação sempre à mão",
+      "description": "Cabeçalho sticky, proporções revistas, contato simplificado e nova distribuição das imagens nos cases.",
+      "images": {
+        "desktop": "2026-11-04-d5d556e-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-04-d5d556e-home-pt-desktop-viewport.webp"
       },
       "kind": "capture"
     }

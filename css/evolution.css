@@ -1,13 +1,53 @@
-.evolution-timeline { list-style: none; margin: 0; padding-left: 2rem; border-left: 1px solid currentColor; }
-.evolution-step { position: relative; padding-bottom: 5rem; }
-.evolution-step::before { content: ''; position: absolute; left: calc(-2rem - 5px); top: .5rem; width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
-.evolution-captures { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 1.5rem; }
-.evolution-captures img { display: block; width: 100%; height: auto; }
-.evolution-captures a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
-.evolution-reference img { object-fit: cover; object-position: top; }
-.evolution-reference.evolution-desktop img { aspect-ratio: 1440 / 1000; }
-@media(max-width:680px) {
- .evolution-timeline { padding-left: 1rem; }
- .evolution-step::before { left: calc(-1rem - 5px); }
- .evolution-captures { grid-template-columns: 1fr; }
+.evolution-timeline {
+    list-style: none;
+    margin: 0;
+    padding-left: 2rem;
+    border-left: 10px dashed #00000020;
+}
+.evolution-step {
+    position: relative;
+    padding-bottom: 5rem;
+}
+.evolution-step::before {
+    content: "";
+    position: absolute;
+    left: calc(-2rem - 9px);
+    top: 0.5rem;
+    width: 25px;
+    height: 9px;
+    border-radius: 0;
+    background: #00000090;
+}
+.evolution-captures {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 1.5rem;
+}
+.evolution-captures img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.evolution-captures a:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
+.evolution-reference img {
+    object-fit: cover;
+    object-position: top;
+}
+.evolution-reference.evolution-desktop img {
+    aspect-ratio: 1440 / 1000;
+}
+@media (max-width: 680px) {
+    .evolution-timeline {
+        padding-left: 1rem;
+    }
+    .evolution-step::before {
+        left: calc(-1rem - 5px);
+    }
+    .evolution-captures {
+        grid-template-columns: 1fr;
+    }
 }

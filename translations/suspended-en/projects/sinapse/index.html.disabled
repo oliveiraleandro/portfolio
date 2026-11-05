@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sinapse Finance — Leandro Oliveira</title>
+  <meta name="description" content="I redesigned forms around the difficulties clients encountered and explored ways to make financial automations easier to follow.">
+  <meta property="og:title" content="Sinapse Finance — Leandro Oliveira">
+  <meta property="og:description" content="I redesigned forms around the difficulties clients encountered and explored ways to make financial automations easier to follow.">
+  <meta property="og:type" content="website">
+  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
+  <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="../../../css/layout.css">
+  <link rel="stylesheet" href="../../../css/components.css?v=sinapse-distribution-1">
+  <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
+  <script src="../../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../../css/header.css?v=sticky-2">
+  <script src="../../../js/header.js?v=sticky-1" defer></script>
+
+  <link rel="stylesheet" href="../../../css/footer.css">
+
+<!-- locale:start -->
+  <link rel="alternate" hreflang="pt-BR" href="../../../projects/sinapse/">
+  <link rel="alternate" hreflang="en-US" href="./">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <script src="../../../js/language.js" defer></script>
+<!-- locale:end -->
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Skip to content</a>
+<header class="site-header container">
+  <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
+  <div class="header-actions">
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Home</a>
+    <nav class="language-switcher" aria-label="Site language">
+      <a class="language-option" href="../../../projects/sinapse/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
+      <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo"><article class="case sinapse">
+<header class="case-hero container"><img class="case-logo" src="../../../projects/sinapse/logo.png" alt="Sinapse Finance" width="551" height="214" decoding="async"><p class="eyebrow">02 / Sinapse Finance</p><h1>Sinapse Finance</h1><p class="case-lead">Filling out a form independently and seeing what a financial automation does.</p><ul class="tags"><li>Interaction Design</li><li>Forms</li><li>Automation</li></ul></header>
+
+<div class="case-body container">
+<section class="story-section">
+<h2>Context and my role</h2>
+<p>As lead designer at Sinapse, an outsourced financial operations provider, I worked on two initiatives with another designer, the product owner, specialists, and developers.</p>
+</section>
+<section class="story-section">
+<h2>Where clients got stuck</h2>
+<p>Clients avoided the forms and asked consultants to fill them out. Over roughly two weeks, I investigated how clients used the forms, redesigned the flow, and tracked the first measurement after launch.</p>
+<p>Recordings and feedback pointed to three questions. What should I enter? How large can the file be? How do I fix an error? I rewrote the labels and added guidance alongside the fields.</p>
+<p>In a shorter follow-up measurement period, successful submissions rose from 58% to about 65%. The Google Analytics bounce rate fell from around 75% to under 40%, and the average time decreased.</p>
+<p>The broader opportunity was to reduce typing. We considered collecting information through conversation and extracting it from documents. Neither approach was implemented during my time on the project.</p>
+</section>
+<section class="story-section">
+<h2>Choosing how much flexibility to offer</h2>
+<p>The financial integrations already existed but had no visual interface. I mapped the rules with specialists and developers and explored a drag-and-drop diagram. Its flexibility increased the number of combinations and technical exceptions to handle.</p>
+</section>
+<div class="sinapse-exploration">
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/sinapse/images/Group%202203.png" alt="Handwritten notes on automation processes and rules" width="680" height="462" loading="lazy" decoding="async"></div></div>
+<figcaption>Mapping rules and sequences before designing the interface.</figcaption>
+</figure>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images"><div class="figure-image-link"><img src="../../../projects/sinapse/images/automation-flow-white.png" alt="Automation flow with a trigger, condition, and loop" width="1280" height="1229" loading="lazy" decoding="async"></div></div>
+<figcaption>Visual automation flow with triggers, conditions, and loops.</figcaption>
+</figure>
+</div>
+<section class="story-section">
+<p>I chose a linear flow with a card for each step and split setup into smaller tasks. The design let people monitor or disable an automation and check its error log, making workflows previously dependent on the Sinapse team visible.</p>
+<p>During testing, I added descriptive titles to clarify what each step did.</p>
+</section>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images sinapse-modals"><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%206.png?v=2x-20260916" alt="Tool selection modal" width="356" height="422" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%205.png?v=2x-20260916" alt="Modal for mapping source fields to destination fields" width="358" height="473" loading="lazy" decoding="async"></div><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%207.png?v=2x-20260916" alt="Condition configuration modal" width="383" height="442" loading="lazy" decoding="async"></div></div>
+<figcaption>Setup broken down into selecting a tool, fields, and conditions.</figcaption>
+</figure>
+<figure class="case-figure asset-gallery">
+<div class="asset-gallery-images sinapse-calculation"><div class="figure-image-link"><img src="../../../projects/sinapse/images/image%208.png?v=2x-20260916" alt="Calculation modal with available fields and operators" width="680" height="617" loading="lazy" decoding="async"></div></div>
+<figcaption>Fields and operators in the calculation editor. The image illustrates the interface rather than measured results.</figcaption>
+</figure>
+<section class="story-section">
+<p>Access to clients was limited. Participants familiar with productivity software understood the sequence but struggled with financial concepts. The tests evaluated the interaction. We still needed to validate it with the intended users.</p>
+</section>
+
+
+
+
+<section class="story-section">
+<h2>Results and lessons learned</h2>
+<p>The form shipped and we measured its use. The automations received internal approval and development began. My involvement ended before full delivery or measurement of adoption.</p>
+<p>Today I’d negotiate access to users earlier and spell out what each round of testing could tell us.</p>
+</section>
+</div>
+<nav class="next-case container" aria-label="Next project"><p class="eyebrow">Next case study</p><a href="../cervello/">Cervello BPMS</a></nav></article></main>
+<footer class="contact container site-footer" id="contato">
+  <div class="site-footer-main">
+    <div class="site-footer-action">
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
+      <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
+    </div>
+    <p class="handwritten contact-note">Great conversations also<br>build great products.</p>
+  </div>
+  <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
+</footer>
+</body>
+</html>

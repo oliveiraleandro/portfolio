@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAP — Redesigning a real estate platform — Leandro Oliveira</title>
+  <meta name="description" content="A clearer, more consistent experience for real estate agents on desktop and mobile.">
+  <meta property="og:title" content="CAP — Redesigning a real estate platform — Leandro Oliveira">
+  <meta property="og:description" content="A clearer, more consistent experience for real estate agents on desktop and mobile.">
+  <meta property="og:type" content="website">
+  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
+  <link rel="stylesheet" href="../../../css/reset.css">
+  <link rel="stylesheet" href="../../../css/variables.css?v=shared-frame-1">
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="../../../css/layout.css">
+  <link rel="stylesheet" href="../../../css/components.css?v=case-spacing-2">
+  <link rel="stylesheet" href="../../../css/responsive.css?v=language-switcher-2">
+  <script src="../../../js/contact.js" defer></script>
+  <link rel="stylesheet" href="../../../css/header.css?v=sticky-2">
+  <script src="../../../js/header.js?v=sticky-1" defer></script>
+
+  <link rel="stylesheet" href="../../../css/footer.css">
+
+<!-- locale:start -->
+  <link rel="alternate" hreflang="pt-BR" href="../../../projects/iconatus/">
+  <link rel="alternate" hreflang="en-US" href="./">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <script src="../../../js/language.js" defer></script>
+<!-- locale:end -->
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Skip to content</a>
+<header class="site-header container">
+  <a href="../../" class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a>
+  <div class="header-actions">
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Home</a>
+    <nav class="language-switcher" aria-label="Site language">
+      <a class="language-option" href="../../../projects/iconatus/" lang="pt-BR" hreflang="pt-BR" data-language-switch aria-label="Português (Brasil)">Português</a>
+      <a class="language-option" href="./" lang="en-US" hreflang="en-US" aria-current="page" aria-label="English (United States)">English</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+  <article class="case iconatus">
+    <header class="case-hero container">
+      <img class="case-logo" src="../../../projects/iconatus/logo.svg" alt="Iconatus" width="267" height="99" decoding="async">
+<p class="eyebrow">04 / Iconatus · CAP</p>
+      <h1>CAP on desktop and mobile</h1>
+      <p class="case-lead">Information to support real estate agents in their daily work.</p>
+      <ul class="tags"><li>B2B Systems</li><li>Information Architecture</li><li>Responsive Design</li><li>Data Visualization</li></ul>
+    </header>
+
+    <div class="case-body container">
+<figure class="case-figure case-opening">
+  <div class="figure-image-link"><img src="../../../projects/iconatus/images/imoveis%20-%20precificacao%20v2.png" alt="Property pricing with price comparisons, appreciation, and liquidity" width="1280" height="1148" loading="lazy" decoding="async"></div>
+  <figcaption>The pricing view brings together current prices, historical trends, and regional comparisons. <a href="../../../projects/iconatus/images/imoveis%20-%20precificacao%20v2.png">Open full image</a></figcaption>
+</figure>
+<section class="story-section">
+<h2>Context and my role</h2>
+<p>For three months, I was the sole designer on the CAP redesign, working with the founder and developers. The challenge was to bring the real estate platform to mobile while retaining its features. I spoke with two agents and mapped screens and user journeys.</p>
+</section>
+<section class="story-section">
+<h2>What should agents see first on their phones?</h2>
+<p>Recent visits indicated activity on a property, but appeared in the last column of the table. On mobile, I moved visits to the top of each card, ahead of the summary and the link to details. I kept the table on desktop.</p>
+<p>On the property detail screen, I proposed replacing tabs with a vertical layout. The client preferred tabs, and the alternative made for a long page. I adjusted tab states and navigation to avoid extra horizontal scrolling.</p>
+<p>Based on the user journeys, I proposed highlighting recent property sourcing and follow-ups on the home page to help agents pick up where they left off. This was a hypothesis.</p>
+</section>
+<figure class="case-figure">
+  <div class="figure-image-link"><img src="../../../projects/iconatus/images/home%20v2.png" alt="CAP desktop home page with sourcing and follow-up activity" width="1280" height="1054" loading="lazy" decoding="async"></div>
+  <figcaption>Recent property sourcing and follow-ups on the desktop home page. <a href="../../../projects/iconatus/images/home%20v2.png">Open full image</a></figcaption>
+</figure>
+<div class="case-phone-pair">
+<figure class="case-figure case-figure-mobile">
+  <div class="figure-image-link"><img src="../../../projects/iconatus/images/mobile%20home.png" alt="CAP mobile home page with modules and activities in one column" width="390" height="2116" loading="lazy" decoding="async"></div>
+  <figcaption>Activities arranged vertically on mobile. <a href="../../../projects/iconatus/images/mobile%20home.png">Open full image</a></figcaption>
+</figure>
+<figure class="case-figure case-figure-mobile">
+  <div class="figure-image-link"><img src="../../../projects/iconatus/images/mobile%20resultado.png" alt="Mobile listing search with photos, summaries, and links to listings" width="390" height="1419" loading="lazy" decoding="async"></div>
+  <figcaption>Property search results displayed as cards. <a href="../../../projects/iconatus/images/mobile%20resultado.png">Open full image</a></figcaption>
+</figure>
+</div>
+<figure class="case-figure">
+  <div class="figure-image-link"><img src="../../../projects/iconatus/images/imoveis%20v2.png" alt="Desktop location view with a map and neighborhood information" width="1280" height="939" loading="lazy" decoding="async"></div>
+  <figcaption>Tabs retained on the property detail screen. <a href="../../../projects/iconatus/images/imoveis%20v2.png">Open full image</a></figcaption>
+</figure>
+<div class="case-copy-phone">
+<section class="story-section">
+<h2>Pricing and trust</h2>
+<p>I emphasized current prices, plotted historical prices over time, and added regional comparisons. The client responded positively to the proposal.</p>
+<p>One agent found the trends interesting but questioned the accuracy of the data. When I asked how to handle uncertainty, I was told that uncertain data would be excluded. Reliability also depended on decisions by the business and technology teams.</p>
+<p>I narrowed the range of colors and typefaces and consolidated components after validating the desktop visual direction with the client.</p>
+</section>
+<figure class="case-figure case-figure-mobile">
+  <div class="figure-image-link"><img src="../../../projects/iconatus/images/mobile%20imo%CC%81vel.png" alt="Mobile pricing with tabs, price benchmarks, appreciation, and liquidity" width="390" height="2846" loading="lazy" decoding="async"></div>
+  <figcaption>Pricing on mobile. The figures illustrate the interface rather than the impact of the redesign. <a href="../../../projects/iconatus/images/mobile%20imo%CC%81vel.png">Open full image</a></figcaption>
+</figure>
+</div>
+<section class="story-section">
+<h2>Results and lessons learned</h2>
+<p>The redesign covered the entire platform, with reusable patterns and mobile-specific solutions. The parts of the implementation I saw closely matched the prototype.</p>
+<p>There was no structured measurement after delivery. The results I observed were qualitative. With more time, I’d study actual usage and further explore the home page.</p>
+<p>The project showed me that making data easier to understand can also surface questions an interface alone cannot resolve.</p>
+</section>
+</div>
+<nav class="next-case container" aria-label="Next project"><p class="eyebrow">Next case study</p><a href="../sebrae/">SEBRAE</a></nav>
+  </article>
+</main>
+<footer class="contact container site-footer" id="contato">
+  <div class="site-footer-main">
+    <div class="site-footer-action">
+      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="../../../projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
+      <noscript><p class="contact-pending">Enable JavaScript to get in touch on WhatsApp.</p></noscript>
+    </div>
+    <p class="handwritten contact-note">Great conversations also<br>build great products.</p>
+  </div>
+  <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
+</footer>
+</body>
+</html>

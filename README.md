@@ -34,7 +34,23 @@ Confira a suspensão com `python3 scripts/test_locales.py`.
 
 Consulte [DOCUMENTACAO.md](DOCUMENTACAO.md) para estrutura, conteúdo, decisões visuais, manutenção e pendências. O histórico de revisão está em [design-qa.md](design-qa.md).
 
-O site está preparado para hospedagem estática, incluindo GitHub Pages. A publicação e a configuração do domínio ainda precisam ser confirmadas.
+## Publicação enxuta no GitHub Pages
+
+`bash scripts/prepare_publish.sh` prepara `dist/` copiando os HTMLs prontos,
+CSS, JavaScript e imagens de `assets/`, `public/` e `projects/`.
+Não instala dependências, compila código nem executa geradores de conteúdo.
+A pasta é recriada a cada execução e não é versionada.
+
+Capturas de revisão continuam em `review-screenshots/`; referências, documentação,
+scripts, traduções suspensas, PDF de apresentação e arquivos temporários também
+permanecem no repositório, mas ficam fora da publicação. As imagens da timeline
+em `public/` são conteúdo do site e continuam publicadas.
+
+O workflow `.github/workflows/pages.yml` publica somente `dist/`. Para ativá-lo,
+envie os arquivos ao GitHub e selecione **Settings → Pages → Source → GitHub Actions**
+em vez da publicação direta da branch. Depois execute **Publish static portfolio**
+na aba Actions se necessário. A configuração atual não é alterada por preparar
+os arquivos localmente. Domínio personalizado não está configurado.
 
 ## Rodapé compartilhado
 

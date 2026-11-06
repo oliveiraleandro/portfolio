@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Prévias temporárias geradas durante a revisão do PDF.
+/tmp/pdfs/*.png
+/tmp/pdfs/*.jpg
+/dist/

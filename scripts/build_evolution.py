@@ -38,7 +38,15 @@ html = f'''<!doctype html>
 <header class="site-header container"><a class="identity" href="../../"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a><div class="header-actions"><a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a></div></header>
 <main id="conteudo"><article class="case portfolio-evolution">
 <header class="case-hero container"><h1>Um portfólio também<br>é um <s class="evolution-strike" aria-hidden="true">produto</s> experimento.</h1><ul class="tags"><li>Design de interface</li><li>Desenvolvimento</li><li>Iteração</li></ul></header>
-<div class="container"><ol class="evolution-timeline" aria-label="Evolução visual do portfólio">
+<div class="container">
+<section class="story-section" id="experimento-com-ia">
+<h2>Onde a IA me ajudou no redesign</h2>
+<p>Estudo IA no meu tempo livre e na minha segunda graduação. Como já assinava o ChatGPT, decidi usá-lo o máximo possível no redesign do meu portfólio. Queria descobrir, na prática, até onde eu conseguia ir com ele.</p>
+<p>Comecei com pedidos bem abertos e usei como referência imagens de interfaces que eu mesmo tinha desenhado. Assim, pude explorar ideias sem montar um protótipo no Figma para cada uma. Nas imagens, a composição me convencia: os elementos pareciam funcionar bem juntos. Quando eu navegava pela página, nem sempre encontrava a mesma harmonia.</p>
+<p>À medida que fui definindo a paleta, ficou mais difícil pedir ajustes pequenos. Às vezes eu já sabia qual cor queria testar, mas dava trabalho explicar a diferença entre aquele tom e o que estava na tela. Como o portfólio é estático e eu conheço HTML e CSS, passei a trocar os valores de cor direto no código.</p>
+<p>Trocar um valor leva segundos. Escolher o tom que eu quero manter pode levar bem mais tempo, e gosto de ter esse tempo para comparar. É nessas pequenas escolhas que consigo sair da solução mais previsível e dar ao portfólio a minha cara.</p>
+</section>
+<ol class="evolution-timeline" aria-label="Evolução visual do portfólio">
 <li class="evolution-step"><div class="evolution-captures">{references}</div></li>
 {''.join(items)}</ol></div>
 </article></main></body></html>'''

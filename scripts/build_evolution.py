@@ -30,7 +30,7 @@ references = ''.join(
 html = f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A evolução do meu portfólio — Leandro Oliveira</title>
-<meta name="description" content="Uma timeline visual da evolução do meu portfólio.">
+<meta name="description" content="As imagens mostram como o desenho do meu portfólio mudou ao longo do tempo.">
 <link rel="stylesheet" href="../../css/reset.css"><link rel="stylesheet" href="../../css/variables.css?v=unified-colors-1"><link rel="stylesheet" href="../../css/base.css"><link rel="stylesheet" href="../../css/layout.css"><link rel="stylesheet" href="../../css/components.css?v=experiment-strike-2"><link rel="stylesheet" href="../../css/responsive.css"><link rel="stylesheet" href="../../css/evolution.css?v=experiment-title-2">
   <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
   <script src="../../js/header.js?v=sticky-1" defer></script>
@@ -41,10 +41,10 @@ html = f'''<!doctype html>
 <div class="container">
 <section class="story-section" id="experimento-com-ia">
 <h2>Onde a IA me ajudou no redesign</h2>
-<p>Estudo IA no meu tempo livre e na minha segunda graduação. Como já assinava o ChatGPT, decidi usá-lo o máximo possível no redesign do meu portfólio. Queria descobrir, na prática, até onde eu conseguia ir com ele.</p>
-<p>Comecei com pedidos bem abertos e usei como referência imagens de interfaces que eu mesmo tinha desenhado. Assim, pude explorar ideias sem montar um protótipo no Figma para cada uma. Nas imagens, a composição me convencia: os elementos pareciam funcionar bem juntos. Quando eu navegava pela página, nem sempre encontrava a mesma harmonia.</p>
-<p>À medida que fui definindo a paleta, ficou mais difícil pedir ajustes pequenos. Às vezes eu já sabia qual cor queria testar, mas dava trabalho explicar a diferença entre aquele tom e o que estava na tela. Como o portfólio é estático e eu conheço HTML e CSS, passei a trocar os valores de cor direto no código.</p>
-<p>Trocar um valor leva segundos. Escolher o tom que eu quero manter pode levar bem mais tempo, e gosto de ter esse tempo para comparar. É nessas pequenas escolhas que consigo sair da solução mais previsível e dar ao portfólio a minha cara.</p>
+<p>Estudo inteligência artificial no meu tempo livre e na minha segunda graduação. Como já assinava o ChatGPT, decidi usá-lo para redesenhar meu portfólio e descobrir em quais decisões ele poderia me ajudar.</p>
+<p>Comecei com pedidos abertos e mostrei ao ChatGPT algumas interfaces que eu havia desenhado. Consegui explorar várias composições sem montar um protótipo no Figma para cada uma. Às vezes, os elementos pareciam bem distribuídos na imagem, mas a composição perdia equilíbrio quando eu percorria a página.</p>
+<p>Quando comecei a ajustar as cores, passei a trabalhar diretamente no código. Como o portfólio é estático e conheço HTML e CSS, eu podia testar o tom que tinha em mente sem precisar descrever a diferença em uma nova mensagem.</p>
+<p>Trocar uma cor leva segundos. Escolher qual delas quero manter leva mais tempo. Gosto de comparar os tons na própria página, porque é nessas pequenas decisões que reconheço meu trabalho.</p>
 </section>
 <ol class="evolution-timeline" aria-label="Evolução visual do portfólio">
 <li class="evolution-step"><div class="evolution-captures">{references}</div></li>

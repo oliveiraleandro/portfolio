@@ -24,6 +24,8 @@ A versão inglesa está temporariamente suspensa. As rotas `/en/` e `/en/project
 
 ## Atualizar conteúdo e traduções
 
+Para escrever ou revisar um case, consulte o [guia de estilo dos cases](GUIA_DE_ESTILO.md).
+
 Edite apenas os HTMLs em português. O catálogo de traduções está congelado; `scripts/build_locales.py` não gera nem modifica arquivos enquanto `ENGLISH_ENABLED = False`.
 
 Os HTMLs ingleses anteriores estão preservados em `translations/suspended-en/`, com extensão `.html.disabled`. Para retomar o inglês, restaure esses arquivos em `en/`, reative o gerador, restaure os seletores de idioma nas páginas portuguesas e revise o catálogo antes de gerar as páginas.

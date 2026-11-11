@@ -1,0 +1,13 @@
+.datacare-name { font-size: 1.8rem; font-weight: 700; }
+.case.datacare .story-section,
+.case.datacare .case-figure figcaption { margin-inline: 0; }
+.case.datacare .datacare-video {
+  max-width: var(--reading-width);
+  margin-inline: 0;
+}
+.case.datacare video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

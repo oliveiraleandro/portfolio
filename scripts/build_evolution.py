@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CASE = ROOT / 'projects/portfolio-evolution'
 data = json.loads((CASE / 'timeline.json').read_text())
 asset = '../../public/images/cases/portfolio-evolution/'
-visual = {'338d3e6', 'df69626', 'db2f11a', '965b240', '8c59af2', '585f05b', 'cfa01e6', 'd5d556e', '8c79505', '763e258', '4771bec', 'a95c60c'}
+visual = {'338d3e6', 'df69626', 'db2f11a', '965b240', '8c59af2', '585f05b', 'cfa01e6', 'd5d556e', '8c79505', '763e258', '4771bec', 'a95c60c', 'e41a75e'}
 
 
 def preview(entry, device, label):

@@ -19,7 +19,10 @@ const selected = options.commits?.split(',');
 const output = path.join(root, 'public/images/cases/portfolio-evolution');
 const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'portfolio-evolution-'));
 const git = (...args) => execFileSync('git', args, {cwd:root, maxBuffer:100*1024*1024});
+// A prévia mostra a seção que distingue esta versão da home.
+const previewSections = { e41a75e: '.project-band.datacare' };
 const notes = {
+ 'e41a75e':['DataCare em destaque na home','O DataCare abre a seleção de projetos com o pipeline em destaque. O case reúne estudos de acessibilidade, vídeos da interface e uma exploração com Claude e Figma.'],
  '8c79505':['Uma abertura editorial','Hero com fundo próprio, marca-texto e princípios organizados em uma faixa editorial.'],
  '763e258':['Papel, luz e transparência','Pausa da versão inglesa, cases em ordem cronológica, cores unificadas e fotografia de papel vegetal no hero.'],
  '4771bec':['A presença das mãos','A fotografia das mãos sob papel vegetal passa a compor o fundo translúcido do hero.'],
@@ -82,6 +85,12 @@ const notes = {
  if(broken.length||failed.length)throw new Error(JSON.stringify({short,device,broken,failed}));
  const base=`${date.slice(0,10)}-${short}-home-pt-${device}`;
  for(const [suffix,fullPage] of [['',true],['-viewport',false]]){
+ if (!fullPage && previewSections[short]) {
+   await page.locator(previewSections[short]).evaluate(section => {
+     const headerHeight = document.querySelector('.site-header').getBoundingClientRect().height;
+     window.scrollTo({top: window.scrollY + section.getBoundingClientRect().top - headerHeight, behavior: 'instant'});
+   });
+ }
  const png=path.join(temp,base+suffix+'.png'); await page.screenshot({path:png,fullPage,animations:'disabled'});
  const name=base+suffix+'.webp';await sharp(png).webp({quality:84}).toFile(path.join(output,name));
  entry.images[device+(suffix?'Viewport':'')]=name;

@@ -1,8 +1,8 @@
 {
   "start": "c623256ca7cfdb8051e493cb3468a84eb90058d4",
-  "end": "a95c60cfa513657e8774a06e04c6854474d5f16f",
-  "capturedOn": "2026-11-05T23:11:42.960Z",
-  "browser": "157.0.8103.39",
+  "end": "e41a75ef24e2eb6538edd95234ed89d1eb9e4d7d",
+  "capturedOn": "2026-11-11T01:51:29.543Z",
+  "browser": "157.0.8103.50",
   "locale": "pt-BR",
   "timezone": "America/Sao_Paulo",
   "viewports": {
@@ -242,6 +242,18 @@
         "desktopViewport": "2026-11-05-a95c60c-home-pt-desktop-viewport.webp",
         "mobile": "2026-11-05-a95c60c-home-pt-mobile.webp",
         "mobileViewport": "2026-11-05-a95c60c-home-pt-mobile-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "e41a75ef24e2eb6538edd95234ed89d1eb9e4d7d",
+      "date": "2026-11-10T22:50:25-03:00",
+      "message": "ajustes",
+      "title": "DataCare em destaque na home",
+      "description": "O DataCare abre a seleção de projetos com o pipeline em destaque. O case reúne estudos de acessibilidade, vídeos da interface e uma exploração com Claude e Figma.",
+      "images": {
+        "desktop": "2026-11-10-e41a75e-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-10-e41a75e-home-pt-desktop-viewport.webp"
       },
       "kind": "capture"
     }

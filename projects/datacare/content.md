@@ -4,7 +4,7 @@ Conhecimento especializado em dados, mais acessível para quem trabalha com eles
 
 ## Contexto e meu papel
 
-A Acesso prestava serviços de tratamento e qualidade de dados e buscava ampliar sua atuação como plataforma. Sua ferramenta própria reunia o conhecimento da empresa sobre dados brasileiros, como CPF e endereços, mas os analistas tinham dificuldade para visualizar os dados, compreender as ferramentas disponíveis e operar a interface. A liderança via nessas dificuldades um obstáculo à agilidade dos processos.
+A empresa Assesso prestava serviços de tratamento e qualidade de dados e buscava ampliar sua atuação como plataforma. Sua ferramenta própria reunia o conhecimento da empresa sobre dados brasileiros, como CPF e endereços, mas os analistas tinham dificuldade para visualizar os dados, compreender as ferramentas disponíveis e operar a interface. A liderança via nessas dificuldades um obstáculo à agilidade dos processos.
 
 Entrei no início de 2023 como único designer, responsável por desenhar a experiência e trazer referências de mercado para orientar a evolução do produto. Trabalhei próximo ao desenvolvimento, com aprovação do líder de produto, e conduzi conversas e validações com analistas e pessoas externas à empresa.
 
@@ -20,7 +20,7 @@ O sistema visual reuniu padrões de tipografia, controles e componentes para os 
 
 ## Legibilidade em diferentes condições de visão
 
-Testo as páginas em diferentes modos de cor para verificar se os textos, ícones e ações continuam fáceis de distinguir. Também avalio o contraste, o tamanho das letras e a proporção entre títulos, rótulos e valores para que a hierarquia da informação continue clara.
+Testei as páginas em diferentes modos de cor para verificar se os textos, ícones e ações continuam fáceis de distinguir. Também avalio o contraste, o tamanho das letras e a proporção entre títulos, rótulos e valores para que a hierarquia da informação continue clara.
 
 ## Entender os dados antes de tratá-los
 
@@ -32,7 +32,7 @@ Usei representações visuais diferentes conforme a natureza dos dados. Nas vali
 
 As sugestões de ferramentas conectam esse diagnóstico ao tratamento. Elas ajudam o analista a escolher operações e podem ser levadas ao pipeline de transformação.
 
-*O protótipo mostra a passagem do diagnóstico no profiler à revisão das ferramentas sugeridas.*
+_O protótipo mostra a passagem do diagnóstico no profiler à revisão das ferramentas sugeridas._
 
 ## Cor para organizar a complexidade
 
@@ -42,7 +42,7 @@ Uma proposta interna era atribuir uma cor diferente a cada tarefa. Nas validaç�
 
 O agrupamento se sustentou nos testes e estabeleceu uma lógica reutilizável para os componentes. A cor passou a indicar uma categoria reconhecível ao longo do fluxo.
 
-*Recorte do sistema de componentes dos pipelines.*
+_Recorte do sistema de componentes dos pipelines._
 
 ## Assistência para escolher o próximo passo
 

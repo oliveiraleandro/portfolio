@@ -1,63 +1,69 @@
-# Datacare
+# Como os analistas examinam e tratam dados no Datacare
 
-Conhecimento especializado em dados, mais acessível para quem trabalha com eles.
+Como único designer do Datacare, redesenhei ferramentas de análise de dados. Mais tarde, usei o Claude para testar como o design system orientava a criação de novas telas.
 
-## Contexto e meu papel
+_O pipeline mostra onde os registros passam por validação e tratamento de duplicidades._
 
-A empresa Assesso prestava serviços de tratamento e qualidade de dados e buscava ampliar sua atuação como plataforma. Sua ferramenta própria reunia o conhecimento da empresa sobre dados brasileiros, como CPF e endereços, mas os analistas tinham dificuldade para visualizar os dados, compreender as ferramentas disponíveis e operar a interface. A liderança via nessas dificuldades um obstáculo à agilidade dos processos.
+## O trabalho com os analistas
 
-Entrei no início de 2023 como único designer, responsável por desenhar a experiência e trazer referências de mercado para orientar a evolução do produto. Trabalhei próximo ao desenvolvimento, com aprovação do líder de produto, e conduzi conversas e validações com analistas e pessoas externas à empresa.
+A Assesso reuniu em uma plataforma sua experiência no tratamento de dados brasileiros, como CPFs e endereços. Os analistas tinham dificuldade para examinar os registros e escolher a ferramenta adequada para cada problema.
 
-Minha primeira prioridade foi reorganizar a navegação, as interações e a hierarquia das informações. A visualização dos dados e a orientação sobre ferramentas foram sendo construídas ao longo das entregas.
+Entrei no início de 2023. Trabalhei com os desenvolvedores e o líder de produto. Testei as propostas com analistas e com pessoas de fora da empresa, começando pela navegação.
 
-## Uma interface para o ambiente real de trabalho
+## O espaço de uma tela de notebook
 
-No contato com os analistas, observei o uso de laptops pequenos e de configuração simples. Adotei 1366 × 768 como referência para as telas: as tarefas precisavam funcionar no espaço disponível para essas pessoas.
+Os analistas usavam notebooks simples. Adotei 1366 × 768 pixels como referência e procurei manter os controles principais nos primeiros 668 pixels de altura. Escolhi um fundo cinza claro para as tabelas, considerando a iluminação do escritório.
 
-Escolhi um tema claro considerando as telas e a iluminação do escritório. Fundos em cinza muito suave, cores derivadas do logo e a tipografia Roboto compunham uma linguagem familiar. A intenção era organizar interfaces densas sem torná-las visualmente pesadas.
+_A busca do menu leva o analista à ferramenta desejada._
 
-O sistema visual reuniu padrões de tipografia, controles e componentes para os diferentes módulos. No pipeline, essa base também precisava ajudar a distinguir tarefas e suas relações.
+## Legibilidade das tabelas
 
-## Legibilidade em diferentes condições de visão
+Testei a interface em diferentes modos de cor para verificar se era possível distinguir textos, ícones e ações. Também avaliei o contraste e o tamanho das letras.
 
-Testei as páginas em diferentes modos de cor para verificar se os textos, ícones e ações continuam fáceis de distinguir. Também avalio o contraste, o tamanho das letras e a proporção entre títulos, rótulos e valores para que a hierarquia da informação continue clara.
+_A mesma tabela em quatro modos de cor._
 
 ## Entender os dados antes de tratá-los
 
-O profiler foi uma das primeiras jornadas entregues. Ele reúne, por coluna, uma amostra dos dados, o tipo técnico e semântico, padrões, preenchimento e sugestões de ferramentas. O tipo semântico identifica o significado do conteúdo, como CPF ou telefone, além de sua representação computacional.
+No profiler, o analista examina uma amostra de conjuntos que podem chegar a bilhões de registros. Cada coluna mostra o que os valores representam, como CPFs ou telefones. Mantive os indicadores visíveis durante a rolagem para que o analista pudesse consultá-los enquanto examinava as linhas.
 
-Essa visão precisava ser útil para conjuntos que podiam chegar a milhões ou bilhões de registros. A interface apresenta uma amostra, mantendo os gráficos e indicadores superiores visíveis durante a rolagem vertical. A rolagem horizontal permite consultar as demais colunas.
+Escolhi gráficos de acordo com o conteúdo de cada coluna. Nos testes, mesmo quem tinha pouca experiência com dados conseguiu distinguir colunas pelos gráficos. A partir desse diagnóstico, o analista pode incluir uma ferramenta sugerida no pipeline, a sequência de tarefas que transforma os dados.
 
-Usei representações visuais diferentes conforme a natureza dos dados. Nas validações, inclusive com não especialistas, participantes conseguiram perceber diferenças entre as colunas pelas representações, sem depender apenas dos nomes.
+_Do diagnóstico à escolha de uma ferramenta de tratamento._
 
-As sugestões de ferramentas conectam esse diagnóstico ao tratamento. Elas ajudam o analista a escolher operações e podem ser levadas ao pipeline de transformação.
+## Como a cor ajuda a reconhecer cada tarefa
 
-_O protótipo mostra a passagem do diagnóstico no profiler à revisão das ferramentas sugeridas._
+Um pipeline podia reunir dezenas de tarefas. Nos testes, atribuir uma cor a cada uma dificultou reconhecer sua função. Passei a usar roxo para transformações e laranja para etapas que executavam outro pipeline. Cada tarefa também tinha nome e ícone. Nos testes seguintes, os participantes reconheceram as categorias com mais facilidade.
 
-## Cor para organizar a complexidade
+_Componentes usados no editor de pipelines._
 
-Os pipelines podiam reunir dezenas de tarefas, cada uma com suas fontes, destinos e configurações. O fluxo completo nem sempre caberia em uma única tela.
+## Um assistente para escolher ferramentas
 
-Uma proposta interna era atribuir uma cor diferente a cada tarefa. Nas validações, essa variedade dificultou identificar o papel de cada uma. Optei por agrupar as cores por tipo: transformações em roxo e subpipelines em laranja, por exemplo, acompanhados de nomes e ícones.
+Desenhei uma proposta de assistente de IA que resume os problemas encontrados nos dados e explica por que recomenda determinado tratamento. Parte dessa proposta ainda aguarda implementação.
 
-O agrupamento se sustentou nos testes e estabeleceu uma lógica reutilizável para os componentes. A cor passou a indicar uma categoria reconhecível ao longo do fluxo.
+## Do Figma ao guia de composição no Claude
 
-_Recorte do sistema de componentes dos pipelines._
+No Figma, organizei os valores de cor e espaçamento em estilos e variáveis e criei componentes reutilizados em vários módulos, dos campos de entrada às tabelas. Conectei o Claude a essa biblioteca pelo MCP do Figma para prototipar o painel de lentes.
 
-## Assistência para escolher o próximo passo
+Com um pedido aberto, o Claude repetiu cards arredondados onde eu usaria listas ou tabelas expansíveis. Preencheu grandes áreas com cores claras e empurrou controles para baixo da primeira tela. No Datacare, costumo reservar a cor para indicar o significado de um elemento sobre um fundo neutro.
 
-O trabalho também incluiu propostas de IA generativa para interpretar os dados e apoiar a escolha das ferramentas. As telas exploram resumos dos problemas, recomendações com justificativas e um assistente contextual.
+Criei no Claude um guia para a equipe de front-end consultar ao compor telas. Registrei quando evitar cards e como adaptar os espaçamentos. Acrescentei à biblioteca um cabeçalho que mostra como dar destaque à ação principal e onde posicionar a busca e os filtros.
 
-Parte desse fluxo ainda não foi implementada. Essas propostas representam uma direção de evolução do produto, distinta das funcionalidades já entregues.
+Já comecei a usar o guia e sou seu principal usuário até aqui. Ainda estou avaliando o resultado da aplicação dessas regras nos protótipos.
 
-## Exploração recente com Claude e Figma
+_Cada lente responde a uma pergunta, como quais cadastros podem estar duplicados._
 
-Mais recentemente, explorei outra forma de desenhar páginas para o Datacare. Conectei o Claude ao Figma pelo MCP do Figma e, em conversa com a IA, construí o painel de lentes usando os componentes e os tokens de design que eu já havia criado para a plataforma.
+## O que o Claude percebeu em um teste sem áudio
 
-## Resultados e aprendizado
+Durante um teste, o participante parou para me perguntar quando deveria importar um dado e quando deveria criar um. Foi a conversa que me permitiu entender a dúvida.
 
-A maior parte das soluções apresentadas chegou ao produto. O profiler segue em uso na preparação dos projetos de dados, e os retornos recebidos dos analistas foram positivos. Suas sugestões também levaram a ajustes, como a inclusão de um subtítulo contextual nos modais.
+Enviei ao Claude a gravação sem áudio para descobrir quais dificuldades ele perceberia só pelas interações. Na primeira análise, ele descreveu a interface como se o participante tivesse visto tudo de uma vez.
 
-Protótipos foram utilizados pela liderança em apresentações comerciais para comunicar a direção futura da plataforma. As entregas foram negociadas com produto e desenvolvimento, considerando limitações técnicas e tempo de implementação. Esses relatos são evidências qualitativas; não dispomos aqui de métricas para quantificar ganhos de produtividade.
+Pedi que mapeasse a interface e acompanhasse as ações na ordem em que ocorreram. Ainda precisei indicar o que a pessoa já tinha visto e precisava lembrar. Hoje, eu começaria a automação pela descrição das ações. Para interpretar uma hesitação, recorreria também ao que observei e ouvi durante o teste.
 
-O projeto reforçou para mim a influência do design tanto no trabalho cotidiano quanto nas decisões sobre o produto. Hoje, defenderia de forma mais explícita a participação de pessoas externas e a investigação de outras plataformas. Ouvir quem ainda não conhece os processos ajuda a questionar pressupostos e a construir soluções que façam sentido para além da operação existente.
+## Resultados no produto
+
+Os analistas continuam a usar o profiler na preparação dos projetos. Por sugestão deles, acrescentei subtítulos às janelas de configuração para esclarecer a tarefa em andamento. A liderança também usou os protótipos em apresentações comerciais para mostrar os próximos passos da plataforma.
+
+_No monitor, o analista consulta os arquivos gerados em cada etapa._
+
+_Indicadores de execução com valores ilustrativos._

@@ -6,7 +6,7 @@ Uma metodologia complexa, mais simples de aplicar.
 
 ## Contexto e meu papel
 
-O SEBRAE Paraná avaliava ecossistemas de inovação usando planilhas, formulários e documentos separados. Meu papel foi compreender a metodologia, organizar a experiência e desenhar uma plataforma para consultores, que preenchiam avaliações, e gestores, que acompanhavam resultados.
+O SEBRAE Paraná avaliava ecossistemas de inovação usando planilhas, formulários e documentos separados. Como product designer, desenhei o fluxo de preenchimento das avaliações para os consultores e as telas de acompanhamento dos resultados para os gestores.
 
 Estudei o manual de aproximadamente 150 páginas e conversei com a equipe da instituição para entender como o trabalho acontecia.
 

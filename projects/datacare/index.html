@@ -37,7 +37,7 @@
   <div class="figure-image-link"><img src="images/pipeline.png" alt="Duas transformações conectadas no pipeline, com um caminho alternativo para registros com erro" width="1366" height="668" loading="lazy" decoding="async"></div>
   <figcaption>O fluxo mostra em que etapa os dados passam por validação e quando o sistema trata os registros duplicados. <a href="images/pipeline.png">Abrir imagem completa</a></figcaption>
 </figure>
-<section class="story-section"><h2>Contexto e meu papel</h2><p>A Acesso prestava serviços de tratamento de dados e queria ampliar o uso de sua plataforma. A ferramenta incorporava o que a empresa sabia sobre dados brasileiros, como as particularidades de um CPF ou de um endereço. Os analistas, porém, tinham dificuldade para examinar os dados e escolher a ferramenta adequada. A liderança via nisso um obstáculo ao trabalho.</p><p>Entrei no início de 2023 como único designer. Busquei referências em outras plataformas e trabalhei com os desenvolvedores. O líder de produto aprovava as propostas, e eu as testava com analistas e com pessoas de fora da empresa.</p><p>Comecei pela navegação e pela organização das informações em cada tela. Nas entregas seguintes, trabalhei em como mostrar os dados e orientar o analista na escolha das ferramentas.</p></section>
+<section class="story-section"><h2>Contexto e meu papel</h2><p>A empresa Assesso prestava serviços de tratamento e qualidade de dados e buscava ampliar sua atuação como plataforma. Sua ferramenta própria reunia o conhecimento da empresa sobre dados brasileiros, como CPF e endereços, mas os analistas tinham dificuldade para visualizar os dados, compreender as ferramentas disponíveis e operar a interface. A liderança via nessas dificuldades um obstáculo à agilidade dos processos.</p><p>Entrei no início de 2023 como único designer. Busquei referências em outras plataformas e trabalhei com os desenvolvedores. O líder de produto aprovava as propostas, e eu as testava com analistas e com pessoas de fora da empresa.</p><p>Comecei pela navegação e pela organização das informações em cada tela. Nas entregas seguintes, trabalhei em como mostrar os dados e orientar o analista na escolha das ferramentas.</p></section>
 
 <section class="story-section"><h2>Uma interface para o ambiente real de trabalho</h2><p>Observei que os analistas usavam notebooks simples, com telas pequenas. Adotei a resolução de 1366 × 768 como referência para desenhar as tarefas no espaço que eles tinham à disposição.</p><p>Escolhi um tema claro para as telas e a iluminação do escritório. Usei um fundo cinza suave para acomodar tabelas densas. As cores vieram do logotipo, e escolhi a fonte Roboto para os textos.</p><p>Defini componentes que os diferentes módulos poderiam compartilhar. No editor de fluxos, os componentes também precisavam mostrar a relação entre uma tarefa e a seguinte.</p></section>
 
@@ -45,7 +45,7 @@
   <div class="figure-image-link"><video controls playsinline preload="none" poster="images/navegacao-capa.webp" width="684" height="440" aria-label="Demonstração do menu de navegação" src="images/navegacao.mp4"></video></div>
   <figcaption>O analista pode usar a busca do menu para chegar às ferramentas de trabalho. <a href="images/navegacao.mp4">Abrir vídeo completo</a></figcaption>
 </figure>
-<section class="story-section"><h2>Legibilidade em diferentes condições de visão</h2><p>Testo as páginas em diferentes modos de cor para verificar se ainda é possível ler os dados e reconhecer os controles. Nas tabelas, por exemplo, verifico se o contraste e o tamanho das letras ajudam a distinguir o título de uma coluna dos valores que ela contém.</p></section>
+<section class="story-section"><h2>Legibilidade em diferentes condições de visão</h2><p>Testei as páginas em diferentes modos de cor para verificar se os textos, ícones e ações continuam fáceis de distinguir. Também avalio o contraste, o tamanho das letras e a proporção entre títulos, rótulos e valores para que a hierarquia da informação continue clara.</p></section>
 <figure class="case-figure">
   <div class="figure-image-link"><img src="images/acessibilidade.png" alt="A mesma tabela em quatro variações de cor, incluindo uma em tons de cinza" width="2340" height="1168" loading="lazy" decoding="async"></div>
   <figcaption>Comparo a mesma tabela em quatro modos de cor, incluindo a escala de cinza. <a href="images/acessibilidade.png">Abrir imagem completa</a></figcaption>
@@ -55,14 +55,14 @@
 
 <figure class="case-figure datacare-video">
   <div class="figure-image-link"><video controls playsinline preload="none" poster="images/modais-ferramentas-capa.webp" width="684" height="335" aria-label="Protótipo dos modais de ferramentas do profiler" src="images/modais-ferramentas.mp4"></video></div>
-  <figcaption>O protótipo mostra como o analista examina uma coluna e consulta as ferramentas que o profiler sugere. <a href="images/modais-ferramentas.mp4">Abrir vídeo completo</a></figcaption>
+  <figcaption><em>O protótipo mostra a passagem do diagnóstico no profiler à revisão das ferramentas sugeridas.</em> <a href="images/modais-ferramentas.mp4">Abrir vídeo completo</a></figcaption>
 </figure>
 
 <section class="story-section"><h2>Como a cor ajuda a reconhecer cada tarefa</h2><p>Um pipeline podia reunir dezenas de tarefas. Para acompanhar o fluxo, o analista precisava entender de onde vinham os dados de cada tarefa e para onde seguiam, mesmo quando a sequência ocupava mais de uma tela.</p><p>A equipe considerou usar uma cor diferente para cada tarefa. Nos testes, tantas cores dificultaram reconhecer a função de cada uma. Passei a usar a mesma cor para tarefas do mesmo tipo. O roxo identificava transformações. O laranja indicava etapas que executavam outro pipeline. Cada tarefa também tinha nome e ícone.</p><p>Nos testes seguintes, o agrupamento por cor ajudou os participantes a reconhecer as categorias. Apliquei o mesmo critério aos componentes usados em outros pontos do fluxo.</p></section>
 
 <figure class="case-figure">
   <div class="figure-image-link"><img src="images/design-system-previa.webp" alt="Prancha de componentes do pipeline com variações de tarefas, conexões e controles" width="1800" height="993" loading="lazy" decoding="async"></div>
-  <figcaption>O nome e o ícone ajudam a reconhecer a tarefa mesmo quando a cor é difícil de distinguir. <a href="images/design-system.png">Abrir imagem completa</a></figcaption>
+  <figcaption><em>Recorte do sistema de componentes dos pipelines.</em> <a href="images/design-system.png">Abrir imagem completa</a></figcaption>
 </figure>
 
 <section class="story-section"><h2>Assistência para escolher o próximo passo</h2><p>Também explorei o uso de inteligência artificial para orientar a escolha de ferramentas. Na proposta, um assistente resume os problemas encontrados nos dados e explica por que recomenda determinado tratamento.</p><p>Parte dessa proposta ainda aguarda implementação.</p></section>

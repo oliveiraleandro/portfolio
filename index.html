@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/components.css?v=experiment-strike-2">
   <link rel="stylesheet" href="css/responsive.css?v=language-switcher-2">
   <script src="js/contact.js" defer></script>
-  <link rel="stylesheet" href="css/home.css?v=hero-touch-1">
+  <link rel="stylesheet" href="css/home.css?v=hero-office-1">
   <link rel="stylesheet" href="css/header.css?v=immersive-hero-1">
   <script src="js/header.js?v=sticky-1" defer></script>
 
@@ -36,9 +36,10 @@
 </header>
 <main id="conteudo">
 <div class="hero-panel">
-  <video class="hero-video" autoplay muted playsinline aria-hidden="true" poster="assets/hero-android.webp">
-    <source src="assets/hero-android-touch.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)">
-  </video>
+  <picture>
+    <source media="(max-width: 680px)" srcset="assets/hero-office-mobile.webp">
+    <img class="hero-photo" src="assets/hero-office.webp" width="1412" height="941" alt="" fetchpriority="high">
+  </picture>
 <section class="hero container" aria-labelledby="hero-title">
   <div class="hero-copy">
   <h1 id="hero-title">Meu trabalho começa por entender <mark>quem vai usar</mark> o produto.</h1>

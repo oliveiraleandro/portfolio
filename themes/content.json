@@ -35,25 +35,25 @@
       "name": "Iconatus · CAP",
       "description": "Plataforma imobiliária para corretores",
       "path": "projects/iconatus/index.html",
-      "image": "projects/iconatus/images/home v2.png"
+      "image": "assets/home/iconatus-480.webp"
     },
     {
       "name": "Sinapse Finance",
       "description": "Formulários e automações financeiras",
       "path": "projects/sinapse/index.html",
-      "image": "projects/sinapse/images/image 8.png"
+      "image": "assets/home/sinapse-480.webp"
     },
     {
       "name": "Cervello BPMS",
       "description": "Gestão de chamados de suporte",
       "path": "projects/cervello/index.html",
-      "image": "projects/cervello/images/cervello.png"
+      "image": "assets/home/cervello-480.webp"
     },
     {
       "name": "SEBRAE",
       "description": "Avaliação de ecossistemas de inovação",
       "path": "projects/sebrae/index.html",
-      "image": "projects/sebrae/images/Frame 2116.png"
+      "image": "assets/home/sebrae-480.webp"
     }
   ],
   "experiment": {

@@ -100,6 +100,8 @@ class References(HTMLParser):
         for key in ("href", "src", "action"):
             if key in attrs:
                 self.paths.append(attrs[key])
+        if "srcset" in attrs:
+            self.paths.extend(candidate.strip().split()[0] for candidate in attrs["srcset"].split(","))
         if tag == "a" and not attrs["href"].startswith("#"):
             self.case_links.append(attrs["href"])
 
@@ -140,11 +142,18 @@ def generate_home(pages, content):
         directory = page.parent
         slug = directory.name
         config = read_json(directory / "theme.json")
-        # All theme templates emit quoted local asset URLs and single mobile srcsets.
+        # Rebase every local source, preserving responsive width/density descriptors.
         def from_root(match):
             attr, value = match.groups()
             if value.startswith("#"):
                 return match.group(0)
+            if attr == "srcset":
+                candidates = []
+                for candidate in value.split(","):
+                    url, *descriptor = candidate.split()
+                    path = os.path.normpath(directory.relative_to(ROOT) / url)
+                    candidates.append(" ".join([path, *descriptor]))
+                return f'srcset="{", ".join(candidates)}"'
             path = os.path.normpath(str(directory.relative_to(ROOT) / value))
             return f'{attr}="{path}"'
 

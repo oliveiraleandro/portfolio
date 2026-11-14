@@ -1,5 +1,7 @@
 # Guia de estilo dos cases
 
+O texto deve ser cativante e fluido. Um detalhe da rotina de quem usa o produto pode despertar a curiosidade do leitor e dar contexto à decisão que vem a seguir.
+
 Escreva como quem apresenta um projeto a um colega que ainda não o conhece. Use um tom cordial e profissional. Prefira palavras familiares e evite gírias. Quando um termo técnico for necessário para entender uma decisão, explique o que ele significa naquele projeto.
 
 Prefira a ordem direta: apresente quem fez o quê. Evite elipses que obriguem o leitor a completar o sentido. “Os consultores preenchiam as avaliações. Os gestores acompanhavam os resultados” é mais fácil de acompanhar do que “Os consultores preenchiam as avaliações; os gestores, os resultados”. A primeira pessoa pode soar natural sem repetir “eu”: em “estudei o manual”, o verbo já deixa clara a autoria.

@@ -13,7 +13,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 FOOTER = re.compile(r'<footer\b[^>]*\bid="contato"[^>]*>.*?</footer>', re.S)
-STYLE = re.compile(r'\s*<link\b[^>]*href="[^"]*css/footer\.css[^\"]*"[^>]*>')
+STYLE = re.compile(r'\s*<link\b[^>]*href="[^"]*css/(?:home|cases)/footer\.css[^\"]*"[^>]*>')
 
 
 def apply_footer(content, page):
@@ -28,7 +28,8 @@ def apply_footer(content, page):
     directory = posixpath.dirname(page) or '.'
     template = template.replace('{{icon}}', posixpath.relpath('projects/common/icons/whatsapp.svg', directory))
     content = FOOTER.sub(lambda _: template, content)
-    stylesheet = posixpath.relpath('css/footer.css', directory)
+    area = 'home' if page.removeprefix('en/') == 'index.html' else 'cases'
+    stylesheet = posixpath.relpath(f'css/{area}/footer.css', directory)
     content = STYLE.sub('', content)
     return content.replace('</head>', f'\n  <link rel="stylesheet" href="{stylesheet}">\n</head>')
 
@@ -37,7 +38,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    pages = [ROOT/'index.html']
+    pages = []  # The themed homepage is owned by build_themes.py.
     if (ROOT/'en/index.html').is_file():
         pages.append(ROOT/'en/index.html')
     pages += sorted((ROOT/'projects').glob('*/index.html'))

@@ -31,8 +31,10 @@ html = f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A evolução do meu portfólio — Leandro Oliveira</title>
 <meta name="description" content="As imagens mostram como o desenho do meu portfólio mudou ao longo do tempo.">
-<link rel="stylesheet" href="../../css/reset.css"><link rel="stylesheet" href="../../css/variables.css?v=unified-colors-1"><link rel="stylesheet" href="../../css/base.css"><link rel="stylesheet" href="../../css/layout.css"><link rel="stylesheet" href="../../css/components.css?v=experiment-strike-2"><link rel="stylesheet" href="../../css/responsive.css"><link rel="stylesheet" href="../../css/evolution.css?v=experiment-title-2">
-  <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
+  <link rel="stylesheet" href="../../css/cases/base.css">
+  <link rel="stylesheet" href="../../css/cases/header.css">
+  <link rel="stylesheet" href="../../css/cases/article.css">
+  <link rel="stylesheet" href="../../css/cases/evolution.css">
   <script src="../../js/header.js?v=sticky-1" defer></script>
 </head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header container"><a class="identity" href="../../"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a><div class="header-actions"><a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a></div></header>

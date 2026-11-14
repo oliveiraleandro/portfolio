@@ -1,0 +1,15 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./projects.css");
+@import url("./footer.css");
+
+@media (max-width: 480px) {
+  .site-header .header-actions { gap: .4rem; }
+  .site-header .identity { flex-shrink: 1; }
+}
+
+.theme-switch button {
+  padding: .4rem; border: 0; background: transparent;
+  color: inherit; font: inherit; cursor: pointer;
+}

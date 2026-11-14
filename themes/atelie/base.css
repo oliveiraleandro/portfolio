@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, p, figure, blockquote { margin: 0; }
+img { display: block; max-width: 100%; height: auto; }
+button, input, textarea, select { font: inherit; }
+
+:root {
+    --color-text: #19243bde;
+    --color-muted: #53617a;
+    --color-background: #eef25e;
+    --color-hero-background: #fcf7ef92;
+    --color-surface: #f3f6fa10;
+    --color-border: #cd6be880;
+    --color-project-band: #eae7e900;
+    --color-project-link: #19243b;
+    --color-tag-background: #dcd8dc20;
+    --color-tag-text: #19243b;
+    --panel-color: 25 36 59;
+    --image-frame-color: rgb(255 255 255 / 0.15);
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 3rem;
+    --space-6: 5rem;
+    --space-7: 8rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.3rem;
+    --radius-lg: 0.3rem;
+    --content-width: 1280px;
+    --reading-width: 700px;
+    --page-gutter: clamp(1.25rem, 4.8vw, 5rem);
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.0625rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+}
+a {
+    color: inherit;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 1px;
+}
+a:hover {
+    text-decoration-thickness: 2px;
+}
+a:focus-visible {
+    outline: 3px solid #075ec9;
+    outline-offset: 5px;
+    border-radius: var(--radius-sm);
+}
+h1,
+h2,
+h3 {
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+
+    text-wrap: balance;
+}
+h1 {
+    font-size: clamp(2.7rem, 5.6vw, 5rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+}
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.75rem);
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+}
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+p {
+    text-wrap: pretty;
+}
+::selection {
+    background: #dceaff;
+    color: #19243b;
+}
+
+.container { width: min(100%, var(--content-width)); margin-inline: auto; padding-inline: var(--page-gutter); }
+
+.eyebrow {
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+.contact-pending {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    margin-top: var(--space-3);
+}
+.contact-link {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-text);
+    color: white;
+    border-radius: var(--radius-md);
+    margin-top: var(--space-3);
+}
+
+blockquote {
+    border-left: 2px solid var(--color-border);
+    padding-left: var(--space-3);
+    margin-block: var(--space-5);
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.skip-link {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    transform: translateY(-200%);
+    z-index: 10;
+    padding: 0.75rem;
+    background: white;
+}
+.skip-link:focus {
+    transform: translateY(0);
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.whatsapp-button {
+    gap: 0.6rem;
+    font: inherit;
+    font-size: 0.9375rem;
+    border: 0;
+    cursor: pointer;
+}
+.whatsapp-button[hidden] {
+    display: none;
+}
+.whatsapp-button:hover {
+    background: var(--color-muted);
+}
+.whatsapp-button:focus-visible {
+    outline: 3px solid #075ec9;
+    outline-offset: 5px;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    filter: invert(1);
+}
+
+.text-link {
+    color: var(--color-project-link);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+.home {
+    --frame-border: 8px solid var(--image-frame-color);
+    --frame-shadow: 0 12px 32px rgb(31 50 78 / 0.1);
+}
+
+.handwritten {
+    font-family:
+        "SignPainter", "Snell Roundhand", "Segoe Print", "Bradley Hand", cursive;
+    font-size: 1.65rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+
+.home .whatsapp-button {
+    gap: 0.6rem;
+}
+
+.whatsapp-icon {
+    flex: 0 0 20px;
+    filter: invert(1);
+}
+
+@media (max-width: 680px) {
+    .home {
+        --frame-border: 5px solid var(--image-frame-color);
+    }
+}

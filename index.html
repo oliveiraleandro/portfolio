@@ -1,94 +1,302 @@
 <!doctype html>
+<!-- Gerado por scripts/build_themes.py. -->
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leandro Oliveira — Product Designer</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <meta name="description" content="Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.">
   <meta property="og:title" content="Leandro Oliveira — Product Designer">
   <meta property="og:description" content="Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.">
   <meta property="og:type" content="website">
-  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css?v=unified-colors-1">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css?v=home-images-2">
-  <link rel="stylesheet" href="css/components.css?v=experiment-strike-2">
-  <link rel="stylesheet" href="css/responsive.css?v=language-switcher-2">
-  <script src="js/contact.js" defer></script>
-  <link rel="stylesheet" href="css/home.css?v=hero-office-1">
-  <link rel="stylesheet" href="css/header.css?v=immersive-hero-1">
-  <script src="js/header.js?v=sticky-1" defer></script>
-
   <meta property="og:locale" content="pt_BR">
-  <link rel="stylesheet" href="css/datacare.css">
-
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" href="assets/favicon.png">
+  <link id="theme-style" rel="stylesheet">
+  <noscript><link rel="stylesheet" href="themes/atelie/theme.css"></noscript>
+  <script>
+    const themes = [{"id": "agencia-2019", "style": "themes/agencia-2019/theme.css", "bodyClass": "", "scripts": []}, {"id": "atelie", "style": "themes/atelie/theme.css", "bodyClass": "home", "scripts": ["js/header.js"]}, {"id": "flickr", "style": "themes/flickr/theme.css", "bodyClass": "", "scripts": []}, {"id": "mac-classico", "style": "themes/mac-classico/theme.css", "bodyClass": "", "scripts": []}, {"id": "orbita", "style": "themes/orbita/theme.css", "bodyClass": "", "scripts": []}, {"id": "windows-xp", "style": "themes/windows-xp/theme.css", "bodyClass": "", "scripts": ["themes/windows-xp/menu.js"]}];
+    const url = new URL(location.href);
+    const previous = url.searchParams.get("trocar");
+    const choices = themes.filter(theme => theme.id !== previous);
+    const selectedTheme = choices[Math.floor(Math.random() * choices.length)] || themes[0];
+    if (url.searchParams.has("trocar")) {
+      url.searchParams.delete("trocar");
+      // Local file previews can restrict History API URL changes.
+      if (location.protocol !== "file:") history.replaceState(null, "", url);
+    }
+    document.getElementById("theme-style").href = selectedTheme.style;
+    document.documentElement.dataset.theme = selectedTheme.id;
+  </script>
+  <script src="js/contact.js" defer></script>
 </head>
 <body class="home">
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="site-header container">
+  <a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header class="site-header container">
   <div class="identity"><span>Leandro Oliveira</span><span class="role">Product Designer</span></div>
-  <div class="header-actions">
-    <button class="contact-link whatsapp-button contact-header" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
-  </div>
+  <nav class="header-actions" aria-label="Principal">
+    <form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="atelie">Trocar tema</button></form>
+    <button class="contact-link whatsapp-button contact-header" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="projects/common/icons/whatsapp.svg" width="20" height="20" alt="">WhatsApp</button>
+  </nav>
 </header>
-<main id="conteudo">
-<div class="hero-panel">
+  <main class="wrap" id="inicio">
+    <div class="hero-panel">
   <picture>
     <source media="(max-width: 680px)" srcset="assets/hero-office-mobile.webp">
     <img class="hero-photo" src="assets/hero-office.webp" width="1412" height="941" alt="" fetchpriority="high">
   </picture>
-<section class="hero container" aria-labelledby="hero-title">
-  <div class="hero-copy">
-  <h1 id="hero-title">Meu trabalho começa por entender <mark>quem vai usar</mark> o produto.</h1>
-  <p class="hero-intro">Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p></div>
-<div class="hero-art" hidden><img loading="lazy" class="hero-screen hero-sebrae" src="projects/sebrae/images/Frame%202116.png" width="823" height="464" alt="" decoding="async"><img loading="lazy" class="hero-screen hero-sinapse" src="projects/sinapse/images/image%208.png?v=2x-20260916" width="680" height="617" alt="" decoding="async"><img loading="lazy" class="hero-screen hero-cervello" src="projects/cervello/images/cervello.png" width="1210" height="553" alt="" decoding="async"></div>
-</section>
+  <section class="hero container" aria-labelledby="titulo">
+    <div class="hero-copy">
+      <h1 id="titulo">Meu trabalho começa por entender <mark>quem vai usar</mark> o produto.</h1>
+      <p class="hero-intro">Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+    </div>
+  </section>
 </div>
-<section class="project-band datacare" aria-labelledby="datacare-title">
+    <section class="project-band datacare" aria-labelledby="destaque">
   <div class="container project-layout">
     <div class="project-label"><span class="recent-label">Projeto mais recente</span><span class="datacare-name">Datacare</span></div>
-    <div class="project-copy"><h2 id="datacare-title">Conhecimento em dados, mais acessível para quem trabalha com eles</h2><p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
-    <ul class="tags"><li>Product Design</li><li>Design System</li><li>Visualização de dados</li></ul>
-    <a class="text-link" href="projects/datacare/">Ver case completo <span class="case-arrow" aria-hidden="true">→</span><span class="sr-only"> — Datacare</span></a></div>
-    <figure class="project-art art-sebrae"><img class="feature-screen" src="projects/datacare/images/pipeline.png" width="1366" height="668" alt="Pipeline Datacare com etapas de validação e deduplicação conectadas" decoding="async" loading="lazy"><a class="project-art-link" href="projects/datacare/" aria-label="Ver case completo — Datacare"></a></figure>
+    <div class="project-copy"><h2 id="destaque">Conhecimento em dados, mais acessível para quem trabalha com eles</h2><p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+      <ul class="tags"><li>Product Design</li><li>Design System</li><li>Visualização de dados</li></ul>
+      <a class="text-link" href="projects/datacare/index.html">Ver case completo <span class="case-arrow" aria-hidden="true">→</span></a>
+    </div>
+    <figure class="project-art art-sebrae"><img class="feature-screen" src="projects/datacare/images/pipeline.png" alt="Interface do Datacare com as etapas do pipeline conectadas." loading="lazy"><a class="project-art-link" href="projects/datacare/index.html" aria-label="Datacare"></a></figure>
   </div>
 </section>
-<section class="project-archive container" aria-labelledby="archive-title">
-  <h2 id="archive-title">Projetos anteriores</h2>
-  <ul>
-    <li><a href="projects/iconatus/"><strong>Iconatus · CAP</strong><span>Plataforma imobiliária para corretores</span><span aria-hidden="true">→</span></a></li>
-    <li><a href="projects/sinapse/"><strong>Sinapse Finance</strong><span>Formulários e automações financeiras</span><span aria-hidden="true">→</span></a></li>
-    <li><a href="projects/cervello/"><strong>Cervello BPMS</strong><span>Gestão de chamados de suporte</span><span aria-hidden="true">→</span></a></li>
-    <li><a href="projects/sebrae/"><strong>SEBRAE</strong><span>Avaliação de ecossistemas de inovação</span><span aria-hidden="true">→</span></a></li>
-  </ul>
+<section class="project-archive container" aria-labelledby="anteriores">
+  <h2 id="anteriores">Projetos anteriores</h2>
+  <ul><li><a href="projects/iconatus/index.html"><strong>Iconatus · CAP</strong><span>Plataforma imobiliária para corretores</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/sinapse/index.html"><strong>Sinapse Finance</strong><span>Formulários e automações financeiras</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/cervello/index.html"><strong>Cervello BPMS</strong><span>Gestão de chamados de suporte</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/sebrae/index.html"><strong>SEBRAE</strong><span>Avaliação de ecossistemas de inovação</span><span aria-hidden="true">→</span></a></li></ul>
 </section>
-<section class="project-band portfolio-evolution" aria-labelledby="evolution-title">
+<section class="project-band portfolio-evolution" aria-labelledby="experimento">
   <div class="container project-layout">
     <div class="project-label">Meu portfólio</div>
-    <div class="project-copy">
-      <h2 id="evolution-title">Até onde a IA pode ajudar a redesenhar um portfólio?</h2>
-      <p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
-      <a class="text-link" href="projects/portfolio-evolution/">Conhecer o experimento <span class="case-arrow" aria-hidden="true">→</span></a>
+    <div class="project-copy"><h2 id="experimento">Até onde a IA pode ajudar a redesenhar um portfólio?</h2><p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
+      <a class="text-link" href="projects/portfolio-evolution/index.html">Conhecer o experimento <span class="case-arrow" aria-hidden="true">→</span></a>
     </div>
-    <figure class="project-art art-sebrae">
-      <img class="feature-screen" src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" width="1440" height="1000" alt="Página inicial da primeira versão responsiva do portfólio" loading="lazy" decoding="async">
-      <a class="project-art-link" href="projects/portfolio-evolution/" aria-label="Conhecer o experimento com IA no portfólio"></a>
-    </figure>
+    <figure class="project-art art-sebrae"><img class="feature-screen" src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" alt="Primeira versão responsiva da home" loading="lazy"><a class="project-art-link" href="projects/portfolio-evolution/index.html" aria-label="Meu portfólio"></a></figure>
   </div>
 </section>
-</main>
-<footer class="contact container site-footer" id="contato">
-  <div class="site-footer-main">
-    <div class="site-footer-action">
-      <button class="contact-link whatsapp-button" type="button" data-whatsapp hidden><img class="whatsapp-icon" src="projects/common/icons/whatsapp.svg" width="20" height="20" alt="" aria-hidden="true">WhatsApp</button>
-      <noscript><p class="contact-pending">Ative o JavaScript para abrir o contato pelo WhatsApp.</p></noscript>
-    </div>
-    <p class="handwritten contact-note">Boas conversas também<br>constroem grandes produtos.</p>
+  </main>
+  <template data-theme id="theme-agencia-2019">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header><nav class="wrap" aria-label="Principal">
+  <span class="name"><i aria-hidden="true"></i>Leandro Oliveira</span>
+  <div class="menu"><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="agencia-2019">Trocar tema</button></form> <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button></div>
+</nav></header>
+  <main class="wrap" id="inicio">
+    <section class="intro" aria-labelledby="titulo">
+  <p class="role">Leandro Oliveira &nbsp;/&nbsp; Product Designer</p>
+  <figure class="cover"><img src="assets/hero-android.webp" alt="Uma mão humana e uma mão robótica exploram os dois lados de uma folha de papel."></figure>
+  <h1 id="titulo">Meu trabalho começa por entender <em>quem vai usar</em> <span>o produto.</span></h1>
+  <div class="intro-foot"><p>Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p></div>
+</section>
+    <section aria-labelledby="projetos">
+  <h2 class="section-title" id="projetos">Projetos</h2>
+  <div class="collection">
+    <article class="feature">
+      <a class="feature-image" href="projects/datacare/index.html" aria-label="Datacare"><img src="projects/datacare/images/pipeline.png" alt="Interface do Datacare com as etapas do pipeline conectadas."></a>
+      <div class="feature-copy"><p class="meta">Datacare <span>· Projeto mais recente</span></p>
+        <h3><a href="projects/datacare/index.html">Conhecimento em dados, mais acessível para quem trabalha com eles</a></h3>
+        <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+        <p class="tags">Product Design · Design System · Visualização de dados</p>
+      </div>
+    </article>
+    <aside aria-labelledby="anteriores"><h3 id="anteriores">Projetos anteriores</h3>
+      <div class="albums"><a class="album" href="projects/iconatus/index.html"><span class="print"><img src="projects/iconatus/images/home%20v2.png" alt="" loading="lazy"></span><strong>Iconatus · CAP</strong><small>Plataforma imobiliária para corretores</small></a>
+<a class="album" href="projects/sinapse/index.html"><span class="print"><img src="projects/sinapse/images/image%208.png" alt="" loading="lazy"></span><strong>Sinapse Finance</strong><small>Formulários e automações financeiras</small></a>
+<a class="album" href="projects/cervello/index.html"><span class="print"><img src="projects/cervello/images/cervello.png" alt="" loading="lazy"></span><strong>Cervello BPMS</strong><small>Gestão de chamados de suporte</small></a>
+<a class="album" href="projects/sebrae/index.html"><span class="print"><img src="projects/sebrae/images/Frame%202116.png" alt="" loading="lazy"></span><strong>SEBRAE</strong><small>Avaliação de ecossistemas de inovação</small></a></div>
+    </aside>
   </div>
-  <div class="footer-signature">Leandro Oliveira <span>Product Designer</span></div>
-</footer>
+</section>
+<article class="experiment">
+  <img src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" alt="Primeira versão responsiva da home" loading="lazy">
+  <div><p class="meta">Meu portfólio</p>
+    <h3><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></h3>
+    <p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
+  </div>
+</article>
+  </main>
+</template>
+<template data-theme id="theme-flickr">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header><nav class="wrap" aria-label="Principal">
+  <span class="name"><i aria-hidden="true"></i>Leandro Oliveira</span>
+  <div class="menu"><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="flickr">Trocar tema</button></form> <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button></div>
+</nav></header>
+  <main class="wrap" id="inicio">
+    <section class="intro" aria-labelledby="titulo">
+  <div><p class="role">Product Designer</p>
+    <h1 id="titulo">Meu trabalho começa por entender <em>quem vai usar</em> o produto.</h1>
+    <p>Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+  </div>
+  <figure class="cover"><img src="assets/hero-hands-tracing-paper.webp" alt="Duas mãos exploram os dois lados de uma folha translúcida."></figure>
+</section>
+    <section aria-labelledby="projetos">
+  <h2 class="section-title" id="projetos">Projetos</h2>
+  <div class="collection">
+    <article class="feature">
+      <a class="feature-image" href="projects/datacare/index.html" aria-label="Datacare"><img src="projects/datacare/images/pipeline.png" alt="Interface do Datacare com as etapas do pipeline conectadas."></a>
+      <div class="feature-copy"><p class="meta">Datacare <span>· Projeto mais recente</span></p>
+        <h3><a href="projects/datacare/index.html">Conhecimento em dados, mais acessível para quem trabalha com eles</a></h3>
+        <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+        <p class="tags">Product Design · Design System · Visualização de dados</p>
+      </div>
+    </article>
+    <aside aria-labelledby="anteriores"><h3 id="anteriores">Projetos anteriores</h3>
+      <div class="albums"><a class="album" href="projects/iconatus/index.html"><span class="print"><img src="projects/iconatus/images/home%20v2.png" alt="" loading="lazy"></span><strong>Iconatus · CAP</strong><small>Plataforma imobiliária para corretores</small></a>
+<a class="album" href="projects/sinapse/index.html"><span class="print"><img src="projects/sinapse/images/image%208.png" alt="" loading="lazy"></span><strong>Sinapse Finance</strong><small>Formulários e automações financeiras</small></a>
+<a class="album" href="projects/cervello/index.html"><span class="print"><img src="projects/cervello/images/cervello.png" alt="" loading="lazy"></span><strong>Cervello BPMS</strong><small>Gestão de chamados de suporte</small></a>
+<a class="album" href="projects/sebrae/index.html"><span class="print"><img src="projects/sebrae/images/Frame%202116.png" alt="" loading="lazy"></span><strong>SEBRAE</strong><small>Avaliação de ecossistemas de inovação</small></a></div>
+    </aside>
+  </div>
+</section>
+<article class="experiment">
+  <img src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" alt="Primeira versão responsiva da home" loading="lazy">
+  <div><p class="meta">Meu portfólio</p>
+    <h3><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></h3>
+    <p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
+  </div>
+</article>
+  </main>
+</template>
+<template data-theme id="theme-mac-classico">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header class="menubar">
+  <span class="identity"><i class="mac" aria-hidden="true"></i>Leandro Oliveira</span>
+  <nav aria-label="Principal"><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="mac-classico">Trocar tema</button></form></nav>
+  <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button>
+</header>
+  <main class="wrap" id="inicio">
+    <section class="window intro" aria-labelledby="titulo">
+  <div class="titlebar"><span>Apresentação</span></div>
+  <div class="intro-body"><div class="byline">Leandro Oliveira <span>Product Designer</span></div>
+    <h1 id="titulo">Meu trabalho começa por entender <mark>quem vai usar</mark> o produto.</h1>
+    <p class="hero-intro">Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+  </div>
+</section>
+    <section class="window project featured" aria-labelledby="destaque">
+  <div class="titlebar"><span>Datacare · Projeto mais recente</span></div>
+  <div class="project-body"><div class="copy">
+    <h2 id="destaque"><a href="projects/datacare/index.html">Conhecimento em dados, mais acessível para quem trabalha com eles</a></h2>
+    <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+    <p class="tags">Product Design · Design System · Visualização de dados</p>
+  </div><a class="project-image" href="projects/datacare/index.html" aria-label="Datacare"><img src="projects/datacare/images/pipeline.png" alt="Interface do Datacare com as etapas do pipeline conectadas."></a></div>
+</section>
+<section class="window archive" aria-labelledby="anteriores">
+  <div class="titlebar"><h2 id="anteriores">Projetos anteriores</h2></div>
+  <ul><li><a href="projects/iconatus/index.html"><strong>Iconatus · CAP</strong><span>Plataforma imobiliária para corretores</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/sinapse/index.html"><strong>Sinapse Finance</strong><span>Formulários e automações financeiras</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/cervello/index.html"><strong>Cervello BPMS</strong><span>Gestão de chamados de suporte</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/sebrae/index.html"><strong>SEBRAE</strong><span>Avaliação de ecossistemas de inovação</span><span aria-hidden="true">→</span></a></li></ul>
+</section>
+<section class="window project" aria-labelledby="experimento">
+  <div class="titlebar"><span>Meu portfólio</span></div>
+  <div class="project-body"><div class="copy">
+    <h2 id="experimento"><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></h2>
+    <p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
+  </div><a class="project-image" href="projects/portfolio-evolution/index.html" aria-label="Meu portfólio"><img src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" alt="Primeira versão responsiva da home" loading="lazy"></a></div>
+</section>
+  </main>
+</template>
+<template data-theme id="theme-orbita">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header><nav class="wrap" aria-label="Principal">
+  <span class="name"><i aria-hidden="true"></i>Leandro Oliveira</span>
+  <div class="menu"><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="orbita">Trocar tema</button></form> <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button></div>
+</nav></header>
+  <main class="wrap" id="inicio">
+    <section class="intro" aria-labelledby="titulo">
+  <div><p class="role">Product Designer</p>
+    <h1 id="titulo">Meu trabalho começa por entender <em>quem vai usar</em> o produto.</h1>
+    <p>Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+  </div>
+  <div class="orbital" aria-hidden="true"><div class="orbit"></div><div class="planet"></div></div>
+</section>
+    <section aria-labelledby="projetos">
+  <h2 class="section-title" id="projetos">Projetos</h2>
+  <div class="collection">
+    <article class="feature">
+      <a class="feature-image" href="projects/datacare/index.html" aria-label="Datacare"><img src="projects/datacare/images/pipeline.png" alt="Interface do Datacare com as etapas do pipeline conectadas."></a>
+      <div class="feature-copy"><p class="meta">Datacare <span>· Projeto mais recente</span></p>
+        <h3><a href="projects/datacare/index.html">Conhecimento em dados, mais acessível para quem trabalha com eles</a></h3>
+        <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+        <p class="tags">Product Design · Design System · Visualização de dados</p>
+      </div>
+    </article>
+    <aside aria-labelledby="anteriores"><h3 id="anteriores">Projetos anteriores</h3>
+      <div class="albums"><a class="album" href="projects/iconatus/index.html"><span class="print"><img src="projects/iconatus/images/home%20v2.png" alt="" loading="lazy"></span><strong>Iconatus · CAP</strong><small>Plataforma imobiliária para corretores</small></a>
+<a class="album" href="projects/sinapse/index.html"><span class="print"><img src="projects/sinapse/images/image%208.png" alt="" loading="lazy"></span><strong>Sinapse Finance</strong><small>Formulários e automações financeiras</small></a>
+<a class="album" href="projects/cervello/index.html"><span class="print"><img src="projects/cervello/images/cervello.png" alt="" loading="lazy"></span><strong>Cervello BPMS</strong><small>Gestão de chamados de suporte</small></a>
+<a class="album" href="projects/sebrae/index.html"><span class="print"><img src="projects/sebrae/images/Frame%202116.png" alt="" loading="lazy"></span><strong>SEBRAE</strong><small>Avaliação de ecossistemas de inovação</small></a></div>
+    </aside>
+  </div>
+</section>
+<article class="experiment">
+  <img src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" alt="Primeira versão responsiva da home" loading="lazy">
+  <div><p class="meta">Meu portfólio</p>
+    <h3><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></h3>
+    <p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
+  </div>
+</article>
+  </main>
+</template>
+<template data-theme id="theme-windows-xp">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <div class="landscape" aria-hidden="true"></div>
+<nav class="taskbar" aria-label="Principal">
+  <details class="start"><summary>Iniciar</summary>
+    <div class="start-menu"><strong>Leandro Oliveira</strong><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="windows-xp">Trocar tema</button></form></div>
+  </details>
+  <span class="task">Leandro Oliveira</span>
+  <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button>
+</nav>
+  <main class="wrap" id="inicio">
+    <section class="window intro" aria-labelledby="titulo">
+  <div class="titlebar"><span>Apresentação</span></div>
+  <div class="intro-body"><div class="byline">Leandro Oliveira <span>Product Designer</span></div>
+    <h1 id="titulo">Meu trabalho começa por entender <mark>quem vai usar</mark> o produto.</h1>
+    <p class="hero-intro">Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+  </div>
+</section>
+    <section class="window project featured" aria-labelledby="destaque">
+  <div class="titlebar"><span>Datacare · Projeto mais recente</span></div>
+  <div class="project-body"><div class="copy">
+    <h2 id="destaque"><a href="projects/datacare/index.html">Conhecimento em dados, mais acessível para quem trabalha com eles</a></h2>
+    <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+    <p class="tags">Product Design · Design System · Visualização de dados</p>
+  </div><a class="project-image" href="projects/datacare/index.html" aria-label="Datacare"><img src="projects/datacare/images/pipeline.png" alt="Interface do Datacare com as etapas do pipeline conectadas."></a></div>
+</section>
+<section class="window archive" aria-labelledby="anteriores">
+  <div class="titlebar"><h2 id="anteriores">Projetos anteriores</h2></div>
+  <ul><li><a href="projects/iconatus/index.html"><strong>Iconatus · CAP</strong><span>Plataforma imobiliária para corretores</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/sinapse/index.html"><strong>Sinapse Finance</strong><span>Formulários e automações financeiras</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/cervello/index.html"><strong>Cervello BPMS</strong><span>Gestão de chamados de suporte</span><span aria-hidden="true">→</span></a></li>
+<li><a href="projects/sebrae/index.html"><strong>SEBRAE</strong><span>Avaliação de ecossistemas de inovação</span><span aria-hidden="true">→</span></a></li></ul>
+</section>
+<section class="window project" aria-labelledby="experimento">
+  <div class="titlebar"><span>Meu portfólio</span></div>
+  <div class="project-body"><div class="copy">
+    <h2 id="experimento"><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></h2>
+    <p>Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.</p>
+  </div><a class="project-image" href="projects/portfolio-evolution/index.html" aria-label="Meu portfólio"><img src="public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp" alt="Primeira versão responsiva da home" loading="lazy"></a></div>
+</section>
+  </main>
+</template>
+  <script>
+    const variant = document.getElementById("theme-" + selectedTheme.id);
+    if (variant) {
+      document.body.className = selectedTheme.bodyClass;
+      document.body.replaceChildren(variant.content);
+    } else {
+      document.querySelectorAll("template[data-theme]").forEach(node => node.remove());
+    }
+    for (const src of selectedTheme.scripts) {
+      const script = document.createElement("script");
+      script.src = src;
+      document.head.append(script);
+    }
+  </script>
 </body>
 </html>

@@ -39,8 +39,9 @@ Consulte [DOCUMENTACAO.md](DOCUMENTACAO.md) para estrutura, conteúdo, decisões
 ## Publicação enxuta no GitHub Pages
 
 `bash scripts/prepare_publish.sh` prepara `dist/` copiando os HTMLs prontos,
-CSS, JavaScript e imagens de `assets/`, `public/` e `projects/`.
-Não instala dependências, compila código nem executa geradores de conteúdo.
+CSS, JavaScript e imagens de `assets/`, `public/`, `projects/` e dos temas.
+Antes da cópia, verifica a home gerada com `python3 scripts/build_themes.py --check`.
+A cada carregamento, a home sorteia um tema. Consulte [a manutenção dos temas](themes/README.md) para editar ou incluir uma apresentação.
 A pasta é recriada a cada execução e não é versionada.
 
 Capturas de revisão continuam em `review-screenshots/`; referências, documentação,
@@ -56,8 +57,7 @@ os arquivos localmente. Domínio personalizado não está configurado.
 
 ## Rodapé compartilhado
 
-O rodapé compacto tem uma única fonte em `templates/footer.html`, com estilos
-isolados em `css/footer.css`. Edite esses arquivos, não os rodapés de cada página.
+O rodapé compacto dos cases tem uma única fonte em `templates/footer.html`, com estilos em `css/cases/footer.css`.
 O template preserva o botão de WhatsApp, a frase caligráfica e a assinatura.
 As traduções usam o catálogo existente; os caminhos de imagens são calculados
 para cada página. O HTML é gerado previamente, sem framework ou carregamento

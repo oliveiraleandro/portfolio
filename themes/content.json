@@ -1,0 +1,67 @@
+{
+  "name": "Leandro Oliveira",
+  "role": "Product Designer",
+  "intro": {
+    "before": "Meu trabalho começa por entender",
+    "emphasis": "quem vai usar",
+    "after": "o produto.",
+    "description": "Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia."
+  },
+  "menu": {
+    "contact": "WhatsApp",
+    "switch_theme": "Trocar tema"
+  },
+  "labels": {
+    "projects": "Projetos",
+    "archive": "Projetos anteriores",
+    "latest": "Projeto mais recente",
+    "presentation": "Apresentação"
+  },
+  "featured": {
+    "name": "Datacare",
+    "title": "Conhecimento em dados, mais acessível para quem trabalha com eles",
+    "description": "Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.",
+    "path": "projects/datacare/index.html",
+    "image": "projects/datacare/images/pipeline.png",
+    "alt": "Interface do Datacare com as etapas do pipeline conectadas.",
+    "tags": [
+      "Product Design",
+      "Design System",
+      "Visualização de dados"
+    ]
+  },
+  "archive": [
+    {
+      "name": "Iconatus · CAP",
+      "description": "Plataforma imobiliária para corretores",
+      "path": "projects/iconatus/index.html",
+      "image": "projects/iconatus/images/home v2.png"
+    },
+    {
+      "name": "Sinapse Finance",
+      "description": "Formulários e automações financeiras",
+      "path": "projects/sinapse/index.html",
+      "image": "projects/sinapse/images/image 8.png"
+    },
+    {
+      "name": "Cervello BPMS",
+      "description": "Gestão de chamados de suporte",
+      "path": "projects/cervello/index.html",
+      "image": "projects/cervello/images/cervello.png"
+    },
+    {
+      "name": "SEBRAE",
+      "description": "Avaliação de ecossistemas de inovação",
+      "path": "projects/sebrae/index.html",
+      "image": "projects/sebrae/images/Frame 2116.png"
+    }
+  ],
+  "experiment": {
+    "name": "Meu portfólio",
+    "title": "Até onde a IA pode ajudar a redesenhar um portfólio?",
+    "description": "Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.",
+    "path": "projects/portfolio-evolution/index.html",
+    "image": "public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp",
+    "alt": "Primeira versão responsiva da home"
+  }
+}

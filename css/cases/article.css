@@ -1,0 +1,253 @@
+.case-hero { padding-block: var(--space-6); }
+.case-hero h1 { max-width: 1000px; margin-block: var(--space-3); }
+.case-lead { max-width: var(--reading-width); margin-top: var(--space-4); font-size: 1.25rem; }
+.case-body { padding-block: var(--space-4); }
+.story-section { max-width: var(--reading-width); margin-inline: auto; margin-bottom: var(--space-6); }
+.story-section h2 { margin-bottom: var(--space-4); }
+.story-section h3 { margin-top: var(--space-4); margin-bottom: var(--space-2); }
+.story-section p + p { margin-top: var(--space-3); }
+.story-section li + li { margin-top: var(--space-1); }
+.next-case { padding-block: var(--space-5); border-top: 1px solid var(--color-border); }
+.next-case a { display: inline-block; font-size: clamp(1.8rem, 3vw, 2.75rem); padding-block: var(--space-1); }
+
+.tags {
+    padding: 0;
+    list-style: none;
+}
+
+.case .case-hero {
+    background: var(--color-project-band);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-block: var(--space-3);
+    rotate: -0.75deg;
+}
+.tags li {
+    font-size: 0.75rem;
+    color: var(--color-tag-text);
+    background: var(--color-tag-background);
+    border: 0;
+    border-radius: var(--radius-lg);
+    padding: 0.25rem 0.75rem;
+}
+.tags li:nth-child(4n + 1) {
+    transform: rotate(-3deg);
+}
+.tags li:nth-child(4n + 2) {
+    transform: rotate(2deg);
+}
+.tags li:nth-child(4n + 3) {
+    transform: rotate(-1deg);
+}
+.tags li:nth-child(4n + 4) {
+    transform: rotate(4deg);
+}
+
+.iconatus .case-hero {
+    background: var(--color-surface);
+}
+
+.case-logo {
+    width: 128px;
+    height: 64px;
+    object-fit: contain;
+    object-position: left center;
+    margin-bottom: var(--space-4);
+}
+.case-figure {
+    margin: 0 auto var(--space-6);
+}
+.case-opening {
+    margin-top: var(--space-4);
+}
+.figure-image-link {
+    display: block;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.figure-image-link img {
+    width: 100%;
+    height: auto;
+}
+.case-figure figcaption {
+    max-width: var(--reading-width);
+    margin: var(--space-3) auto 0;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+.case-figure figcaption a {
+    display: inline-block;
+    min-height: 44px;
+    padding-block: 0.6rem;
+}
+.case-figure-mobile {
+    display: grid;
+    grid-template-columns: minmax(0, 390px) minmax(0, 300px);
+    justify-content: center;
+    align-items: start;
+    gap: var(--space-5);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+}
+.case-figure-mobile .figure-image-link {
+    max-height: 780px;
+}
+.case-figure-mobile figcaption {
+    margin: 0;
+}
+
+/* Os PNGs do SEBRAE têm 823px: evitar ampliação que prejudique a nitidez. */
+.sebrae .case-figure .figure-image-link {
+    max-width: 823px;
+    margin-inline: 0;
+}
+
+.case:is(.sebrae, .sinapse, .cervello, .iconatus) .story-section,
+.case:is(.sebrae, .sinapse, .cervello, .iconatus) .case-figure figcaption {
+    margin-inline: 0;
+}
+
+.asset-gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+}
+.asset-gallery-images .figure-image-link {
+    flex: 0 1 auto;
+    max-width: 100%;
+    min-width: 0;
+}
+.asset-gallery-images img {
+    width: auto;
+    max-width: 100%;
+}
+.gallery-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Tamanhos de apresentação independentes da resolução dos exports 2×. */
+.sinapse-modals .figure-image-link {
+    flex: 0 1 240px;
+}
+.sinapse-calculation .figure-image-link {
+    flex: 0 1 510px;
+}
+.sinapse-modals img,
+.sinapse-calculation img {
+    width: 100%;
+}
+
+.case .figure-image-link {
+    border: 8px solid var(--image-frame-color);
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgb(31 50 78 / 0.1);
+}
+.case .figure-image-link img {
+    display: block;
+    border-radius: 8px;
+}
+@media (max-width: 680px) {
+    .case .figure-image-link {
+        border-width: 5px;
+        border-radius: 13px;
+    }
+}
+
+/* O corpo dos cases segue a borda esquerda do logo e do título. */
+.case:is(.sinapse, .cervello) .asset-gallery-images {
+    justify-content: start;
+    padding: 0;
+}
+.case.iconatus .case-figure-mobile {
+    display: block;
+    padding: 0;
+}
+.case.iconatus .case-figure-mobile .figure-image-link {
+    max-width: 390px;
+}
+.case.iconatus .case-figure-mobile figcaption {
+    margin-top: var(--space-3);
+}
+
+.case.sinapse .sinapse-exploration {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--space-4);
+}
+.case.sinapse .sinapse-exploration .case-figure {
+    min-width: 0;
+    width: 100%;
+}
+.case.sinapse .sinapse-exploration .figure-image-link {
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .case.sinapse .sinapse-exploration {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+}
+
+/* Imagens relacionadas compartilham uma faixa, com leitura sequencial no celular. */
+.case-media-pair,
+.case-phone-pair,
+.case-copy-phone {
+    display: grid;
+    align-items: start;
+    gap: var(--space-4);
+}
+.case-media-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.case-phone-pair {
+    grid-template-columns: repeat(2, minmax(0, 390px));
+}
+.case-copy-phone {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 390px);
+}
+.case-media-pair > .case-figure,
+.case-phone-pair > .case-figure,
+.case-copy-phone > .case-figure {
+    width: 100%;
+    min-width: 0;
+}
+@media (max-width: 900px) {
+    .case-media-pair,
+    .case-phone-pair,
+    .case-copy-phone {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+}
+
+@media (max-width: 680px) {
+  .case-hero { padding-block: var(--space-5); }
+  .case-hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+  .case-lead { font-size: 1.1rem; }
+  .story-section { margin-bottom: var(--space-5); }
+}
+
+@media (max-width: 680px) {
+  .case-figure { margin-bottom: var(--space-5); }
+  .case-figure-mobile { display: block; padding: var(--space-2); }
+  .case-figure-mobile .figure-image-link { max-height: 620px; }
+  .case-figure-mobile figcaption { margin-top: var(--space-3); }
+}
+@media (max-width: 680px) {
+  .gallery-comparison { grid-template-columns: minmax(0, 1fr); }
+}

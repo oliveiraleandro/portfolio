@@ -10,20 +10,16 @@
   <meta property="og:description" content="Desenhei ferramentas para ajudar os analistas a examinar os dados e escolher como tratá-los no Datacare.">
   <meta property="og:type" content="website">
   <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
-  <link rel="stylesheet" href="../../css/reset.css">
-  <link rel="stylesheet" href="../../css/variables.css?v=unified-colors-1">
-  <link rel="stylesheet" href="../../css/base.css">
-  <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/components.css?v=unified-colors-1">
-  <link rel="stylesheet" href="../../css/responsive.css?v=language-switcher-2">
+  <link rel="stylesheet" href="../../css/cases/base.css">
+  <link rel="stylesheet" href="../../css/cases/header.css">
+  <link rel="stylesheet" href="../../css/cases/article.css">
+  <link rel="stylesheet" href="../../css/cases/datacare.css">
   <script src="../../js/contact.js" defer></script>
-  <link rel="stylesheet" href="../../css/header.css?v=sticky-2">
   <script src="../../js/header.js?v=sticky-1" defer></script>
 
   <meta property="og:locale" content="pt_BR">
-  <link rel="stylesheet" href="../../css/datacare.css?v=video-2">
 
-  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/cases/footer.css">
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -40,10 +36,10 @@
 </figure>
 <section class="story-section"><h2>O trabalho com os analistas</h2><p>A Assesso reuniu em uma plataforma sua experiência no tratamento de dados brasileiros, como CPFs e endereços. Os analistas tinham dificuldade para examinar os registros e escolher a ferramenta adequada para cada problema.</p><p>Entrei no início de 2023. Trabalhei com os desenvolvedores e o líder de produto. Testei as propostas com analistas e com pessoas de fora da empresa, começando pela navegação.</p></section>
 
-<section class="story-section"><h2>O espaço de uma tela de notebook</h2><p>Os analistas usavam notebooks simples. Adotei 1366 × 768 pixels como referência e procurei manter os controles principais nos primeiros 668 pixels de altura. Escolhi um fundo cinza claro para as tabelas, considerando a iluminação do escritório.</p></section>
+<section class="story-section"><h2>O espaço de uma tela de notebook</h2><p>Os analistas usavam notebooks simples. Adotei 1366 × 768 pixels como referência e procurei manter os controles principais nos primeiros 668 pixels de altura. Escolhi um fundo cinza claro para as tabelas, considerando a iluminação do escritório. O modo escuro veio depois, com o auxílio da IA generativa.</p></section>
 
 <figure class="case-figure datacare-video">
-  <div class="figure-image-link"><video controls playsinline preload="none" poster="images/navegacao-capa.webp" width="684" height="440" aria-label="Demonstração do menu de navegação" src="images/navegacao.mp4"></video></div>
+  <div class="figure-image-link"><video autoplay muted loop playsinline controls poster="images/navegacao-capa.webp" width="684" height="440" aria-label="Demonstração do menu de navegação" src="images/navegacao.mp4"></video></div>
   <figcaption>A busca do menu leva o analista à ferramenta desejada. <a href="images/navegacao.mp4">Abrir vídeo completo</a></figcaption>
 </figure>
 <section class="story-section"><h2>Legibilidade das tabelas</h2><p>Testei a interface em diferentes modos de cor para verificar se era possível distinguir textos, ícones e ações. Também avaliei o contraste e o tamanho das letras.</p></section>
@@ -55,7 +51,7 @@
 <section class="story-section"><h2>Entender os dados antes de tratá-los</h2><p>No profiler, o analista examina uma amostra de conjuntos que podem chegar a bilhões de registros. Cada coluna mostra o que os valores representam, como CPFs ou telefones. Mantive os indicadores visíveis durante a rolagem para que o analista pudesse consultá-los enquanto examinava as linhas.</p><p>Escolhi gráficos de acordo com o conteúdo de cada coluna. Nos testes, mesmo quem tinha pouca experiência com dados conseguiu distinguir colunas pelos gráficos. A partir desse diagnóstico, o analista pode incluir uma ferramenta sugerida no pipeline, a sequência de tarefas que transforma os dados.</p></section>
 
 <figure class="case-figure datacare-video">
-  <div class="figure-image-link"><video controls playsinline preload="none" poster="images/modais-ferramentas-capa.webp" width="684" height="335" aria-label="Protótipo dos modais de ferramentas do profiler" src="images/modais-ferramentas.mp4"></video></div>
+  <div class="figure-image-link"><video autoplay muted loop playsinline controls poster="images/modais-ferramentas-capa.webp" width="684" height="335" aria-label="Protótipo dos modais de ferramentas do profiler" src="images/modais-ferramentas.mp4"></video></div>
   <figcaption>Do diagnóstico à escolha de uma ferramenta de tratamento. <a href="images/modais-ferramentas.mp4">Abrir vídeo completo</a></figcaption>
 </figure>
 
@@ -76,7 +72,7 @@
 
 <section class="story-section"><h2>O que o Claude percebeu em um teste sem áudio</h2><p>Durante um teste, o participante parou para me perguntar quando deveria importar um dado e quando deveria criar um. Foi a conversa que me permitiu entender a dúvida.</p><p>Enviei ao Claude a gravação sem áudio para descobrir quais dificuldades ele perceberia só pelas interações. Na primeira análise, ele descreveu a interface como se o participante tivesse visto tudo de uma vez.</p><p>Pedi que mapeasse a interface e acompanhasse as ações na ordem em que ocorreram. Ainda precisei indicar o que a pessoa já tinha visto e precisava lembrar. Hoje, eu começaria a automação pela descrição das ações. Para interpretar uma hesitação, recorreria também ao que observei e ouvi durante o teste.</p></section>
 
-<section class="story-section"><h2>Resultados no produto</h2><p>Os analistas continuam a usar o profiler na preparação dos projetos. Por sugestão deles, acrescentei subtítulos às janelas de configuração para esclarecer a tarefa em andamento. A liderança também usou os protótipos em apresentações comerciais para mostrar os próximos passos da plataforma.</p></section>
+<section class="story-section"><h2>Resultados no produto</h2><p>A apuração dos resultados ainda está em curso.</p></section>
 
 <figure class="case-figure">
   <div class="figure-image-link"><img src="images/monitor.png" alt="Monitor de processos com etapas de uma execução, duração, status e arquivos disponíveis" width="1366" height="668" loading="lazy" decoding="async"></div>

@@ -21,7 +21,7 @@ As referências orientam a direção de arte, sem exigir reprodução pixel a pi
 | `projects/*/images/` | Screenshots originais dos projetos |
 | `projects/*/logo.*` | Logos fornecidos |
 | `projects/common/icons/` | Ícones de princípios e WhatsApp |
-| `css/` | Estilos compartilhados e específicos da home |
+| `css/` | Estilos dos projetos em `css/cases/`. Cada tema guarda seu CSS em `themes/<tema>/` |
 | `js/contact.js` | Contato WhatsApp com obfuscação |
 | `js/language.js` | Preserva a âncora ao trocar de idioma |
 | `en/index.html` e `en/projects/*/index.html` | Cinco versões inglesas geradas |
@@ -51,17 +51,15 @@ As páginas incluem `lang`, links alternativos e metadados Open Graph de idioma.
 
 ## Organização dos estilos
 
-A ordem dos estilos compartilhados é reset, variáveis, base, layout, componentes e responsividade. A home carrega `home.css` ao final, para seus ajustes específicos.
+A home carrega a folha do tema sorteado. As folhas de Ateliê ficam em `themes/atelie/`. As páginas de projeto carregam folhas de `css/cases/`. Cada área tem seu próprio `base.css` com reset, variáveis, tipografia, containers e controles, além de `header.css` e `footer.css`. As media queries ficam junto do componente.
 
 | Arquivo | Responsabilidade |
 | --- | --- |
-| `css/reset.css` | Normalização básica |
-| `css/variables.css` | Cores, espaçamentos, raios, larguras e variável de moldura |
-| `css/base.css` | Tipografia, elementos gerais e fundo da página |
-| `css/layout.css` | Containers, grids e estrutura dos cases |
-| `css/components.css` | Logos, tags, figuras, galerias e contato |
-| `css/responsive.css` | Adaptações compartilhadas por largura |
-| `css/home.css` | Composições, painéis e acabamento exclusivos da home |
+| `themes/atelie/hero.css` | Abertura da home |
+| `themes/atelie/projects.css` | Vitrine e lista de projetos da home |
+| `css/cases/article.css` | Abertura, seções, figuras, galerias e navegação dos cases |
+| `css/cases/datacare.css` | Ajustes específicos do case Datacare |
+| `css/cases/evolution.css` | Timeline e título do case Evolução do Portfólio |
 
 Os parâmetros `?v=...` nos links de estilos e em algumas imagens servem para renovar o cache da prévia. Quando uma mudança não aparecer, conferir o arquivo carregado e atualizar sua versão nas páginas afetadas.
 
@@ -78,13 +76,13 @@ Os parâmetros `?v=...` nos links de estilos e em algumas imagens servem para re
 
 ## Molduras e transparência das imagens
 
-A cor de todas as bordas de imagens da home e dos cases é controlada em `css/variables.css`:
+Cada área define a cor das molduras no seu `base.css`:
 
 ```css
 --image-frame-color: rgb(255 255 255 / 0.15);
 ```
 
-O valor atual representa branco com 15% de opacidade. Alterar essa variável atualiza todas as molduras; `--color-border` continua responsável por outras bordas da interface.
+O valor atual representa branco com 15% de opacidade. Alterar essa variável atualiza as molduras da área; `--color-border` continua responsável por outras bordas da interface.
 
 Nos cases, `.case .figure-image-link` aplica borda de 8px no desktop e 5px até 680px, raio de 16px (13px no mobile) e sombra `0 12px 32px rgb(31 50 78 / 0.1)`. O fundo da moldura é **transparente**. O fundo branco adicional foi removido porque se sobrepunha à borda e diminuía a transparência percebida. A regra intermediária `background-clip: padding-box` também foi removida, pois deixou de ser necessária.
 

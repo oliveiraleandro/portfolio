@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- Gerado por scripts/build_themes.py. -->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$name — $role</title>
+  <meta name="description" content="$description">
+  <meta property="og:title" content="$name — $role">
+  <meta property="og:description" content="$description">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/favicon.png">
+  <link id="theme-style" rel="stylesheet">
+  <noscript><link rel="stylesheet" href="themes/atelie/theme.css"></noscript>
+  <script>
+    const themes = $catalog;
+    const url = new URL(location.href);
+    const previous = url.searchParams.get("trocar");
+    const choices = themes.filter(theme => theme.id !== previous);
+    const selectedTheme = choices[Math.floor(Math.random() * choices.length)] || themes[0];
+    if (url.searchParams.has("trocar")) {
+      url.searchParams.delete("trocar");
+      // Local file previews can restrict History API URL changes.
+      if (location.protocol !== "file:") history.replaceState(null, "", url);
+    }
+    document.getElementById("theme-style").href = selectedTheme.style;
+    document.documentElement.dataset.theme = selectedTheme.id;
+  </script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body class="home">
+  $fallback
+  $variants
+  <script>
+    const variant = document.getElementById("theme-" + selectedTheme.id);
+    if (variant) {
+      document.body.className = selectedTheme.bodyClass;
+      document.body.replaceChildren(variant.content);
+    } else {
+      document.querySelectorAll("template[data-theme]").forEach(node => node.remove());
+    }
+    for (const src of selectedTheme.scripts) {
+      const script = document.createElement("script");
+      script.src = src;
+      document.head.append(script);
+    }
+  </script>
+</body>
+</html>

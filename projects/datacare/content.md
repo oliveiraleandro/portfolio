@@ -12,7 +12,7 @@ Entrei no início de 2023. Trabalhei com os desenvolvedores e o líder de produt
 
 ## O espaço de uma tela de notebook
 
-Os analistas usavam notebooks simples. Adotei 1366 × 768 pixels como referência e procurei manter os controles principais nos primeiros 668 pixels de altura. Escolhi um fundo cinza claro para as tabelas, considerando a iluminação do escritório.
+Os analistas usavam notebooks simples. Adotei 1366 × 768 pixels como referência e procurei manter os controles principais nos primeiros 668 pixels de altura. Escolhi um fundo cinza claro para as tabelas, considerando a iluminação do escritório. O modo escuro veio depois, com o auxílio da IA generativa.
 
 _A busca do menu leva o analista à ferramenta desejada._
 
@@ -62,7 +62,7 @@ Pedi que mapeasse a interface e acompanhasse as ações na ordem em que ocorrera
 
 ## Resultados no produto
 
-Os analistas continuam a usar o profiler na preparação dos projetos. Por sugestão deles, acrescentei subtítulos às janelas de configuração para esclarecer a tarefa em andamento. A liderança também usou os protótipos em apresentações comerciais para mostrar os próximos passos da plataforma.
+A apuração dos resultados ainda está em curso.
 
 _No monitor, o analista consulta os arquivos gerados em cada etapa._
 

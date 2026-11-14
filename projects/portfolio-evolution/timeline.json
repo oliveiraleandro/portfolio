@@ -1,8 +1,8 @@
 {
   "start": "c623256ca7cfdb8051e493cb3468a84eb90058d4",
-  "end": "e41a75ef24e2eb6538edd95234ed89d1eb9e4d7d",
-  "capturedOn": "2026-11-11T01:51:29.543Z",
-  "browser": "157.0.8103.50",
+  "end": "3cd22084172ddf37ca9b2bf8bc2decaac0639f38",
+  "capturedOn": "2026-11-14T19:41:21.395Z",
+  "browser": "157.0.8103.51",
   "locale": "pt-BR",
   "timezone": "America/Sao_Paulo",
   "viewports": {
@@ -256,6 +256,101 @@
         "desktopViewport": "2026-11-10-e41a75e-home-pt-desktop-viewport.webp"
       },
       "kind": "capture"
+    },
+    {
+      "sha": "594104f93e4424e3a70200928345473d97556ffb",
+      "date": "2026-11-11T11:19:11-03:00",
+      "message": "case de volta na home",
+      "title": "O portfólio entra na própria vitrine",
+      "description": "O case sobre a evolução do site ganha uma seção ilustrada na home.",
+      "images": {
+        "desktop": "2026-11-11-594104f-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-11-594104f-home-pt-desktop-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "b18b0508c29b707b9eaf83d250ddd5a0e4959631",
+      "date": "2026-11-12T07:42:45-03:00",
+      "message": "Usa o vídeo do toque no hero e preserva a versão estática",
+      "title": "O toque entre duas mãos",
+      "description": "O vídeo da abertura aproxima uma mão humana de uma robótica. A captura mostra o pôster estático usado com movimento reduzido.",
+      "images": {
+        "desktop": "2026-11-12-b18b050-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-12-b18b050-home-pt-desktop-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "7507658c58606380a0663df0a17511583a9dc544",
+      "date": "2026-11-12T18:30:39-03:00",
+      "message": "ajustes",
+      "title": "Uma nova imagem de abertura",
+      "description": "A cena de escritório passa a abrir a home, com um enquadramento próprio para celular.",
+      "images": {
+        "desktop": "2026-11-12-7507658-home-pt-desktop.webp",
+        "desktopViewport": "2026-11-12-7507658-home-pt-desktop-viewport.webp"
+      },
+      "kind": "capture"
+    },
+    {
+      "sha": "3cd22084172ddf37ca9b2bf8bc2decaac0639f38",
+      "date": "2026-11-14T16:39:51-03:00",
+      "message": "temas",
+      "title": "Seis temas para o mesmo portfólio",
+      "description": "O visitante pode trocar o tema pelo menu superior. As seis apresentações usam os mesmos textos e destinos.",
+      "images": {},
+      "kind": "capture",
+      "themes": [
+        {
+          "slug": "mac-classico",
+          "title": "Mac clássico",
+          "images": {
+            "desktop": "2026-11-14-3cd2208-mac-classico-home-pt-desktop.webp",
+            "desktopViewport": "2026-11-14-3cd2208-mac-classico-home-pt-desktop-viewport.webp"
+          }
+        },
+        {
+          "slug": "windows-xp",
+          "title": "Windows XP",
+          "images": {
+            "desktop": "2026-11-14-3cd2208-windows-xp-home-pt-desktop.webp",
+            "desktopViewport": "2026-11-14-3cd2208-windows-xp-home-pt-desktop-viewport.webp"
+          }
+        },
+        {
+          "slug": "flickr",
+          "title": "Flickr",
+          "images": {
+            "desktop": "2026-11-14-3cd2208-flickr-home-pt-desktop.webp",
+            "desktopViewport": "2026-11-14-3cd2208-flickr-home-pt-desktop-viewport.webp"
+          }
+        },
+        {
+          "slug": "agencia-2019",
+          "title": "Agência 2019",
+          "images": {
+            "desktop": "2026-11-14-3cd2208-agencia-2019-home-pt-desktop.webp",
+            "desktopViewport": "2026-11-14-3cd2208-agencia-2019-home-pt-desktop-viewport.webp"
+          }
+        },
+        {
+          "slug": "orbita",
+          "title": "Órbita",
+          "images": {
+            "desktop": "2026-11-14-3cd2208-orbita-home-pt-desktop.webp",
+            "desktopViewport": "2026-11-14-3cd2208-orbita-home-pt-desktop-viewport.webp"
+          }
+        },
+        {
+          "slug": "atelie",
+          "title": "Ateliê",
+          "images": {
+            "desktop": "2026-11-14-3cd2208-atelie-home-pt-desktop.webp",
+            "desktopViewport": "2026-11-14-3cd2208-atelie-home-pt-desktop-viewport.webp"
+          }
+        }
+      ]
     }
   ]
 }

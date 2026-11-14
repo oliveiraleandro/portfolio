@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CASE = ROOT / 'projects/portfolio-evolution'
 data = json.loads((CASE / 'timeline.json').read_text())
 asset = '../../public/images/cases/portfolio-evolution/'
-visual = {'338d3e6', 'df69626', 'db2f11a', '965b240', '8c59af2', '585f05b', 'cfa01e6', 'd5d556e', '8c79505', '763e258', '4771bec', 'a95c60c', 'e41a75e'}
+visual = {'338d3e6', 'df69626', 'db2f11a', '965b240', '8c59af2', '585f05b', 'cfa01e6', 'd5d556e', '8c79505', '763e258', '4771bec', 'a95c60c', 'e41a75e', '594104f', 'b18b050', '7507658', '3cd2208'}
 
 
 def preview(entry, device, label):
@@ -21,7 +21,8 @@ items = []
 for entry in data['commits']:
     if entry['sha'][:7] not in visual:
         continue
-    items.append(f'''<li class="evolution-step"><div class="evolution-captures">{preview(entry,'desktop','desktop')}</div></li>''')
+    captures = ''.join(preview(view, 'desktop', 'desktop') for view in entry.get('themes', [entry]))
+    items.append(f'<li class="evolution-step"><div class="evolution-captures">{captures}</div></li>')
 
 references = ''.join(
     f'''<figure class="evolution-{device} evolution-reference"><a class="figure-image-link" href="{asset}2026-09-14-c623256-reference-{device}.webp" aria-label="Ampliar referência inicial de design, {label}"><img src="{asset}2026-09-14-c623256-reference-{device}.webp" loading="lazy" alt="Referência inicial de design da home, {label}; não é uma captura do site"></a></figure>'''
@@ -30,6 +31,7 @@ references = ''.join(
 html = f'''<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A evolução do meu portfólio — Leandro Oliveira</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon.png">
 <meta name="description" content="As imagens mostram como o desenho do meu portfólio mudou ao longo do tempo.">
   <link rel="stylesheet" href="../../css/cases/base.css">
   <link rel="stylesheet" href="../../css/cases/header.css">

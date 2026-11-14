@@ -2,7 +2,7 @@
  * node scripts/capture_evolution.cjs — exports committed sources into a temporary directory.
  * Originals remain in the printed temporary directory; only WebP assets enter the site.
  */
-const {execFileSync, spawn} = require('node:child_process');
+const {execFileSync} = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 const os = require('node:os');
@@ -20,8 +20,13 @@ const output = path.join(root, 'public/images/cases/portfolio-evolution');
 const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'portfolio-evolution-'));
 const git = (...args) => execFileSync('git', args, {cwd:root, maxBuffer:100*1024*1024});
 // A prévia mostra a seção que distingue esta versão da home.
-const previewSections = { e41a75e: '.project-band.datacare' };
+const previewSections = { e41a75e: '.project-band.datacare', '594104f': '.project-band.portfolio-evolution' };
+const themeOrder = ['mac-classico', 'windows-xp', 'flickr', 'agencia-2019', 'orbita', 'atelie'];
 const notes = {
+ '594104f':['O portfólio entra na própria vitrine','O case sobre a evolução do site ganha uma seção ilustrada na home.'],
+ 'b18b050':['O toque entre duas mãos','O vídeo da abertura aproxima uma mão humana de uma robótica. A captura mostra o pôster estático usado com movimento reduzido.'],
+ '7507658':['Uma nova imagem de abertura','A cena de escritório passa a abrir a home, com um enquadramento próprio para celular.'],
+ '3cd2208':['Seis temas para o mesmo portfólio','O visitante pode trocar o tema pelo menu superior. As seis apresentações usam os mesmos textos e destinos.'],
  'e41a75e':['DataCare em destaque na home','O DataCare abre a seleção de projetos com o pipeline em destaque. O case reúne estudos de acessibilidade, vídeos da interface e uma exploração com Claude e Figma.'],
  '8c79505':['Uma abertura editorial','Hero com fundo próprio, marca-texto e princípios organizados em uma faixa editorial.'],
  '763e258':['Papel, luz e transparência','Pausa da versão inglesa, cases em ordem cronológica, cores unificadas e fotografia de papel vegetal no hero.'],
@@ -70,41 +75,66 @@ const notes = {
  entry.kind='capture';
  const dir=path.join(temp,short); fs.mkdirSync(dir);
  const available=git('ls-tree','--name-only',sha).toString().trim().split('\n');
- const paths=['index.html','css','js','projects','assets','public'].filter(p=>available.includes(p));
+ const paths=['index.html','css','js','projects','assets','public','themes'].filter(p=>available.includes(p));
  const tar=path.join(temp,short+'.tar'); fs.writeFileSync(tar,git('archive',sha,...paths));
  execFileSync('tar',['-xf',tar,'-C',dir]);fs.unlinkSync(tar);
- for(const [device,viewport] of Object.entries(manifest.viewports)){
- if(options['desktop-only'] && device !== 'desktop') continue;
- const context=await browser.newContext({viewport,deviceScaleFactor:1,locale:'pt-BR',timezoneId:'America/Sao_Paulo',reducedMotion:'reduce',colorScheme:'light'});
- const page=await context.newPage(); const failed=[];
- page.on('requestfailed',r=>failed.push(r.url()));
- await page.goto(`http://127.0.0.1:8765/${short}/`,{waitUntil:'networkidle'});
- await page.addStyleTag({content:'*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}'});
- await page.evaluate(async()=>{document.querySelectorAll('img').forEach(i=>i.loading='eager'); await document.fonts.ready; await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));});
- const broken=await page.evaluate(()=>[...document.images].filter(i=>!i.naturalWidth).map(i=>i.src));
- if(broken.length||failed.length)throw new Error(JSON.stringify({short,device,broken,failed}));
- const base=`${date.slice(0,10)}-${short}-home-pt-${device}`;
- for(const [suffix,fullPage] of [['',true],['-viewport',false]]){
- if (!fullPage && previewSections[short]) {
-   await page.locator(previewSections[short]).evaluate(section => {
-     const headerHeight = document.querySelector('.site-header').getBoundingClientRect().height;
-     window.scrollTo({top: window.scrollY + section.getBoundingClientRect().top - headerHeight, behavior: 'instant'});
-   });
+ const views = [{route:'', suffix:'', images:entry.images}];
+ if (short === '3cd2208') {
+   views.length = 0;
+   entry.themes = [];
+   for (const slug of themeOrder) {
+     const config = JSON.parse(fs.readFileSync(path.join(dir,'themes',slug,'theme.json'),'utf8'));
+     const theme = {slug, title:config.title, images:{}};
+     entry.themes.push(theme);
+     views.push({route:`themes/${slug}/index.html`, suffix:`-${slug}`, images:theme.images});
+   }
  }
- const png=path.join(temp,base+suffix+'.png'); await page.screenshot({path:png,fullPage,animations:'disabled'});
- const name=base+suffix+'.webp';await sharp(png).webp({quality:84}).toFile(path.join(output,name));
- entry.images[device+(suffix?'Viewport':'')]=name;
- }
- await context.close();
+ for (const view of views) {
+   for(const [device,viewport] of Object.entries(manifest.viewports)){
+   if(options['desktop-only'] && device !== 'desktop') continue;
+   const context=await browser.newContext({viewport,deviceScaleFactor:1,locale:'pt-BR',timezoneId:'America/Sao_Paulo',reducedMotion:'reduce',colorScheme:'light'});
+   // Use the portfolio's bundled copy of Orelega One for repeatable, offline captures.
+   const font = path.join(root,'tmp/pdfs/OrelegaOne-Regular.ttf');
+   await context.route('https://fonts.googleapis.com/**', route => route.fulfill({
+     contentType:'text/css', body:'@font-face{font-family:"Orelega One";src:url(https://fonts.gstatic.com/portfolio.ttf)}'
+   }));
+   await context.route('https://fonts.gstatic.com/portfolio.ttf', route => route.fulfill({path:font,contentType:'font/ttf'}));
+   const page=await context.newPage(); const failed=[];
+   page.on('requestfailed',r=>failed.push(r.url()));
+   await page.goto(`http://127.0.0.1:8765/${short}/${view.route}`,{waitUntil:'networkidle'});
+   await page.addStyleTag({content:'*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}'});
+   await page.evaluate(async()=>{document.querySelectorAll('img').forEach(i=>i.loading='eager'); await document.fonts.ready; await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));});
+   const broken=await page.evaluate(()=>[...document.images].filter(i=>!i.naturalWidth).map(i=>i.src));
+   if(broken.length||failed.length)throw new Error(JSON.stringify({short,device,broken,failed}));
+   const base=`${date.slice(0,10)}-${short}${view.suffix}-home-pt-${device}`;
+   for(const [suffix,fullPage] of [['',true],['-viewport',false]]){
+   if (!fullPage && previewSections[short]) {
+     await page.locator(previewSections[short]).evaluate(section => {
+       const headerHeight = document.querySelector('.site-header').getBoundingClientRect().height;
+       window.scrollTo({top: window.scrollY + section.getBoundingClientRect().top - headerHeight, behavior: 'instant'});
+     });
+   }
+   const png=path.join(temp,base+suffix+'.png'); await page.screenshot({path:png,fullPage,animations:'disabled'});
+   const name=base+suffix+'.webp';await sharp(png).webp({quality:84}).toFile(path.join(output,name));
+   view.images[device+(suffix?'Viewport':'')]=name;
+   }
+   await context.close();
+   }
  }
  const existing = manifest.commits.findIndex(item => item.sha === sha);
  if(existing >= 0) {
- entry.images = {...manifest.commits[existing].images, ...entry.images};
+ const prior = manifest.commits[existing];
+ entry.images = {...prior.images, ...entry.images};
+ for (const theme of entry.themes || []) {
+   const oldTheme = prior.themes?.find(item => item.slug === theme.slug);
+   theme.images = {...oldTheme?.images, ...theme.images};
+ }
  manifest.commits[existing] = entry;
  } else manifest.commits.push(entry);
  console.log('Captured',short);
  }
  manifest.commits.sort((a,b) => commits.findIndex(line=>line.startsWith(a.sha+'|')) - commits.findIndex(line=>line.startsWith(b.sha+'|')));
+ manifest.end = manifest.commits.at(-1).sha;
  fs.writeFileSync(manifestPath,JSON.stringify(manifest,null,2)+'\n');
  console.log('Original PNGs:',temp);
  }finally{if(browser)await browser.close();server.close();}

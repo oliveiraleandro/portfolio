@@ -1,0 +1,41 @@
+@font-face { font-family: VT323; src: url(vt323.ttf) format("truetype"); font-display: swap; }
+:root { --blue: #0808ad; --yellow: #ffed00; --cyan: #00eff1; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: clamp(5px,.5vw,10px); background: #000; color: white; font: clamp(1.35rem,1.95vw,2rem)/1.02 VT323, monospace; }
+.wrap { max-width: 1680px; margin-inline: auto; }
+nav, .menu { display: flex; align-items: center; flex-wrap: wrap; gap: .4rem 1.5rem; }
+nav { justify-content: space-between; background: var(--blue); padding: .35em 2%; }
+.identity { display: grid; line-height: .95; }
+.identity strong { font-size: 1.22em; }
+button { color: inherit; font: inherit; border: 0; background: transparent; padding: .35em 0; cursor: pointer; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .11em; }
+button:hover, a:hover { color: var(--yellow); text-decoration: underline; }
+:focus-visible { outline: 3px dashed currentColor; outline-offset: 3px; }
+.skip { position: absolute; top: -10em; background: black; }
+.skip:focus { top: 0; }
+h1,h2,h3,p,ul { margin: 0; }
+section { margin-top: .7em; }
+h1,h2 { padding: .1em 2%; line-height: 1; color: black; }
+h1 { background: var(--cyan); font-size: clamp(2.1rem,3.55vw,3.9rem); }
+h2 { background: var(--yellow); font-size: 1.25em; }
+.intro p { padding: .35em 2% .05em; }
+.feature-body { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: 2%; margin-top: .45em; }
+.feature-body > div { background: var(--blue); padding: .35em 4% .6em; }
+.feature-body img { width: 100%; display: block; image-rendering: pixelated; }
+h3 { font-size: clamp(3rem,5.3vw,5.5rem); line-height: .95; }
+.feature-body p { margin-top: .28em; }
+.subtitle { font-size: 1.14em; }
+.tags { color: var(--cyan); font-size: .85em; }
+.archive ul { padding: .25em 2% 0 1.6em; list-style: square; }
+li::marker { color: var(--cyan); }
+.summary::before { content: " – "; }
+.experiment { padding-bottom: .4em; background: var(--blue); }
+.experiment h2 { background: var(--cyan); }
+.experiment p { padding: .22em 2%; }
+.experiment a { font-size: 1.3em; }
+@media (max-width: 700px) {
+  .feature-body { grid-template-columns: 1fr; gap: .5em; }
+  .feature-body img { max-width: 470px; margin-inline: auto; }
+  .menu { gap: .6em; }
+  .archive li { margin-block: .22em; }
+}

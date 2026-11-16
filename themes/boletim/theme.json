@@ -1,0 +1,9 @@
+{
+  "title": "Boletim",
+  "layout": "documento",
+  "featured_art": {
+    "source": "projects/datacare/images/pipeline.png",
+    "file": "pipeline.webp",
+    "alt": "Pipeline de dados em mosaico de teletexto."
+  }
+}

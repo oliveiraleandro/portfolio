@@ -15,7 +15,7 @@
   <link id="theme-style" rel="stylesheet">
   <noscript><link rel="stylesheet" href="themes/atelie/theme.css"></noscript>
   <script>
-    const themes = [{"id": "agencia-2019", "style": "themes/agencia-2019/theme.css", "bodyClass": "", "scripts": []}, {"id": "atelie", "style": "themes/atelie/theme.css", "bodyClass": "home", "scripts": ["js/header.js"]}, {"id": "cristal", "style": "themes/cristal/theme.css", "bodyClass": "", "scripts": []}, {"id": "de-bolso", "style": "themes/de-bolso/theme.css", "bodyClass": "", "scripts": []}, {"id": "favoritos", "style": "themes/favoritos/theme.css", "bodyClass": "", "scripts": []}, {"id": "fichario", "style": "themes/fichario/theme.css", "bodyClass": "", "scripts": []}, {"id": "flickr", "style": "themes/flickr/theme.css", "bodyClass": "", "scripts": []}, {"id": "hipertexto", "style": "themes/hipertexto/theme.css", "bodyClass": "", "scripts": []}, {"id": "lado-b", "style": "themes/lado-b/theme.css", "bodyClass": "", "scripts": []}, {"id": "mac-classico", "style": "themes/mac-classico/theme.css", "bodyClass": "", "scripts": []}, {"id": "orbita", "style": "themes/orbita/theme.css", "bodyClass": "", "scripts": []}, {"id": "windows-xp", "style": "themes/windows-xp/theme.css", "bodyClass": "", "scripts": ["themes/windows-xp/menu.js"]}];
+    const themes = [{"id": "agencia-2019", "style": "themes/agencia-2019/theme.css", "bodyClass": "", "scripts": []}, {"id": "atelie", "style": "themes/atelie/theme.css", "bodyClass": "home", "scripts": ["js/header.js"]}, {"id": "boletim", "style": "themes/boletim/theme.css", "bodyClass": "", "scripts": []}, {"id": "cristal", "style": "themes/cristal/theme.css", "bodyClass": "", "scripts": []}, {"id": "de-bolso", "style": "themes/de-bolso/theme.css", "bodyClass": "", "scripts": []}, {"id": "favoritos", "style": "themes/favoritos/theme.css", "bodyClass": "", "scripts": []}, {"id": "fichario", "style": "themes/fichario/theme.css", "bodyClass": "", "scripts": []}, {"id": "flickr", "style": "themes/flickr/theme.css", "bodyClass": "", "scripts": []}, {"id": "hipertexto", "style": "themes/hipertexto/theme.css", "bodyClass": "", "scripts": []}, {"id": "lado-b", "style": "themes/lado-b/theme.css", "bodyClass": "", "scripts": []}, {"id": "mac-classico", "style": "themes/mac-classico/theme.css", "bodyClass": "", "scripts": []}, {"id": "orbita", "style": "themes/orbita/theme.css", "bodyClass": "", "scripts": []}, {"id": "sequencia", "style": "themes/sequencia/theme.css", "bodyClass": "", "scripts": []}, {"id": "windows-xp", "style": "themes/windows-xp/theme.css", "bodyClass": "", "scripts": ["themes/windows-xp/menu.js"]}];
     const url = new URL(location.href);
     const previous = url.searchParams.get("trocar");
     const currentIndex = themes.findIndex(theme => theme.id === previous);
@@ -130,6 +130,40 @@
     <p>a criatividade não elimina a possibilidade de alucinação; ela apenas torna a veracidade um critério que nem sempre é relevante para avaliar o resultado.</p>
   </div>
 </article>
+  </main>
+</template>
+<template data-theme id="theme-boletim">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header class="wrap"><nav aria-label="Principal">
+  <div class="identity"><strong>Leandro Oliveira</strong><span>Product Designer</span></div>
+  <div class="menu"><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="boletim">Trocar tema</button></form> <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button></div>
+</nav></header>
+  <main class="wrap" id="inicio">
+    <section class="intro" aria-labelledby="titulo">
+  <h1 id="titulo">Meu trabalho começa por entender quem vai usar o produto.</h1>
+  <p>Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+</section>
+    <section class="featured" aria-labelledby="destaque">
+  <h2 id="destaque">Projeto mais recente</h2>
+  <div class="feature-body"><div>
+    <h3><a href="projects/datacare/index.html">Datacare</a></h3>
+    <p class="subtitle">Conhecimento em dados, mais acessível para quem trabalha com eles</p>
+    <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+    <p class="tags">Product Design · Design System · Visualização de dados</p>
+  </div><img src="themes/boletim/pipeline.webp" alt="Pipeline de dados em mosaico de teletexto." loading="lazy"></div>
+</section>
+<section class="archive" aria-labelledby="anteriores">
+  <h2 id="anteriores">Projetos anteriores</h2>
+  <ul><li><a href="projects/iconatus/index.html">Iconatus · CAP</a><span class="summary">Plataforma imobiliária para corretores</span></li>
+<li><a href="projects/sinapse/index.html">Sinapse Finance</a><span class="summary">Formulários e automações financeiras</span></li>
+<li><a href="projects/cervello/index.html">Cervello BPMS</a><span class="summary">Gestão de chamados de suporte</span></li>
+<li><a href="projects/sebrae/index.html">SEBRAE</a><span class="summary">Avaliação de ecossistemas de inovação</span></li></ul>
+</section>
+<section class="experiment" aria-labelledby="experimento">
+  <h2 id="experimento">Meu portfólio</h2>
+  <p><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></p>
+  <p>a criatividade não elimina a possibilidade de alucinação; ela apenas torna a veracidade um critério que nem sempre é relevante para avaliar o resultado.</p>
+</section>
   </main>
 </template>
 <template data-theme id="theme-cristal">
@@ -481,6 +515,40 @@
     <p>a criatividade não elimina a possibilidade de alucinação; ela apenas torna a veracidade um critério que nem sempre é relevante para avaliar o resultado.</p>
   </div>
 </article>
+  </main>
+</template>
+<template data-theme id="theme-sequencia">
+<a class="skip skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header class="wrap"><nav aria-label="Principal">
+  <div class="identity"><strong>Leandro Oliveira</strong><span>Product Designer</span></div>
+  <div class="menu"><form class="theme-switch" action="index.html" method="get"><button type="submit" name="trocar" value="sequencia">Trocar tema</button></form> <button class="tray" type="button" data-whatsapp hidden>WhatsApp ↗</button></div>
+</nav></header>
+  <main class="wrap" id="inicio">
+    <section class="intro" aria-labelledby="titulo">
+  <h1 id="titulo">Meu trabalho começa por entender quem vai usar o produto.</h1>
+  <p>Eu investigo como as pessoas usam software no dia a dia, onde encontram dificuldades e de que informações precisam para decidir. A partir disso, desenho ferramentas que ajudam profissionais a realizar tarefas com mais clareza e autonomia.</p>
+</section>
+    <section class="featured" aria-labelledby="destaque">
+  <h2 id="destaque">Projeto mais recente</h2>
+  <div class="feature-body"><div>
+    <h3><a href="projects/datacare/index.html">Datacare</a></h3>
+    <p class="subtitle">Conhecimento em dados, mais acessível para quem trabalha com eles</p>
+    <p>Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.</p>
+    <p class="tags">Product Design · Design System · Visualização de dados</p>
+  </div><img src="themes/sequencia/pipeline.webp" alt="Etapas do pipeline de dados em quatro fotogramas." loading="lazy"></div>
+</section>
+<section class="archive" aria-labelledby="anteriores">
+  <h2 id="anteriores">Projetos anteriores</h2>
+  <ul><li><a href="projects/iconatus/index.html"><img src="assets/home/iconatus-480.webp" alt="" loading="lazy"><strong>Iconatus · CAP</strong> — Plataforma imobiliária para corretores</a></li>
+<li><a href="projects/sinapse/index.html"><img src="assets/home/sinapse-480.webp" alt="" loading="lazy"><strong>Sinapse Finance</strong> — Formulários e automações financeiras</a></li>
+<li><a href="projects/cervello/index.html"><img src="assets/home/cervello-480.webp" alt="" loading="lazy"><strong>Cervello BPMS</strong> — Gestão de chamados de suporte</a></li>
+<li><a href="projects/sebrae/index.html"><img src="assets/home/sebrae-480.webp" alt="" loading="lazy"><strong>SEBRAE</strong> — Avaliação de ecossistemas de inovação</a></li></ul>
+</section>
+<section class="experiment" aria-labelledby="experimento">
+  <h2 id="experimento">Meu portfólio</h2>
+  <p><a href="projects/portfolio-evolution/index.html">Até onde a IA pode ajudar a redesenhar um portfólio?</a></p>
+  <p>a criatividade não elimina a possibilidade de alucinação; ela apenas torna a veracidade um critério que nem sempre é relevante para avaliar o resultado.</p>
+</section>
   </main>
 </template>
 <template data-theme id="theme-windows-xp">

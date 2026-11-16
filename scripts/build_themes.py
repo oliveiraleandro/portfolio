@@ -68,7 +68,7 @@ def generate(directory, content):
     if art_override and art_override["source"] == content["featured"]["image"]:
         fields["featured_image"] = quote(art_override["file"])
         fields["featured_alt"] = escape(art_override["alt"])
-    cards = [render(TEMPLATES / f"{layout}-card.html", **project_fields(project, directory))
+    cards = [render(template("card.html", f"{layout}-card.html"), **project_fields(project, directory))
              for project in content["archive"]]
     labels = content["labels"]
     projects = render(template("projects.html", f"{layout}-projects.html"), **fields,

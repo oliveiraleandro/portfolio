@@ -29,3 +29,9 @@ A primeira comparação mostrou tipografia e faixa de princípios menores que a 
 ## Limites e refinamentos
 
 A textura do pincel é uma nova imagem na mesma direção da referência. A tipografia rasterizada da proposta tem pequenas diferenças de renderização frente às fontes reais. Essas diferenças são P3. A captura mobile foi feita antes da calibração final da escala desktop, e a revisão posterior em inglês a 320 px confirmou o comportamento das regras responsivas.
+
+## Sequência e Boletim
+
+final result: blocked
+
+Os testes estáticos conferiram conteúdo e destinos dos 14 temas, sorteio, exclusão do tema atual na troca, recursos locais e isolamento de estilos. A comparação visual no navegador ficou pendente porque o navegador integrado bloqueou a abertura da prévia local.

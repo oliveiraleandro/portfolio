@@ -1,43 +1,23 @@
-# CAP: uma plataforma imobiliária no desktop e no celular
+# CAP no computador e no celular
 
-Informação para apoiar a rotina dos corretores.
+Na tabela de imóveis do CAP, as visitas recentes ficavam na última coluna. Ao levar o CAP para o celular, quis entender o que o corretor precisava saber antes mesmo de abrir a ficha de um imóvel.
 
-*Precificação reúne valores atuais, histórico e comparações regionais.*
+A Iconatus já conhecia meu trabalho. Durante três meses, fui o único designer no redesenho da plataforma e trabalhei com o fundador e os desenvolvedores. A partir de conversas com os corretores, mapeei o caminho que faziam entre as telas. As visitas indicavam se havia atividade recente em um imóvel. Mantive a tabela no computador e, no celular, trouxe as visitas para o início do cartão de cada imóvel.
 
-## Contexto e meu papel
+Na ficha do imóvel, experimentei dispor os detalhes em uma única coluna. A página ficou longa e a Iconatus preferiu manter as abas. Dei mais destaque à aba aberta e ajustei o acesso às demais para que o corretor pudesse trocar de aba sem deslizar a tela para os lados. Para a página inicial, propus destacar os imóveis captados ou acompanhados recentemente. Queria que o corretor pudesse retomar o trabalho de onde havia parado.
 
-Durante três meses, fui o único designer no redesign do CAP, trabalhando com o fundador e os desenvolvedores. O desafio era preparar a plataforma imobiliária para o celular sem remover funcionalidades. Conversei com dois corretores e mapeei telas e jornadas.
+Nas conversas, os corretores levantaram uma dúvida sobre os preços. Até que ponto o valor exibido no CAP servia de referência para avaliar um imóvel? Destaquei o preço atual e mostrei como ele variava ao longo do tempo e em relação aos imóveis da região. A Iconatus recebeu bem a proposta. Quando levei a dúvida dos corretores à empresa, ela orientou a equipe a publicar apenas os dados que considerava confiáveis. Desde então, procuro entender de onde vem um preço antes de decidir como apresentá-lo.
 
-## Adaptar exigia rever prioridades
+Depois de validar as telas do computador com a Iconatus, reduzi a variedade de cores e fontes e reuni os componentes que a equipe poderia reutilizar. Nas partes da implementação que acompanhei, as telas ficaram próximas do protótipo. A equipe não mediu o uso após a entrega de forma sistemática. Com mais tempo, eu observaria por qual imóvel os corretores começam o dia para saber se os destaques da página inicial fazem sentido na rotina deles.
 
-Mantive tabelas no desktop e transformei as linhas em cards no celular. As visitas recentes, antes na última coluna, ganharam destaque por indicarem atividade do imóvel. Depois vinham o resumo e o acesso aos detalhes.
+_O corretor pode comparar o preço de um imóvel com seu histórico e com os valores da região._
 
-Na visão detalhada, propus substituir abas por uma sequência vertical. O cliente preferiu mantê-las; a alternativa também criava uma página longa. Ajustei seus estados e acesso para evitar rolagem horizontal adicional.
+_No computador, a página inicial destaca os imóveis com atividade recente._
 
-Na home, propus destacar captações e acompanhamentos recentes para facilitar a retomada do trabalho, como hipótese baseada nas jornadas.
+_No celular, o corretor percorre as atividades de cima para baixo._
 
-*Captações e acompanhamentos recentes reunidos na home desktop.*
+_A busca mostra cada oferta em um cartão._
 
-*No celular, atividades organizadas em sequência vertical.*
+_O corretor alterna entre as abas para consultar os detalhes do imóvel._
 
-*Busca de ofertas apresentada em cards.*
-
-*Abas preservadas na visão detalhada do imóvel.*
-
-## Precificação e confiança
-
-Dei destaque aos preços atuais, apresentei o histórico em uma série temporal e acrescentei comparações regionais. O cliente recebeu bem a proposta.
-
-Um corretor se interessou pelas tendências, mas questionou a precisão dos dados. Ao perguntar sobre incerteza, recebi a orientação de que informações incertas não seriam exibidas. A confiabilidade permanecia uma responsabilidade de negócio e tecnologia, além do redesign.
-
-Reduzi a variedade de cores e fontes, consolidando componentes depois de validar a direção visual com o cliente no desktop.
-
-*Precificação adaptada ao celular. Os valores ilustram a interface, sem representar resultados do redesign.*
-
-## Resultados e aprendizado
-
-O trabalho cobriu toda a plataforma, com padrões reutilizáveis e soluções específicas para mobile. As partes da implementação que acompanhei ficaram próximas do protótipo.
-
-Não houve medição estruturada após a entrega; os resultados observados são qualitativos. Com mais tempo, acompanharia o uso real e aprofundaria a home.
-
-O projeto mostrou que tornar dados mais compreensíveis também pode revelar dúvidas que a interface sozinha não resolve.
+_O corretor também pode consultar os preços pelo celular. Os valores são ilustrativos._

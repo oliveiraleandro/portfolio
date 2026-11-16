@@ -59,7 +59,7 @@
   "experiment": {
     "name": "Meu portfólio",
     "title": "Até onde a IA pode ajudar a redesenhar um portfólio?",
-    "description": "Redesenhei meu portfólio para testar como a IA poderia me ajudar nas decisões de design. Usei o ChatGPT para explorar composições e observei como elas funcionavam ao navegar pela página. Quando precisei comparar tons de uma cor, fiz os ajustes diretamente no código.",
+    "description": "a criatividade não elimina a possibilidade de alucinação; ela apenas torna a veracidade um critério que nem sempre é relevante para avaliar o resultado.",
     "path": "projects/portfolio-evolution/index.html",
     "image": "public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp",
     "alt": "Primeira versão responsiva da home"

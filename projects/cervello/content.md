@@ -1,41 +1,19 @@
 # Cervello BPMS
 
-Uma base visual e técnica para modernizar uma plataforma corporativa.
+Alguns dos meus colegas usavam o Cervello para atender chamados de TI e trabalhavam na mesma sala que eu. Nas conversas do dia a dia, eles me mostravam dificuldades que raramente chegavam à equipe de produto.
 
-*Atendimento com contexto, status e informações essenciais do chamado.*
+Entrei em 2018 e fui o único designer durante cerca de quatro anos. Os controles mudavam de aparência e de lugar conforme o módulo. O gerente de produto e eu começamos pelo caminho que o suporte percorria com mais frequência, do login até a abertura de um chamado. Eu levava os ajustes aos protótipos e voltava a conversar com os colegas para saber se as mudanças faziam sentido durante o atendimento.
 
-## Contexto e meu papel
+Cada cliente podia usar as cores da própria marca. Gerei por código as combinações de texto e fundo e mantive as cores das mensagens de erro, por exemplo, para que o suporte pudesse reconhecê-las em qualquer tema. Na página inicial, propus uma biblioteca de imagens que os clientes pudessem usar nos atalhos sem pagar royalties a cada uso.
 
-Em 2018, entrei no Cervello, plataforma de TI e chamados cuja interface acumulava controles e inconsistências. Durante aproximadamente quatro anos, fui o único designer, atuando em pesquisa qualitativa, prototipação, Design System e implementação em HTML, CSS e SCSS.
+Algumas páginas ficavam a vários passos da tela inicial. Propus uma busca que alcançasse todos os módulos. O gerente de produto sugeriu mostrar também o caminho até a página encontrada. No aplicativo, propus dar menos destaque à configuração dos painéis. Depois da implantação, o suporte raramente precisava criar um painel ou configurar novamente a página inicial.
 
-Com o PM, priorizei login, home e atendimento, seguindo as tarefas mais frequentes do suporte.
+Como a equipe não tinha um desenvolvedor dedicado à interface, participei também da implementação. Substituí boa parte dos estilos do Bootstrap por componentes com a mesma aparência em diferentes módulos. Escrevi os estilos em SCSS e usei a convenção BEM para que as partes de cada componente seguissem uma regra comum de nomenclatura. Nos painéis, mantive a biblioteca que os desenvolvedores já usavam. A cada entrega, revisava as telas e atualizava o protótipo.
 
-## Personalização com consistência
+Os colegas do suporte que testaram as telas aprovaram as mudanças. O gerente de produto e a equipe comercial também aprovaram o resultado. A personalização ajudava nas apresentações a clientes com marcas diferentes. A empresa assinou novos contratos nesse período, mas os dados que acompanhávamos não permitem atribuí-los ao redesenho. Os componentes ficaram disponíveis para outros módulos. Se retomasse o projeto, envolveria os colegas do suporte também na escolha dos problemas que a equipe deveria resolver primeiro.
 
-O produto precisava assumir a identidade de diferentes clientes. Criei relações predefinidas entre texto e fundo e variações de cor geradas por código. Sucesso, alerta e erro mantiveram cores fixas para preservar seus significados.
+_A equipe de suporte pode consultar a situação do chamado durante o atendimento._
 
-Organizei tipografia, espaçamentos e ações. Na home personalizável, propus uma biblioteca de imagens royalty free para facilitar a configuração dos atalhos.
+_O mesmo painel aparece nos temas claro e escuro. Os valores são ilustrativos._
 
-Também reorganizei telas fragmentadas em abas. Para acessar páginas mais profundas, propus uma busca universal; o PM complementou a orientação com breadcrumbs. As propostas eram discutidas com usuários em conversas informais apoiadas por protótipos.
-
-## Do sistema visual ao código
-
-Os módulos compartilhavam fundamentos, com controles próprios quando necessário. Sem um desenvolvedor front-end dedicado, substituí grande parte do Bootstrap por uma base em SCSS organizada com BEM, reutilizando componentes e gerando opções de cor.
-
-Nos dashboards, respeitei a biblioteca JavaScript existente. No aplicativo, defendi menor prioridade para configurar a home e criar dashboards: eram tarefas de implantação, pouco frequentes no suporte.
-
-Essa proximidade entre desenho e implementação permitia que os padrões definidos nas telas fossem incorporados aos estilos utilizados pelos diferentes módulos da plataforma.
-
-Revisava as entregas e mantinha o protótipo sincronizado com o produto.
-
-*Dashboards claros e escuros. Valores ilustrativos, sem representar impacto do redesign.*
-
-*Home, solicitações e busca no aplicativo com identidade white label.*
-
-## Resultados e aprendizado
-
-Usuários envolvidos nas validações, PM e comercial avaliaram positivamente o redesign. A personalização facilitava apresentar a plataforma a diferentes clientes.
-
-Não havia telemetria sistemática. Novos contratos foram assinados, mas não tenho dados para atribuí-los ao redesign.
-
-O trabalho deixou uma experiência reorganizada e componentes reutilizáveis. Hoje, usaria esses aprendizados para influenciar mais a direção do produto.
+_No aplicativo, a identidade visual do cliente acompanha a equipe desde a página inicial até a consulta de uma solicitação._

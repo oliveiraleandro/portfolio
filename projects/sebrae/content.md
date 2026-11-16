@@ -1,41 +1,23 @@
 # Ecossistema de Inovação SEBRAE
 
-Uma metodologia complexa, mais simples de aplicar.
+Para preencher uma avaliação, o consultor do SEBRAE Paraná precisava alternar entre o formulário, a planilha e o manual do método. O gestor dependia do relatório do consultor para acompanhar os resultados.
 
-*Gráficos de radar preservam a linguagem visual já conhecida da metodologia.*
+Desenhei as telas para os dois grupos. Antes de organizar o formulário, estudei o manual de cerca de 150 páginas e conversei com a equipe do SEBRAE sobre como aplicava o método. Dividi a avaliação em etapas e coloquei a orientação de cada uma junto à pergunta que o consultor precisava responder.
 
-## Contexto e meu papel
+Mantive os gráficos de radar que os especialistas já conheciam. Nos testes, quem tinha menos familiaridade com o método teve dificuldade para entender alguns termos e ler partes da tela. A revisão das telas incluiu mudanças nos termos e no contraste. Os especialistas reconheceram o método na interface e apontaram outra dificuldade, que aparecia antes mesmo de abrir o formulário.
 
-O SEBRAE Paraná avaliava ecossistemas de inovação usando planilhas, formulários e documentos separados. Como product designer, desenhei o fluxo de preenchimento das avaliações para os consultores e as telas de acompanhamento dos resultados para os gestores.
+O catálogo organizava as avaliações por projeto para que o gestor pudesse acompanhar cada iniciativa ao longo do tempo. O consultor começava o dia pensando em quem precisava entrevistar. Para chegar a essa tarefa, tinha de procurar o projeto. Havia pouca margem para mudar o catálogo, então propus incluir projetos já preenchidos. Eles serviam de referência para decidir quanto detalhe registrar na avaliação.
 
-Estudei o manual de aproximadamente 150 páginas e conversei com a equipe da instituição para entender como o trabalho acontecia.
+Com a plataforma, os consultores passaram a preencher as avaliações com o manual à mão. Os gestores ganharam acesso ao histórico e aos dados em tempo real e passaram a depender menos dos relatórios. A equipe do SEBRAE destacou a fidelidade ao método. Se retomasse o projeto, começaria pela tarefa do dia na página inicial do consultor e manteria o catálogo para quem acompanha as iniciativas.
 
-## Ajuda no momento certo
+_Os gráficos de radar seguem o formato que a equipe conhecia do método._
 
-Organizei o fluxo em etapas, com uma ação principal evidente em cada contexto. As explicações metodológicas ficaram disponíveis em modais, permitindo consultar orientações sem interromper o preenchimento com conteúdo extenso.
+_O consultor pode ler a explicação sobre efetividade enquanto preenche a avaliação._
 
-Mantive os gráficos de radar, familiares à equipe. Nos testes, não especialistas revelaram problemas de contraste e terminologia, que foram revistos. Os especialistas reconheceram o método, mas apontaram um conflito na organização das avaliações.
+_O consultor escolhe as vocações do território durante a avaliação._
 
-*Seleção de vocações com os dados necessários à avaliação.*
+_O painel mostra a área do projeto durante a análise das vocações econômicas._
 
-*Análise de vocações e potenciais com delimitação territorial visível.*
+_O consultor encontra as avaliações no catálogo de projetos._
 
-*Explicações de efetividade disponíveis durante o preenchimento, sob demanda.*
-
-## Projetos ou tarefas?
-
-O catálogo tratava cada avaliação como um projeto, atendendo à necessidade institucional de acompanhar iniciativas ao longo do tempo. Os consultores pensavam em atividades: entrevistar, avaliar e entregar informações.
-
-Como havia pouca margem para mudar essa estrutura, propus iniciar o sistema com projetos reais cadastrados. Eles serviriam de referência para organizar avaliações e entender o nível de detalhe esperado.
-
-A proposta ajudava no aprendizado, mas não eliminava o conflito. Hoje, exploraria uma entrada orientada pelas tarefas dos consultores, preservando os projetos na visão gerencial.
-
-*O catálogo evidencia a organização institucional que exigia adaptação dos consultores.*
-
-## Resultados e aprendizado
-
-A plataforma reuniu operação e orientações. Os gestores passaram a consultar dados atuais e históricos diretamente, em tempo real, reduzindo a dependência de relatórios preparados pelos consultores.
-
-O retorno qualitativo do SEBRAE foi positivo, especialmente pela fidelidade ao método. Aprendi que a estrutura necessária para gerir um processo pode diferir daquela que ajuda alguém a executá-lo.
-
-*Comparação histórica dos indicadores. Os valores ilustram a interface, sem representar métricas de impacto do redesign.*
+_O gráfico compara os indicadores ao longo do tempo. Os valores são ilustrativos._

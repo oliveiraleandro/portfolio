@@ -50,7 +50,7 @@ def generate(directory, content):
                     f'<button type="submit" name="trocar" value="{escape(directory.name)}">'
                     f'{switch_label}</button></form>')
     header = render(template("header.html", "header.html"), name=name, role=escape(content["role"]),
-                    contact_label=escape(menu["contact"]),
+                    projects_label=escape(content["labels"]["projects"]), contact_label=escape(menu["contact"]),
                     switch_theme=switch_theme,
                     contact=f'<button class="tray" type="button" data-whatsapp hidden>{escape(menu["contact"])} ↗</button>')
     art = directory / "art.html"

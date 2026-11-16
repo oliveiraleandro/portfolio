@@ -1,0 +1,38 @@
+:root { --ink: #162f16; --screen: #c3d8ac; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 clamp(14px, 2vw, 34px) 2rem; color: var(--ink);
+  background: radial-gradient(ellipse at 22% 20%, #d5e3c0, transparent 66%), var(--screen);
+  font: 1rem/1.45 ui-monospace, Menlo, Consolas, monospace;
+}
+.wrap { max-width: 1450px; margin-inline: auto; }
+nav, .identity, .menu { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; }
+nav { justify-content: space-between; padding-block: .8rem; border-bottom: 3px solid; }
+.identity { font-size: clamp(1rem, 1.7vw, 1.6rem); }
+.identity span { padding-left: .8em; border-left: 2px solid; }
+button { font: inherit; color: inherit; background: none; padding: .45rem .15rem; border: 0; cursor: pointer; }
+a { color: inherit; font-weight: bold; text-underline-offset: .15em; }
+button:hover, a:hover { background: var(--ink); color: var(--screen); }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.skip { position: absolute; top: -10rem; background: var(--screen); }
+.skip:focus { top: 0; }
+section { border-bottom: 2px solid; padding: clamp(16px, 1.8vw, 30px) .25rem; }
+h1,h2,h3,p,ul { margin: 0; }
+h1,h3 { font-weight: 900; letter-spacing: -.065em; line-height: 1.1; }
+h1 { font-size: clamp(1.9rem, 3.4vw, 3.5rem); }
+.intro p { max-width: 105ch; margin-top: .7em; font-size: clamp(1rem, 1.35vw, 1.3rem); }
+h2 { display: inline-block; padding: .12em .55em; background: var(--ink); color: var(--screen); font-size: 1.04rem; }
+.feature-body { display: grid; grid-template-columns: 1.45fr 1fr; gap: 2rem; align-items: center; margin-top: .7rem; }
+h3 { font-size: clamp(2rem, 3.5vw, 3.4rem); }
+.feature-body img { width: 100%; border: 2px solid; image-rendering: pixelated; }
+.subtitle { font-weight: bold; font-size: 1.12rem; }
+p + p, .feature-body p, .experiment p { margin-top: .6em; }
+.tags { font-size: .85rem; }
+ul { list-style: none; padding: 0; margin-top: .7rem; }
+li { display: grid; grid-template-columns: minmax(12rem, 28%) 1fr; padding: .45rem; border-bottom: 1px solid; }
+.summary { border-left: 2px solid; padding-left: 1rem; }
+@media (max-width: 650px) {
+  .feature-body, li { grid-template-columns: 1fr; gap: .4rem; }
+  .summary { padding: 0; border: 0; }
+  .feature-body img { max-width: 26rem; }
+}

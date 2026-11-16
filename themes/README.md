@@ -14,7 +14,7 @@ Verifique se as páginas estão atualizadas e se os caminhos, as âncoras e a se
 python3 scripts/build_themes.py --check
 ```
 
-Cada `index.html` em uma pasta de tema é uma saída gerada e pode ser aberto diretamente pelo navegador. O gerador também monta o `index.html` da raiz. Cada carregamento da home sorteia um dos temas cadastrados, com a mesma probabilidade. O botão “Trocar tema” volta à home e exclui o tema atual do sorteio. A URL permanece a da home. Sem JavaScript, a página exibe Ateliê, que usa o CSS em `themes/atelie/`.
+Cada `index.html` em uma pasta de tema é uma saída gerada e pode ser aberto diretamente pelo navegador. O gerador também monta o `index.html` da raiz. Ao abrir a home diretamente, a página sorteia um dos temas cadastrados, com a mesma probabilidade. O botão “Trocar tema” avança na ordem do catálogo e, após o último tema, volta ao primeiro. A URL permanece a da home. Sem JavaScript, a página exibe Ateliê, que usa o CSS em `themes/atelie/`.
 
 ## Adicionar um tema
 
@@ -24,6 +24,6 @@ Crie uma pasta em `themes/` com `theme.css` e `theme.json`. Por exemplo:
 {"title": "Novo tema", "layout": "editorial"}
 ```
 
-Escolha `editorial` para a composição em seções ou `desktop` para a composição em janelas. Os dois layouts usam os modelos em `templates/`. Um novo tema pode fornecer `art.html` para a arte da abertura editorial, `intro.html` para rearranjar o título e a descrição, e `header.html` para outra apresentação do menu. Reutilize os campos dos modelos comuns. No cabeçalho, `$switch_theme` e `$contact` inserem as ações compartilhadas. Se existir, `menu.js` será carregado para interações específicas, como o menu Iniciar do XP.
+Escolha `editorial` para a composição em seções, `desktop` para a composição em janelas ou `documento` para a apresentação com destaque e índice de projetos. Os três layouts usam os modelos em `templates/`. Um novo tema pode fornecer `art.html` para a arte da abertura editorial, `intro.html` para rearranjar o título e a descrição, e `header.html` para outra apresentação do menu. Reutilize os campos dos modelos comuns. No cabeçalho, `$switch_theme` e `$contact` inserem as ações compartilhadas. Se existir, `menu.js` será carregado para interações específicas, como o menu Iniciar do XP.
 
 Execute o gerador e abra o novo `index.html`. O mesmo cadastro inclui o tema no sorteio da home. O pacote de publicação leva a home gerada e os recursos visuais dos temas.

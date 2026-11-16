@@ -1,0 +1,9 @@
+{
+  "title": "De bolso",
+  "layout": "documento",
+  "featured_art": {
+    "source": "projects/datacare/images/pipeline.png",
+    "file": "datacare-lcd.png",
+    "alt": "Pipeline do Datacare representado em bitmap monocromático."
+  }
+}

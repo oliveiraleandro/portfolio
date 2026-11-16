@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto; padding: 0 clamp(12px, 3vw, 48px) 2rem; max-width: 1472px;
+  color: #111; background: #fffefa; font: clamp(1.06rem, 1.5vw, 1.45rem)/1.4 "Times New Roman", Times, serif;
+}
+nav, .identity, .menu { display: flex; align-items: baseline; flex-wrap: wrap; gap: .25rem 1rem; }
+nav { padding: .65rem 0; justify-content: space-between; border-bottom: 1px solid; }
+.identity strong { font-size: 1.12em; }
+a, button { color: #0000bc; text-decoration: underline; }
+a:visited { color: #551a8b; }
+button { background: transparent; border: 0; cursor: pointer; padding: .35em 0; font: inherit; }
+:focus-visible { outline: 2px solid #0000bc; outline-offset: 3px; }
+.skip { position: absolute; top: -10rem; background: white; }
+.skip:focus { top: 0; }
+section { border-bottom: 1px solid #555; padding: 1em 0; }
+h1,h2,h3,p,ul { margin: 0; }
+h1 { font-size: clamp(2rem, 3.1vw, 3.2rem); line-height: 1.08; }
+h2 { font-size: 1.65em; }
+h3 { font-size: 1.35em; }
+p, ul, h3 { margin-top: .4em; }
+p { max-width: 86ch; }
+.subtitle { font-weight: bold; }
+.tags { font-family: monospace; font-size: .78em; }
+.feature-body img { display: none; }
+ul { padding-left: 1.4em; }
+.summary::before { content: " — "; }

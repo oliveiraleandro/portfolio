@@ -1,0 +1,19 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(root),
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 150ms;
+  animation-timing-function: ease-in-out;
+}
+
+html.theme-entering {
+  animation: theme-enter 150ms ease-in-out;
+}
+
+@keyframes theme-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

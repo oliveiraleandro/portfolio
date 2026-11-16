@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/theme-transition.css">
   <title>$name — $role</title>
   <meta name="description" content="$description">
   <meta property="og:title" content="$name — $role">
@@ -17,8 +18,18 @@
     const themes = $catalog;
     const url = new URL(location.href);
     const previous = url.searchParams.get("trocar");
-    const choices = themes.filter(theme => theme.id !== previous);
-    const selectedTheme = choices[Math.floor(Math.random() * choices.length)] || themes[0];
+    const currentIndex = themes.findIndex(theme => theme.id === previous);
+    const nextIndex = currentIndex >= 0
+      ? (currentIndex + 1) % themes.length
+      : Math.floor(Math.random() * themes.length);
+    const selectedTheme = themes[nextIndex];
+    if (currentIndex >= 0) {
+      const root = document.documentElement;
+      root.classList.add("theme-entering");
+      window.addEventListener("pagereveal", event => {
+        if (event.viewTransition) root.classList.remove("theme-entering");
+      }, { once: true });
+    }
     if (url.searchParams.has("trocar")) {
       url.searchParams.delete("trocar");
       // Local file previews can restrict History API URL changes.

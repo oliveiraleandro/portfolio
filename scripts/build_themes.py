@@ -36,7 +36,7 @@ def project_fields(project, directory):
 def generate(directory, content):
     config = read_json(directory / "theme.json")
     layout = config["layout"]
-    if layout not in ("desktop", "editorial"):
+    if layout not in ("desktop", "editorial", "documento"):
         raise ValueError(f"Layout desconhecido em {directory}: {layout}")
 
     def template(name, fallback):
@@ -49,7 +49,8 @@ def generate(directory, content):
     switch_theme = (f'<form class="theme-switch" action="../../index.html" method="get">'
                     f'<button type="submit" name="trocar" value="{escape(directory.name)}">'
                     f'{switch_label}</button></form>')
-    header = render(template("header.html", "header.html"), name=name, role=escape(content["role"]),
+    header_template = "documento-header.html" if layout == "documento" else "header.html"
+    header = render(template("header.html", header_template), name=name, role=escape(content["role"]),
                     projects_label=escape(content["labels"]["projects"]), contact_label=escape(menu["contact"]),
                     switch_theme=switch_theme,
                     contact=f'<button class="tray" type="button" data-whatsapp hidden>{escape(menu["contact"])} ↗</button>')
@@ -63,6 +64,10 @@ def generate(directory, content):
     for section in ("featured", "experiment"):
         for key, value in project_fields(content[section], directory).items():
             fields[f"{section}_{key}"] = value
+    art_override = config.get("featured_art")
+    if art_override and art_override["source"] == content["featured"]["image"]:
+        fields["featured_image"] = quote(art_override["file"])
+        fields["featured_alt"] = escape(art_override["alt"])
     cards = [render(TEMPLATES / f"{layout}-card.html", **project_fields(project, directory))
              for project in content["archive"]]
     labels = content["labels"]

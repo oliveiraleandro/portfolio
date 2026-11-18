@@ -17,51 +17,12 @@
     "latest": "Projeto mais recente",
     "presentation": "Apresentação"
   },
-  "featured": {
-    "name": "Datacare",
-    "title": "Conhecimento em dados, mais acessível para quem trabalha com eles",
-    "description": "Desenhei uma plataforma de qualidade de dados, reunindo diagnóstico, ferramentas de tratamento e pipelines para apoiar o trabalho dos analistas.",
-    "path": "projects/datacare/index.html",
-    "image": "projects/datacare/images/pipeline.png",
-    "alt": "Interface do Datacare com as etapas do pipeline conectadas.",
-    "tags": [
-      "Product Design",
-      "Design System",
-      "Visualização de dados"
-    ]
-  },
+  "featured": "datacare",
   "archive": [
-    {
-      "name": "Iconatus · CAP",
-      "description": "Plataforma imobiliária para corretores",
-      "path": "projects/iconatus/index.html",
-      "image": "assets/home/iconatus-480.webp"
-    },
-    {
-      "name": "Sinapse Finance",
-      "description": "Formulários e automações financeiras",
-      "path": "projects/sinapse/index.html",
-      "image": "assets/home/sinapse-480.webp"
-    },
-    {
-      "name": "Cervello BPMS",
-      "description": "Gestão de chamados de suporte",
-      "path": "projects/cervello/index.html",
-      "image": "assets/home/cervello-480.webp"
-    },
-    {
-      "name": "SEBRAE",
-      "description": "Avaliação de ecossistemas de inovação",
-      "path": "projects/sebrae/index.html",
-      "image": "assets/home/sebrae-480.webp"
-    }
+    "iconatus",
+    "sinapse",
+    "cervello",
+    "sebrae"
   ],
-  "experiment": {
-    "name": "Meu portfólio",
-    "title": "Até onde a IA pode ajudar a redesenhar um portfólio?",
-    "description": "a criatividade não elimina a possibilidade de alucinação; ela apenas torna a veracidade um critério que nem sempre é relevante para avaliar o resultado.",
-    "path": "projects/portfolio-evolution/index.html",
-    "image": "public/images/cases/portfolio-evolution/2026-09-14-338d3e6-home-pt-desktop-viewport.webp",
-    "alt": "Primeira versão responsiva da home"
-  }
+  "experiment": "portfolio-evolution"
 }

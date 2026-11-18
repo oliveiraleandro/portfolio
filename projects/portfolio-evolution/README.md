@@ -1,6 +1,6 @@
 # Evolução do portfólio
 
-Case em português: `projects/portfolio-evolution/index.html`.
+Case em português: `projects/portfolio-evolution/index.html` (gerado). Edite os textos e o card em `content.md` e execute `python3 scripts/build_site.py`. A seleção histórica das capturas continua em `scripts/build_evolution.py`, e os títulos acessíveis das capturas vêm de `timeline.json`.
 
 - Intervalo: `c623256ca7cfdb8051e493cb3468a84eb90058d4` até `3cd2208`, de 14/09 a 14/11/2026.
 - 22 commits registrados; 21 têm uma home renderizável. O primeiro tem `index.html` vazio e é apresentado como referência de design, nunca como screenshot de uma página funcional.

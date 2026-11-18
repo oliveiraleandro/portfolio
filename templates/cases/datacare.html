@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$page_title — $site_name</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon.png">
+  <meta name="description" content="$description">
+  <meta property="og:title" content="$page_title — $site_name">
+  <meta property="og:description" content="$description">
+  <meta property="og:type" content="website">
+  <!-- TODO: definir domínio público para canonical e og:url; adicionar og:image com URL absoluta de um asset real. -->
+  <link rel="stylesheet" href="../../css/cases/base.css">
+  <link rel="stylesheet" href="../../css/cases/header.css">
+  <link rel="stylesheet" href="../../css/cases/article.css">
+  <link rel="stylesheet" href="../../css/cases/datacare.css">
+  <script src="../../js/contact.js" defer></script>
+
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="stylesheet" href="../../css/cases/footer.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header container">
+  <a href="../../" class="identity"><span>$site_name</span><span class="role">$site_role</span></a>
+  <div class="header-actions">
+    <a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a>
+  </div>
+</header>
+<main id="conteudo"><article class="case datacare"><header class="case-hero container"><p class="eyebrow">$eyebrow</p><h1>$title</h1><p class="case-lead">$lead</p><ul class="tags">$tags</ul>
+<div class="case-intro">
+$body
+</div>
+</header><div class="case-body container">
+<figure class="case-figure case-opening">
+  <a class="figure-image-link" href="images/pipeline.png" target="_blank" rel="noopener"><img src="images/pipeline.png" alt="$alt_1" width="1366" height="668" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_1 <a href="images/pipeline.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+<figure class="case-figure datacare-video">
+  <div class="figure-image-link"><video autoplay muted loop playsinline controls poster="images/navegacao-capa.webp" width="684" height="440" aria-label="$alt_2" src="images/navegacao.mp4"></video></div>
+  <figcaption>$caption_2 <a href="images/navegacao.mp4">Abrir vídeo completo</a></figcaption>
+</figure>
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/acessibilidade.png" target="_blank" rel="noopener"><img src="images/acessibilidade.png" alt="$alt_3" width="2340" height="1168" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_3 <a href="images/acessibilidade.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+<figure class="case-figure" id="modo-escuro">
+  <a class="figure-image-link" href="images/modo-escuro.png" target="_blank" rel="noopener"><img src="images/modo-escuro.png" alt="$alt_4" width="2340" height="1168" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_4 <a href="images/modo-escuro.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+
+<figure class="case-figure datacare-video">
+  <div class="figure-image-link"><video autoplay muted loop playsinline controls poster="images/modais-ferramentas-capa.webp" width="684" height="335" aria-label="$alt_5" src="images/modais-ferramentas.mp4"></video></div>
+  <figcaption>$caption_5 <a href="images/modais-ferramentas.mp4">Abrir vídeo completo</a></figcaption>
+</figure>
+
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/design-system.png" target="_blank" rel="noopener"><img src="images/design-system-previa.webp" alt="$alt_6" width="1800" height="993" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_6 <a href="images/design-system.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/exploracao-ia.png" target="_blank" rel="noopener"><img src="images/exploracao-ia.png" alt="$alt_7" width="1366" height="1351" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_7 <a href="images/exploracao-ia.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/monitor.png" target="_blank" rel="noopener"><img src="images/monitor.png" alt="$alt_8" width="1366" height="668" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_8 <a href="images/monitor.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+<figure class="case-figure">
+  <a class="figure-image-link" href="images/operacional.png" target="_blank" rel="noopener"><img src="images/operacional.png" alt="$alt_9" width="1366" height="668" loading="lazy" decoding="async"></a>
+  <figcaption>$caption_9 <a href="images/operacional.png" target="_blank" rel="noopener">Abrir imagem completa</a></figcaption>
+</figure>
+
+</div><nav class="next-case container" aria-label="$alt_10"><p class="eyebrow">Próximo case</p><a href="$next_url">$next_name</a></nav></article></main>
+$footer
+</body>
+</html>

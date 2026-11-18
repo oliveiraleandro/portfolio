@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# Copy the ready-to-serve site; do not regenerate pages or install dependencies.
+# Generate and validate editorial content before preparing the static site.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-python3 scripts/build_themes.py --check
+python3 scripts/build_site.py
+python3 scripts/build_site.py --check
 python3 scripts/check_styles.py
 
 rm -rf dist

@@ -1,17 +1,17 @@
 # Manutenção das prévias
 
-Edite `content.json` para alterar a apresentação, os rótulos do menu, os textos dos cases e os destinos. Os caminhos de imagens e páginas partem da raiz do repositório. A lista `archive` determina a ordem dos projetos anteriores. A ação do WhatsApp usa o script existente em `js/contact.js`.
+Edite `content.json` para alterar a apresentação, os rótulos do menu e os identificadores dos projetos. Os textos, imagens e tags dos cards vêm de `projects/<case>/content.md`. Consulte [EDITAR_CONTEUDO.md](../EDITAR_CONTEUDO.md). Os caminhos de imagens e páginas partem da raiz do repositório. A lista `archive` determina a ordem dos projetos anteriores. A ação do WhatsApp usa o script existente em `js/contact.js`.
 
 A partir da raiz do repositório, gere as prévias:
 
 ```sh
-python3 scripts/build_themes.py
+python3 scripts/build_site.py
 ```
 
 Verifique se as páginas estão atualizadas e se os caminhos, as âncoras e a sequência de destinos são válidos:
 
 ```sh
-python3 scripts/build_themes.py --check
+python3 scripts/build_site.py --check
 ```
 
 Cada `index.html` em uma pasta de tema é uma saída gerada e pode ser aberto diretamente pelo navegador. O gerador também monta o `index.html` da raiz. Ao abrir a home diretamente, a página sorteia um dos temas cadastrados, com a mesma probabilidade. O botão “Trocar tema” avança na ordem do catálogo e, após o último tema, volta ao primeiro. A URL permanece a da home. Sem JavaScript, a página exibe Ateliê, que usa o CSS em `themes/atelie/`.

@@ -51,26 +51,10 @@ references = "".join(
     f'''<figure class="evolution-{device} evolution-reference"><a class="figure-image-link" href="{asset}2026-09-14-c623256-reference-{device}.webp" target="_blank" rel="noopener" aria-label="Ampliar referência inicial de design, {label}"><img src="{asset}2026-09-14-c623256-reference-{device}.webp" loading="lazy" alt="Referência inicial de design da home, {label}; não é uma captura do site"></a></figure>'''
     for device, label in [("desktop", "desktop")]
 )
-html = f"""<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A evolução do meu portfólio — Leandro Oliveira</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon.png">
-<meta name="description" content="As imagens mostram como o desenho do meu portfólio mudou ao longo do tempo.">
-  <link rel="stylesheet" href="../../css/cases/base.css">
-  <link rel="stylesheet" href="../../css/cases/header.css">
-  <link rel="stylesheet" href="../../css/cases/article.css">
-  <link rel="stylesheet" href="../../css/cases/evolution.css">
-</head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="site-header container"><a class="identity" href="../../"><span>Leandro Oliveira</span><span class="role">Product Designer</span></a><div class="header-actions"><a class="text-link home-link" href="../../"><span aria-hidden="true">←</span> Página inicial</a></div></header>
-<main id="conteudo"><article class="case portfolio-evolution">
-<header class="case-hero container"><h1>Um portfólio também<br>é um <s class="evolution-strike" aria-hidden="true">produto</s> experimento.</h1><ul class="tags"><li>Design de interface</li><li>Desenvolvimento</li><li>Iteração</li></ul>
-<div class="case-intro" id="experimento-com-ia">
-<p>Estudo inteligência artificial no meu tempo livre e na minha segunda graduação. Quando decidi redesenhar este portfólio, já assinava o ChatGPT. Aproveitei o projeto para experimentar em quais tarefas de design ele poderia me ajudar.</p>
-</div></header>
-<div class="container">
-<ol class="evolution-timeline" aria-label="Evolução visual do portfólio">
-<li class="evolution-step"><div class="evolution-captures">{references}</div></li>
-{"".join(items)}</ol></div>
-</article></main></body></html>"""
-(CASE / "index.html").write_text(html)
-print("Built", CASE / "index.html")
+def render_timeline():
+    return f'<li class="evolution-step"><div class="evolution-captures">{references}</div></li>\n' + "".join(items)
+
+
+if __name__ == "__main__":
+    from build_site import main
+    main()

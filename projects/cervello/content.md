@@ -1,3 +1,31 @@
++++
+name = "Cervello BPMS"
+page_title = "Cervello BPMS"
+description = "Redesenhei uma plataforma de chamados a partir das tarefas mais frequentes da equipe de suporte, com componentes reutilizáveis entre os módulos."
+eyebrow = "03 / Cervello BPMS"
+tags = ["Design System", "Enterprise UX", "HTML e CSS"]
+next = "iconatus"
+
+[card]
+description = "Gestão de chamados de suporte"
+image = "assets/home/cervello-480.webp"
+
+[captions]
+caption_1 = "A equipe de suporte pode consultar a situação do chamado durante o atendimento."
+caption_2 = "O mesmo painel aparece nos temas claro e escuro. Os valores são ilustrativos."
+caption_3 = "No aplicativo, a identidade visual do cliente acompanha a equipe desde a página inicial até a consulta de uma solicitação."
+
+[accessibility]
+alt_1 = "Cervello"
+alt_2 = "Atendimento de chamado com resumo, status, prioridade e prazos de SLA"
+alt_3 = "Dashboard em modo claro"
+alt_4 = "Dashboard em modo escuro"
+alt_5 = "Home mobile com notícias e acesso a solicitações"
+alt_6 = "Lista mobile de solicitações com ações de aprovação"
+alt_7 = "Tela mobile de busca de solicitações"
+alt_8 = "Próximo projeto"
++++
+
 # Cervello BPMS
 
 Alguns dos meus colegas usavam o Cervello para atender chamados de TI e trabalhavam na mesma sala que eu. Nas conversas do dia a dia, eles me mostravam dificuldades que raramente chegavam à equipe de produto.
@@ -11,9 +39,3 @@ Algumas páginas ficavam a vários passos da tela inicial. Propus uma busca que 
 Como a equipe não tinha um desenvolvedor dedicado à interface, participei também da implementação. Substituí boa parte dos estilos do Bootstrap por componentes com a mesma aparência em diferentes módulos. Escrevi os estilos em SCSS e usei a convenção BEM para que as partes de cada componente seguissem uma regra comum de nomenclatura. Nos painéis, mantive a biblioteca que os desenvolvedores já usavam. A cada entrega, revisava as telas e atualizava o protótipo.
 
 Os colegas do suporte que testaram as telas aprovaram as mudanças. O gerente de produto e a equipe comercial também aprovaram o resultado. A personalização ajudava nas apresentações a clientes com marcas diferentes. A empresa assinou novos contratos nesse período, mas os dados que acompanhávamos não permitem atribuí-los ao redesenho. Os componentes ficaram disponíveis para outros módulos. Se retomasse o projeto, envolveria os colegas do suporte também na escolha dos problemas que a equipe deveria resolver primeiro.
-
-_A equipe de suporte pode consultar a situação do chamado durante o atendimento._
-
-_O mesmo painel aparece nos temas claro e escuro. Os valores são ilustrativos._
-
-_No aplicativo, a identidade visual do cliente acompanha a equipe desde a página inicial até a consulta de uma solicitação._

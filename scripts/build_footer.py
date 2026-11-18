@@ -20,6 +20,8 @@ def apply_footer(content, page):
     if not FOOTER.search(content):
         return content
     template = (ROOT / 'templates/footer.html').read_text().rstrip()
+    identity = json.loads((ROOT / 'themes/content.json').read_text())
+    template = template.replace('{{name}}', html.escape(identity['name'])).replace('{{role}}', html.escape(identity['role']))
     if page.startswith('en/'):
         catalog = json.loads((ROOT / 'translations/en-US.json').read_text())
         for text in ('WhatsApp', 'Ative o JavaScript para abrir o contato pelo WhatsApp.',

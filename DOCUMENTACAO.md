@@ -4,7 +4,7 @@ Estado atualizado em 24/09/2026, incluindo versões por idioma. Registros antigo
 
 ## Objetivo e escopo
 
-Portfólio de Product/UX Design de Leandro Oliveira, em português brasileiro e inglês americano, com interfaces reais e narrativa sobre problemas, decisões e aprendizados. A implementação publicada é estática: HTML e CSS, com JavaScript pequeno para o contato WhatsApp e preservação de âncoras na troca de idioma. Um gerador Python produz os HTMLs ingleses durante a manutenção, sem framework, dependências externas ou backend.
+Portfólio de Product/UX Design de Leandro Oliveira, em português brasileiro e inglês americano, com interfaces reais e narrativa sobre problemas, decisões e aprendizados. A implementação publicada é estática: HTML e CSS, com JavaScript pequeno para o contato WhatsApp e preservação de âncoras na troca de idioma. Um gerador Python 3.11+ produz os cases e a home a partir das fontes editoriais, sem framework, dependências externas ou backend. O inglês está suspenso.
 
 As referências orientam a direção de arte, sem exigir reprodução pixel a pixel. Prioridades: composição editorial, espaço em branco, tipografia forte, interfaces em grande escala, recortes intencionais e mobile em uma coluna. As alterações visuais devem priorizar CSS e preservar os assets originais.
 
@@ -17,7 +17,7 @@ As referências orientam a direção de arte, sem exigir reprodução pixel a pi
 | `projects/sinapse/index.html` | Case de automações financeiras e formulários |
 | `projects/cervello/index.html` | Case de redesign de plataforma corporativa |
 | `projects/iconatus/index.html` | Case CAP, plataforma imobiliária desktop e mobile |
-| `projects/*/content.md` | Conteúdo editorial de referência de cada case |
+| `projects/*/content.md` | Fonte editorial dos cases e dos cards da home (Markdown com campos TOML) |
 | `projects/*/images/` | Screenshots originais dos projetos |
 | `projects/*/logo.*` | Logos fornecidos |
 | `projects/common/icons/` | Ícones de princípios e WhatsApp |
@@ -35,7 +35,7 @@ As referências orientam a direção de arte, sem exigir reprodução pixel a pi
 
 ## Conteúdo editorial
 
-Os quatro cases foram atualizados a partir dos respectivos `content.md`. Esses arquivos não são carregados pelo navegador: mudanças no Markdown precisam ser refletidas manualmente no HTML português. Os HTMLs portugueses são a fonte estrutural usada para gerar os ingleses; não há sincronização automática a partir dos arquivos Markdown.
+Os seis cases são gerados a partir de `projects/*/content.md` e dos layouts em `templates/cases/`. `python3 scripts/build_site.py` gera os cases, os temas e a home, verificando campos obrigatórios, imagens, links e âncoras antes de escrever. `--check` verifica sem gravar. Os cards da home usam os dados dos cases; `themes/content.json` mantém a apresentação e a ordem. Veja [EDITAR_CONTEUDO.md](EDITAR_CONTEUDO.md). Os HTMLs são saídas geradas, nunca a fonte editorial. O inglês permanece suspenso.
 
 Ao atualizar um case, revisar também título, descrição, metadados Open Graph e resumo na home, quando afetados. Preservar figuras relevantes, textos alternativos e legendas. Não inventar resultados ou apresentar números mostrados nas interfaces como métricas de impacto do trabalho.
 
@@ -130,6 +130,6 @@ Antes de publicar ou após mudanças amplas, revisar home e cases em 320, 390, 7
 - Referências específicas dos cases não estavam disponíveis na revisão anterior. As referências de home existentes são `home-destktop.png` (grafia original) e `home-mobile.png`.
 - Confirmar publicação e repositório remoto; não há confirmação de deploy nesta documentação.
 
-Para GitHub Pages, gerar e versionar os HTMLs antes de publicar a branch escolhida a partir da raiz. A hospedagem não precisa executar Python nem uma etapa de build. Os caminhos relativos permitem servir o projeto em subdiretório. Após publicar, testar as dez páginas e seus assets na URL pública.
+Para GitHub Pages, `scripts/prepare_publish.sh` gera e valida o site antes de preparar `dist/`; o workflow publica essa pasta. Versione também os HTMLs gerados para manter a prévia local atualizada. Python 3.11+ é necessário na geração, mas a hospedagem continua servindo arquivos estáticos. Os caminhos relativos permitem servir o projeto em subdiretório.
 
 Uma tentativa anterior de `git diff --check` foi impedida pela solicitação de aceite da licença do Xcode no ambiente local. Nenhuma licença foi aceita pelo agente; essa ocorrência não é um erro do site.

@@ -1,3 +1,32 @@
++++
+name = "Sinapse Finance"
+page_title = "Sinapse Finance"
+description = "Redesenhei formulários a partir das dificuldades dos clientes e explorei como tornar as automações financeiras mais fáceis de acompanhar."
+eyebrow = "02 / Sinapse Finance"
+tags = ["Interaction Design", "Formulários", "Automações"]
+next = "cervello"
+
+[card]
+description = "Formulários e automações financeiras"
+image = "assets/home/sinapse-480.webp"
+
+[captions]
+caption_1 = "O mapa mostra as regras que orientaram o desenho das etapas."
+caption_2 = "O diagrama mostra o que inicia a automação e em que condições uma etapa se repete."
+caption_3 = "O cliente escolhe uma ferramenta antes de configurar os campos e definir as condições de uso."
+caption_4 = "O configurador mostra quais campos entram no cálculo e como combiná-los. Os valores são ilustrativos."
+
+[accessibility]
+alt_1 = "Sinapse Finance"
+alt_2 = "Anotações manuscritas de processos e regras de automação"
+alt_3 = "Fluxo de automação com gatilho, condição e repetição"
+alt_4 = "Modal de escolha de ferramenta"
+alt_5 = "Modal de mapeamento entre campos de origem e destino"
+alt_6 = "Modal para configurar uma condição"
+alt_7 = "Modal de cálculo com campos disponíveis e operadores"
+alt_8 = "Próximo projeto"
++++
+
 # Sinapse Finance
 
 Alguns clientes da Sinapse preferiam pedir ao consultor que preenchesse um formulário por eles. Como designer principal, investiguei o que dificultava o envio e desenhei uma forma de os clientes acompanharem as operações financeiras que a Sinapse automatizava.
@@ -9,11 +38,3 @@ Em cerca de duas semanas, acompanhei o trabalho da investigação à primeira me
 As automações financeiras já funcionavam, mas o cliente não conseguia ver por quais etapas uma operação passava. Estudei as regras com os especialistas financeiros e os desenvolvedores. No primeiro desenho, o cliente podia arrastar as etapas em um diagrama. Cada combinação criava novas exceções que a equipe teria de prever. Optei por cartões na ordem de execução, com um título que explicava a função de cada etapa. Se algo desse errado, o cliente poderia consultar o erro e desativar a automação.
 
 Tive pouco acesso aos clientes para testar essa proposta. Quem já usava programas de produtividade conseguiu seguir a sequência dos cartões, embora alguns conceitos financeiros gerassem dúvidas. Esses testes me ajudaram a ajustar a navegação. Para entender como alguém investigaria um erro durante o trabalho, eu precisaria acompanhar clientes da Sinapse usando a ferramenta. A equipe aprovou a proposta e iniciou o desenvolvimento. Saí antes da entrega completa. Hoje, combinaria essas conversas com os clientes já no início do projeto.
-
-_O mapa mostra as regras que orientaram o desenho das etapas._
-
-_O diagrama mostra o que inicia a automação e em que condições uma etapa se repete._
-
-_O cliente escolhe uma ferramenta antes de configurar os campos e definir as condições de uso._
-
-_O configurador mostra quais campos entram no cálculo e como combiná-los. Os valores são ilustrativos._

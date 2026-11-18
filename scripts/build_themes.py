@@ -186,7 +186,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    content = read_json(THEMES / "content.json")
+    from site_content import load_home
+    outputs = build_outputs(load_home())
+    count = len(outputs) - 1
+    stale = [p for p, html in outputs.items() if not p.exists() or p.read_text() != html]
+    if args.check and stale:
+        raise SystemExit("Regenerar: " + ", ".join(str(p.relative_to(ROOT)) for p in stale))
+    for page in stale:
+        page.write_text(outputs[page], encoding="utf-8")
+    print(f"{count} temas verificados. {len(stale)} páginas atualizadas.")
+
+
+def build_outputs(content):
     outputs = {}
     for config in sorted(THEMES.glob("*/theme.json")):
         page = config.parent / "index.html"
@@ -194,12 +205,7 @@ def main():
         validate(page, outputs[page], content)
     count = len(outputs)
     outputs[ROOT / "index.html"] = generate_home(outputs, content)
-    stale = [p for p, html in outputs.items() if not p.exists() or p.read_text() != html]
-    if args.check and stale:
-        raise SystemExit("Regenerar: " + ", ".join(str(p.relative_to(ROOT)) for p in stale))
-    for page in stale:
-        page.write_text(outputs[page], encoding="utf-8")
-    print(f"{count} temas verificados. {len(stale)} páginas atualizadas.")
+    return outputs
 
 
 if __name__ == "__main__":

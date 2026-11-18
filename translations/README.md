@@ -50,6 +50,6 @@ As ressalvas sobre ausência de métricas, período curto de medição e impleme
 
 ## Atualização
 
-Edite o catálogo, execute `python3 scripts/build_locales.py` e confira o texto completo no HTML gerado. Alguns parágrafos possuem trechos separados por ênfases ou quebras de linha; a tradução precisa funcionar na frase montada. Não edite os arquivos de `en/` diretamente.
+Quando o inglês for reativado, gere primeiro os HTMLs portugueses com `python3 scripts/build_site.py`. Edite o catálogo, execute `python3 scripts/build_locales.py` e confira o texto completo no HTML gerado. Alguns parágrafos possuem trechos separados por ênfases ou quebras de linha; a tradução precisa funcionar na frase montada. Não edite os arquivos de `en/` diretamente.
 
 Valide a geração com `python3 scripts/build_locales.py --check` e as rotas com `python3 scripts/test_locales.py`.
